@@ -30,7 +30,7 @@ const QaServices = () => {
                       <Image
                         src={state.image}
                         alt={state.value}
-                        // priority={true}
+                        priority={true}
                       />
                     </span>
                     <p>{state.value}</p>

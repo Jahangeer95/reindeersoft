@@ -1,8 +1,8 @@
-import waterfall from "../../../../assets/images/qa-and-automation-testing/qa-services/waterfall.png";
-import manualTesting from "../../../../assets/images/qa-and-automation-testing/qa-services/manual-testing.png";
-import consultancy from "../../../../assets/images/qa-and-automation-testing/qa-services/consultancy.png";
-import automationTesting from "../../../../assets/images/qa-and-automation-testing/qa-services/automation-testing.png";
-import agile from "../../../../assets/images/qa-and-automation-testing/qa-services/agile.png";
+import waterfall from "@/assets/images/qa-and-automation-testing/qa-services/waterFall.png";
+import manualTesting from "@/assets/images/qa-and-automation-testing/qa-services/manual-testing.png";
+import consultancy from "@/assets/images/qa-and-automation-testing/qa-services/consultancy.png";
+import automationTesting from "@/assets/images/qa-and-automation-testing/qa-services/automation-testing.png";
+import agile from "@/assets/images/qa-and-automation-testing/qa-services/agile.png";
 
 import {
   QaServicesArrayType,
