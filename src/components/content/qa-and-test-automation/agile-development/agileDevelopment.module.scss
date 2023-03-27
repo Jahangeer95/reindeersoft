@@ -1,0 +1,96 @@
+@use "../../../../sass/font";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/colors";
+
+.AgileDevelopmentMain {
+    padding: 80px 0;
+    // background-color: colors.$secondary_light;
+
+    div {
+        div {
+
+            h3 {
+                @include heading.levelThree-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding: 0px;
+                    li {
+                        position: relative;
+                        background: linear-gradient(to top left, rgba(colors.$white-color,1), rgba(colors.$secondary_light,1));
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        border-radius: 10px;
+                        border-bottom: 1px ridge rgba(colors.$primary_dark,1);
+                        
+                        span {
+                            background: linear-gradient(to top left, rgba(colors.$primary_dark3,1), rgba(colors.$primary_dark,1));
+                            border-radius: 10px 0 0 10px;
+                            padding: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 150px;
+                            height: min(150px);
+
+                            @media only screen and (max-width: "768px") {
+                                height: min(180px);
+                                width: 120px;
+                            }
+
+                            @media only screen and (max-width: "450px") {
+                                width: 100px;
+                            }
+
+
+                           
+
+                            h4 {
+                                @include heading.levelFive-heading;
+                                font-size: 0.85rem;
+                                color: colors.$white-color;
+                                width: 120px !important;
+                                text-align: center;
+                                margin: 0;
+                                
+                                
+                            }
+                        }
+                        
+                        p {
+                            @include paragraph.paragraph-mixin;
+                            padding: 10px;
+                            text-indent: unset;
+                         
+                        }
+                        &:last-child {
+                            margin-bottom: 10px;
+
+                            span {
+
+                                @media only screen and (max-width: "991px") {
+                                    height: min(175px);
+                                }
+
+                                @media only screen and (max-width: "768px") {
+                                    height: min(230px);
+                                }
+                                @media only screen and (max-width: "450px") {
+                                    height: min(250px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
