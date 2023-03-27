@@ -1,5 +1,5 @@
-import Head from 'next/head';
-import QaAndTestAutomation from '@/components/content/qa-and-test-automation';
+import Head from "next/head";
+import QaAndTestAutomation from "@/components/content/qa-and-test-automation";
 
 export default function QaAndTestAutomationPage() {
   return (
@@ -11,7 +11,6 @@ export default function QaAndTestAutomationPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <QaAndTestAutomation />
-      
     </>
-  )
+  );
 }
