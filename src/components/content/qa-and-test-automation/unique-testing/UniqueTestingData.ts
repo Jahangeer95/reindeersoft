@@ -1,9 +1,9 @@
-import functionalTesting from "@/assets/images/qa-and-automation-testing/unique-testing/functional-testing.png";
-import performanceTesting from "@/assets/images/qa-and-automation-testing/unique-testing/performance-testing.png";
-import securityTesting from "@/assets/images/qa-and-automation-testing/unique-testing/security-testing.png";
-import usabilityTesting from "@/assets/images/qa-and-automation-testing/unique-testing/usability-testing.png";
-import compatibilityTesting from "@/assets/images/qa-and-automation-testing/unique-testing/compatibility-testing.png";
-import mobileAppTesting from "@/assets/images/qa-and-automation-testing/unique-testing/mobileApp-testing.png";
+import functionalTesting from "@/assets/images/qa-and-automation-testing/unique-testing/functional-testing.jpg";
+import performanceTesting from "@/assets/images/qa-and-automation-testing/unique-testing/performance-testing.jpg";
+import securityTesting from "@/assets/images/qa-and-automation-testing/unique-testing/security-testing.jpg";
+import usabilityTesting from "@/assets/images/qa-and-automation-testing/unique-testing/usability-testing.jpg";
+import compatibilityTesting from "@/assets/images/qa-and-automation-testing/unique-testing/compatibility-testing.jpg";
+import mobileAppTesting from "@/assets/images/qa-and-automation-testing/unique-testing/mobileApp-testing.jpg";
 import {
   UniqueTestingArrType,
   UniqueTestingTitleType,
