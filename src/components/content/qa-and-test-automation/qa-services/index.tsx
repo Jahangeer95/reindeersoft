@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./qaServicesData";
@@ -27,11 +27,11 @@ const QaServices = () => {
                 >
                   <div>
                     <span>
-                      {/* <Image
+                      <Image
                         src={state.image}
                         alt={state.value}
                         priority={true}
-                      /> */}
+                      />
                     </span>
                     <p>{state.value}</p>
                   </div>

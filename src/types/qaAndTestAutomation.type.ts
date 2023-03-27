@@ -23,7 +23,7 @@ export type QaServicesTitleType = string;
 export type QaServicesArrayType = {
   id: string;
   value: string;
-  // image: StaticImageData;
+  image: StaticImageData;
 }[];
 
 // Waterfall Development Data types...
