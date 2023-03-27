@@ -27,11 +27,11 @@ const QaServices = () => {
                 >
                   <div>
                     <span>
-                      <Image
+                      {/* <Image
                         src={state.image}
                         alt={state.value}
                         priority={true}
-                      />
+                      /> */}
                     </span>
                     <p>{state.value}</p>
                   </div>
