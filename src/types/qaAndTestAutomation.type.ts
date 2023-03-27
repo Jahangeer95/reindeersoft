@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-import { type } from "os";
 
 // Banner Data types..
 export type BannertitleType = string;
@@ -24,7 +23,7 @@ export type QaServicesTitleType = string;
 export type QaServicesArrayType = {
   id: string;
   value: string;
-  image: StaticImageData;
+  // image: StaticImageData;
 }[];
 
 // Waterfall Development Data types...

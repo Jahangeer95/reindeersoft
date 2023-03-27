@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./qaServicesData";
