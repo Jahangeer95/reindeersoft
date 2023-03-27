@@ -24,7 +24,7 @@ const QaAndTestAutomation = () => {
 
       <AgileDevelopment />
 
-      <UniqueTesting />
+      {/* <UniqueTesting /> */}
 
       <AutomatedTesting />
 
