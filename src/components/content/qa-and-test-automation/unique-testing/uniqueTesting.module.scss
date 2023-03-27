@@ -1,0 +1,74 @@
+@use "../../../../sass/colors";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+
+.UniqueTestingMain {
+    padding: 80px 0;
+    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+
+    div {
+        div {
+            h3 {
+                @include heading.levelThree-heading;
+            }
+            article {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 3.5%;
+                row-gap: 40px;
+
+                @media only screen and (max-width: "991px") {
+                    gap: 5%;
+                    row-gap: 30px;
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 31%;
+                    padding: 30px;
+                    border: 1px solid rgba(colors.$primary_light, 1);
+                    background-color: rgba(colors.$white-color, 1);
+
+                    @media only screen and (max-width: "991px") {
+                        width: 47.5%;
+                    }
+
+                    @media only screen and (max-width: "550px") {
+                        width: 90%;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
+                    
+                    img {
+                        display: block;
+                        width: 100px;
+                        height: auto;
+                        margin-bottom: 30px;
+                        filter: hue-rotate(180deg);
+                    }
+
+                    h4 {
+                        @include heading.levelFour-heading;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: 500;
+                        height: 70px;
+                        @media only screen and (min-width: "1400px") {
+                            height: fit-content;
+                        }
+                        @media only screen and (max-width: "550px") {
+                            height: fit-content;
+                        }
+                    }
+                    p {
+                        @include paragraph.paragraph-mixin;
+                        text-indent: unset;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
