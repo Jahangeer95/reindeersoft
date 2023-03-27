@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./banner";
 import QualityAssurance from "./quality-assurance-importance";
 import Quality from "./quality-assurance-process";
-// import QaServices from "./qa-services";
+import QaServices from "./qa-services";
 import AgileDevelopment from "./agile-development";
 import WaterfallDevelopment from "./waterfall-development";
 import AutomatedTesting from "./automatedTesting";
@@ -18,13 +18,13 @@ const QaAndTestAutomation = () => {
 
       <Quality />
 
-      {/* <QaServices /> */}
+      <QaServices />
 
       <WaterfallDevelopment />
 
       <AgileDevelopment />
 
-      {/* <UniqueTesting /> */}
+      <UniqueTesting />
 
       <AutomatedTesting />
 
