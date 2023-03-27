@@ -4,7 +4,7 @@
 
 .QualityMain {
     padding: 80px 0;
-    background: linear-gradient(to top left, rgba(colors.$white-color,1), rgba(colors.$secondary_light,1));
+    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
 
     div {
         div {
@@ -22,17 +22,18 @@
                 margin-bottom: 30px;
                 max-width: 900px;
                 font-size: 0.9rem;
-                // text-transform: capitalize;
             }
 
 
         }
+
         article {
             position: relative;
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
             justify-content: center;
+
             @media only screen and (max-width: "768px") {
                 gap: 10px;
             }
@@ -40,15 +41,19 @@
             div {
                 position: relative;
                 width: 18%;
+
                 @media only screen and (max-width: "1330px") {
                     width: 30%;
                 }
+
                 @media only screen and (max-width: "768px") {
                     width: 40%;
                 }
+
                 @media only screen and (max-width: "550px") {
                     width: 80%;
                 }
+
                 .Border {
                     position: relative;
                     z-index: 0;
@@ -78,7 +83,7 @@
                 div {
                     width: 100%;
                     padding-left: 30px;
-                    
+
                     @media only screen and (max-width: "1230px") {
                         display: flex;
                         flex-direction: column;
@@ -105,11 +110,13 @@
                             height: fit-content;
                         }
                     }
-                    ul{
+
+                    ul {
                         list-style: decimal;
                         margin: 0;
                         padding-left: 15px;
-                        li{
+
+                        li {
                             position: relative;
                             @include paragraph.paragraph-mixin;
                             font-size: 0.7rem;

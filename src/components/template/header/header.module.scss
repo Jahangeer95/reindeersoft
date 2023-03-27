@@ -15,7 +15,7 @@
     a {
         // color: colors.$primary_light;
         color: colors.$primary_dark4;
-        @include font.font(18px, 32px, 800);
+        @include font.font(18px, 32px, 500);
         text-decoration: none;
         margin: auto 5px;
         padding: 5px;
