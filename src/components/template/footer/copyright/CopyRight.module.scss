@@ -1,0 +1,14 @@
+@use "../../../../sass/colors";
+@use "../../../../sass/font";
+
+.CopyRight_Main {
+    background-color: colors.$primary_light;
+    text-align: center;
+
+    span {
+        display: block;
+        padding: 5px;
+        @include font.font(12px, 20px, 400);
+        color: colors.$secondary_dark;
+    }
+}

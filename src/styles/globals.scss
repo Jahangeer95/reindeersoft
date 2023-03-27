@@ -1,0 +1,236 @@
+@use "../sass/font";
+@use "../sass/colors";
+@use "../sass/animation";
+
+
+:root {
+  --max-width: 1100px;
+  --background-main: rgb(255, 255, 255);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: clamp(16px, calc(10px + 1.5vmin), 24px);
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: var(--background-main) !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// Banner Slider styling...
+.HomeBanner_Main {
+  position: relative;
+  margin-top: 100px;
+
+  .carousel {
+    .carousel-indicators {
+      gap: 10px;
+      justify-content: flex-start;
+
+      button {
+        width: 8px;
+        height: 8px;
+      }
+
+      .active {
+        transform: scale(120%);
+      }
+    }
+
+    .carousel-inner {
+
+      .carousel-item {
+        a {
+          text-decoration: none;
+          color: #ffffff;
+
+          img {
+            width: 100%;
+            height: 85vh;
+
+            @media only screen and (max-width: "991px") {
+              height: 80vh;
+            }
+
+            @media only screen and (max-width: "768px") {
+              height: 70vh;
+            }
+          }
+
+          .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-image: linear-gradient(rgba(colors.$secondary_dark, 0.7), rgba(colors.$primary_dark3, 0.7));
+            width: 100%;
+            height: 100%;
+          }
+
+          div {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            aside {
+              margin-left: 15%;
+              margin-right: 15%;
+
+              @media only screen and (max-width: "768px") {
+                margin-left: 10%;
+                margin-right: 10%;
+              }
+
+              @media only screen and (max-width: "550px") {
+                margin-left: 15%;
+                margin-right: 15%;
+              }
+
+              h1 {
+                position: relative;
+                @include font.font(calc(35px + 2.5vmin), 110%, 600);
+                margin-bottom: 10px;
+                display: none;
+                text-transform: uppercase;
+
+                @media only screen and (max-width: "768px") {
+                  @include font.font(30px, 100%, 600);
+                }
+              }
+
+              span {
+                display: flex;
+                gap: 100px;
+
+                @media only screen and (max-width: "768px") {
+                  gap: 40px;
+                }
+
+                @media only screen and (max-width: "550px") {
+                  flex-direction: column-reverse;
+                  gap: 10px;
+
+                }
+
+                p {
+                  @include font.font(calc(6px + 1.5vmin), 32px, 400);
+                  width: 45%;
+                  display: none;
+                  margin: 0;
+
+                  @media only screen and (max-width: "768px") {
+                    @include font.font(15px, 28px, 400);
+                  }
+
+                  @media only screen and (max-width: "550px") {
+                    width: 100%;
+                  }
+
+                  &:nth-child(2) {
+                    &::before {
+                      content: "";
+                      position: absolute;
+                      top: 0;
+                      left: -50px;
+                      height: 100%;
+                      border-left: 5px solid colors.$primary_dark;
+                      display: none;
+
+                      @media only screen and (max-width: "768px") {
+                        left: -25px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+
+
+          }
+        }
+      }
+
+      .carousel-item.active {
+        a {
+          div {
+            aside {
+              h1 {
+                display: block;
+                animation: left-to-right 1.5s forwards;
+              }
+
+              span {
+                p {
+                  display: block;
+
+                  &:first-child {
+                    animation: bottom-to-top 1.5s forwards;
+                  }
+
+                  &:nth-child(2) {
+                    animation: right-to-left 1.5s forwards;
+
+                    &::before {
+                      display: block;
+                      animation: scale-up 2s forwards;
+
+                      @media only screen and (max-width: "550px") {
+                        display: none;
+                      }
+                    }
+                  }
+
+                }
+              }
+            }
+          }
+
+        }
+
+        @include animation.animation-heading-mixin(left-to-right);
+        @include animation.animation-p1-mixin(bottom-to-top);
+        @include animation.animation-p2-mixin(right-to-left);
+        @include animation.animation-border-mixin(scale-up);
+      }
+    }
+
+    .carousel-control-prev {
+      height: fit-content;
+      margin-top: auto;
+      margin-bottom: auto;
+
+      span {
+        transition: all 0.3s ease-out;
+        padding: 30px 10px;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+        }
+      }
+    }
+
+    .carousel-control-next {
+      @extend .carousel-control-prev;
+    }
+  }
+}

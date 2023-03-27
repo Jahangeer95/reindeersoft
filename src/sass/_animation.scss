@@ -1,0 +1,103 @@
+@use "./colors";
+
+@mixin animation-heading-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: translateX(-300px);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+
+@mixin animation-p1-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: translateY(200px);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+
+@mixin animation-p2-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: translateX(200px);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+}
+
+@mixin animation-border-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: scale(0%);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(100%);
+        }
+    }
+}
+
+@mixin animation-list-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: scale(0%);
+            opacity: 0;
+            background-color: colors.$white_color;
+        }
+
+        to {
+            opacity: 1;
+            transform: scale(100%);
+        }
+    }
+}
+
+@mixin animation-background-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+}
+
+@mixin animation-scaleup-mixin($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: scale(0%);
+        }
+
+        to {
+            transform: scale(100%);
+        }
+    }
+}
+

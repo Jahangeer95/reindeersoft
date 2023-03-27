@@ -1,0 +1,31 @@
+@use "../../../sass/colors";
+
+.Footer_Main {
+    background-color: colors.$secondary_dark;
+
+    div {
+
+        div {
+            padding: 60px 0;
+            article {
+                position: relative;
+                display: grid;
+                grid-template-columns: 40% 25% 25%;
+                gap: 5%;
+
+                @media only screen and (max-width: "991px") {
+                    grid-template-columns: 45% 45%;
+                    gap: 10%;
+                    row-gap: 40px;
+
+                }
+                @media only screen and (max-width: "768px") {
+                    grid-template-columns: 100%;
+                    row-gap: 40px;
+
+                }
+            }
+        }
+        color: colors.$primary_light;
+    }
+}

@@ -1,0 +1,64 @@
+@use "./font";
+@use "./colors";
+
+@mixin levelTwo-heading {
+    position: relative;
+    width: fit-content;
+    @include font.font(2rem, 120%, 600);
+    margin-bottom: 50px;
+    color: colors.$primary_dark4;
+    text-shadow: 2px 2px 4px colors.$primary_dark;
+    text-transform: capitalize;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        height: 8px;
+        width: 30%;
+        margin: 0 35%;
+        border-radius: 10px;
+        background: linear-gradient(to right, colors.$primary_dark4, colors.$secondary_dark1, colors.$primary_dark, colors.$secondary_dark1, colors.$primary_dark4);
+    }
+}
+
+@mixin levelThree-heading {
+    position: relative;
+    width: fit-content;
+    @include font.font(1.7rem, 120%, 500);
+    margin-bottom: 50px;
+    color: colors.$primary_dark4;
+    text-shadow: 2px 2px 4px colors.$primary_dark;
+    text-transform: capitalize;
+    animation: one 0.5s ease-in infinite;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -15px;
+        height: 6px;
+        width: 30%;
+        margin: 0 35%;
+        border-radius: 10px;
+        background: linear-gradient(to right, colors.$primary_dark4, colors.$secondary_dark1, colors.$primary_dark, colors.$secondary_dark1, colors.$primary_dark4);
+    }
+}
+
+@mixin levelFour-heading {
+    position: relative;
+    width: fit-content;
+    @include font.font(1.4rem, 120%, 500);
+    margin-bottom: 20px;
+    color: colors.$primary_dark4;
+    text-transform: capitalize;
+}
+
+@mixin levelFive-heading {
+    position: relative;
+    width: fit-content;
+    @include font.font(1.2rem, 120%, 500);
+    margin-bottom: 10px;
+    color: colors.$primary_dark4;
+}

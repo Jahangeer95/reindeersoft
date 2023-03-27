@@ -1,0 +1,15 @@
+@use "./colors";
+@use "./font";
+
+@mixin paragraph-mixin {
+    @include font.font(0.8rem, 1.2rem, 400);
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 40px;
+    margin-bottom: 10px;
+    color: colors.$paragraph-color;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,57 @@
+@use "../../../sass/colors";
+@use "../../../sass/font";
+
+.Header_Main {
+    background: rgba(white, 0.8);
+    // background: rgba(colors.$secondary_dark, 0.95);
+    backdrop-filter: blur(3px);
+
+    nav {
+        height: 100px;
+    }
+}
+
+.Nav_Menu {
+    a {
+        // color: colors.$primary_light;
+        color: colors.$primary_dark4;
+        @include font.font(18px, 32px, 800);
+        text-decoration: none;
+        margin: auto 5px;
+        padding: 5px;
+        transition: all 0.3s ease-in-out;
+        width: fit-content;
+
+        &:hover:not(.Active) {
+            color: colors.$secondary_dark1;
+        }
+
+    }
+
+    .Active {
+        color: colors.$secondary_dark1;
+    }
+
+}
+
+.Logo_Animation {
+    animation: rotate 7s ease-in-out infinite;
+    width: 130px;
+    height: auto;
+    // filter: hue-rotate(320deg) contrast(60%) brightness(90%) drop-shadow(2px 4px 8px rgba(25, 45, 15, 0.6)) invert(0.7);
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        animation: none;
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotateY(0deg);
+    }
+
+    from {
+        transform: rotateY(360deg);
+    }
+}
