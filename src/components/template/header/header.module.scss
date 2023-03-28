@@ -3,7 +3,6 @@
 
 .Header_Main {
     background: rgba(white, 0.8);
-    // background: rgba(colors.$secondary_dark, 0.95);
     backdrop-filter: blur(3px);
 
     nav {
@@ -13,9 +12,8 @@
 
 .Nav_Menu {
     a {
-        // color: colors.$primary_light;
         color: colors.$primary_dark4;
-        @include font.font(18px, 32px, 500);
+        @include font.font(18px, 32px, 700);
         text-decoration: none;
         margin: auto 5px;
         padding: 5px;
