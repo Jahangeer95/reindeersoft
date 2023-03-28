@@ -5,7 +5,6 @@
 
 .AutomatedTestingMain {
     padding: 80px 0;
-    // background-color: colors.$secondary_light;
 
     div {
         div {
@@ -37,17 +36,17 @@
                         margin: 0;
                         text-indent: unset;
                         border-radius: 10px;
-                        box-shadow: 2px 4px 8px 2px rgba(colors.$primary_dark, 0.25);
+                        box-shadow: 2px 4px 8px 2px rgba(colors.$reindeer-lightbrown, 0.25);
                         user-select: none;
                         transition: all 0.3s ease-in;
-                        background: linear-gradient(to top left, rgba(colors.$primary_dark3,1), rgba(colors.$primary_dark,1));
+                        background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
 
                         aside {
                             width: 150px;
                             height: fit-content;
                             background-color: transparent;
                             text-align: center;
-                            display:block;
+                            display: block;
                             margin: auto 0;
                             color: colors.$white-color;
                             padding: 10px;
@@ -55,32 +54,33 @@
                         }
 
                         p {
-                            background: linear-gradient(to top left, rgba(colors.$white-color,1), rgba(colors.$secondary_light,1));
-                            border-radius:  0 10px 10px 0;
+                            background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+                            border-radius: 0 10px 10px 0;
                             text-indent: unset;
+
                             span {
                                 display: block;
                                 margin: 10px 0;
                                 padding: 10px;
                                 width: fit-content;
                                 color: colors.$white-color;
-                                background: linear-gradient(to top left, rgba(colors.$primary_dark3,1), rgba(colors.$primary_dark,1));
+                                background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
                                 @include font.font(1rem, 1rem, 500);
-    
+
                                 &:last-child {
                                     width: 100%;
                                     background-color: transparent;
-                                    color: colors.$primary_dark3;
+                                    color: colors.$primary_dark2;
                                     @include font.font(0.8rem, 1rem, 400);
                                     padding: 10px 20px;
                                     background: transparent;
-    
+
                                 }
-    
+
                             }
                         }
 
-                        
+
                     }
                 }
             }
@@ -89,10 +89,11 @@
 
     .AutomationServices {
         position: relative;
-        background: linear-gradient(to top left, rgba(colors.$white-color,1), rgba(colors.$secondary_light,1));
+        background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
         padding: 80px 0;
         height: fit-content;
-        @media only screen and (max-width: 991px){
+
+        @media only screen and (max-width: 991px) {
             padding: 80px 20px;
         }
 
@@ -109,7 +110,7 @@
 
                 article {
                     display: flex;
-                    flex-direction: row ;
+                    flex-direction: row;
                     justify-content: center;
                     align-items: center;
                     padding: 0 50px;
@@ -128,6 +129,7 @@
                         @media only screen and (max-width: "991px") {
                             width: 100%;
                         }
+
                         img {
                             width: 100%;
                             display: block;
@@ -156,7 +158,7 @@
                             text-indent: unset;
                             margin: 0 auto;
                             margin-bottom: 30px;
-                            color: colors.$secondary_dark;
+                            color: colors.$primary-dark1;
                         }
 
                         span {
@@ -179,7 +181,7 @@
                                     @include paragraph.paragraph-mixin;
                                     text-indent: unset;
                                     font-weight: 500;
-                                    color: colors.$secondary_dark;
+                                    color: colors.$primary-dark1;
                                     text-align: left;
                                     text-transform: capitalize;
                                 }
@@ -204,32 +206,37 @@
 
         div {
             padding: 0;
-            
+
             div {
                 display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
                 gap: 15px;
-                
+
                 aside {
-                    background: linear-gradient(to top left, rgba(colors.$white-color,1), rgba(colors.$secondary_light,1));
+                    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
                     width: max(7rem);
                     padding: 10px 0;
                     aspect-ratio: 1/1;
                     border-radius: 10px;
-                    box-shadow: 2px 4px 4px rgba(colors.$primary_dark, 0.25);
+                    box-shadow: 2px 4px 4px rgba(colors.$reindeer-lightbrown, 0.25);
                     transition: all 0.3s ease-in;
+
                     &:hover {
-                        background: linear-gradient(to top left, rgba(colors.$white-color,1), rgba(colors.$primary_dark,1));
+                        background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$reindeer-lightbrown, 1));
                     }
-                    &:nth-child(even){
-                        background: linear-gradient(to top left, rgba(colors.$primary_dark3,1), rgba(colors.$primary_dark,1));
-                        &:hover{
-                            background: linear-gradient(to top left, rgba(colors.$primary_dark,1), rgba(colors.$secondary_light,1));
+
+                    &:nth-child(even) {
+                        background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+
+                        &:hover {
+                            background: linear-gradient(to top left, rgba(colors.$reindeer-lightbrown, 1), rgba(colors.$secondary_light, 1));
                         }
+
                         h5 {
                             color: colors.$white-color;
                         }
+
                         span {
                             color: colors.$white-color;
                         }
@@ -238,9 +245,10 @@
                     h5 {
                         @include heading.levelFive-heading;
                     }
+
                     span {
                         font-size: 2rem;
-                        color: colors.$primary_dark4;
+                        color: colors.$primary_dark3;
                     }
                 }
             }

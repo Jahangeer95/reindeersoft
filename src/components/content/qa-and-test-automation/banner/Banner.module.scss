@@ -6,7 +6,7 @@
 .QaMain {
     position: relative;
     margin-top: 100px;
-    background-image: linear-gradient(rgba(colors.$secondary_dark, 0.7), rgba(colors.$primary_dark3, 0.7)), url("../../../../assets/images/qa-and-automation-testing//automation-testing1.png");
+    background-image: linear-gradient(rgba(colors.$primary-dark1, 0.7), rgba(colors.$primary_dark2, 0.7)), url("../../../../assets/images/qa-and-automation-testing//automation-testing1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -81,7 +81,7 @@
                         width: 13px;
                         height: 100%;
                         border-radius: 10px;
-                        background-color: colors.$primary_dark;
+                        background-color: colors.$reindeer-lightbrown;
                         animation: scale-up 1.5s forwards;
 
                         @media only screen and (max-width: "991px") {

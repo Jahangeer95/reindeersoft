@@ -65,7 +65,7 @@
                         bottom: -100px;
                         width: 3000px;
                         height: 4px;
-                        background-color: colors.$secondary_dark;
+                        background-color: colors.$primary-dark1;
                         z-index: 0;
                     }
                 }
@@ -98,7 +98,7 @@
 
                     p {
                         @include paragraph.paragraph-mixin;
-                        color: colors.$primary_dark4;
+                        color: colors.$primary_dark3;
                         text-align: left;
                         font-weight: 500;
                         height: 50px;

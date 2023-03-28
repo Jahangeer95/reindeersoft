@@ -5,7 +5,6 @@
 
 .QaServicesMain {
     padding: 80px 0;
-    // background-color: colors.$primary_light;
 
     div {
         div {
@@ -92,7 +91,7 @@
                             @include paragraph.paragraph-mixin;
                             text-indent: unset;
                             text-align: center;
-                            color: colors.$primary_dark4;
+                            color: colors.$primary_dark3;
                             transition: all 0.3s ease-in;
 
                             @media only screen and (min-width: "1200px") {
@@ -106,7 +105,7 @@
 
                     &:hover {
 
-                        background: linear-gradient(to top left, rgba(colors.$primary_dark3, 0.9), rgba(colors.$primary_dark, 0.9));
+                        background: linear-gradient(to top left, rgba(colors.$primary_dark2, 0.9), rgba(colors.$reindeer-lightbrown, 0.9));
                         border-bottom: 15px ridge whitesmoke;
 
                         @media only screen and (max-width: "991px") {
