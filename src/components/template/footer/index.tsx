@@ -3,7 +3,6 @@ import { Container } from "react-bootstrap";
 import Company from "./companyData/Company";
 import CopyRight from "./copyright/CopyRight";
 import Links from "./links/Links";
-import SocialContacts from "./socialContact/SocialContacts";
 import styles from "./Footer.module.scss";
 import Contact from "./contact/Contact";
 
@@ -18,8 +17,6 @@ const Footer = () => {
             <Links />
 
             <Contact />
-
-            <SocialContacts />
           </article>
         </div>
         <span className={styles.Border}></span>

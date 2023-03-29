@@ -41,4 +41,27 @@
             }
         }
     }
+
+    aside {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        span {
+            border-radius: 50%;
+            color: colors.$reindeer-lightbrown;
+            background-color: colors.$primary_dark1;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease-in;
+            cursor: pointer;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
 }

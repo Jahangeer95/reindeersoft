@@ -7,13 +7,13 @@ const Company = () => {
   return (
     <div className={styles.Company_Main}>
       <h5>About Us</h5>
+      <span>
+        <Image src={logo} alt="company-logo" />
+      </span>
       <p>
         Contrary to popular belief, Lorem Ipsum is not simply random text. It
         has roots in a piece of classical Latin literature from 45 BC.
       </p>
-      <span>
-        <Image src={logo} alt="company-logo" />
-      </span>
     </div>
   );
 };

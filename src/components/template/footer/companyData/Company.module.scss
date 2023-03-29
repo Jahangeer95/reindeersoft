@@ -22,12 +22,6 @@
         margin-bottom: 20px;
     }
 
-    p {
-        margin: 0;
-        @include font.font(16px, 28px, 400);
-        color: colors.$reindeer-lightbrown;
-    }
-
     span {
         display: block;
         margin-top: 20px;
@@ -35,6 +29,15 @@
         img {
             width: 150px;
             height: auto;
+            filter: hue-rotate(220deg) contrast(60%);
         }
     }
+
+    p {
+        margin: 0;
+        @include font.font(16px, 28px, 400);
+        color: colors.$reindeer-lightbrown;
+    }
+
+
 }
