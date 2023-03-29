@@ -51,9 +51,11 @@
             border-radius: 50%;
             color: colors.$reindeer-lightbrown;
             background-color: colors.$primary_dark1;
+            border: 1px solid colors.$reindeer-lightbrown;
             width: 35px;
             height: 35px;
             display: flex;
+            font-size: 20px;
             justify-content: center;
             align-items: center;
             transition: all 0.3s ease-in;
