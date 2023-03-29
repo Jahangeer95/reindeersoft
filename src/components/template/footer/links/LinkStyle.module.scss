@@ -1,13 +1,31 @@
 @use "../../../../sass/font";
 @use "../../../../sass/colors";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
 
 .Links_Main {
     padding: 0 !important;
+    width: 28%;
+
+    @media only screen and (max-width: "991px") {
+        width: 48%;
+
+    }
+
+    @media only screen and (max-width: "768px") {
+        width: 100%;
+
+    }
+
+    h5 {
+        @include heading.levelFive-heading;
+        color: colors.$white-color;
+    }
 
     span {
         text-align: left;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
 
         @media only screen and (max-width: "768px") {
             justify-content: flex-start;
@@ -24,7 +42,7 @@
             }
 
             li {
-                padding: 10px;
+                padding: 5px;
 
                 &:first-child {
                     padding-top: 0;
@@ -41,8 +59,8 @@
 
                 a {
                     text-decoration: none;
+                    @include paragraph.paragraph-mixin;
                     color: colors.$reindeer-lightbrown;
-                    @include font.font(calc(8px + 1.5vmin), 120%, 500);
                     transition: all 0.3s ease-in-out;
 
                     &:hover {

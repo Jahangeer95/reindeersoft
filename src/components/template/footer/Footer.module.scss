@@ -1,7 +1,7 @@
 @use "../../../sass/colors";
 
 .Footer_Main {
-    background-color: colors.$primary-dark1;
+    background: linear-gradient(to top left, rgba(colors.$primary_dark1, 1), rgba(colors.$primary_dark2, 1));
 
     div {
 
@@ -10,23 +10,29 @@
 
             article {
                 position: relative;
-                display: grid;
-                grid-template-columns: 40% 25% 25%;
-                gap: 5%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2%;
 
                 @media only screen and (max-width: "991px") {
-                    grid-template-columns: 45% 45%;
-                    gap: 10%;
-                    row-gap: 40px;
+                    gap: 4%;
+                    row-gap: 50px;
 
                 }
 
                 @media only screen and (max-width: "768px") {
-                    grid-template-columns: 100%;
-                    row-gap: 40px;
+                    flex-direction: column;
+                    gap: 50px;
 
                 }
             }
+        }
+
+        .Border {
+            height: 2px;
+            display: block;
+            width: 100%;
+            background-color: rgba(colors.$reindeer-lightbrown, 0.2);
         }
 
         color: colors.$primary_light;

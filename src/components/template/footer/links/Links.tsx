@@ -1,24 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./LinkStyle.module.scss";
+import { homeBannerArray } from "@/components/content/home/banner/HomeBannerData";
 
 const Links = () => {
   return (
     <div className={styles.Links_Main}>
+      <h5>Services</h5>
       <span>
         <ul>
-          <li>
-            <Link href="/services">Services</Link>
-          </li>
-          <li>
-            <Link href="/technologies">Technologies</Link>
-          </li>
-          <li>
-            <Link href="/blogs">Blogs</Link>
-          </li>
-          <li>
-            <Link href="/contact-us">Contact us</Link>
-          </li>
+          {homeBannerArray.map((state, idx) => (
+            <li key={idx}>
+              <Link
+                href={`${state.heading.toLowerCase().split(" ").join("-")}`}
+              >
+                {state.heading}
+              </Link>
+            </li>
+          ))}
         </ul>
       </span>
     </div>

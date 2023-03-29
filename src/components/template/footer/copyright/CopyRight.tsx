@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import styles from "./CopyRight.module.scss";
 
@@ -9,6 +10,7 @@ const CopyRight = () => {
       <span>
         Copyright &copy; 2023-{year} REINDEERSOFT. All rights reserved.
       </span>
+      <Link href="#">Terms and Conditions</Link>
     </div>
   );
 };
