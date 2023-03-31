@@ -1,0 +1,135 @@
+@use "../../../../sass/colors";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+
+.WebAppProcessMain {
+    padding: 80px 0;
+    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+
+    div {
+        div {
+            h2 {
+                @include heading.levelTwo-heading;
+                margin-bottom: 60px;
+
+            }
+
+            p {
+                display: block;
+                @include paragraph.paragraph-mixin;
+                text-align: center;
+                text-indent: unset;
+                margin-bottom: 30px;
+                max-width: 900px;
+                font-size: 0.9rem;
+            }
+
+
+        }
+
+        article {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+
+            @media only screen and (max-width: "768px") {
+                gap: 10px;
+            }
+
+            div {
+                position: relative;
+                width: 18%;
+
+                @media only screen and (max-width: "1330px") {
+                    width: 30%;
+                }
+
+                @media only screen and (max-width: "768px") {
+                    width: 40%;
+                }
+
+                @media only screen and (max-width: "550px") {
+                    width: 80%;
+                }
+
+                .Border {
+                    position: relative;
+                    z-index: 0;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -1000px;
+                        bottom: -100px;
+                        width: 3000px;
+                        height: 4px;
+                        background-color: colors.$primary-dark1;
+                        z-index: 0;
+                    }
+                }
+
+                span {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    z-index: 1;
+
+
+
+                }
+
+                div {
+                    width: 100%;
+                    padding-left: 30px;
+
+                    @media only screen and (max-width: "1230px") {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0;
+                    }
+
+                    @media only screen and (max-width: "550px") {
+                        align-items: flex-start;
+                    }
+
+                    p {
+                        @include paragraph.paragraph-mixin;
+                        color: colors.$primary_dark3;
+                        text-align: left;
+                        font-weight: 500;
+                        height: 50px;
+                        text-indent: unset;
+                        font-size: 1rem;
+                        margin-bottom: 20px;
+
+                        @media only screen and (max-width: "768px") {
+                            height: fit-content;
+                        }
+                    }
+
+                    ul {
+                        list-style: decimal;
+                        margin: 0;
+                        padding-left: 15px;
+
+                        li {
+                            position: relative;
+                            @include paragraph.paragraph-mixin;
+                            font-size: 0.7rem;
+                            text-indent: unset;
+                            text-align: left;
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

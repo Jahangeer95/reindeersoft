@@ -1,14 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/images/logo.png";
 import styles from "./header.module.scss";
 
 const Header = () => {
+  const [pos, setPos] = useState("top");
   const [value, setValue] = useState(false);
   const [display, setDisplay] = useState(false);
+
+  useEffect(() => {
+    document.addEventListener("scroll", (e) => {
+      let scrolled = document.scrollingElement!.scrollTop;
+      if (scrolled >= 5) {
+        setPos("moved");
+      } else {
+        setPos("top");
+      }
+    });
+  }, []);
 
   const menuHandler = () => {
     setValue(true);
@@ -26,7 +37,12 @@ const Header = () => {
   };
 
   return (
-    <header className={`${styles.Header_Main} fixed-top`}>
+    <header
+      className={`${styles.Header_Main} fixed-top`}
+      style={{
+        backgroundColor: pos === "top" ? "white" : "rgba(199,190,164,0.8)",
+      }}
+    >
       <Navbar expand="md">
         <Container fluid="lg">
           <Link href="/">

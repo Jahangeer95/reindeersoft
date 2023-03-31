@@ -2,7 +2,7 @@ import {
   BannerDescriptionType,
   BannerListType,
   BannertitleType,
-} from "@/types/qaAndTestAutomation.type";
+} from "@/types/webAndAppDevelopment.type";
 
 export const title: BannertitleType = "Web & App Development";
 export const description: BannerDescriptionType =
