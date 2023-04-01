@@ -3,14 +3,14 @@ import cloudIntegration from "@/assets/images/cloud-application-development/clou
 import serverlessComputing from "@/assets/images/cloud-application-development/cloud-application-services/serverless-computing.png";
 import distributedSystem from "@/assets/images/cloud-application-development/cloud-application-services/distributed-system.png";
 import cloudNativeApp from "@/assets/images/cloud-application-development/cloud-application-services/cloud-nativ-app.png";
-
 import {
-  QaServicesArrayType,
-  QaServicesTitleType,
-} from "@/types/qaAndTestAutomation.type";
+  CloudAppServicesArrayType,
+  CloudAppServicesTitleType,
+} from "@/types/cloudAppDevelopment.type";
 
-export const title: QaServicesTitleType = "Our Quality Assurance Services";
-export const qaServicesArray: QaServicesArrayType = [
+export const title: CloudAppServicesTitleType =
+  "Our Cloud Application Development Services";
+export const qaServicesArray: CloudAppServicesArrayType = [
   {
     id: "cloud-app-one",
     value: "Cloud-Native Applications",

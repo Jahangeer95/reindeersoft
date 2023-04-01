@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
-import * as data from "./qaServicesData";
+import * as data from "./cloudAppServicesData";
 import styles from "./cloudApplicationServices.module.scss";
 
 const CloudApplicationServices = () => {
