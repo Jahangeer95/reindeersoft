@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import ProgressCircle from "@/components/ui/ProgressCircle";
 import * as data from "./webAppProcess";
 import styles from "./webApp.module.scss";
 
@@ -13,21 +12,16 @@ const WebAndAppDevProcess = () => {
           <p>{data.description}</p>
         </div>
         <article>
-          {data.qualityAssuranceProcessArray.map((state) => {
+          {data.qualityAssuranceProcessArray.map((state, idx) => {
             return (
-              <div key={state.id}>
-                <span className={styles.Border}></span>
-                <span>
-                  <ProgressCircle percentage={state.id * 20} />
-                </span>
-                <div>
+              <div key={idx}>
+                <span className={styles.Triangle1}></span>
+                <span
+                  className={`d-flex justify-content-center align-items-center ${styles.Content}`}
+                >
                   <p>{state.heading}</p>
-                  <ul>
-                    {state.list.map((item, idx) => (
-                      <li key={idx}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
+                </span>
+                <span className={styles.Triangle2}></span>
               </div>
             );
           })}
