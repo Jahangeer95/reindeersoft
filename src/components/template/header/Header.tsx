@@ -36,13 +36,14 @@ const Header = () => {
     setDisplay(false);
   };
 
+  const classes = [
+    styles.Header_Main,
+    "fixed-top",
+    pos !== "top" && styles.HeaderBackground,
+  ];
+
   return (
-    <header
-      className={`${styles.Header_Main} fixed-top`}
-      style={{
-        backgroundColor: pos === "top" ? "white" : "rgba(199,190,164,0.8)",
-      }}
-    >
+    <header className={classes.join(" ")}>
       <Navbar expand="md">
         <Container fluid="lg">
           <Link href="/">

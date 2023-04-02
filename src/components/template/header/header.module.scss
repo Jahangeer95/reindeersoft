@@ -5,6 +5,7 @@
     background: rgba(white, 0.8);
     transition: all 0.3s ease-in;
     backdrop-filter: blur(3px);
+    transition: all 0.3s ease-in;
 
     nav {
         height: 100px;
@@ -22,9 +23,8 @@
         width: fit-content;
 
         &:hover:not(.Active) {
-            color: colors.$secondary_dark1;
+            color: colors.$reindeer_lightbrown;
         }
-
     }
 
     .Active {
@@ -54,4 +54,16 @@
     from {
         transform: rotateY(360deg);
     }
+}
+
+.HeaderBackground {
+    background: linear-gradient(to top left, rgba(colors.$primary_dark1, 0.99), rgba(colors.$primary_dark2, 0.99));
+
+    .Nav_Menu {
+
+        a {
+            color: colors.$primary_light;
+        }
+    }
+
 }
