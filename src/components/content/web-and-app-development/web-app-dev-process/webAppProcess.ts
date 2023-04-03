@@ -17,7 +17,7 @@ export const qualityAssuranceProcessArray: WebAppDevProcessArrayType = [
   },
   {
     id: 2,
-    heading: "UX/UI Design",
+    heading: "Design Implementation",
   },
   {
     id: 3,
