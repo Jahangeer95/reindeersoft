@@ -1,0 +1,22 @@
+@use "../../../../sass/font";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/colors";
+
+.motionPlanningMain {
+    padding: 80px 0;
+
+    div {
+        div {
+            h3 {
+                @include heading.levelThree-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                }
+            }
+        }
+    }
+}

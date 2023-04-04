@@ -24,7 +24,7 @@ export const homeBannerArray: homeBannerArrayTypes = [
   },
   {
     bannerImage: slide3,
-    heading: "Robotics and AI",
+    heading: "Robotics and Autonomy",
     paragraph: [
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
