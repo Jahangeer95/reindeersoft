@@ -1,10 +1,10 @@
 import { Container } from "react-bootstrap";
-import styles from "./manipulation.module.scss";
-import * as data from "./manipulationData";
+import styles from "./computerVision.module.scss";
+import * as data from "./computerVisionData";
 
-const Manipulation = () => {
+const ComputerVision = () => {
   return (
-    <section className={styles.manipulationMain} id="robotics-app-three">
+    <section className={styles.computerVisionMain} id="robotics-app-six">
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>
@@ -19,4 +19,4 @@ const Manipulation = () => {
   );
 };
 
-export default Manipulation;
+export default ComputerVision;

@@ -29,3 +29,19 @@ export type MotionPlanningContentType = string[];
 // Manipulation Data types...
 export type ManipulationTitleType = string;
 export type ManipulationContentType = string[];
+
+// Safety Compliant Control Data types...
+export type SafetyCompliantControlTitleType = string;
+export type SafetyCompliantControlContentType = string[];
+
+// Simulation Data types...
+export type SimulationTitleType = string;
+export type SimulationContentType = string[];
+
+// Computer Vision Data types...
+export type ComputerVisionTitleType = string;
+export type ComputerVisionContentType = string[];
+
+// Integration Data types...
+export type IntegrationTitleType = string;
+export type IntegrationContentType = string[];

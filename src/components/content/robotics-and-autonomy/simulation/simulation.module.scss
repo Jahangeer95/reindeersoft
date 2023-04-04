@@ -1,0 +1,23 @@
+@use "../../../../sass/font";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/colors";
+
+.simulationMain {
+    padding: 80px 0;
+    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+
+    div {
+        div {
+            h3 {
+                @include heading.levelThree-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                }
+            }
+        }
+    }
+}
