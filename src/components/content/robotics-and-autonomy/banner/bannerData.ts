@@ -13,5 +13,6 @@ export const list: BannerListType = [
   "Manipulation",
   "Real Time Safety Compliant Control",
   "Simulation",
+  "Computer Vision",
   "Integration",
 ];
