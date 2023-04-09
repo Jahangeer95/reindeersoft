@@ -37,6 +37,8 @@
                     &:first-child {
                         width: 35%;
                         position: relative;
+                        border-radius: 20px;
+
 
                         @media only screen and (max-width: "768px") {
                             width: 75%;
@@ -48,7 +50,6 @@
                             width: 100%;
                             height: fit-content;
                             border-radius: 20px;
-                            padding: 10px;
                         }
                     }
 
