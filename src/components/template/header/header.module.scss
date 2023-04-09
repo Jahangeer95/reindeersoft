@@ -17,10 +17,27 @@
         color: colors.$primary_dark3;
         @include font.font(18px, 32px, 700);
         text-decoration: none;
-        margin: auto 5px;
-        padding: 5px;
+        height: fit-content;
         transition: all 0.3s ease-in-out;
         width: fit-content;
+
+        &:last-child {
+            margin-left: 40px;
+            padding: 10px 20px;
+            background: linear-gradient(to top left, colors.$primary_dark1, colors.$primary_dark2);
+            border-radius: 10px;
+            color: colors.$white-color;
+
+            @media only screen and (max-width: "768px") {
+                margin-left: 0;
+            }
+
+            &:hover {
+                background: linear-gradient(to top left, colors.$primary_dark2, colors.$primary_dark1);
+                color: colors.$white-color !important;
+            }
+
+        }
 
         &:hover:not(.Active) {
             color: colors.$reindeer_lightbrown;
@@ -63,6 +80,16 @@
 
         a {
             color: colors.$primary_light;
+
+            &:last-child {
+                background: linear-gradient(to top left, colors.$primary_light, colors.$reindeer_lightbrown);
+                color: colors.$primary_dark1;
+
+                &:hover {
+                    background: linear-gradient(to top left, colors.$reindeer_lightbrown, colors.$primary_light);
+                    color: colors.$primary_dark1 !important;
+                }
+            }
         }
     }
 
