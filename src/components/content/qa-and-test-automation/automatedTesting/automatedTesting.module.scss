@@ -2,6 +2,7 @@
 @use "../../../../sass/heading";
 @use "../../../../sass/paragraph";
 @use "../../../../sass/colors";
+@use "../../../../sass/gradient";
 
 .AutomatedTestingMain {
     padding: 80px 0;
@@ -54,7 +55,7 @@
                         }
 
                         p {
-                            background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+                            @include gradient.lightGradient1;
                             border-radius: 0 10px 10px 0;
                             text-indent: unset;
 
@@ -89,7 +90,7 @@
 
     .AutomationServices {
         position: relative;
-        background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+        @include gradient.lightGradient1;
         padding: 80px 0;
         height: fit-content;
 
@@ -214,7 +215,7 @@
                 gap: 15px;
 
                 aside {
-                    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));
+                    @include gradient.lightGradient1;
                     width: max(7rem);
                     padding: 10px 0;
                     aspect-ratio: 1/1;

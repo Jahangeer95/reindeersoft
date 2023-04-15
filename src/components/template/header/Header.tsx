@@ -69,7 +69,7 @@ const Header = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav
-                className={`justify-content-end align-items-center flex-grow-1 pe-3 gap-3 ${styles.Nav_Menu}`}
+                className={`justify-content-end align-items-center flex-grow-1 gap-3 ${styles.Nav_Menu}`}
               >
                 <Link href="/services" onMouseEnter={menuHandler}>
                   Services
