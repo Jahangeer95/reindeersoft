@@ -9,8 +9,8 @@ import HoverMenu from "./nav-menu";
 
 const Header = () => {
   const [pos, setPos] = useState("top");
-  const [value, setValue] = useState(true);
-  const [display, setDisplay] = useState(true);
+  const [value, setValue] = useState(false);
+  const [display, setDisplay] = useState(false);
 
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
