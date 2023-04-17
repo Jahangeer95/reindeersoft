@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Link from "next/link";
-import styles from "./HoverMenu.module.scss";
+import styles from "./hoverMenu.module.scss";
 import Image from "next/image";
 import { homeBannerArray } from "@/components/content/home/banner/HomeBannerData";
 const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.png");
