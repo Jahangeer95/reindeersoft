@@ -35,7 +35,7 @@ const WebDevelopmentServices = () => {
           <div>
             {data.webDevelopmentTechnologies.map((state, idx) => {
               return (
-                <article>
+                <article key={idx}>
                   <h4 className="text-center">{state.heading}</h4>
                   <div>
                     {state.List.map((state, idx) => {
