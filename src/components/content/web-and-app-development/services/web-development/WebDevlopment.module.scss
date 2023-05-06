@@ -1,0 +1,162 @@
+@use "../../../../../sass/gradient";
+@use "../../../../../sass/heading";
+@use "../../../../../sass/paragraph";
+@use "../../../../../sass/colors";
+@use "../../../../../sass/font";
+
+.webDevelopmentMain {
+    padding: 80px 0;
+
+    div {
+        div {
+            padding-bottom: 50px;
+
+            h3 {
+                @include heading.levelThree-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                }
+
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 0;
+                    margin-top: 50px;
+                    row-gap: 20px;
+
+                    li {
+                        position: relative;
+                        @include paragraph.paragraph-mixin;
+                        display: flex;
+                        margin: 0;
+                        text-indent: unset;
+                        border-radius: 10px;
+                        box-shadow: 2px 4px 8px 2px rgba(colors.$reindeer-lightbrown, 0.25);
+                        user-select: none;
+                        transition: all 0.3s ease-in;
+                        background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+
+                        aside {
+                            width: 150px;
+                            height: fit-content;
+                            background-color: transparent;
+                            text-align: center;
+                            display: block;
+                            margin: auto 0;
+                            color: colors.$white-color;
+                            padding: 10px;
+                            @include font.font(1.2rem, 1rem, 600);
+                        }
+
+                        p {
+                            @include gradient.lightGradient1;
+                            border-radius: 0 10px 10px 0;
+                            text-indent: unset;
+
+                            span {
+                                display: block;
+                                margin: 10px 0;
+                                padding: 10px;
+                                width: fit-content;
+                                color: colors.$white-color;
+                                background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                                @include font.font(1rem, 1rem, 500);
+
+                                &:last-child {
+                                    width: 100%;
+                                    background-color: transparent;
+                                    color: colors.$primary_dark2;
+                                    @include font.font(0.8rem, 1rem, 400);
+                                    padding: 10px 20px;
+                                    background: transparent;
+
+                                }
+
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+
+        }
+
+        &:nth-child(2) {
+            @include gradient.lightGradient1;
+
+            div {
+                div {
+
+                    article {
+                        padding-top: 50px;
+
+                        h4 {
+                            @include heading.levelFour-heading;
+                            margin-bottom: 50px;
+                            width: 100%;
+                        }
+
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            gap: 15px;
+                            background: none;
+                            padding: 0;
+
+                            aside {
+                                // @include gradient.lightGradient1;
+                                background-color: white;
+                                width: max(7rem);
+                                padding: 10px 0;
+                                aspect-ratio: 1/1;
+                                border-radius: 10px;
+                                box-shadow: 2px 4px 4px rgba(colors.$reindeer-lightbrown, 0.25);
+                                transition: all 0.3s ease-in;
+
+                                &:hover {
+                                    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$reindeer-lightbrown, 1));
+                                }
+
+                                &:nth-child(even) {
+                                    background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+
+                                    &:hover {
+                                        background: linear-gradient(to top left, rgba(colors.$reindeer-lightbrown, 1), rgba(colors.$secondary_light, 1));
+                                    }
+
+                                    h5 {
+                                        color: colors.$white-color;
+                                    }
+
+                                    span {
+                                        color: colors.$white-color;
+                                    }
+                                }
+
+                                h5 {
+                                    @include heading.levelFive-heading;
+                                }
+
+                                span {
+                                    font-size: 2rem;
+                                    color: colors.$primary_dark3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
