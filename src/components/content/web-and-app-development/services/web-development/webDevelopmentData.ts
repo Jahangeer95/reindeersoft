@@ -26,7 +26,7 @@ export const webDevelopmentTypeList: WebDevelopmentTypeDataType = [
       "E-commerce websites are designed to sell products or services online. They typically include features such as product listings, shopping carts, and payment processing.",
   },
   {
-    title: "Ecommerce Web Development",
+    title: "Web Portals Development",
     description:
       "Web portals are websites that provide a single point of access to a variety of resources and services. They often feature personalized content, user authentication, and a customizable interface.",
   },

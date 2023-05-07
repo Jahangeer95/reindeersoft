@@ -43,15 +43,18 @@
                         background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
 
                         aside {
-                            width: 150px;
                             height: fit-content;
                             background-color: transparent;
                             text-align: center;
                             display: block;
                             margin: auto 0;
                             color: colors.$white-color;
-                            padding: 10px;
+                            padding: 0 50px;
                             @include font.font(1.2rem, 1rem, 600);
+
+                            @media only screen and (max-width: "768px") {
+                                padding: 0 30px;
+                            }
                         }
 
                         p {
@@ -113,8 +116,7 @@
                             padding: 0;
 
                             aside {
-                                // @include gradient.lightGradient1;
-                                background-color: white;
+                                background-color: colors.$white-color;
                                 width: max(7rem);
                                 padding: 10px 0;
                                 aspect-ratio: 1/1;

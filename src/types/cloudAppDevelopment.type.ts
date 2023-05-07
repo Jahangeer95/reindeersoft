@@ -16,3 +16,10 @@ export type CloudAppServicesArrayType = {
   value: string;
   image: StaticImageData;
 }[];
+
+// Cloud Application Each service Data types...
+export type CloudAppServiceTitleType = string;
+export type CloudAppServiceContent = {
+  description: string;
+  image: StaticImageData;
+};

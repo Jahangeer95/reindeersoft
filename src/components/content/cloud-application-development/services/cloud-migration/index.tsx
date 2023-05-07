@@ -1,4 +1,6 @@
 import { Container } from "react-bootstrap";
+import Image from "next/image";
+import * as data from "./cloudMigrationData";
 import styles from "./cloudMigrations.module.scss";
 
 const CloudMigrations = () => {
@@ -9,9 +11,17 @@ const CloudMigrations = () => {
     <section className={styles.CloudMigrationsMain} id="cloud-app-two">
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
-          <h3 className="text-center">{title}</h3>
           <article>
-            <p>{description}</p>
+            <span>
+              <Image
+                src={data.cloudMigrationContent.image}
+                alt={data.cloudMigrationTitle}
+              />
+            </span>
+            <span>
+              <h3 className="text-center">{data.cloudMigrationTitle}</h3>
+              <p>{data.cloudMigrationContent.description}</p>
+            </span>
           </article>
         </div>
       </Container>

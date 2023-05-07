@@ -18,7 +18,7 @@ export const appDevelopmentTypeList: AppDevelopmentTypeDataType = [
   {
     title: "Native Mobile Applications",
     description:
-      "Native apps are built specifically for a particular mobile operating system, such as iOS or Android, and are installed directly on the device.  ",
+      "Native apps are built specifically for a particular mobile operating system, such as iOS or Android, and are installed directly on the device. They often provide the best performance and user experience, but require separate development for each platform.",
   },
   {
     title: "Hybrid Mobile Applications",
