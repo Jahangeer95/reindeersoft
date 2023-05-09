@@ -16,3 +16,10 @@ export type IoTServicesArrayType = {
   value: string;
   image: StaticImageData;
 }[];
+
+// IoT Each service Data types...
+export type IoTServiceTitleType = string;
+export type IoTServiceContent = {
+  description: string;
+  image: StaticImageData;
+};
