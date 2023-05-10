@@ -4,6 +4,7 @@ import WebAndAppDevProcess from "./web-app-dev-process";
 import WebAppDevImportance from "./web-app-dev-importance";
 import WebDevelopmentServices from "./services/web-development";
 import AppDevelopment from "./services/app-development";
+import IntegratedAppDevelopment from "./services/integrated-app-development";
 
 const WebAppDevelopment = () => {
   return (
@@ -17,6 +18,8 @@ const WebAppDevelopment = () => {
       <WebDevelopmentServices />
 
       <AppDevelopment />
+
+      <IntegratedAppDevelopment />
     </>
   );
 };

@@ -38,3 +38,7 @@ export type AppDevelopmentTechnologiesType = {
   heading: string;
   List: string[];
 }[];
+
+// Integrated Mobile App Development service data type
+export type IntegratedAppDevelopmentServiceTitleType = string;
+export type IntegratedAppDevelopmentDescriptionType = string[];

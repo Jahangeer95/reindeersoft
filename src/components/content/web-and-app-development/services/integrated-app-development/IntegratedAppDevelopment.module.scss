@@ -1,0 +1,23 @@
+@use "../../../../../sass/heading";
+@use "../../../../../sass/paragraph";
+
+
+.appDevelopmentMain {
+    padding: 80px 0;
+
+    div {
+        div {
+            // padding-bottom: 50px;
+
+            h3 {
+                @include heading.levelThree-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                }
+            }
+        }
+    }
+}
