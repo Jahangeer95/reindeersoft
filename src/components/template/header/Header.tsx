@@ -74,9 +74,9 @@ const Header = () => {
                 <Nav
                   className={`justify-content-end align-items-center flex-grow-1 gap-3 ${styles.Nav_Menu}`}
                 >
-                  <Link href="#" onMouseEnter={menuHandler}>
+                  <button type="button" onMouseEnter={menuHandler}>
                     Services
-                  </Link>
+                  </button>
                   <Link href="/technologies">Technologies</Link>
                   <Link href="/blogs">Blogs</Link>
                   <Link href="/contact-us">Contact us</Link>

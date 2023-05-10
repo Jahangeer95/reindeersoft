@@ -45,6 +45,12 @@
         }
     }
 
+    button {
+        @extend a;
+        background-color: transparent;
+        border: none;
+    }
+
     .Active {
         color: colors.$secondary_dark1;
     }
