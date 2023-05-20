@@ -5,7 +5,10 @@ import styles from "./serverlessComputing.module.scss";
 
 const ServerlessComputing = () => {
   return (
-    <section className={styles.ServerlessComputingMain} id="cloud-app-four">
+    <section
+      className={styles.ServerlessComputingMain}
+      id={data.serverlessComputingTitle.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

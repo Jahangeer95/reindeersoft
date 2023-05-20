@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./bannerData";
+import { handleClickScroll } from "@/utils/functions/scrollingHandler";
 import styles from "./Banner.module.scss";
 
 const Banner = () => {
@@ -16,7 +17,14 @@ const Banner = () => {
               <span></span>
               <ul>
                 {data.list.map((state, idx) => (
-                  <li key={idx}>{state}</li>
+                  <li key={idx}>
+                    <button
+                      type="button"
+                      onClick={() => handleClickScroll(state)}
+                    >
+                      {state}
+                    </button>
+                  </li>
                 ))}
               </ul>
             </div>

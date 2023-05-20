@@ -5,7 +5,10 @@ import * as data from "./computerVisionData";
 
 const ComputerVision = () => {
   return (
-    <section className={styles.computerVisionMain} id="robotics-app-six">
+    <section
+      className={styles.computerVisionMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

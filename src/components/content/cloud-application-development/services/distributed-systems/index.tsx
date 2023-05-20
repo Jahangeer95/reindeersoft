@@ -5,7 +5,10 @@ import styles from "./distributedSystems.module.scss";
 
 const DistributedSystems = () => {
   return (
-    <section className={styles.DistributedSystemsMain} id="cloud-app-five">
+    <section
+      className={styles.DistributedSystemsMain}
+      id={data.distributedSystemTitle.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

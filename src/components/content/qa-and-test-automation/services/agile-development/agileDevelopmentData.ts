@@ -4,7 +4,7 @@ import {
 } from "@/types/qaAndTestAutomation.type";
 
 export const title: AgileDevelopmentTitleType =
-  "Quality Assurance in agile development";
+  "Quality Assurance in agile software development";
 export const agileContent: AgileDevelopmentContentType = {
   paragraph1:
     "Quality Assurance (QA) is an important aspect of software development that ensures that the final software product is of high quality and meets the required standards. In agile development, QA is integrated into the development process itself, rather than being a separate stage of development. Here are some ways that QA is integrated into Agile Development:",

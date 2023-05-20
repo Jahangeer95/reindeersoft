@@ -13,12 +13,12 @@ export const title: QaServicesTitleType = "Our Quality Assurance Services";
 export const qaServicesArray: QaServicesArrayType = [
   {
     id: "one",
-    value: "QA in Waterfall Software Development",
+    value: "Quality Assurance in Waterfall Software Development",
     image: waterfall,
   },
   {
     id: "two",
-    value: "QA in Agile Software Development",
+    value: "Quality Assurance in Agile Software Development",
     image: agile,
   },
   {

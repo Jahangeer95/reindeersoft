@@ -5,7 +5,10 @@ import * as data from "./motionPlanningData";
 
 const MotionPlanning = () => {
   return (
-    <section className={styles.motionPlanningMain} id="robotics-app-two">
+    <section
+      className={styles.motionPlanningMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

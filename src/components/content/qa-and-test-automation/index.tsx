@@ -3,11 +3,11 @@ import Banner from "./banner";
 import QualityAssurance from "./quality-assurance-importance";
 import Quality from "./quality-assurance-process";
 import QaServices from "./qa-services";
-import AgileDevelopment from "./agile-development";
-import WaterfallDevelopment from "./waterfall-development";
-import AutomatedTesting from "./automatedTesting";
-import ConsultancyServices from "./consultancy";
-import UniqueTesting from "./unique-testing";
+import AgileDevelopment from "./services/agile-development";
+import WaterfallDevelopment from "./services/waterfall-development";
+import AutomatedTesting from "./services/automatedTesting";
+import ConsultancyServices from "./services/consultancy";
+import UniqueTesting from "./services/unique-testing";
 
 const QaAndTestAutomation = () => {
   return (

@@ -5,7 +5,10 @@ import styles from "./agileDevelopment.module.scss";
 
 const AgileDevelopment = () => {
   return (
-    <section className={styles.AgileDevelopmentMain} id="two">
+    <section
+      className={styles.AgileDevelopmentMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>

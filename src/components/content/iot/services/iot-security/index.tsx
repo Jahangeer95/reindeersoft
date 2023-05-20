@@ -5,7 +5,10 @@ import styles from "./iotSecurity.module.scss";
 
 const IoTSecurity = () => {
   return (
-    <section className={styles.IoTSecurityMain} id="iot-three">
+    <section
+      className={styles.IoTSecurityMain}
+      id={data.IoTSecurityTitle.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

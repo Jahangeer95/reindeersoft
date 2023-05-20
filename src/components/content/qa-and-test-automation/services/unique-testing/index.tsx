@@ -6,7 +6,10 @@ import styles from "./uniqueTesting.module.scss";
 
 const UniqueTesting = () => {
   return (
-    <section className={styles.UniqueTestingMain} id="three">
+    <section
+      className={styles.UniqueTestingMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>

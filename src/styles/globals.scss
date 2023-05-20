@@ -1,6 +1,7 @@
 @use "../sass/font";
 @use "../sass/colors";
 @use "../sass/animation";
+@use "../sass/paragraph";
 
 
 :root {
@@ -61,6 +62,7 @@ a {
           img {
             width: 100%;
             height: 85vh;
+            object-fit: cover;
 
             @media only screen and (max-width: "991px") {
               height: 80vh;
@@ -68,6 +70,10 @@ a {
 
             @media only screen and (max-width: "768px") {
               height: 70vh;
+            }
+
+            @media only screen and (max-width: "550px") {
+              height: 60vh;
             }
           }
 
@@ -81,85 +87,102 @@ a {
             height: 100%;
           }
 
-          div {
+          article {
             position: absolute;
             left: 0;
-            top: 0;
+            bottom: 0;
             width: 100%;
             height: 100%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 80px;
 
-            aside {
-              margin-left: 15%;
-              margin-right: 15%;
+            @media only screen and (max-width: "1200px") {
+              gap: 10px;
+            }
+
+            h1 {
+              display: block;
+              width: fit-content;
+              color: colors.$white_color;
+              text-align: center;
+              @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
+              text-transform: uppercase;
+              margin-bottom: 0;
+              animation: slide 1.5s forwards;
 
               @media only screen and (max-width: "768px") {
-                margin-left: 10%;
-                margin-right: 10%;
+                width: 80%;
               }
 
-              @media only screen and (max-width: "550px") {
-                margin-left: 15%;
-                margin-right: 15%;
+            }
+
+            div {
+              display: flex;
+              margin: 0 auto;
+              width: 75%;
+              gap: 100px;
+
+              @media only screen and (max-width: "1200px") {
+                gap: 50px;
               }
 
-              h1 {
-                position: relative;
-                @include font.font(calc(35px + 2.5vmin), 110%, 600);
-                margin-bottom: 10px;
-                display: none;
-                text-transform: uppercase;
+              @media only screen and (max-width: "991px") {
+                flex-direction: column;
+                gap: 20px;
+              }
+
+              p {
+                width: 100%;
+                @include paragraph.paragraph-mixin;
+                text-indent: unset;
+                color: colors.$white-color;
+                animation: bottom-to-top 1.5s forwards;
+                margin: 0;
 
                 @media only screen and (max-width: "768px") {
-                  @include font.font(30px, 100%, 600);
+                  line-height: 115%;
                 }
               }
 
               span {
-                display: flex;
-                gap: 100px;
+                width: 13px;
+                height: 100%;
+                border-radius: 10px;
+                background-color: colors.$reindeer-lightbrown;
+                animation: scale-up 1.5s forwards;
 
-                @media only screen and (max-width: "768px") {
-                  gap: 40px;
-                }
-
-                @media only screen and (max-width: "550px") {
-                  flex-direction: column-reverse;
-                  gap: 10px;
-
-                }
-
-                p {
-                  @include font.font(calc(6px + 1.5vmin), 32px, 400);
-                  width: 45%;
+                @media only screen and (max-width: "991px") {
                   display: none;
-                  margin: 0;
+                }
+              }
 
-                  @media only screen and (max-width: "768px") {
-                    @include font.font(15px, 28px, 400);
+              ul {
+                list-style-type: none;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+
+                @media only screen and (max-width: "991px") {
+                  display: none;
+                }
+
+                li {
+                  @include paragraph.paragraph-mixin;
+                  text-indent: unset;
+                  color: colors.$white-color;
+                  text-transform: capitalize;
+                  animation: right-to-left 1.5s forwards;
+                  text-align: left;
+
+                  @media only screen and (max-width: "991px") {
+                    width: 300px;
                   }
 
-                  @media only screen and (max-width: "550px") {
-                    width: 100%;
-                  }
-
-                  &:nth-child(2) {
-                    &::before {
-                      content: "";
-                      position: absolute;
-                      top: 0;
-                      left: -50px;
-                      height: 100%;
-                      border-left: 5px solid colors.$reindeer-lightbrown;
-                      display: none;
-
-                      @media only screen and (max-width: "768px") {
-                        left: -25px;
-                      }
-                    }
-                  }
                 }
               }
             }
@@ -167,6 +190,10 @@ a {
 
 
           }
+
+
+
+
         }
       }
 
@@ -207,10 +234,10 @@ a {
 
         }
 
-        @include animation.animation-heading-mixin(left-to-right);
+        @include animation.animation-heading-mixin(slide);
         @include animation.animation-p1-mixin(bottom-to-top);
         @include animation.animation-p2-mixin(right-to-left);
-        @include animation.animation-border-mixin(scale-up);
+        @include animation.animation-scaleup-mixin(scale-up);
       }
     }
 

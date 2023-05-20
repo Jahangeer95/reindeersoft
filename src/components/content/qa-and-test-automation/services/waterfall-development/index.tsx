@@ -5,7 +5,10 @@ import styles from "./waterfallDevelopment.module.scss";
 
 const WaterfallDevelopment = () => {
   return (
-    <section className={styles.WaterFallDevelopmentMain} id="one">
+    <section
+      className={styles.WaterFallDevelopmentMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>

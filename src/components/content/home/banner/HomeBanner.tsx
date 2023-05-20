@@ -26,16 +26,20 @@ const HomeBanner = () => {
                   placeholder="blur"
                 />
                 <div className="overlay"></div>
-                <div>
-                  <aside>
-                    <h1 className="text-center mb-4">{state.heading}</h1>
-                    <span>
-                      {state.paragraph.map((value, index) => (
-                        <p key={index}>{value}</p>
+
+                <article>
+                  <h1 className="text-center mb-4">{state.heading}</h1>
+                  <div>
+                    <p>{state.description}</p>
+
+                    <span></span>
+                    <ul>
+                      {state.list.map((state, idx) => (
+                        <li key={idx}>{state}</li>
                       ))}
-                    </span>
-                  </aside>
-                </div>
+                    </ul>
+                  </div>
+                </article>
               </Link>
             </Carousel.Item>
           );

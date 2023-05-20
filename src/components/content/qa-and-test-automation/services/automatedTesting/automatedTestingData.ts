@@ -1,5 +1,5 @@
-import images from "../../../../assets/images/qa-and-automation-testing/automation-testing/star1.png";
-import automation from "../../../../assets/images/qa-and-automation-testing/automation-testing/automationTesting.jpg";
+import images from "@/assets/images/qa-and-automation-testing/automation-testing/star1.png";
+import automation from "@/assets/images/qa-and-automation-testing/automation-testing/automationTesting.jpg";
 import {
   AutomatedTestingContentType,
   AutomatedTestingTitleType,
@@ -11,7 +11,8 @@ import {
   TechnologiesTitleType,
 } from "@/types/qaAndTestAutomation.type";
 
-export const title: AutomatedTestingTitleType = "Automated Testing";
+export const title: AutomatedTestingTitleType =
+  "Test automation & CI/CD Integration";
 export const content: AutomatedTestingContentType = {
   paragraph1:
     "Automated testing is the process of using software tools to run pre-scripted tests on a software application or system to ensure it meets the required quality standards. It is an essential part of software development that helps to improve the speed, quality, and accuracy of testing. Here are some of the reasons why automated testing is so important:",

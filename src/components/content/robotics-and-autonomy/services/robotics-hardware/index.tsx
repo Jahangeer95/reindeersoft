@@ -5,7 +5,10 @@ import * as data from "./roboticsHardwareData";
 
 const RoboticsHardware = () => {
   return (
-    <section className={styles.roboticsHardwareMain} id="robotics-app-one">
+    <section
+      className={styles.roboticsHardwareMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

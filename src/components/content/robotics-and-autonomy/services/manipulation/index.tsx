@@ -5,7 +5,10 @@ import * as data from "./manipulationData";
 
 const Manipulation = () => {
   return (
-    <section className={styles.manipulationMain} id="robotics-app-three">
+    <section
+      className={styles.manipulationMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

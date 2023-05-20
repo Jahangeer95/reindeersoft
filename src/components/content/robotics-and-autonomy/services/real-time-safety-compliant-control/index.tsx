@@ -7,7 +7,7 @@ const SafetyCompliantControl = () => {
   return (
     <section
       className={styles.safetyCompliantControlMain}
-      id="robotics-app-four"
+      id={data.title.toLowerCase().split(" ").join("-")}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

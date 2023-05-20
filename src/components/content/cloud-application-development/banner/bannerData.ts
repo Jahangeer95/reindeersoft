@@ -12,5 +12,5 @@ export const list: BannerListType = [
   "Cloud Migration",
   "Cloud Integration",
   "Serverless Computing",
-  "Distributed System",
+  "Distributed Systems",
 ];

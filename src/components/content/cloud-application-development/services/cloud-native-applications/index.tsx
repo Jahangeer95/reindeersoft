@@ -6,7 +6,10 @@ import styles from "./cloudNativeApp.module.scss";
 
 const CloudNativeApplications = () => {
   return (
-    <section className={styles.CloudNativeAppMain} id="cloud-app-one">
+    <section
+      className={styles.CloudNativeAppMain}
+      id={data.cloudNativeApplicationTitle.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

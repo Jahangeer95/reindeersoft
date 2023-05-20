@@ -4,7 +4,7 @@ import {
 } from "@/types/qaAndTestAutomation.type";
 
 export const title: waterfallDevelopmentTitleType =
-  "Quality Assurance in waterfall development";
+  "Quality Assurance in waterfall software development";
 
 export const content: waterfallDevelopmentContentType = {
   paragraph1:

@@ -11,6 +11,7 @@ const Header = () => {
   const [pos, setPos] = useState("top");
   const [value, setValue] = useState(false);
   const [display, setDisplay] = useState(false);
+  const [hideSideBar, setHideSideBar] = useState(true);
 
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
@@ -39,6 +40,10 @@ const Header = () => {
     pos !== "top" && styles.HeaderBackground,
   ];
 
+  const sideBarHandler = () => {
+    setHideSideBar((prevHideBar) => !prevHideBar);
+  };
+
   return (
     <>
       <header className={classes.join(" ")}>
@@ -54,17 +59,20 @@ const Header = () => {
             <Navbar.Toggle
               aria-controls="offcanvasNavbar-expand-md"
               className="bg-light"
+              onClick={sideBarHandler}
             />
             <Navbar.Offcanvas
               id="offcanvasNavbar-expand-md"
               aria-labelledby="offcanvasNavbarLabel-expand-md"
               placement="start"
               style={{ width: "100%" }}
+              show={!hideSideBar}
             >
               <Offcanvas.Header
                 closeButton
                 closeVariant="white"
                 style={{ backgroundColor: "#3c342e" }}
+                onHide={sideBarHandler}
               >
                 <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
                   <Image src={logo} alt="logo-png" />
@@ -74,11 +82,12 @@ const Header = () => {
                 <Nav
                   className={`justify-content-end align-items-center flex-grow-1 gap-3 ${styles.Nav_Menu}`}
                 >
+                  <Link href="/">Home</Link>
                   <button type="button" onMouseEnter={menuHandler}>
                     Services
                   </button>
-                  <Link href="/technologies">Technologies</Link>
-                  <Link href="/blogs">Blogs</Link>
+                  <Link href="/careers">Careers</Link>
+                  <Link href="/blogs">About</Link>
                   <Link href="/contact-us">Contact us</Link>
                 </Nav>
                 <Transition in={value} timeout={600} mountOnEnter unmountOnExit>
@@ -87,6 +96,7 @@ const Header = () => {
                       val={state}
                       clickHandler={handleClick}
                       dis={display}
+                      onHandleSideBar={sideBarHandler}
                     />
                   )}
                 </Transition>

@@ -7,7 +7,10 @@ import Technologies from "./Technologies";
 
 const AutomatedTesting = () => {
   return (
-    <section className={styles.AutomatedTestingMain} id="four">
+    <section
+      className={styles.AutomatedTestingMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>

@@ -5,7 +5,10 @@ import * as data from "./integrationData";
 
 const Integration = () => {
   return (
-    <section className={styles.integrationMain} id="robotics-app-seven">
+    <section
+      className={styles.integrationMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

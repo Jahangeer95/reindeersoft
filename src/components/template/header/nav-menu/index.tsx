@@ -10,6 +10,7 @@ type HoverMenuPropsType = {
   val: string;
   dis: boolean;
   clickHandler: () => void;
+  onHandleSideBar: () => void;
 };
 
 const HoverMenu = (props: HoverMenuPropsType) => {
@@ -22,9 +23,17 @@ const HoverMenu = (props: HoverMenuPropsType) => {
       : null,
   ];
 
+  const sideBarHandler: () => void = () => {
+    if (window.innerWidth <= 768) {
+      props.onHandleSideBar();
+    }
+
+    props.clickHandler();
+  };
+
   return (
     <section className={classes.join(" ")} onMouseLeave={props.clickHandler}>
-      <Container>
+      <Container fluid="lg">
         <div>
           <span>
             <Image src={menu} alt="nav-menu" />
@@ -35,7 +44,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
                 <Link
                   key={index}
                   href={`${state.heading.split(" ").join("-").toLowerCase()}`}
-                  onClick={props.clickHandler}
+                  onClick={sideBarHandler}
                 >
                   {state.heading}
                 </Link>

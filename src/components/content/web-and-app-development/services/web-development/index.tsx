@@ -1,11 +1,15 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./webDevelopmentData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./WebDevlopment.module.scss";
 
 const WebDevelopmentServices = () => {
   return (
-    <section className={styles.webDevelopmentMain}>
+    <section
+      className={styles.webDevelopmentMain}
+      id={camelToDash(data.webDevelopmentTitle)}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.webDevelopmentTitle}</h3>

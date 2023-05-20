@@ -5,7 +5,10 @@ import * as data from "./simulationData";
 
 const Simulation = () => {
   return (
-    <section className={styles.simulationMain} id="robotics-app-five">
+    <section
+      className={styles.simulationMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

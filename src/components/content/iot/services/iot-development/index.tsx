@@ -6,7 +6,10 @@ import styles from "./iotDevelopment.module.scss";
 
 const IoTDevelopment = () => {
   return (
-    <section className={styles.IoTDevelopmentMain} id="iot-one">
+    <section
+      className={styles.IoTDevelopmentMain}
+      id={data.IoTDevelopmentTitle.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

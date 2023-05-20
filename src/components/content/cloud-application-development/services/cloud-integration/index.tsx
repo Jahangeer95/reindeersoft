@@ -5,7 +5,10 @@ import styles from "./cloudIntegrations.module.scss";
 
 const CloudIntegration = () => {
   return (
-    <section className={styles.CloudIntegrationsMain} id="cloud-app-three">
+    <section
+      className={styles.CloudIntegrationsMain}
+      id={data.cloudIntegrationTitle.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

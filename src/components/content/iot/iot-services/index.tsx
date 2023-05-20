@@ -2,16 +2,10 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./iotServicesData";
+import { handleClickScroll } from "@/utils/functions/scrollingHandler";
 import styles from "./iotServices.module.scss";
 
 const IoTServices = () => {
-  const handleClickScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
-
   return (
     <section className={styles.iotServicesMain}>
       <Container fluid="lg">
@@ -23,7 +17,7 @@ const IoTServices = () => {
                 <button
                   type="button"
                   key={idx}
-                  onClick={() => handleClickScroll(state.id)}
+                  onClick={() => handleClickScroll(state.value)}
                 >
                   <div>
                     <span>

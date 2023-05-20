@@ -5,7 +5,10 @@ import styles from "./consultancyServices.module.scss";
 
 const ConsultancyServices = () => {
   return (
-    <section className={styles.ConsultancyServicesMain} id="five">
+    <section
+      className={styles.ConsultancyServicesMain}
+      id={data.title.toLowerCase().split(" ").join("-")}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>
