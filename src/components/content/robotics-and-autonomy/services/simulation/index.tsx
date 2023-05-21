@@ -1,14 +1,12 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
-import styles from "./simulation.module.scss";
 import * as data from "./simulationData";
+import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./simulation.module.scss";
 
 const Simulation = () => {
   return (
-    <section
-      className={styles.simulationMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
-    >
+    <section className={styles.simulationMain} id={camelToDash(data.title)}>
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

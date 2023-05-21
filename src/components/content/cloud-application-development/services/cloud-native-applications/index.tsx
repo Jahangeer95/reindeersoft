@@ -2,13 +2,14 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import * as data from "./cloudNativeApplicationData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./cloudNativeApp.module.scss";
 
 const CloudNativeApplications = () => {
   return (
     <section
       className={styles.CloudNativeAppMain}
-      id={data.cloudNativeApplicationTitle.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.cloudNativeApplicationTitle)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

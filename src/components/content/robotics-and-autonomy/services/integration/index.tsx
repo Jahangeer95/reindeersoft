@@ -1,14 +1,12 @@
 import { Container } from "react-bootstrap";
-import styles from "./integration.module.scss";
 import Image from "next/image";
 import * as data from "./integrationData";
+import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./integration.module.scss";
 
 const Integration = () => {
   return (
-    <section
-      className={styles.integrationMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
-    >
+    <section className={styles.integrationMain} id={camelToDash(data.title)}>
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

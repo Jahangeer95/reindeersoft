@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import * as data from "./iotAnalyticsData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./iotAnalytics.module.scss";
 
 const IoTAnalytics = () => {
   return (
     <section
       className={styles.IoTAnalyticsMain}
-      id={data.IoTAnalyticsTitle.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.IoTAnalyticsTitle)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

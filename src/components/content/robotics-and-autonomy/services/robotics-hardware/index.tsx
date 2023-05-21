@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
-import styles from "./roboticsHardware.module.scss";
 import Image from "next/image";
 import * as data from "./roboticsHardwareData";
+import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./roboticsHardware.module.scss";
 
 const RoboticsHardware = () => {
   return (
     <section
       className={styles.roboticsHardwareMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.title)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

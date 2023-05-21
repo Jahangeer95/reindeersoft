@@ -1,13 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./ConsultancyData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./consultancyServices.module.scss";
 
 const ConsultancyServices = () => {
   return (
     <section
       className={styles.ConsultancyServicesMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.title)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

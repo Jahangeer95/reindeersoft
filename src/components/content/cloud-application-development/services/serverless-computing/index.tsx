@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import * as data from "./serverlessComputingData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./serverlessComputing.module.scss";
 
 const ServerlessComputing = () => {
   return (
     <section
       className={styles.ServerlessComputingMain}
-      id={data.serverlessComputingTitle.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.serverlessComputingTitle)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

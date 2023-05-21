@@ -1,13 +1,14 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./agileDevelopmentData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./agileDevelopment.module.scss";
 
 const AgileDevelopment = () => {
   return (
     <section
       className={styles.AgileDevelopmentMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.title)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

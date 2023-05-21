@@ -2,12 +2,13 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./waterFallDevelopmentData";
 import styles from "./waterfallDevelopment.module.scss";
+import { camelToDash } from "@/utils/functions/camelToDash";
 
 const WaterfallDevelopment = () => {
   return (
     <section
       className={styles.WaterFallDevelopmentMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.title)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

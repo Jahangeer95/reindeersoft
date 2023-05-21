@@ -2,14 +2,12 @@ import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./UniqueTestingData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./uniqueTesting.module.scss";
 
 const UniqueTesting = () => {
   return (
-    <section
-      className={styles.UniqueTestingMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
-    >
+    <section className={styles.UniqueTestingMain} id={camelToDash(data.title)}>
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>

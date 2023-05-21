@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import * as data from "./cloudMigrationData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./cloudMigrations.module.scss";
 
 const CloudMigrations = () => {
   return (
     <section
       className={styles.CloudMigrationsMain}
-      id={data.cloudMigrationTitle.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.cloudMigrationTitle)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

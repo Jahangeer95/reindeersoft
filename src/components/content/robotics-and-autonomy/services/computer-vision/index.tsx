@@ -1,14 +1,12 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
-import styles from "./computerVision.module.scss";
 import * as data from "./computerVisionData";
+import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./computerVision.module.scss";
 
 const ComputerVision = () => {
   return (
-    <section
-      className={styles.computerVisionMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
-    >
+    <section className={styles.computerVisionMain} id={camelToDash(data.title)}>
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <article>

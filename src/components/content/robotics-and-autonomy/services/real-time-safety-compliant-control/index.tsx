@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
-import styles from "./safetyCompliantControl.module.scss";
 import Image from "next/image";
 import * as data from "./safetyCompliantControlData";
+import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./safetyCompliantControl.module.scss";
 
 const SafetyCompliantControl = () => {
   return (
     <section
       className={styles.safetyCompliantControlMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.title)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

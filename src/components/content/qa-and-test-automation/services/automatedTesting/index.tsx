@@ -2,14 +2,15 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./automatedTestingData";
 import Image from "next/image";
-import styles from "./automatedTesting.module.scss";
 import Technologies from "./Technologies";
+import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./automatedTesting.module.scss";
 
 const AutomatedTesting = () => {
   return (
     <section
       className={styles.AutomatedTestingMain}
-      id={data.title.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.title)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">

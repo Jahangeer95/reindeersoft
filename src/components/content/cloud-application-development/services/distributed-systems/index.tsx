@@ -1,13 +1,14 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import * as data from "./distributedSystemData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./distributedSystems.module.scss";
 
 const DistributedSystems = () => {
   return (
     <section
       className={styles.DistributedSystemsMain}
-      id={data.distributedSystemTitle.toLowerCase().split(" ").join("-")}
+      id={camelToDash(data.distributedSystemTitle)}
     >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
