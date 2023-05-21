@@ -73,8 +73,9 @@ a {
             }
 
             @media only screen and (max-width: "550px") {
-              height: 60vh;
+              height: 65vh;
             }
+
           }
 
           .overlay {
@@ -100,7 +101,7 @@ a {
             gap: 80px;
 
             @media only screen and (max-width: "1200px") {
-              gap: 10px;
+              gap: 20px;
             }
 
             h1 {
@@ -110,7 +111,7 @@ a {
               text-align: center;
               @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
               text-transform: uppercase;
-              margin-bottom: 0;
+              margin-bottom: 10px;
               animation: slide 1.5s forwards;
 
               @media only screen and (max-width: "768px") {

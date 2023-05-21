@@ -28,7 +28,7 @@ const HomeBanner = () => {
                 <div className="overlay"></div>
 
                 <article>
-                  <h1 className="text-center mb-4">{state.heading}</h1>
+                  <h1 className="text-center">{state.heading}</h1>
                   <div>
                     <p>{state.description}</p>
 
