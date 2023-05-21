@@ -1,8 +1,9 @@
 import React from "react";
-import { homeBannerArray } from "./HomeBannerData";
-import { Carousel } from "react-bootstrap";
 import Link from "next/link";
 import Image from "next/image";
+import { Carousel } from "react-bootstrap";
+import { homeBannerArray } from "./HomeBannerData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 
 const HomeBanner = () => {
   return (
@@ -15,9 +16,7 @@ const HomeBanner = () => {
               interval={6000}
               className="carousel-item"
             >
-              <Link
-                href={`${state.heading.toLowerCase().split(" ").join("-")}`}
-              >
+              <Link href={camelToDash(state.heading)}>
                 <Image
                   src={state.bannerImage}
                   alt="banner-slider"

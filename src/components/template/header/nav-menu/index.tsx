@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import Link from "next/link";
 import styles from "./hoverMenu.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { homeBannerArray } from "@/components/content/home/banner/HomeBannerData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.png");
 
 type HoverMenuPropsType = {
@@ -14,6 +15,7 @@ type HoverMenuPropsType = {
 };
 
 const HoverMenu = (props: HoverMenuPropsType) => {
+  const [menuImage, setMenuImage] = useState<StaticImageData | any>(menu);
   const classes = [
     styles.Hover_Menu_Main,
     props.val === "entering"
@@ -24,9 +26,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
   ];
 
   const sideBarHandler: () => void = () => {
-    if (window.innerWidth <= 768) {
-      props.onHandleSideBar();
-    }
+    props.onHandleSideBar();
 
     props.clickHandler();
   };
@@ -36,15 +36,16 @@ const HoverMenu = (props: HoverMenuPropsType) => {
       <Container fluid="lg">
         <div>
           <span>
-            <Image src={menu} alt="nav-menu" />
+            <Image src={menuImage} alt="nav-menu" />
           </span>
           <aside>
             {homeBannerArray.map((state, index) => {
               return (
                 <Link
                   key={index}
-                  href={`${state.heading.split(" ").join("-").toLowerCase()}`}
+                  href={camelToDash(state.heading)}
                   onClick={sideBarHandler}
+                  onMouseEnter={() => setMenuImage(state.bannerImage)}
                 >
                   {state.heading}
                 </Link>

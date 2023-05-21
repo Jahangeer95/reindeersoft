@@ -41,7 +41,9 @@ const Header = () => {
   ];
 
   const sideBarHandler = () => {
-    setHideSideBar((prevHideBar) => !prevHideBar);
+    if (window.innerWidth <= 768) {
+      setHideSideBar((prevHideBar) => !prevHideBar);
+    }
   };
 
   return (
@@ -82,13 +84,19 @@ const Header = () => {
                 <Nav
                   className={`justify-content-end align-items-center flex-grow-1 gap-3 ${styles.Nav_Menu}`}
                 >
-                  <Link href="/">Home</Link>
+                  <Link href="/" onClick={sideBarHandler}>
+                    Home
+                  </Link>
                   <button type="button" onMouseEnter={menuHandler}>
                     Services
                   </button>
-                  <Link href="/careers">Careers</Link>
-                  <Link href="/blogs">About</Link>
-                  <Link href="/contact-us">Contact us</Link>
+                  {/* <Link href="/careers">Careers</Link> */}
+                  <Link href="/about" onClick={sideBarHandler}>
+                    About
+                  </Link>
+                  <Link href="/contact-us" onClick={sideBarHandler}>
+                    Contact us
+                  </Link>
                 </Nav>
                 <Transition in={value} timeout={600} mountOnEnter unmountOnExit>
                   {(state) => (

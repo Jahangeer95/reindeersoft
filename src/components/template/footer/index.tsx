@@ -25,7 +25,7 @@ const Footer = () => {
         </svg>
       </b>
 
-      <Container>
+      <Container fluid="lg">
         <div>
           <article>
             <Company />
