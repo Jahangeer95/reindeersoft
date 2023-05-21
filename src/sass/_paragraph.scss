@@ -2,12 +2,16 @@
 @use "./font";
 
 @mixin paragraph-mixin {
-    @include font.font(0.8rem, 1.2rem, 400);
+    @include font.font(0.8rem, 1.1rem, 400);
     text-align: justify;
     text-justify: inter-word;
-    text-indent: 40px;
+    // text-indent: 40px;
     margin-bottom: 10px;
     color: colors.$paragraph-color;
+
+    @media only screen and (max-width: "768px") {
+        text-justify: distribute;
+    }
 
     &:last-child {
         margin-bottom: 0;
