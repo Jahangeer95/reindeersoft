@@ -4,51 +4,15 @@
 
 .ContactMain {
     padding: 0 !important;
-    width: 25%;
 
-    @media only screen and (max-width: "991px") {
-        width: 48%;
-
-    }
-
-    @media only screen and (max-width: "768px") {
-        width: 100%;
-
-    }
-
-    h5 {
-        @include heading.levelFive-heading;
-        color: colors.$white-color;
-        margin-bottom: 20px;
-    }
-
-    address {
-        display: flex;
-        flex-direction: column;
-
-        span {
-            display: grid;
-            grid-template-columns: auto auto;
-            justify-content: flex-start;
-            gap: 10px;
-            font-size: 20px;
-
-
-            p {
-                margin: 0;
-                @include font.font(16px, 28px, 400);
-                color: colors.$reindeer-lightbrown;
-            }
-        }
-    }
 
     aside {
         display: flex;
-        gap: 10px;
-        flex-wrap: wrap;
+        gap: 15px;
 
         span {
-            border-radius: 50%;
+            // border-radius: 50%;
+            border-radius: 10px;
             color: colors.$reindeer-lightbrown;
             background-color: colors.$primary_dark1;
             border: 1px solid colors.$reindeer-lightbrown;

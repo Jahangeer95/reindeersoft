@@ -6,7 +6,6 @@ import styles from "./Company.module.scss";
 const Company = () => {
   return (
     <div className={styles.Company_Main}>
-      <h5>About Us</h5>
       <span>
         <Image src={logo} alt="company-logo" />
       </span>
