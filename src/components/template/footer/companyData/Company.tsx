@@ -10,8 +10,9 @@ const Company = () => {
         <Image src={logo} alt="company-logo" />
       </span>
       <p>
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC.
+        Reindeersoft is a dedicated team of professionals committed to
+        delivering exceptional solutions to our clients. We strive to exceed
+        expectations and build long-lasting partnerships.
       </p>
     </div>
   );

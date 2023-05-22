@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { Container } from "react-bootstrap";
 import styles from "./CopyRight.module.scss";
 
 const CopyRight = () => {
@@ -7,10 +8,14 @@ const CopyRight = () => {
   let year = date.getFullYear();
   return (
     <div className={styles.CopyRight_Main}>
-      <span>
-        Copyright &copy; 2023-{year} REINDEERSOFT. All rights reserved.
-      </span>
-      <Link href="#">Terms and Conditions</Link>
+      <Container fluid="lg">
+        <div>
+          <span>
+            Copyright &copy; 2023-{year} REINDEERSOFT. All rights reserved.
+          </span>
+          <Link href="#">Terms and Conditions</Link>
+        </div>
+      </Container>
     </div>
   );
 };

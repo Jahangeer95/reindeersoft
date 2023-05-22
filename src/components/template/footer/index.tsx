@@ -16,9 +16,9 @@ const Footer = () => {
             <Contact />
           </article>
         </div>
-        <span className={styles.Border}></span>
-        <CopyRight />
+        {/* <span className={styles.Border}></span> */}
       </Container>
+      <CopyRight />
     </footer>
   );
 };

@@ -8,7 +8,7 @@
 
         div {
             position: relative;
-            padding: 20px 0;
+            padding: 20px 0 0;
 
             article {
                 position: relative;
@@ -19,12 +19,12 @@
             }
         }
 
-        .Border {
-            height: 2px;
-            display: block;
-            width: 100%;
-            background-color: rgba(colors.$reindeer-lightbrown, 0.2);
-        }
+        // .Border {
+        //     height: 2px;
+        //     display: block;
+        //     width: 100%;
+        //     background-color: rgba(colors.$reindeer-lightbrown, 0.2);
+        // }
 
         color: colors.$primary_light;
     }

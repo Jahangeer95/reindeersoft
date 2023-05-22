@@ -5,13 +5,16 @@
 .Company_Main {
     padding: 0 !important;
     text-align: center;
-    max-width: 700px;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     span {
         display: inline-block;
 
         img {
-            width: 150px;
+            width: 120px;
             height: auto;
             filter: hue-rotate(220deg) contrast(60%);
         }
@@ -20,6 +23,7 @@
     p {
         margin: 0;
         @include paragraph.paragraph-mixin;
+        font-size: 0.6rem;
         color: colors.$reindeer-lightbrown;
         text-align: center;
     }

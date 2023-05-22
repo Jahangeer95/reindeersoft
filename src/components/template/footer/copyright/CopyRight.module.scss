@@ -1,27 +1,40 @@
 @use "../../../../sass/colors";
-@use "../../../../sass/font";
+@use "../../../../sass/paragraph";
 
 .CopyRight_Main {
-    background-color: transparent;
+    background-color: colors.$primary_dark1;
     padding: 0 !important;
-    display: flex;
-    justify-content: space-between;
 
 
-    span {
-        display: block;
-        padding: 10px 10px 20px;
-        @include font.font(12px, 20px, 400);
-        color: rgba(colors.$reindeer-lightbrown, 0.6);
-    }
+    div {
+        padding: 0 10px !important;
 
-    a {
-        @extend span;
-        text-decoration: none;
-        transition: all 0.3s ease-in;
+        div {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 !important;
 
-        &:hover {
-            color: rgba(colors.$white-color, 0.3);
+            span {
+                display: block;
+                padding: 5px 0;
+                @include paragraph.paragraph-mixin;
+                font-size: 0.5rem;
+                color: rgba(colors.$reindeer-lightbrown, 0.6);
+                margin: 0 !important;
+            }
+
+            a {
+                @extend span;
+                text-decoration: none;
+                transition: all 0.3s ease-in;
+
+                &:hover {
+                    color: rgba(colors.$white-color, 0.7);
+                }
+            }
         }
     }
+
+
+
 }
