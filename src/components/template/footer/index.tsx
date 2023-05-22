@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Company from "./companyData/Company";
 import CopyRight from "./copyright/CopyRight";
-import Links from "./links/Links";
 import styles from "./Footer.module.scss";
 import Contact from "./contact/Contact";
 
