@@ -9,6 +9,7 @@ import SafetyCompliantControl from "./services/real-time-safety-compliant-contro
 import Simulation from "./services/simulation";
 import ComputerVision from "./services/computer-vision";
 import Integration from "./services/integration";
+import ContactUsSection from "@/components/custom/contactUsSection";
 
 const RoboticsAndAutonomy = () => {
   return (
@@ -42,6 +43,8 @@ const RoboticsAndAutonomy = () => {
         Robotics and Autonomy Services Details
         ******************************
       */}
+
+      <ContactUsSection />
     </>
   );
 };

@@ -5,6 +5,8 @@ import WebAppDevImportance from "./web-app-dev-importance";
 import WebDevelopmentServices from "./services/web-development";
 import AppDevelopment from "./services/app-development";
 import IntegratedAppDevelopment from "./services/integrated-app-development";
+import ContactUsForm from "@/components/custom/contactUsForm";
+import ContactUsSection from "@/components/custom/contactUsSection";
 
 const WebAppDevelopment = () => {
   return (
@@ -20,6 +22,8 @@ const WebAppDevelopment = () => {
       <AppDevelopment />
 
       <IntegratedAppDevelopment />
+
+      <ContactUsSection />
     </>
   );
 };

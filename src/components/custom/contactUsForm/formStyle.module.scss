@@ -1,0 +1,53 @@
+@use "../../../sass/colors";
+@use "../../../sass/font";
+
+.formMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    column-gap: 2%;
+    row-gap: 10px;
+    width: 100%;
+
+    input {
+        width: 100%;
+
+        @include font.font(0.8rem, 100%, 300);
+
+        &:first-child {
+            width: 49%;
+        }
+
+        &:nth-child(2) {
+            width: 49%;
+        }
+
+        &:last-child {
+            max-width: 400px;
+        }
+    }
+
+    textarea {
+        width: 100%;
+
+        @include font.font(0.8rem, 100%, 300);
+    }
+
+    select {
+        width: 100%;
+
+        @include font.font(0.8rem, 100%, 300);
+    }
+
+    input[type="submit"] {
+        background-color: colors.$primary_dark1;
+        border: none;
+        color: colors.$reindeer_lightbrown;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+            background-color: colors.$primary_dark2;
+        }
+    }
+}

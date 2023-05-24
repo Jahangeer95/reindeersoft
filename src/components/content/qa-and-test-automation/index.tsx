@@ -8,6 +8,7 @@ import WaterfallDevelopment from "./services/waterfall-development";
 import AutomatedTesting from "./services/automatedTesting";
 import ConsultancyServices from "./services/consultancy";
 import UniqueTesting from "./services/unique-testing";
+import ContactUsSection from "@/components/custom/contactUsSection";
 
 const QaAndTestAutomation = () => {
   return (
@@ -29,6 +30,8 @@ const QaAndTestAutomation = () => {
       <AutomatedTesting />
 
       <ConsultancyServices />
+
+      <ContactUsSection />
     </>
   );
 };

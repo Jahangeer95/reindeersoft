@@ -7,6 +7,7 @@ import CloudMigrations from "./services/cloud-migration";
 import CloudIntegration from "./services/cloud-integration";
 import ServerlessComputing from "./services/serverless-computing";
 import DistributedSystems from "./services/distributed-systems";
+import ContactUsSection from "@/components/custom/contactUsSection";
 
 const CloudApplicationDevelopment = () => {
   return (
@@ -26,6 +27,8 @@ const CloudApplicationDevelopment = () => {
       <ServerlessComputing />
 
       <DistributedSystems />
+
+      <ContactUsSection />
     </>
   );
 };

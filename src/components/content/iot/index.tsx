@@ -6,6 +6,7 @@ import IoTDevelopment from "./services/iot-development";
 import IoTIntegrations from "./services/iot-integrations";
 import IoTSecurity from "./services/iot-security";
 import IoTAnalytics from "./services/iot-analytics";
+import ContactUsSection from "@/components/custom/contactUsSection";
 
 const Iot = () => {
   return (
@@ -23,6 +24,8 @@ const Iot = () => {
       <IoTSecurity />
 
       <IoTAnalytics />
+
+      <ContactUsSection />
     </>
   );
 };
