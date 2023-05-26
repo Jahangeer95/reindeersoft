@@ -8,11 +8,31 @@ const ContactUsForm = () => {
 
   return (
     <Form className={styles.formMain}>
-      <Form.Control type="text" placeholder="First Name" />
-      <Form.Control type="text" placeholder="Last Name" />
-      <Form.Control type="email" placeholder="Work Email" />
-      <Form.Control type="text" placeholder="Phone Number" />
-      <Form.Select defaultValue="none">
+      <Form.Control
+        name="first-name"
+        type="text"
+        placeholder="First Name"
+        required
+      />
+      <Form.Control
+        name="last-name"
+        type="text"
+        placeholder="Last Name"
+        required
+      />
+      <Form.Control
+        name="email"
+        type="email"
+        placeholder="Work Email"
+        required
+      />
+      <Form.Control
+        name="phone"
+        type="text"
+        placeholder="Phone Number"
+        required
+      />
+      <Form.Select name="country" defaultValue="none" required>
         <option value="none" disabled hidden>
           Select Country
         </option>
@@ -22,7 +42,13 @@ const ContactUsForm = () => {
           </option>
         ))}
       </Form.Select>
-      <Form.Control as="textarea" rows={4} placeholder="Message" />
+      <Form.Control
+        name="message"
+        as="textarea"
+        rows={4}
+        placeholder="Message"
+        required
+      />
       <Form.Control type="submit" value="Submit" />
     </Form>
   );
