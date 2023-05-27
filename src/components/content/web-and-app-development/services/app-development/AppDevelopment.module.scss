@@ -37,7 +37,7 @@
                         margin: 0;
                         text-indent: unset;
                         border-radius: 10px;
-                        box-shadow: 2px 4px 8px 2px rgba(colors.$primary-dark1, 0.15);
+                        box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.15), -2px -4px 8px rgba(colors.$primary-dark1, 0.15);
                         user-select: none;
                         transition: all 0.3s ease-in;
                         @include gradient.darkGradient1;
@@ -58,7 +58,8 @@
                         }
 
                         p {
-                            @include gradient.lightGradient1;
+
+                            background-color: colors.$white-color;
                             border-radius: 0 10px 10px 0;
                             text-indent: unset;
 
@@ -93,7 +94,7 @@
         }
 
         &:nth-child(2) {
-            @include gradient.lightGradient1;
+            @include gradient.lightGradient2;
 
             div {
                 div {
