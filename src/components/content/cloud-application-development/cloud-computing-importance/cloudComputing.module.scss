@@ -1,11 +1,11 @@
 @use "../../../../sass/heading";
 @use "../../../../sass/paragraph";
-@use "../../../../sass/gradient";
+@use "../../../../sass/colors";
 
 .CloudComputingMain {
     position: relative;
     padding: 80px 0;
-    @include gradient.lightGradient1;
+    background-color: rgba(colors.$primary_light, 0.1);
 
     div {
         div {

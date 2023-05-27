@@ -5,7 +5,7 @@
 
 .WaterFallDevelopmentMain {
     padding: 80px 0;
-    @include gradient.lightGradient1;
+    @include gradient.lightGradient2;
 
     div {
         div {
@@ -30,10 +30,10 @@
                         background-color: rgba(colors.$white-color, 1);
                         align-items: center;
                         border-radius: 10px;
-                        border-bottom: 1px ridge rgba(colors.$reindeer-lightbrown, 1);
+                        border-bottom: 1px ridge rgba(colors.$primary-dark2, 1);
 
                         span {
-                            background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                            @include gradient.darkGradient1;
                             border-radius: 10px 0 0 10px;
                             padding: 10px;
                             display: flex;
@@ -51,9 +51,6 @@
                                 width: 100px;
                             }
 
-
-
-
                             h4 {
                                 @include heading.levelFive-heading;
                                 font-size: 0.85rem;
@@ -61,8 +58,6 @@
                                 width: 120px !important;
                                 text-align: center;
                                 margin: 0;
-
-
                             }
                         }
 

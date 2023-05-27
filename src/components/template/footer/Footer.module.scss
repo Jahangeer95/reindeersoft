@@ -1,7 +1,7 @@
 @use "../../../sass/colors";
 
 .Footer_Main {
-    background: linear-gradient(to top left, rgba(colors.$primary_dark1, 1), rgba(colors.$primary_dark2, 1));
+    background-color: colors.$primary-dark1;
     position: relative;
 
     div {

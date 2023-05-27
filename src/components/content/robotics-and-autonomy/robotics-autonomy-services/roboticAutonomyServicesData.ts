@@ -13,7 +13,7 @@ import {
 
 export const title: RoboticsAutonomyServicesTitleType =
   "Robotics and Autonomy Services";
-export const qaServicesArray: RoboticsAutonomyServicesArrayType = [
+export const roboticServicesArray: RoboticsAutonomyServicesArrayType = [
   {
     id: "robotics-app-one",
     value: "Robotics Hardware",

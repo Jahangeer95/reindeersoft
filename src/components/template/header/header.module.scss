@@ -2,8 +2,7 @@
 @use "../../../sass/font";
 
 .Header_Main {
-    background: rgba(white, 1);
-    transition: all 0.3s ease-in;
+    background: rgba(colors.$header-background-color1, 1);
     backdrop-filter: blur(3px);
     transition: all 0.3s ease-in;
 
@@ -15,7 +14,7 @@
 .Nav_Menu {
 
     a {
-        color: colors.$primary_dark3;
+        color: colors.$header-navlink-color1;
         @include font.font(18px, 100%, 700);
         text-decoration: none;
         height: fit-content;
@@ -25,23 +24,24 @@
         &:last-child {
             margin-left: 40px;
             padding: 10px 20px;
-            background: linear-gradient(to top left, colors.$primary_dark1, colors.$primary_dark2);
+            background: linear-gradient(to top left, colors.$header-navlink-background-color1, colors.$header-navlink-background-color2);
             border-radius: 10px;
-            color: colors.$white-color;
+            color: colors.$header-navlink-color2;
 
             @media only screen and (max-width: "768px") {
                 margin-left: 0;
             }
 
             &:hover {
-                background: linear-gradient(to top left, colors.$primary_dark2, colors.$primary_dark1);
-                color: colors.$white-color !important;
+                background: linear-gradient(to top left, colors.$header-navlink-hover-background-color1, colors.$header-navlink-hover-background-color2);
+                color: colors.$header-navlink-hover-color2 !important;
             }
 
         }
 
         &:hover:not(.Active) {
-            color: colors.$reindeer_lightbrown;
+            color: colors.$header-navlink-hover-color3;
+            text-shadow: unset;
         }
     }
 
@@ -58,11 +58,9 @@
 }
 
 .Logo_Animation {
-    // animation: rotate 7s ease-in-out infinite;
     width: 130px;
     height: auto;
-    // filter: hue-rotate(320deg) contrast(60%) brightness(90%) drop-shadow(2px 4px 8px rgba(25, 45, 15, 0.6)) invert(0.7);
-    filter: hue-rotate(220deg) contrast(60%);
+    filter: hue-rotate(20deg) contrast(10%) brightness(10%) invert(0.1);
     transition: all 0.3s ease-out;
 
     &:hover {
@@ -81,20 +79,24 @@
 }
 
 .HeaderBackground {
-    background: linear-gradient(to top left, rgba(colors.$primary_dark1, 0.99), rgba(colors.$primary_dark2, 0.99));
+    background: linear-gradient(to top, rgba(colors.$header-background-color2, 1), rgba(colors.$header-background-color1, 1));
 
     .Nav_Menu {
 
         a {
-            color: colors.$primary_light;
+            color: colors.$header-navlink-color2;
+            text-shadow: 2px 2px rgba(colors.$header-text-shadow-color, 0.6);
+
+            &:hover {
+                color: colors.$header-navlink-hover-color1;
+            }
 
             &:last-child {
-                background: linear-gradient(to top left, colors.$primary_light, colors.$reindeer_lightbrown);
-                color: colors.$primary_dark1;
+                text-shadow: unset;
 
                 &:hover {
-                    background: linear-gradient(to top left, colors.$reindeer_lightbrown, colors.$primary_light);
-                    color: colors.$primary_dark1 !important;
+                    background: linear-gradient(to top left, colors.$header-navlink-hover-background-color1, colors.$header-navlink-hover-background-color2);
+
                 }
             }
         }

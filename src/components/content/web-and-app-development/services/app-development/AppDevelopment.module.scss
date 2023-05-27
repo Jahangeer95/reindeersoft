@@ -37,10 +37,10 @@
                         margin: 0;
                         text-indent: unset;
                         border-radius: 10px;
-                        box-shadow: 2px 4px 8px 2px rgba(colors.$reindeer-lightbrown, 0.25);
+                        box-shadow: 2px 4px 8px 2px rgba(colors.$primary-dark1, 0.15);
                         user-select: none;
                         transition: all 0.3s ease-in;
-                        background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                        @include gradient.darkGradient1;
 
                         aside {
                             height: fit-content;
@@ -68,13 +68,13 @@
                                 padding: 10px;
                                 width: fit-content;
                                 color: colors.$white-color;
-                                background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                                @include gradient.darkGradient1;
                                 @include font.font(1rem, 1rem, 500);
 
                                 &:last-child {
                                     width: 100%;
                                     background-color: transparent;
-                                    color: colors.$primary_dark2;
+                                    color: colors.$primary_dark1;
                                     @include font.font(0.8rem, 1rem, 400);
                                     padding: 10px 20px;
                                     background: transparent;
@@ -121,18 +121,18 @@
                                 padding: 10px 0;
                                 aspect-ratio: 1/1;
                                 border-radius: 10px;
-                                box-shadow: 2px 4px 4px rgba(colors.$reindeer-lightbrown, 0.25);
+                                box-shadow: 2px 4px 4px rgba(colors.$primary-dark1, 0.25);
                                 transition: all 0.3s ease-in;
 
                                 &:hover {
-                                    background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$reindeer-lightbrown, 1));
+                                    @include gradient.lightGradient2;
                                 }
 
                                 &:nth-child(even) {
-                                    background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                                    @include gradient.darkGradient1;
 
                                     &:hover {
-                                        background: linear-gradient(to top left, rgba(colors.$reindeer-lightbrown, 1), rgba(colors.$secondary_light, 1));
+                                        background: linear-gradient(to top left, rgba(colors.$primary-dark1, 1), rgba(colors.$primary-dark2, 0.7));
                                     }
 
                                     h5 {

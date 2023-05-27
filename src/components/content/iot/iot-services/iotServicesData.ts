@@ -5,7 +5,7 @@ import iotDevelopment from "@/assets/images/iot/iot-services/iot-development.png
 import { IoTServicesArrayType, IoTServicesTitleType } from "@/types/iot.type";
 
 export const title: IoTServicesTitleType = "IoT Services";
-export const qaServicesArray: IoTServicesArrayType = [
+export const iotServicesArray: IoTServicesArrayType = [
   {
     id: "iot-one",
     value: "IoT Development",

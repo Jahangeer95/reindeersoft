@@ -29,10 +29,10 @@
                         justify-content: space-between;
                         align-items: center;
                         border-radius: 10px;
-                        border-bottom: 1px ridge rgba(colors.$reindeer-lightbrown, 1);
+                        border-bottom: 1px ridge rgba(colors.$primary-dark2, 1);
 
                         span {
-                            background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                            @include gradient.darkGradient1;
                             border-radius: 10px 0 0 10px;
                             padding: 10px;
                             display: flex;

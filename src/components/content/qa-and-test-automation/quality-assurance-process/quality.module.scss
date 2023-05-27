@@ -5,7 +5,8 @@
 
 .QualityMain {
     padding: 80px 0;
-    @include gradient.lightGradient1;
+    // @include gradient.lightGradient1;
+    background-color: rgba(colors.$primary_light, 0.1);
 
     div {
         div {
@@ -66,7 +67,7 @@
                         bottom: -100px;
                         width: 3000px;
                         height: 4px;
-                        background-color: colors.$primary-dark1;
+                        background-color: colors.$primary-dark2;
                         z-index: 0;
                     }
                 }
@@ -99,7 +100,7 @@
 
                     p {
                         @include paragraph.paragraph-mixin;
-                        color: colors.$primary_dark3;
+                        color: colors.$primary_dark2;
                         text-align: left;
                         font-weight: 500;
                         height: 50px;
