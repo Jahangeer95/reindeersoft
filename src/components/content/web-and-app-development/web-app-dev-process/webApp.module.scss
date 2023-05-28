@@ -46,13 +46,13 @@
                     border-style: solid;
                     border-left-color: transparent;
                     border-right: none;
-                    border-bottom-color: colors.$primary-dark2;
-                    border-top-color: colors.$primary-dark2;
+                    border-bottom-color: rgba(colors.$primary-dark2, 0.7);
+                    border-top-color: rgba(colors.$primary-dark2, 0.7);
                 }
 
                 .Content {
                     width: 130px;
-                    background-color: colors.$primary-dark2;
+                    background-color: rgba(colors.$primary-dark2, 0.7);
                     height: 120px;
 
                     p {
@@ -69,7 +69,7 @@
                     width: 60px;
                     border-width: 60px;
                     border-style: solid;
-                    border-left-color: colors.$primary-dark2;
+                    border-left-color: rgba(colors.$primary-dark2, 0.7);
                     border-right: none;
                     border-bottom-color: transparent;
                     border-top-color: transparent;

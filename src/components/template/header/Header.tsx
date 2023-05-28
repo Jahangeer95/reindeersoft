@@ -73,7 +73,7 @@ const Header = () => {
               <Offcanvas.Header
                 closeButton
                 closeVariant="white"
-                style={{ backgroundColor: "#3c342e" }}
+                style={{ backgroundColor: "#000d28" }}
                 onHide={sideBarHandler}
               >
                 <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">

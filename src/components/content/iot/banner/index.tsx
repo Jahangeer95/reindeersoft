@@ -1,37 +1,16 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import * as data from "./bannerData";
-import { handleClickScroll } from "@/utils/functions/scrollingHandler";
 import styles from "./Banner.module.scss";
+import CustomBanner from "@/components/custom/banner";
 
 const Banner = () => {
   return (
-    <section className={styles.IotMain}>
-      <Container>
-        <div>
-          <article>
-            <h1>{data.title}</h1>
-            <div>
-              <p>{data.description}</p>
-
-              <span></span>
-              <ul>
-                {data.list.map((state, idx) => (
-                  <li key={idx}>
-                    <button
-                      type="button"
-                      onClick={() => handleClickScroll(state)}
-                    >
-                      {state}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </article>
-        </div>
-      </Container>
-    </section>
+    <CustomBanner
+      title={data.title}
+      description={data.description}
+      list={data.list}
+      imageClass={styles.IotBannerImage}
+    />
   );
 };
 
