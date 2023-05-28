@@ -1,5 +1,5 @@
 @use "../../../../sass/colors";
 
 .IotBannerImage {
-    background-image: linear-gradient(rgba(colors.$primary-dark1, 0.7), rgba(colors.$primary_dark3, 0.7)), url("../../../../assets/images/iot/iot.jpg");
+    background-image: linear-gradient(rgba(teal, 0.7), rgba(teal, 0.7)), url("../../../../assets/images/iot/iot.jpg");
 }

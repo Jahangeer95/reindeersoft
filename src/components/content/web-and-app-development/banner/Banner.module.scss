@@ -1,5 +1,5 @@
 @use "../../../../sass/colors";
 
 .WebAppDevBannerImage {
-    background-image: linear-gradient(rgba(colors.$primary-dark1, 0.7), rgba(colors.$primary_dark3, 0.7)), url("../../../../assets/images/web-and-app-development/web-app-development.png");
+    background-image: linear-gradient(rgba(orange, 0.8), rgba(orange, 0.8)), url("../../../../assets/images/web-and-app-development/web-app-development.png");
 }

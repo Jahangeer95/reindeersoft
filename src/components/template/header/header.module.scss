@@ -79,27 +79,27 @@
 }
 
 .HeaderBackground {
-    background: linear-gradient(to top, rgba(colors.$header-background-color2, 1), rgba(colors.$header-background-color1, 1));
+    box-shadow: 2px 4px 8px rgba(colors.$primary_dark1, 0.25);
 
-    .Nav_Menu {
+    // .Nav_Menu {
 
-        a {
-            color: colors.$header-navlink-color2;
-            text-shadow: 2px 2px rgba(colors.$header-text-shadow-color, 0.6);
+    //     a {
+    //         color: colors.$header-navlink-color2;
+    //         text-shadow: 2px 2px rgba(colors.$header-text-shadow-color, 0.6);
 
-            &:hover {
-                color: colors.$header-navlink-hover-color1;
-            }
+    //         &:hover {
+    //             color: colors.$header-navlink-hover-color1;
+    //         }
 
-            &:last-child {
-                text-shadow: unset;
+    //         &:last-child {
+    //             text-shadow: unset;
 
-                &:hover {
-                    background: linear-gradient(to top left, colors.$header-navlink-hover-background-color1, colors.$header-navlink-hover-background-color2);
+    //             &:hover {
+    //                 background: linear-gradient(to top left, colors.$header-navlink-hover-background-color1, colors.$header-navlink-hover-background-color2);
 
-                }
-            }
-        }
-    }
+    //             }
+    //         }
+    //     }
+    // }
 
 }

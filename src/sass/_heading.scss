@@ -10,17 +10,17 @@
     text-shadow: 2px 2px 4px rgba(colors.$primary-dark2, 0.1);
     text-transform: capitalize;
 
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -15px;
-        height: 8px;
-        width: 30%;
-        margin: 0 35%;
-        border-radius: 10px;
-        background: linear-gradient(to right, colors.$primary_dark1, rgba(colors.$primary_dark2, 1), rgba(colors.$primary_dark2, 0.5), rgba(colors.$primary_dark2, 1), colors.$primary_dark1);
-    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: -15px;
+    //     height: 8px;
+    //     width: 30%;
+    //     margin: 0 35%;
+    //     border-radius: 10px;
+    //     background: linear-gradient(to right, colors.$primary_dark1, rgba(colors.$primary_dark2, 1), rgba(colors.$primary_dark2, 0.5), rgba(colors.$primary_dark2, 1), colors.$primary_dark1);
+    // }
 }
 
 @mixin levelThree-heading {
@@ -33,17 +33,17 @@
     text-transform: capitalize;
     animation: one 0.5s ease-in infinite;
 
-    &:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -15px;
-        height: 6px;
-        width: 30%;
-        margin: 0 35%;
-        border-radius: 10px;
-        background: linear-gradient(to right, colors.$primary_dark1, rgba(colors.$primary_dark2, 1), rgba(colors.$primary_dark2, 0.5), rgba(colors.$primary_dark2, 1), colors.$primary_dark1);
-    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: -15px;
+    //     height: 6px;
+    //     width: 30%;
+    //     margin: 0 35%;
+    //     border-radius: 10px;
+    //     background: linear-gradient(to right, colors.$primary_dark1, rgba(colors.$primary_dark2, 1), rgba(colors.$primary_dark2, 0.5), rgba(colors.$primary_dark2, 1), colors.$primary_dark1);
+    // }
 }
 
 @mixin levelFour-heading {

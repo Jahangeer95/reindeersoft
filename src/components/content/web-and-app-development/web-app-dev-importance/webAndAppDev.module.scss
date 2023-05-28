@@ -6,6 +6,11 @@
 .WebAppDevelopmentMain {
     position: relative;
     padding: 80px 0;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        background-color: lightskyblue;
+    }
 
     div {
         div {

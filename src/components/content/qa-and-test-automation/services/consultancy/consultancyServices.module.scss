@@ -6,7 +6,7 @@
 
 .ConsultancyServicesMain {
     padding: 80px 0;
-    @include gradient.lightGradient2;
+    border-bottom: 1px solid colors.$primary_light;
 
     div {
         div {
