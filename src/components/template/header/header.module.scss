@@ -22,13 +22,20 @@
         transition: all 0.3s ease-in-out;
         width: fit-content;
 
+        @media only screen and (min-width: "768px") {
+            &:first-child {
+                margin-left: auto;
+            }
+        }
+
 
         &:last-child {
-            margin-left: 40px;
+            margin-left: auto;
             padding: 10px 20px;
             background: linear-gradient(to top left, colors.$header-navlink-background-color1, colors.$header-navlink-background-color2);
             border-radius: 10px;
             color: colors.$header-navlink-color2;
+
 
             @media only screen and (max-width: "768px") {
                 margin-left: 0;

@@ -22,9 +22,9 @@
 }
 
 @mixin backgroundGradient {
-    background: linear-gradient(to top, rgba(colors.$primary_dark4, 0.1), rgba(colors.$primary_dark2, 0.1));
+    background: linear-gradient(to top, rgba(colors.$secondary_light1, 0.3), rgba(colors.$secondary_light1, 0.3));
 }
 
 @mixin twoColorGradient {
-    background: linear-gradient(to right, rgba(colors.$secondary_light1, 1) 0, rgba(colors.$secondary_light2, 1) 50%, rgba(colors.$secondary_light3, 1) 100%);
+    background: linear-gradient(rgba(colors.$secondary_light1, 1), rgba(colors.$secondary_light2, 1), rgba(colors.$secondary_light3, 1));
 }

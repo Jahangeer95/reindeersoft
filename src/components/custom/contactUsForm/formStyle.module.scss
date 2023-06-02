@@ -12,9 +12,13 @@
 
     input {
         width: 100%;
-
+        height: 45px;
         @include font.font(0.8rem, 100%, 300);
         border: 1px solid colors.$primary-dark2;
+
+        &::placeholder {
+            color: colors.$primary_light;
+        }
 
         &:first-child {
             width: 49%;
@@ -35,14 +39,16 @@
         @include font.font(0.8rem, 100%, 300);
 
         &::placeholder {
-            color: colors.$white-color;
+            color: colors.$primary_light;
         }
     }
 
     select {
         width: 100%;
+        height: 45px;
         border: 1px solid colors.$primary-dark2;
         @include font.font(0.8rem, 100%, 300);
+        color: colors.$primary_light;
     }
 
     input[type="submit"] {

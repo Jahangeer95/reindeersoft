@@ -40,7 +40,7 @@
                         box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.15), -2px -4px 8px rgba(colors.$primary-dark1, 0.15);
                         user-select: none;
                         transition: all 0.3s ease-in;
-                        @include gradient.darkGradient1;
+                        @include gradient.lightGradient3;
 
                         aside {
                             height: fit-content;
@@ -69,7 +69,7 @@
                                 padding: 10px;
                                 width: fit-content;
                                 color: colors.$white-color;
-                                @include gradient.darkGradient1;
+                                @include gradient.lightGradient3;
                                 @include font.font(1rem, 1rem, 500);
 
                                 &:last-child {
@@ -118,7 +118,8 @@
                             padding: 0;
 
                             aside {
-                                background-color: colors.$white-color;
+                                // background-color: colors.$white-color;
+                                @include gradient.lightGradient3;
                                 width: max(7rem);
                                 padding: 10px 0;
                                 aspect-ratio: 1/1;
@@ -130,24 +131,25 @@
                                     @include gradient.lightGradient2;
                                 }
 
-                                &:nth-child(even) {
-                                    @include gradient.darkGradient1;
+                                // &:nth-child(even) {
+                                //     @include gradient.darkGradient1;
 
-                                    &:hover {
-                                        background: linear-gradient(to top left, rgba(colors.$primary-dark1, 1), rgba(colors.$primary-dark2, 0.7));
-                                    }
+                                //     &:hover {
+                                //         background: linear-gradient(to top left, rgba(colors.$primary-dark1, 1), rgba(colors.$primary-dark2, 0.7));
+                                //     }
 
-                                    h5 {
-                                        color: colors.$white-color;
-                                    }
+                                //     h5 {
+                                //         color: colors.$white-color;
+                                //     }
 
-                                    span {
-                                        color: colors.$white-color;
-                                    }
-                                }
+                                //     span {
+                                //         color: colors.$white-color;
+                                //     }
+                                // }
 
                                 h5 {
                                     @include heading.levelFive-heading;
+                                    color: colors.$white-color;
                                 }
 
                                 span {

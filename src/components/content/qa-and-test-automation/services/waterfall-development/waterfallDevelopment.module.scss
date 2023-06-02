@@ -33,7 +33,7 @@
                         border-bottom: 1px ridge rgba(colors.$primary-dark2, 1);
 
                         span {
-                            @include gradient.darkGradient1;
+                            @include gradient.lightGradient3;
                             border-radius: 10px 0 0 10px;
                             padding: 10px;
                             display: flex;

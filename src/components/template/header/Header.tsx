@@ -43,6 +43,8 @@ const Header = () => {
   const sideBarHandler = () => {
     if (window.innerWidth <= 768) {
       setHideSideBar((prevHideBar) => !prevHideBar);
+      setValue(false);
+      setDisplay(false);
     }
   };
 
@@ -82,7 +84,7 @@ const Header = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav
-                  className={`justify-content-end align-items-center flex-grow-1 gap-md-3 ${styles.Nav_Menu}`}
+                  className={`justify-content-end align-items-center flex-grow-1 gap-md-4 ${styles.Nav_Menu}`}
                 >
                   <Link
                     href="/"

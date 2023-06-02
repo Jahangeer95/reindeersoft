@@ -6,6 +6,14 @@ import countryList from "country-list";
 const ContactUsForm = () => {
   // should use currying concept for change Handler
 
+  const whatAreYouSeekingArr: string[] = [
+    "Item 1",
+    "Item 2",
+    "Item 3",
+    "Item 4",
+    "Item 5",
+  ];
+
   return (
     <Form className={styles.formMain}>
       <Form.Control
@@ -26,17 +34,21 @@ const ContactUsForm = () => {
         placeholder="Work Email"
         required
       />
-      <Form.Control
-        name="phone"
-        type="text"
-        placeholder="Phone Number"
-        required
-      />
       <Form.Select name="country" defaultValue="none" required>
         <option value="none" disabled hidden>
-          Select Country
+          Select Country (optional)
         </option>
         {countryList.getNames().map((state: string, idx: number) => (
+          <option key={idx} value={state}>
+            {state}
+          </option>
+        ))}
+      </Form.Select>
+      <Form.Select name="seekingFor" defaultValue="none" required>
+        <option value="none" disabled hidden>
+          What are you seeking for?
+        </option>
+        {whatAreYouSeekingArr.map((state: string, idx: number) => (
           <option key={idx} value={state}>
             {state}
           </option>
