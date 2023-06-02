@@ -6,9 +6,11 @@ import { handleClickScroll } from "@/utils/functions/scrollingHandler";
 import styles from "./services.module.scss";
 
 const Services = (props: ServicesPropTypes) => {
-  const { title, servicesArray } = props;
+  const { title, servicesArray, serviceClass } = props;
+
+  const classes = [styles.ServicesMain, serviceClass];
   return (
-    <section className={styles.ServicesMain}>
+    <section className={classes.join(" ")}>
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-center">{title}</h2>

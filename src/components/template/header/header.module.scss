@@ -12,6 +12,7 @@
 }
 
 .Nav_Menu {
+    row-gap: 20px;
 
     a {
         color: colors.$header-navlink-color1;
@@ -20,6 +21,7 @@
         height: fit-content;
         transition: all 0.3s ease-in-out;
         width: fit-content;
+
 
         &:last-child {
             margin-left: 40px;

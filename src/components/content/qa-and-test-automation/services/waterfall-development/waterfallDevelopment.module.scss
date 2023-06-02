@@ -5,7 +5,7 @@
 
 .WaterFallDevelopmentMain {
     padding: 80px 0;
-    border-bottom: 1px solid colors.$primary_light;
+    @include gradient.backgroundGradient;
 
     div {
         div {

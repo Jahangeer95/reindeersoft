@@ -82,19 +82,40 @@ const Header = () => {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav
-                  className={`justify-content-end align-items-center flex-grow-1 gap-3 ${styles.Nav_Menu}`}
+                  className={`justify-content-end align-items-center flex-grow-1 gap-md-3 ${styles.Nav_Menu}`}
                 >
-                  <Link href="/" onClick={sideBarHandler}>
+                  <Link
+                    href="/"
+                    onClick={sideBarHandler}
+                    onMouseEnter={() => {
+                      setDisplay(false);
+                      setValue(false);
+                    }}
+                  >
                     Home
                   </Link>
                   <button type="button" onMouseEnter={menuHandler}>
                     Services
                   </button>
                   {/* <Link href="/careers">Careers</Link> */}
-                  <Link href="/about" onClick={sideBarHandler}>
+                  <Link
+                    href="/about"
+                    onClick={sideBarHandler}
+                    onMouseEnter={() => {
+                      setDisplay(false);
+                      setValue(false);
+                    }}
+                  >
                     About
                   </Link>
-                  <Link href="/contact-us" onClick={sideBarHandler}>
+                  <Link
+                    href="/contact-us"
+                    onClick={sideBarHandler}
+                    onMouseEnter={() => {
+                      setDisplay(false);
+                      setValue(false);
+                    }}
+                  >
                     Contact us
                   </Link>
                 </Nav>

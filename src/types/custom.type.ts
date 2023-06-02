@@ -7,6 +7,7 @@ export type ServicesPropTypes = {
     value: string;
     image: StaticImageData;
   }[];
+  serviceClass: string;
 };
 
 export type BannerPropTypes = {

@@ -26,8 +26,8 @@
 
             article {
                 max-width: 700px;
-                padding: 50px;
-                @include gradient.lightGradient2;
+                padding: 70px;
+                @include gradient.twoColorGradient;
                 border-radius: 10px;
             }
         }

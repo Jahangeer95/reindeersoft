@@ -1,5 +1,5 @@
-@use "../../../../sass/colors";
+@use "../../../../sass/gradient";
 
 .IotBannerImage {
-    background-image: linear-gradient(rgba(teal, 0.7), rgba(teal, 0.7)), url("../../../../assets/images/iot/iot.jpg");
+    @include gradient.bannerGradient(url("../assets/images/iot/iot.jpg"));
 }

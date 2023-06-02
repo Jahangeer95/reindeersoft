@@ -2,9 +2,11 @@
 @use "../../../../../sass/heading";
 @use "../../../../../sass/paragraph";
 @use "../../../../../sass/colors";
+@use "../../../../../sass/gradient";
 
 .CloudMigrationsMain {
     padding: 80px 0;
+    @include gradient.backgroundGradient;
 
     div {
         div {

@@ -8,13 +8,17 @@
   left: 0;
   right: 0;
   width: 100%;
+  max-width: 1100px;
   margin-top: 100px;
-  padding: 50px 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
   @include gradient.lightGradient1;
-  box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.22);
+  box-shadow: 2px 4px 8px rgba(colors.$nav-menu-box-shadow-color, 0.22);
 
   @media only screen and (max-width: "768px") {
-    margin-top: 180px;
+    margin-top: 190px;
+    padding: 30px;
   }
 
   div {
@@ -30,7 +34,7 @@
 
       span {
         position: relative;
-        width: 40%;
+        width: 35%;
 
         @media only screen and (max-width: "991px") {
           display: none;
@@ -38,8 +42,8 @@
 
         img {
           width: 100%;
-          max-width: 400px;
-          height: 250px;
+          max-width: 350px;
+          height: 220px;
           object-fit: cover;
           border-radius: 10px;
         }
@@ -53,13 +57,12 @@
         row-gap: 50px;
 
         @media only screen and (max-width: "1230px") {
-          column-gap: 70px;
+          column-gap: 50px;
           width: 100%;
         }
 
-        @media only screen and (max-width: "991px") {
-          column-gap: 50px;
-          width: 100%;
+        @media only screen and (max-width: "768px") {
+          column-gap: 20px;
         }
 
         @media only screen and (max-width: "550px") {
@@ -74,8 +77,8 @@
         a {
           position: relative;
           text-decoration: none;
-          color: colors.$primary_dark1;
-          @include font.font(18px, 100%, 500);
+          color: colors.$nav-menu-link-color;
+          @include font.font(16px, 100%, 500);
           display: block;
           transition: all 0.3s ease-out;
           width: fit-content;
@@ -86,9 +89,9 @@
             position: absolute;
             content: "";
             left: 0;
-            top: 30px;
+            top: 23px;
             width: 0%;
-            border-bottom: 3px solid colors.$secondary_dark1;
+            border-bottom: 2px solid colors.$nav-menu-link-color-hover;
             transition: all 0.3s ease-out;
           }
 
@@ -96,14 +99,14 @@
             position: absolute;
             content: "";
             right: 0;
-            top: 30px;
+            top: 23px;
             width: 0%;
-            border-bottom: 3px solid colors.$secondary_dark1;
+            border-bottom: 2px solid colors.$nav-menu-link-color-hover;
             transition: all 0.3s ease-out;
           }
 
           &:hover {
-            color: colors.$secondary_dark1;
+            color: colors.$nav-menu-link-color-hover;
 
             &::after {
               width: 50%;

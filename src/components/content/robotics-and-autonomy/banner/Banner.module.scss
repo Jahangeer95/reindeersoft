@@ -1,5 +1,5 @@
-@use "../../../../sass/colors";
+@use "../../../../sass/gradient";
 
 .RoboticsAutonomyBannerImage {
-    background-image: linear-gradient(rgba(green, 0.8), rgba(green, 0.8)), url("../../../../assets/images/robotics-and-autonomy/robotics-and-autonomy.jpg");
+    @include gradient.bannerGradient(url("../assets/images/robotics-and-autonomy/robotics-and-autonomy.jpg"));
 }
