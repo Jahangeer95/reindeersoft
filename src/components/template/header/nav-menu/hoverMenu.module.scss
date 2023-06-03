@@ -1,6 +1,87 @@
 @use "../../../../sass/colors";
 @use "../../../../sass/font";
 @use "../../../../sass/gradient";
+@use "../../../../sass/paragraph";
+
+
+.aside {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+  column-gap: 100px;
+  row-gap: 50px;
+
+  @media only screen and (max-width: "1230px") {
+    column-gap: 50px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: "768px") {
+    column-gap: 20px;
+  }
+
+  @media only screen and (max-width: "550px") {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+.image {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.anchorTag {
+
+  position: relative;
+  text-decoration: none;
+  color: colors.$nav-menu-link-color;
+  @include font.font(16px, 100%, 500);
+  display: block;
+  transition: all 0.3s ease-out;
+  width: fit-content;
+  height: fit-content;
+
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 23px;
+    width: 0%;
+    border-bottom: 2px solid colors.$nav-menu-link-color-hover;
+    transition: all 0.3s ease-out;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 23px;
+    width: 0%;
+    border-bottom: 2px solid colors.$nav-menu-link-color-hover;
+    transition: all 0.3s ease-out;
+  }
+
+  &:hover {
+    color: colors.$nav-menu-link-color-hover;
+
+    &::after {
+      width: 50%;
+    }
+
+    &::before {
+      width: 50%;
+    }
+  }
+
+}
 
 .Hover_Menu_Main {
   position: fixed;
@@ -17,13 +98,12 @@
   box-shadow: 2px 4px 8px rgba(colors.$nav-menu-box-shadow-color, 0.22);
 
   @media only screen and (max-width: "768px") {
-    margin-top: 190px;
     padding: 30px;
   }
 
   div {
 
-    div {
+    .services {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -41,85 +121,73 @@
         }
 
         img {
-          width: 100%;
-          max-width: 350px;
-          height: 220px;
-          object-fit: cover;
-          border-radius: 10px;
+          @extend .image;
         }
       }
 
       aside {
-        display: grid;
-        grid-template-columns: auto auto;
-        align-content: center;
-        column-gap: 100px;
-        row-gap: 50px;
-
-        @media only screen and (max-width: "1230px") {
-          column-gap: 50px;
-          width: 100%;
-        }
-
-        @media only screen and (max-width: "768px") {
-          column-gap: 20px;
-        }
-
-        @media only screen and (max-width: "550px") {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 30px;
-          width: 100%;
-        }
+        @extend .aside;
 
         a {
-          position: relative;
-          text-decoration: none;
-          color: colors.$nav-menu-link-color;
-          @include font.font(16px, 100%, 500);
-          display: block;
-          transition: all 0.3s ease-out;
-          width: fit-content;
-          height: fit-content;
-
-
-          &::before {
-            position: absolute;
-            content: "";
-            left: 0;
-            top: 23px;
-            width: 0%;
-            border-bottom: 2px solid colors.$nav-menu-link-color-hover;
-            transition: all 0.3s ease-out;
-          }
-
-          &::after {
-            position: absolute;
-            content: "";
-            right: 0;
-            top: 23px;
-            width: 0%;
-            border-bottom: 2px solid colors.$nav-menu-link-color-hover;
-            transition: all 0.3s ease-out;
-          }
-
-          &:hover {
-            color: colors.$nav-menu-link-color-hover;
-
-            &::after {
-              width: 50%;
-            }
-
-            &::before {
-              width: 50%;
-            }
-          }
+          @extend .anchorTag;
         }
       }
     }
+
+    .engagementModel {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 200px;
+      gap: 50px;
+
+      span {
+        display: block;
+        position: relative;
+
+        &:first-child {
+          width: 100%;
+
+          img {
+            @extend .image;
+          }
+        }
+
+        &:nth-child(2) {
+          width: 100%;
+
+          p {
+            @include paragraph.paragraph_mixin;
+            color: colors.$primary_dark4;
+            text-align: justify;
+            font-size: 14px;
+
+          }
+        }
+
+
+
+        @media only screen and (max-width:"991px") {
+          display: none;
+        }
+      }
+
+      aside {
+        @extend .aside;
+        grid-template-columns: auto;
+        width: 100%;
+
+        a {
+
+          @extend .anchorTag;
+        }
+
+      }
+    }
   }
+
 }
 
 .Open {

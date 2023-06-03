@@ -12,6 +12,7 @@ const Header = () => {
   const [value, setValue] = useState(false);
   const [display, setDisplay] = useState(false);
   const [hideSideBar, setHideSideBar] = useState(true);
+  const [button, setButton] = useState<null | any>(null);
 
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
@@ -24,7 +25,8 @@ const Header = () => {
     });
   }, []);
 
-  const menuHandler = () => {
+  const menuHandler = (buttonText: string) => {
+    setButton(buttonText);
     setValue(true);
     setDisplay(true);
   };
@@ -96,19 +98,27 @@ const Header = () => {
                   >
                     Home
                   </Link>
-                  <button type="button" onMouseEnter={menuHandler}>
+                  <button
+                    type="button"
+                    onMouseEnter={() => menuHandler("services")}
+                  >
                     Services
                   </button>
-                  {/* <Link href="/careers">Careers</Link> */}
+                  <button
+                    type="button"
+                    onMouseEnter={() => menuHandler("engagement-model")}
+                  >
+                    Engagement Model
+                  </button>
                   <Link
-                    href="/about"
+                    href="/about-us"
                     onClick={sideBarHandler}
                     onMouseEnter={() => {
                       setDisplay(false);
                       setValue(false);
                     }}
                   >
-                    About
+                    About Us
                   </Link>
                   <Link
                     href="/contact-us"
@@ -127,6 +137,7 @@ const Header = () => {
                       val={state}
                       clickHandler={handleClick}
                       dis={display}
+                      button={button}
                       onHandleSideBar={sideBarHandler}
                     />
                   )}
