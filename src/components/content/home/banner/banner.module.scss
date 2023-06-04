@@ -1,0 +1,5 @@
+@use "../../../../sass/gradient";
+
+.homeBannerImage {
+    @include gradient.bannerGradient(url("../assets/images/home/Liqq.gif"));
+}

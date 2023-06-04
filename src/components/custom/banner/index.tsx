@@ -8,6 +8,18 @@ const CustomBanner = (props: BannerPropTypes) => {
   const { title, description, list, imageClass } = props;
 
   const classes = [styles.BannerMain, imageClass];
+
+  const Itemslist: JSX.Element = (
+    <ul>
+      {list.map((state, idx) => (
+        <li key={idx}>
+          <button type="button" onClick={() => handleClickScroll(state)}>
+            {state}
+          </button>
+        </li>
+      ))}
+    </ul>
+  );
   return (
     <section className={classes.join(" ")}>
       <Container>
@@ -17,19 +29,8 @@ const CustomBanner = (props: BannerPropTypes) => {
             <div>
               <p>{description}</p>
 
-              <span></span>
-              <ul>
-                {list.map((state, idx) => (
-                  <li key={idx}>
-                    <button
-                      type="button"
-                      onClick={() => handleClickScroll(state)}
-                    >
-                      {state}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              {list.length > 0 && <span></span>}
+              {list.length > 0 && Itemslist}
             </div>
           </article>
         </div>
