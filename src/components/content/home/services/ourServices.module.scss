@@ -49,6 +49,7 @@
                     width: 22%;
                     padding: 20px;
                     background-color: color.$white-color;
+                    @include g.lightGradient2;
                     text-decoration: none;
                     box-shadow: 2px 4px 8px rgba(color.$primary_dark1, 0.22), -2px -4px 8px rgba(color.$primary_dark1, 0.22);
                     border-radius: 10px;
@@ -72,7 +73,7 @@
                         display: block;
                         margin-left: auto;
                         margin-right: auto;
-                        background-color: rgba(color.$primary_dark1, 0.25);
+                        background-color: rgba(color.$primary_dark4, 1);
                         border-radius: 50%;
                         width: 100px;
                         height: 100px;
@@ -90,17 +91,18 @@
                         @include h.levelFive-heading;
                         text-align: center;
                         width: 100%;
+                        color: color.$primary_dark4;
                     }
 
                     &:hover {
-                        @include g.lightGradient2;
+                        @include g.darkGradient1;
 
                         span {
-                            background-color: rgba(color.$primary_dark4, 1);
+                            background-color: color.$white-color;
                         }
 
                         h5 {
-                            color: color.$primary_dark4;
+                            color: color.$white-color;
                         }
                     }
                 }

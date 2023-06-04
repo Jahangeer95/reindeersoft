@@ -48,17 +48,17 @@
         height: 45px;
         border: 1px solid colors.$primary-dark2;
         @include font.font(0.8rem, 100%, 300);
-        color: colors.$primary_light;
+
     }
 
     input[type="submit"] {
-        background-color: colors.$primary_dark4;
+        background-color: colors.$primary_dark2;
         border: none;
         color: colors.$white-color;
         transition: all 0.3s ease-in;
 
         &:hover {
-            background-color: colors.$primary_dark2;
+            background-color: colors.$primary_dark4;
         }
     }
 }
