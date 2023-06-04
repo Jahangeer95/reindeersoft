@@ -104,12 +104,7 @@ const Header = () => {
                   >
                     Services
                   </button>
-                  <button
-                    type="button"
-                    onMouseEnter={() => menuHandler("engagement-model")}
-                  >
-                    Engagement Model
-                  </button>
+
                   <Link
                     href="/about-us"
                     onClick={sideBarHandler}
@@ -120,6 +115,12 @@ const Header = () => {
                   >
                     About Us
                   </Link>
+                  <button
+                    type="button"
+                    onMouseEnter={() => menuHandler("engagement-model")}
+                  >
+                    Engagement Model
+                  </button>
                   <Link
                     href="/contact-us"
                     onClick={sideBarHandler}

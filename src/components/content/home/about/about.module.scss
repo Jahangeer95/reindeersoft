@@ -1,0 +1,23 @@
+@use "../../../../sass/heading" as h;
+@use "../../../../sass/paragraph" as p;
+
+.aboutMain {
+    position: relative;
+    padding: 80px 0;
+
+    div {
+        div {
+
+            h2 {
+                @include h.levelTwo-heading;
+            }
+
+            article {
+                p {
+                    @include p.paragraph-mixin;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}

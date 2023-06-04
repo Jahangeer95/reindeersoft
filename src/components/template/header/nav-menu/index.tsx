@@ -8,8 +8,7 @@ import { camelToDash } from "@/utils/functions/camelToDash";
 import { engagementModelData } from "./engagement";
 const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.png");
 
-const defaultValue =
-  "Reindeersoft is a dedicated team of professionals committed to delivering exceptional solutions to our clients. We strive to exceed expectations and build long-lasting partnerships.";
+const defaultValue = "";
 
 type HoverMenuPropsType = {
   val: string;
@@ -82,7 +81,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
               onClick={sideBarHandler}
               onMouseEnter={() => {
                 setMenuImage(state.image);
-                setMenuText(state.modelDetail);
+                setMenuText(defaultValue);
               }}
             >
               {state.linkname}
