@@ -119,7 +119,7 @@ const Header = () => {
                     type="button"
                     onMouseEnter={() => menuHandler("engagement-model")}
                   >
-                    Engagement Model
+                    How We Work
                   </button>
                   <Link
                     href="/contact-us"
