@@ -12,7 +12,6 @@ const OurServices = () => {
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h2>{data.title}</h2>
-          <p>{data.paragraph}</p>
           <article>
             {data.ourServicesList.map((state, idx) => {
               return (

@@ -5,16 +5,9 @@ import qaAndTestAutomation from "@/assets/images/home/qa-and-test-automation.png
 import cloudApplicationDevelopment from "@/assets/images/home/cloud-application-development.png";
 import iot from "@/assets/images/home/iot.png";
 
-import {
-  OurServiceListType,
-  OurServicesParagraphType,
-  OurServicesTitleType,
-} from "@/types/home.type";
+import { OurServiceListType, OurServicesTitleType } from "@/types/home.type";
 
-export const title: OurServicesTitleType = "Our Services";
-
-export const paragraph: OurServicesParagraphType =
-  "At our company, we are dedicated to delivering the best services to our customers. With a focus on excellence, we strive to provide tailored solutions that meet their unique needs. Our commitment to surpassing expectations ensures an exceptional experience for every client we serve.";
+export const title: OurServicesTitleType = "Service Offerings";
 
 export const ourServicesList: OurServiceListType = [
   {

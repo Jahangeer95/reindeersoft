@@ -11,7 +11,6 @@ export type AboutUsTitleType = string;
 export type AboutUsContentType = string[];
 
 export type OurServicesTitleType = string;
-export type OurServicesParagraphType = string;
 export type OurServiceListType = {
   icon: StaticImageData;
   title: string;

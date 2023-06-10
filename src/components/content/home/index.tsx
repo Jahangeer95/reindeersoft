@@ -5,6 +5,7 @@ import Banner from "./banner";
 import About from "./about";
 import OurServices from "./services";
 import HowWeWork from "./how-we-work";
+import QualityAssuranceProcess from "./quality-assurance-process";
 
 const HomeContent = () => {
   return (
@@ -18,6 +19,8 @@ const HomeContent = () => {
       <OurServices />
 
       <HowWeWork />
+
+      <QualityAssuranceProcess />
 
       <ContactUsSection />
     </>
