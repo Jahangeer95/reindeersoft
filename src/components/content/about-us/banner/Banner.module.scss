@@ -1,0 +1,91 @@
+@use "../../../../sass/colors";
+@use "../../../../sass/font";
+@use "../../../../sass/animation";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/gradient";
+
+.IotMain {
+    position: relative;
+    margin-top: 100px;
+    @include gradient.bannerGradient(url("../assets/images/about-us/about-banner.jpg"));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    aspect-ratio: 1/0.49;
+    min-height: 320px;
+    max-height: 550px;
+    width: 100%;
+
+    div {
+        div {
+            article {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 90%;
+                margin-left: 10%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 30px;
+
+                @media only screen and (max-width: "768px") {
+                    gap: 15px;
+                }
+
+                h1 {
+                    display: block;
+                    color: colors.$white_color;
+                    text-align: left;
+                    @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    animation: slide 1.5s forwards;
+
+                    @media only screen and (max-width: "768px") {
+                        width: 80%;
+                    }
+
+
+                }
+
+                div {
+                    display: flex;
+                    width: 80%;
+                    gap: 100px;
+
+                    @media only screen and (max-width: "1200px") {
+                        gap: 50px;
+                    }
+
+                    @media only screen and (max-width: "991px") {
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+
+                    p {
+                        width: 100%;
+                        @include paragraph.paragraph-mixin;
+                        text-indent: unset;
+                        color: colors.$white-color;
+                        animation: bottom-to-top 1.5s forwards;
+                        margin: 0;
+
+                        @media only screen and (max-width: "768px") {
+                            line-height: 115%;
+                        }
+                    }
+
+                }
+
+
+                @include animation.animation-heading-mixin(slide);
+                @include animation.animation-p1-mixin(bottom-to-top);
+                @include animation.animation-p2-mixin(right-to-left);
+                @include animation.animation-scaleup-mixin(scale-up);
+            }
+        }
+    }
+}

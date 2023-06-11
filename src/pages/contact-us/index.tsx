@@ -1,7 +1,7 @@
 import ContactUs from "@/components/content/contact-us";
 import Head from "next/head";
 
-export default function IoTPage() {
+export default function ContactUsPage() {
   return (
     <>
       <Head>
