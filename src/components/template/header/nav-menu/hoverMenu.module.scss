@@ -47,38 +47,49 @@
   transition: all 0.3s ease-out;
   width: fit-content;
   height: fit-content;
+  text-align: justify;
+  text-justify: inter-word;
 
+  &:last-child {
+    @media only screen and (min-width: "768px") {
+      grid-column: 1/span 2;
+    }
 
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 23px;
-    width: 0%;
-    border-bottom: 2px solid colors.$nav-menu-link-color-hover;
-    transition: all 0.3s ease-out;
   }
 
-  &::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 23px;
-    width: 0%;
-    border-bottom: 2px solid colors.$nav-menu-link-color-hover;
-    transition: all 0.3s ease-out;
+  @media screen and (min-width: "768px") {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 23px;
+      width: 0%;
+      border-bottom: 2px solid colors.$nav-menu-link-color-hover;
+      transition: all 0.3s ease-out;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      top: 23px;
+      width: 0%;
+      border-bottom: 2px solid colors.$nav-menu-link-color-hover;
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover::before {
+      width: 50%;
+    }
+
+    &:hover::after {
+      width: 50%;
+    }
   }
 
   &:hover {
     color: colors.$nav-menu-link-color-hover;
 
-    &::after {
-      width: 50%;
-    }
-
-    &::before {
-      width: 50%;
-    }
   }
 
 }
@@ -130,6 +141,7 @@
 
         a {
           @extend .anchorTag;
+
         }
       }
     }

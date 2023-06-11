@@ -1,0 +1,78 @@
+@use "../../../../sass/heading" as h;
+@use "../../../../sass/colors" as color;
+@use "../../../../sass/gradient" as g;
+@use "../../../../sass/paragraph" as p;
+
+.faqsMain {
+    position: relative;
+    padding: 80px 0;
+
+    div {
+        div {
+            h2 {
+                @include h.levelTwo-heading;
+            }
+
+            article {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                details {
+                    display: block;
+                    width: 100%;
+                    max-width: 800px;
+                    transition: height 3s ease;
+                    overflow: hidden;
+
+                    &[open] {
+                        height: auto;
+                    }
+
+                    summary {
+                        display: block;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                        // background-color: color.$reindeer-lightbrown;
+                        @include g.lightGradient2;
+                        border-left: 4px solid color.$primary_dark4;
+                        transition: all 0.3s ease-in;
+                        cursor: pointer;
+                        user-select: none;
+
+
+                        h5 {
+                            width: 100%;
+                            @include h.levelFive-heading;
+                            margin: 0 !important;
+                        }
+
+                        span {
+                            color: color.$primary_dark2;
+                            padding: 1px;
+                            border-radius: 50%;
+                            background-color: color.$white-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 25px;
+                            height: 25px;
+
+                        }
+
+                    }
+
+                    p {
+                        @include p.paragraph_mixin;
+                        @include g.backgroundGradient;
+                        border-left: 4px solid color.$primary_dark4;
+                        padding: 10px 20px;
+                        transition: all 0.3s ease-in;
+                    }
+                }
+            }
+        }
+    }
+}

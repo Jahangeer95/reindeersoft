@@ -6,6 +6,7 @@ import About from "./about";
 import OurServices from "./services";
 import HowWeWork from "./how-we-work";
 import QualityAssuranceProcess from "./quality-assurance-process";
+import Faqs from "./faq";
 
 const HomeContent = () => {
   return (
@@ -21,6 +22,8 @@ const HomeContent = () => {
       <HowWeWork />
 
       <QualityAssuranceProcess />
+
+      <Faqs />
 
       <ContactUsSection />
     </>

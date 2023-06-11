@@ -55,4 +55,10 @@ export const homeBannerArray: homeBannerArrayTypes = [
     description: iot.description,
     list: iot.list,
   },
+  {
+    bannerImage: slide5,
+    heading: "Large Language Model(LLM) integration and applications",
+    description: iot.description,
+    list: iot.list,
+  },
 ];
