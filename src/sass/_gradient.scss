@@ -12,8 +12,16 @@
     background: linear-gradient(to top, rgba(colors.$primary_dark2, 0.9), rgba(colors.$primary-dark2, 1));
 }
 
+@mixin lightGradient4 {
+    background: linear-gradient(to top right, rgba(colors.$primary-dark2, 0.7), rgba(colors.$secondary_dark2, 0.7));
+}
+
 @mixin darkGradient1 {
     background: linear-gradient(to top left, rgba(colors.$primary_dark2, 0.7), rgba(colors.$primary-dark1, 1));
+}
+
+@mixin darkGradient2 {
+    background: linear-gradient(to top left, rgba(colors.$primary_dark2, 0.4), rgba(colors.$primary-dark2, 0.5));
 }
 
 @mixin bannerGradient ($banner-image) {
