@@ -194,6 +194,10 @@
         a {
 
           @extend .anchorTag;
+
+          &:last-child {
+            grid-column: auto;
+          }
         }
 
       }
