@@ -1,0 +1,5 @@
+@use "../../../../sass/gradient";
+
+.LLMBannerImage {
+    @include gradient.bannerGradient(url("../assets/images/llm/large-language-model.jpg"));
+}
