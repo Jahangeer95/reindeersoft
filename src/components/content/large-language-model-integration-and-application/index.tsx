@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "./banner";
 import ServiceOverview from "./service-overview";
+import LLMServices from "./llm-services";
 
 const LLM = () => {
   return (
@@ -8,6 +9,8 @@ const LLM = () => {
       <Banner />
 
       <ServiceOverview />
+
+      <LLMServices />
     </>
   );
 };
