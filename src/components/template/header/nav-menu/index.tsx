@@ -102,10 +102,10 @@ const HoverMenu = (props: HoverMenuPropsType) => {
       }}
       style={marginTop}
     >
-      <Container fluid="lg">
+      <div>
         {props.button === "services" && servicesMenu}
         {props.button === "engagement-model" && engagementModelMenu}
-      </Container>
+      </div>
     </div>
   );
 };
