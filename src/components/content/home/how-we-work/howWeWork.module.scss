@@ -1,12 +1,12 @@
 @use "../../../../sass/heading" as h;
 @use "../../../../sass/colors" as color;
 @use "../../../../sass/gradient" as g;
+@use "../../../../sass/font" as font;
 
 
 .howWeWorkMain {
     position: relative;
     padding: 80px 0;
-    // background-color: rgba(color.$reindeer-lightbrown, 0.7);
 
     div {
         div {
@@ -16,29 +16,29 @@
 
             article {
                 width: 100%;
-                // @include g.twoColorGradient;
-                // background-color: color.$primary_dark2;
                 @include g.lightGradient2;
                 padding: 50px;
+                // min-width: 800px;
+                // overflow: auto;
 
                 table {
                     width: 100%;
                     text-align: center;
                     border-collapse: collapse;
+                    // min-width: 700px;
+                    // overflow: auto;
 
-                    tr {
-                        border: 2px solid color.$white-color;
-                        border-left: unset;
-                        border-right: unset;
 
-                        &:first-child {
-                            border-top: unset;
-                            border-bottom: unset;
+                    thead {
+                        tr {
+                            border-bottom: 2px solid color.$white-color;
 
                             th {
-                                // background-color: color.$secondary_dark2;
-                                // background-color: #b56722;
                                 @include g.lightGradient4;
+                                border-left: 2px solid color.$white-color;
+                                padding: 10px;
+                                color: color.$table-header-font-color;
+                                @include font.font(1.3rem, 105%, 600);
 
                                 &:first-child {
                                     background-color: transparent;
@@ -47,33 +47,36 @@
                                 }
                             }
                         }
+                    }
 
-                        &:last-child {
-                            border-bottom: unset;
-                        }
+                    tbody {
+                        tr {
+                            border-bottom: 2px solid color.$white-color;
 
-                        th {
-                            border-left: 2px solid color.$white-color;
-                            padding: 10px;
-                            color: rgb(224, 184, 110);
-                            font-size: larger;
-
-                            &:first-child {
-                                border-left: unset;
-                                @include g.lightGradient4;
-                                // background-color: color.$secondary_dark2;
-                                // background-color: rgba(133, 133, 133, 1);
+                            &:last-child {
+                                border-bottom: unset;
                             }
 
-                        }
+                            td {
+                                border-left: 2px solid color.$white-color;
+                                padding: 10px;
+                                color: color.$primary_dark4;
+                                @include font.font(1rem, 105%, 400);
 
-                        td {
-                            border-left: 2px solid color.$white-color;
-                            padding: 10px;
-                            color: color.$primary_dark4;
+                                &:first-child {
+                                    @include g.lightGradient4;
+                                    border-left: 2px solid color.$white-color;
+                                    padding: 10px;
+                                    color: color.$table-header-font-color;
+                                    @include font.font(1.3rem, 105%, 600);
+                                    border-left: unset;
+                                }
 
+                            }
                         }
                     }
+
+
                 }
             }
         }

@@ -5,7 +5,7 @@ import llmConsultationAndSupport from "@/assets/images/llm/llm-services-icon/llm
 
 import { LLMServicesArrayType, LLMServicesTitleType } from "@/types/llm.type";
 
-export const title: LLMServicesTitleType = "Robotics and Autonomy Services";
+export const title: LLMServicesTitleType = "Large Language Model Services";
 export const roboticServicesArray: LLMServicesArrayType = [
   {
     id: "llm-app-one",
