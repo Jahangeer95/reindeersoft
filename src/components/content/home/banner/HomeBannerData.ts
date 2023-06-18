@@ -10,6 +10,9 @@ import * as qaAndTestAutomation from "../../qa-and-test-automation/banner/banner
 import * as roboticsAndAutonomy from "../../robotics-and-autonomy/banner/bannerData";
 import * as iot from "../../iot/banner/bannerData";
 
+// Has to be modified since slider is not there
+// still this data used in other section
+
 export const homeBannerArray: homeBannerArrayTypes = [
   {
     bannerImage: slide1,

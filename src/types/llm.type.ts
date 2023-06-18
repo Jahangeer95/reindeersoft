@@ -16,3 +16,17 @@ export type LLMServicesArrayType = {
   value: string;
   image: StaticImageData;
 }[];
+
+// LLM Each Service Data types...
+export type LLMServiceTitleType = string;
+export type LLMServiceContentType = {
+  description: string[];
+  image: StaticImageData;
+};
+
+// LLM Applications data type
+export type LLMApplicationsTitleType = string;
+export type LLMApplicationsContentType = {
+  title: string;
+  description: string;
+}[];

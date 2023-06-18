@@ -12,5 +12,5 @@ export const list: BannerListType = [
   "Integrations",
   "Prompt Engineering",
   "Training and Customization",
-  "Consulatation and Support",
+  "Consultation and Support",
 ];
