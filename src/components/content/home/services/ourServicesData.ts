@@ -4,6 +4,7 @@ import roboticAndAutonomy from "@/assets/images/home/robotics-and-autonomy.png";
 import qaAndTestAutomation from "@/assets/images/home/qa-and-test-automation.png";
 import cloudApplicationDevelopment from "@/assets/images/home/cloud-application-development.png";
 import iot from "@/assets/images/home/iot.png";
+import llm from "@/assets/images/home/llm.png";
 
 import { OurServiceListType, OurServicesTitleType } from "@/types/home.type";
 
@@ -33,5 +34,9 @@ export const ourServicesList: OurServiceListType = [
   {
     icon: iot,
     title: "Internet of Things",
+  },
+  {
+    icon: llm,
+    title: "Large Language Model(LLM) Integration and Applications",
   },
 ];

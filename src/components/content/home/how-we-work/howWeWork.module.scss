@@ -9,7 +9,9 @@
     padding: 80px 0;
 
     div {
+
         div {
+
             h2 {
                 @include h.levelTwo-heading;
             }
@@ -18,15 +20,36 @@
                 width: 100%;
                 @include g.lightGradient2;
                 padding: 50px;
-                // min-width: 800px;
-                // overflow: auto;
+                overflow-x: scroll;
+
+                // For mozilla
+                scrollbar-width: auto;
+                scroll-behavior: smooth;
+                scrollbar-color: transparent transparent;
+
+                @media only screen and (max-width: "768px") {
+                    padding: 0;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 0px;
+                    display: none;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: transparent;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: transparent;
+                }
+
 
                 table {
                     width: 100%;
                     text-align: center;
                     border-collapse: collapse;
-                    // min-width: 700px;
-                    // overflow: auto;
+                    min-width: 700px;
 
 
                     thead {
@@ -38,7 +61,7 @@
                                 border-left: 2px solid color.$white-color;
                                 padding: 10px;
                                 color: color.$table-header-font-color;
-                                @include font.font(1.3rem, 105%, 600);
+                                @include font.font(0.8rem, 105%, 600);
 
                                 &:first-child {
                                     background-color: transparent;
@@ -61,14 +84,14 @@
                                 border-left: 2px solid color.$white-color;
                                 padding: 10px;
                                 color: color.$primary_dark4;
-                                @include font.font(1rem, 105%, 400);
+                                @include font.font(0.7rem, 105%, 400);
 
                                 &:first-child {
                                     @include g.lightGradient4;
                                     border-left: 2px solid color.$white-color;
                                     padding: 10px;
                                     color: color.$table-header-font-color;
-                                    @include font.font(1.3rem, 105%, 600);
+                                    @include font.font(0.8rem, 105%, 600);
                                     border-left: unset;
                                 }
 
