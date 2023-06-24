@@ -2,10 +2,13 @@
 @use "../../../../sass/colors" as color;
 @use "../../../../sass/gradient" as g;
 @use "../../../../sass/paragraph" as p;
+@use "../../../../sass/visibility" as vis;
 
 .faqsMain {
     position: relative;
     padding: 80px 0;
+    @include vis.hiddenVisibility;
+
 
     div {
         div {
@@ -79,4 +82,8 @@
             }
         }
     }
+}
+
+.faqsMain.visible {
+    @include vis.showVisibility;
 }

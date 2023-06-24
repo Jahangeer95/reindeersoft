@@ -2,11 +2,13 @@
 @use "../../../../sass/paragraph" as p;
 @use "../../../../sass/colors" as color;
 @use "../../../../sass/gradient" as g;
+@use "../../../../sass/visibility" as vis;
 
 .aboutMain {
     position: relative;
     padding: 80px 0;
     @include g.lightGradient1;
+    @include vis.hiddenVisibility;
 
     div {
         div {
@@ -37,37 +39,13 @@
                     background-color: rgba(color.$reindeer-lightbrown, 0.1);
                     font-style: italic;
 
-                    // &::after {
-                    //     content: '';
-                    //     position: absolute;
-                    //     border-radius: 100vmax;
-                    //     top: 0;
-                    //     left: 0;
-                    //     width: 0;
-                    //     height: 5px;
-                    //     background: linear-gradient(90deg,
-                    //             transparent 50%,
-                    //             rgba(color.$secondary_dark2, 0.5),
-                    //             color.$secondary_dark2);
-                    //     animation: animateTop 3s ease-in-out infinite;
-
-                    // }
-
                 }
-
-                // @keyframes animateTop {
-                //     25% {
-                //         width: 98%;
-                //         opacity: 1;
-                //     }
-
-                //     30%,
-                //     100% {
-                //         opacity: 0;
-                //     }
-                // }
 
             }
         }
     }
+}
+
+.aboutMain.visible {
+    @include vis.showVisibility;
 }

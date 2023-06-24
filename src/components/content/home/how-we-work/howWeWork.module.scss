@@ -2,11 +2,14 @@
 @use "../../../../sass/colors" as color;
 @use "../../../../sass/gradient" as g;
 @use "../../../../sass/font" as font;
+@use "../../../../sass/visibility" as vis;
 
 
 .howWeWorkMain {
     position: relative;
     padding: 80px 0;
+
+    @include vis.hiddenVisibility;
 
     div {
 
@@ -104,4 +107,8 @@
             }
         }
     }
+}
+
+.howWeWorkMain.visible {
+    @include vis.showVisibility;
 }

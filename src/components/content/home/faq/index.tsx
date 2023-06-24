@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./faqData";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import { useView } from "@/hooks/useView";
 import styles from "./faqa.module.scss";
 
 const Faqs = () => {
   const [activeIndex, setActiveIndex] = useState<number[]>([]);
+  const { ref, inView } = useView();
 
   const setActiveIndexFun = (index: number) => {
     activeIndex?.includes(index)
@@ -16,7 +18,10 @@ const Faqs = () => {
   };
 
   return (
-    <section className={styles.faqsMain}>
+    <section
+      ref={ref}
+      className={`${styles.faqsMain} ${inView ? styles.visible : ""}`}
+    >
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h2>{data.title}</h2>

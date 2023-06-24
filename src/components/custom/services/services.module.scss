@@ -2,9 +2,12 @@
 @use "../../../sass/heading";
 @use "../../../sass/paragraph";
 @use "../../../sass/gradient";
+@use "../../../sass/visibility";
 
 .ServicesMain {
     padding: 80px 0;
+    @include visibility.hiddenVisibility;
+
 
     div {
         div {
@@ -125,4 +128,8 @@
             }
         }
     }
+}
+
+.ServicesMain.visible {
+    @include visibility.showVisibility
 }

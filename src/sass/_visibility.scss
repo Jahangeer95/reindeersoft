@@ -1,0 +1,10 @@
+@mixin hiddenVisibility {
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+@mixin showVisibility {
+    transform: translateY(0px);
+    opacity: 1;
+}
