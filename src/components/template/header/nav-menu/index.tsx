@@ -66,12 +66,6 @@ const HoverMenu = (props: HoverMenuPropsType) => {
 
   const engagementModelMenu: JSX.Element = (
     <div className={styles.engagementModel}>
-      <span>
-        <Image src={menuImage} alt="nav-menu" />
-      </span>
-      <span>
-        <p>{menuText}</p>
-      </span>
       <aside>
         {engagementModelData.map((state, idx) => {
           return (
@@ -89,6 +83,12 @@ const HoverMenu = (props: HoverMenuPropsType) => {
           );
         })}
       </aside>
+      <span>
+        <Image src={menuImage} alt="nav-menu" />
+      </span>
+      <span>
+        <p>{menuText}</p>
+      </span>
     </div>
   );
 

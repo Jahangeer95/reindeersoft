@@ -1,0 +1,73 @@
+@use "../../../../sass/heading" as h;
+@use "../../../../sass/paragraph" as p;
+@use "../../../../sass/colors" as color;
+@use "../../../../sass/gradient" as g;
+
+.aboutMain {
+    position: relative;
+    padding: 80px 0;
+    @include g.lightGradient1;
+
+    div {
+        div {
+
+            h2 {
+                @include h.levelTwo-heading;
+                margin-bottom: 20px;
+                color: color.$secondary_dark1;
+            }
+
+            article {
+                position: relative;
+
+                p {
+                    position: relative;
+                    @include p.paragraph-mixin;
+                    text-align: justify;
+                    font-size: 1.05rem;
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    color: color.$secondary_dark1;
+                    border: 1px solid color.$primary_dark2;
+                    border-radius: 20px;
+                    padding: 20px;
+                    box-shadow: 2px 4px 8px rgba(color.$primary-dark2, 0.22), -2px -4px 8px rgba(color.$primary-dark2, 0.22);
+                    background-color: rgba(color.$reindeer-lightbrown, 0.1);
+                    font-style: italic;
+
+                    // &::after {
+                    //     content: '';
+                    //     position: absolute;
+                    //     border-radius: 100vmax;
+                    //     top: 0;
+                    //     left: 0;
+                    //     width: 0;
+                    //     height: 5px;
+                    //     background: linear-gradient(90deg,
+                    //             transparent 50%,
+                    //             rgba(color.$secondary_dark2, 0.5),
+                    //             color.$secondary_dark2);
+                    //     animation: animateTop 3s ease-in-out infinite;
+
+                    // }
+
+                }
+
+                // @keyframes animateTop {
+                //     25% {
+                //         width: 98%;
+                //         opacity: 1;
+                //     }
+
+                //     30%,
+                //     100% {
+                //         opacity: 0;
+                //     }
+                // }
+
+            }
+        }
+    }
+}

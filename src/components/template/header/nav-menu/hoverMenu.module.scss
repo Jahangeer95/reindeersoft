@@ -108,7 +108,7 @@
   @include gradient.lightGradient1;
   box-shadow: 2px 4px 8px rgba(colors.$nav-menu-box-shadow-color, 0.22);
 
-  @media only screen and (min-width: "1500px") {
+  @media only screen and (min-width: "1550px") {
     max-width: fit-content;
   }
 
@@ -159,41 +159,19 @@
       min-height: 200px;
       gap: 50px;
 
-      span {
-        display: block;
-        position: relative;
-
-        &:first-child {
-          width: 100%;
-
-          img {
-            @extend .image;
-          }
-        }
-
-        &:nth-child(2) {
-          width: 100%;
-
-          p {
-            @include paragraph.paragraph_mixin;
-            color: colors.$primary_dark4;
-            text-align: justify;
-            font-size: 14px;
-
-          }
-        }
-
-
-
-        @media only screen and (max-width:"991px") {
-          display: none;
-        }
+      @media only screen and (max-width: "768px") {
+        justify-content: center !important;
       }
 
       aside {
         @extend .aside;
         grid-template-columns: auto;
         width: 100%;
+
+        @media only screen and (max-width: "768px") {
+          width: fit-content;
+          ;
+        }
 
         a {
 
@@ -205,6 +183,37 @@
         }
 
       }
+
+      span {
+        display: block;
+        position: relative;
+        width: 100%;
+
+        &:last-child {
+          @media only screen and (max-width: "991px") {
+            display: none;
+          }
+        }
+
+        img {
+          @extend .image;
+        }
+
+        p {
+          @include paragraph.paragraph_mixin;
+          color: colors.$primary_dark4;
+          text-align: justify;
+          font-size: 14px;
+
+        }
+
+
+        @media only screen and (max-width:"768px") {
+          display: none;
+        }
+      }
+
+
     }
   }
 

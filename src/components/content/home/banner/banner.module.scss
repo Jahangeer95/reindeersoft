@@ -1,5 +1,29 @@
 @use "../../../../sass/gradient";
+@use "../../../../sass/colors";
 
 .homeBannerImage {
-    @include gradient.bannerGradient(url("../assets/images/home/Liqq.gif"));
+    @include gradient.bannerGradient(url("../assets/images/home/banner.gif"));
+    max-height: fit-content;
+
+    div {
+        div {
+            article {
+                width: 70%;
+                min-width: 600px;
+                max-width: 800px;
+                gap: 20px;
+
+                @media only screen and (max-width: "768px") {
+                    width: 100%;
+                    min-width: fit-content;
+                }
+
+                h1 {
+                    text-shadow: 2px 2px 4px rgba(colors.$reindeer-lightbrown, 0.8);
+
+                }
+
+            }
+        }
+    }
 }
