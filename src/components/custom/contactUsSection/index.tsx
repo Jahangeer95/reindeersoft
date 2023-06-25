@@ -7,13 +7,14 @@ import { useView } from "@/hooks/useView";
 const ContactUsSection = () => {
   const { ref, inView } = useView();
   return (
-    <section
-      ref={ref}
-      className={`${styles.contactUsSectionMain} ${
-        inView ? styles.visible : ""
-      }`}
-    >
-      <Container fluid="lg">
+    <section className={styles.contactUsSectionMain}>
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div>
           <h2>Contact us</h2>
           <ContactUsForm />

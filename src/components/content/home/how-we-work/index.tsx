@@ -7,11 +7,14 @@ import styles from "./howWeWork.module.scss";
 const HowWeWork = () => {
   const { ref, inView } = useView();
   return (
-    <section
-      ref={ref}
-      className={`${styles.howWeWorkMain} ${inView ? styles.visible : ""}`}
-    >
-      <Container fluid="lg">
+    <section className={styles.howWeWorkMain}>
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2>How We Work</h2>
           <article>

@@ -18,11 +18,14 @@ const Faqs = () => {
   };
 
   return (
-    <section
-      ref={ref}
-      className={`${styles.faqsMain} ${inView ? styles.visible : ""}`}
-    >
-      <Container fluid="lg">
+    <section className={styles.faqsMain}>
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2>{data.title}</h2>
           <article>

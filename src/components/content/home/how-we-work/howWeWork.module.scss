@@ -9,8 +9,6 @@
     position: relative;
     padding: 80px 0;
 
-    @include vis.hiddenVisibility;
-
     div {
 
         div {
@@ -109,6 +107,10 @@
     }
 }
 
-.howWeWorkMain.visible {
+.content-container {
+    @include vis.hiddenVisibility;
+}
+
+.content-container.visible {
     @include vis.showVisibility;
 }

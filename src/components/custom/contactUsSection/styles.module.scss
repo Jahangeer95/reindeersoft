@@ -6,7 +6,6 @@
 .contactUsSectionMain {
     padding: 80px 0;
     @include gradient.twoColorGradient;
-    @include visibility.hiddenVisibility;
 
     div {
         div {
@@ -25,6 +24,10 @@
     }
 }
 
-.contactUsSectionMain.visible {
+.content-container {
+    @include visibility.hiddenVisibility;
+}
+
+.content-container.visible {
     @include visibility.showVisibility;
 }

@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import { AboutUsContentType, AboutUsTitleType } from "@/types/home.type";
 import { useView } from "@/hooks/useView";
-import styles from "./about.module.scss";
+import styles from "./mission.module.scss";
 
 const About = () => {
   const { ref, inView } = useView();
@@ -11,11 +11,14 @@ const About = () => {
   ];
 
   return (
-    <section
-      ref={ref}
-      className={`${styles.aboutMain} ${inView ? styles.visible : ""}  `}
-    >
-      <Container fluid="lg">
+    <section className={styles.missionMain}>
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-center">{title}</h2>
           <article>
