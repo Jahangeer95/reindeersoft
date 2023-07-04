@@ -12,11 +12,11 @@ const Banner = () => {
         list={[]}
         imageClass={styles.homeBannerImage}
       />
-      <Image
+      {/* <Image
         src={require("../../../../assets/images/home/Liqq.gif")}
         alt="banner-image"
         style={{ display: "none" }}
-      />
+      /> */}
     </>
   );
 };
