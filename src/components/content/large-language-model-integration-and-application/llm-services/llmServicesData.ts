@@ -2,6 +2,7 @@ import llmIntegration from "@/assets/images/llm/llm-services-icon/llm-integratio
 import llmPromptEngineering from "@/assets/images/llm/llm-services-icon/llm-prompt-engineering.png";
 import llmTrainingAndCustomization from "@/assets/images/llm/llm-services-icon/llm-training-and-customization.png";
 import llmConsultationAndSupport from "@/assets/images/llm/llm-services-icon/llm-consultation-and-support.png";
+import llmApplications from "@/assets/images/llm/llm-services-icon/llm-applications.png";
 
 import { LLMServicesArrayType, LLMServicesTitleType } from "@/types/llm.type";
 
@@ -26,5 +27,10 @@ export const roboticServicesArray: LLMServicesArrayType = [
     id: "llm-app-four",
     value: "Consultation and Support",
     image: llmConsultationAndSupport,
+  },
+  {
+    id: "llm-app-five",
+    value: "Applications",
+    image: llmApplications,
   },
 ];

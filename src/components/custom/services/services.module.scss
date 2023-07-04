@@ -1,129 +1,105 @@
-@use "../../../sass/colors";
-@use "../../../sass/heading";
-@use "../../../sass/paragraph";
-@use "../../../sass/gradient";
-@use "../../../sass/visibility";
+@use "../../../sass/colors" as color;
+@use "../../../sass/heading" as h;
+@use "../../../sass/paragraph" as p;
+@use "../../../sass/gradient" as g;
+@use "../../../sass/visibility" as vis;
 
 .ServicesMain {
     padding: 80px 0;
-    @include visibility.hiddenVisibility;
+    @include vis.hiddenVisibility;
 
 
     div {
         div {
             h2 {
-
-                @include heading.levelTwo-heading;
-                margin-bottom: 80px;
+                @include h.levelTwo-heading;
             }
 
             article {
+                width: 100%;
                 display: flex;
                 justify-content: center;
-                flex-wrap: wrap;
+                flex-flow: row wrap;
+                gap: 4%;
                 row-gap: 50px;
-                column-gap: 12%;
-                min-width: 100%;
 
-                @media only screen and (max-width: "991px") {
-                    column-gap: 15%;
+                @media only screen and (max-width: "1200px") {
+                    gap: 5%;
+                    row-gap: 40px;
                 }
 
                 @media only screen and (max-width: "768px") {
-                    row-gap: 30px;
+                    gap: 6%;
+                    row-gap: 40px;
+                }
 
+                @media only screen and (max-width: "550px") {
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 40px;
                 }
 
                 button {
-                    position: relative;
-                    vertical-align: middle;
-                    width: 25%;
-                    max-width: 250px;
-                    aspect-ratio: 1/1;
-                    text-align: center;
-                    text-decoration: none;
-                    padding: 20px;
-                    border-radius: 40% 40px;
-                    transition: all 0.3s ease-in;
-                    transform: rotate(45deg);
-                    display: inline-block;
                     border: none;
-                    border-bottom: 15px ridge rgba(colors.$secondary_dark2, 0.8);
-                    @include gradient.lightGradient1;
+                    outline: none;
+                    width: 22%;
+                    padding: 20px;
+                    @include g.lightGradient2;
+                    box-shadow: 2px 4px 8px rgba(color.$primary_dark1, 0.22), -2px -4px 8px rgba(color.$primary_dark1, 0.22);
+                    border-radius: 10px;
+                    transition: all 0.3s ease-in;
 
-                    @media only screen and (max-width: "991px") {
+                    @media only screen and (max-width: "1200px") {
                         width: 30%;
-                        max-width: 200px;
-                        border-width: 10px;
                     }
 
                     @media only screen and (max-width: "768px") {
-                        width: 37%;
-                        border-width: 5px;
-
+                        width: 47%;
                     }
 
                     @media only screen and (max-width: "550px") {
-                        width: 60%;
-                        max-width: 180px;
+                        width: 70%;
+                        max-width: 300px;
+                        min-width: 250px;
                     }
 
-                    @media only screen and (max-width: "400px") {
-                        max-width: 160px;
+                    span {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        background-color: rgba(color.$primary_dark4, 1);
+                        border-radius: 50%;
+                        width: 100px;
+                        height: 100px;
+                        padding: 10px;
+                        transition: all 0.3s ease-in;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
 
-                    div {
-                        transform: rotate(-45deg);
-
-                        span {
-                            position: relative;
-                            top: -15px;
-                            margin: 0 auto;
-                            display: block;
-                            width: 30%;
-                            aspect-ratio: 1/1;
-                            margin-bottom: 20px;
-
-                            img {
-                                display: block;
-                                width: 100%;
-                                height: 100%;
-                            }
-                        }
-
-                        p {
-                            @include paragraph.paragraph-mixin;
-                            text-indent: unset;
-                            text-align: center;
-                            color: colors.$primary_dark3;
-                            transition: all 0.3s ease-in;
-
-                            @media only screen and (min-width: "1200px") {
-                                font-size: 1rem;
-                            }
-
-
-                        }
-
+                    p {
+                        margin: 40px auto;
+                        @include h.levelFive-heading;
+                        text-align: center;
+                        width: 100%;
+                        color: color.$primary_dark4;
+                        transition: all 0.3s ease-in;
                     }
 
                     &:hover {
-                        @include gradient.backgroundGradient;
-                        border-bottom: 15px ridge whitesmoke;
+                        @include g.darkGradient1;
 
-                        @media only screen and (max-width: "991px") {
-                            border-width: 10px;
-                        }
-
-                        @media only screen and (max-width: "768px") {
-                            border-width: 5px;
+                        span {
+                            background-color: color.$white-color;
                         }
 
                         p {
-                            color: colors.$primary_dark2;
+                            color: color.$white-color;
                         }
                     }
-
                 }
             }
         }
@@ -131,5 +107,5 @@
 }
 
 .ServicesMain.visible {
-    @include visibility.showVisibility
+    @include vis.showVisibility
 }

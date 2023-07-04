@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { Container } from "react-bootstrap";
 import Link from "next/link";
-import styles from "./hoverMenu.module.scss";
+import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { homeBannerArray } from "@/components/content/home/banner/HomeBannerData";
+const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.png");
 import { camelToDash } from "@/utils/functions/camelToDash";
 import { engagementModelData } from "./engagement";
-const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.png");
+import styles from "./hoverMenu.module.scss";
 
 const defaultValue = "";
 
@@ -66,6 +65,9 @@ const HoverMenu = (props: HoverMenuPropsType) => {
 
   const engagementModelMenu: JSX.Element = (
     <div className={styles.engagementModel}>
+      <span>
+        <Image src={menuImage} alt="nav-menu" />
+      </span>
       <aside>
         {engagementModelData.map((state, idx) => {
           return (
@@ -83,9 +85,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
           );
         })}
       </aside>
-      <span>
-        <Image src={menuImage} alt="nav-menu" />
-      </span>
+
       <span>
         <p>{menuText}</p>
       </span>

@@ -39,7 +39,7 @@
                         box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.15), -2px -4px 8px rgba(colors.$primary-dark1, 0.15);
                         user-select: none;
                         transition: all 0.3s ease-in;
-                        @include gradient.lightGradient3;
+                        @include gradient.backgroundGradient;
 
                         aside {
 
@@ -48,7 +48,7 @@
                             text-align: center;
                             display: block;
                             margin: auto 0;
-                            color: colors.$white-color;
+                            color: colors.$primary_dark2;
                             padding: 0 50px;
                             @include font.font(1.2rem, 1rem, 600);
 
@@ -67,8 +67,8 @@
                                 margin: 10px 0;
                                 padding: 10px;
                                 width: fit-content;
-                                color: colors.$white-color;
-                                @include gradient.lightGradient3;
+                                color: colors.$primary_dark2;
+                                @include gradient.backgroundGradient;
                                 @include font.font(1rem, 1rem, 500);
                                 word-wrap: break-word;
                                 text-align: left;

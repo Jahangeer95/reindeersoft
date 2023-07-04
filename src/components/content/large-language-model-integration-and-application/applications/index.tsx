@@ -5,7 +5,7 @@ import styles from "./llmApplications.module.scss";
 
 const LLMApplications = () => {
   return (
-    <section className={styles.llmApplicationsMain}>
+    <section className={styles.llmApplicationsMain} id="applications">
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-center">{data.llmApplicationTitle}</h2>

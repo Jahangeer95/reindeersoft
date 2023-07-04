@@ -1,14 +1,19 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import Link from "next/link";
+import Image from "next/image";
+import { Container } from "react-bootstrap";
 import * as data from "./ourServicesData";
+import { useView } from "@/hooks/useView";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./ourServices.module.scss";
-import Image from "next/image";
 
 const OurServices = () => {
+  const { ref, inView } = useView();
+
+  const classes = [styles.ourServicesMain, inView ? styles.visible : ""];
+
   return (
-    <section className={styles.ourServicesMain}>
+    <section ref={ref} className={classes.join(" ")}>
       <Container fluid="lg">
         <div className="d-flex flex-column align-items-center">
           <h2>{data.title}</h2>
@@ -19,7 +24,7 @@ const OurServices = () => {
                   <span>
                     <Image src={state.icon} alt={state.title} />
                   </span>
-                  <h5>{state.title}</h5>
+                  <p>{state.title}</p>
                 </Link>
               );
             })}

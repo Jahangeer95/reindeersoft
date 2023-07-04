@@ -60,7 +60,7 @@ export const homeBannerArray: homeBannerArrayTypes = [
   },
   {
     bannerImage: slide5,
-    heading: "Large Language Model(LLM) integration and applications",
+    heading: "Large Language Model",
     description: iot.description,
     list: iot.list,
   },

@@ -2,22 +2,19 @@
 @use "../../../../sass/heading" as h;
 @use "../../../../sass/paragraph" as p;
 @use "../../../../sass/colors" as color;
+@use "../../../../sass/visibility" as vis;
 
 .ourServicesMain {
     position: relative;
     padding: 80px 0;
 
     @include g.backgroundGradient;
+    @include vis.hiddenVisibility;
 
     div {
         div {
             h2 {
                 @include h.levelTwo-heading;
-            }
-
-            p {
-                @include p.paragraph-mixin;
-                text-align: center;
             }
 
             article {
@@ -84,7 +81,7 @@
                         }
                     }
 
-                    h5 {
+                    p {
                         margin: 40px auto;
                         @include h.levelFive-heading;
                         text-align: center;
@@ -100,7 +97,7 @@
                             background-color: color.$white-color;
                         }
 
-                        h5 {
+                        p {
                             color: color.$white-color;
                         }
                     }
@@ -108,4 +105,8 @@
             }
         }
     }
+}
+
+.ourServicesMain.visible {
+    @include vis.showVisibility
 }

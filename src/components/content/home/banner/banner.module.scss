@@ -7,10 +7,14 @@
 
     div {
         div {
+
             article {
                 width: 70%;
                 min-width: 600px;
                 max-width: 800px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 gap: 20px;
 
                 @media only screen and (max-width: "768px") {
@@ -21,6 +25,12 @@
                 h1 {
                     text-shadow: 2px 2px 4px rgba(colors.$reindeer-lightbrown, 0.8);
 
+                }
+
+                div {
+                    p {
+                        text-align: center;
+                    }
                 }
 
             }

@@ -37,6 +37,6 @@ export const ourServicesList: OurServiceListType = [
   },
   {
     icon: llm,
-    title: "Large Language Model(LLM) Integration and Applications",
+    title: "Large Language Model",
   },
 ];
