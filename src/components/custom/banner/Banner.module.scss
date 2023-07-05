@@ -54,6 +54,7 @@
                     color: colors.$white_color;
                     margin-bottom: 0;
                     @extend h1;
+                    animation: slide1 1.5s forwards;
 
                 }
 
@@ -139,6 +140,7 @@
 
 
                 @include animation.animation-heading-mixin(slide);
+                @include animation.animation-heading-mixin1(slide1);
                 @include animation.animation-p1-mixin(bottom-to-top);
                 @include animation.animation-p2-mixin(right-to-left);
                 @include animation.animation-scaleup-mixin(scale-up);

@@ -9,7 +9,21 @@
 
         to {
             opacity: 1;
-            transform: translateY(0px);
+            transform: translateX(0px);
+        }
+    }
+}
+
+@mixin animation-heading-mixin1($animation_name) {
+    @keyframes #{$animation_name} {
+        from {
+            transform: translateX(300px);
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0px);
         }
     }
 }
@@ -100,4 +114,3 @@
         }
     }
 }
-
