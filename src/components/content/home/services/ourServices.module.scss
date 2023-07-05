@@ -9,7 +9,7 @@
     padding: 80px 0;
 
     @include g.backgroundGradient;
-    @include vis.hiddenVisibility;
+
 
     div {
         div {
@@ -107,6 +107,10 @@
     }
 }
 
-.ourServicesMain.visible {
-    @include vis.showVisibility
+.content-container {
+    @include vis.hiddenVisibility;
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
 }

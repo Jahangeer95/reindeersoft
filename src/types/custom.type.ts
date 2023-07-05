@@ -11,7 +11,9 @@ export type ServicesPropTypes = {
 };
 
 export type BannerPropTypes = {
-  title: string;
+  title1?: string;
+  title2?: string;
+  title?: string;
   description: string;
   list: string[];
   imageClass: string;

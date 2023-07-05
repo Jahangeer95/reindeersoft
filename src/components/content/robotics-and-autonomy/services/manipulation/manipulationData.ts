@@ -9,9 +9,8 @@ export const title: RoboticsAutonomyServicesTitleType = "Manipulation";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [
-    "Manipulation is a critical component of robotics that enables robots to interact with the world around them in a precise and controlled manner. From manufacturing to healthcare to agriculture, manipulation is used in a wide range of industries to perform tasks that would be difficult or impossible for humans to do on their own.",
-    "At the heart of manipulation is the ability to control the movement and orientation of an object in a specific way to achieve a desired goal. This requires a deep understanding of the kinematics and dynamics of the robot and its environment.",
-    "At our company, we specialize in developing cutting-edge solutions for manipulation in robotic systems, including advanced techniques for inverse kinematics and inverse dynamics. Our team of experts has years of experience in this field, and we are dedicated to delivering innovative and effective solutions that meet the needs of our clients.",
+    "Manipulation plays a critical role in robotics, empowering robots to interact with the world around them in a precise and controlled manner. Its applications span across diverse industries, including manufacturing, healthcare, and agriculture, enabling robots to perform tasks that would be challenging or impossible for humans to accomplish independently.",
+    "At the core of manipulation lies the ability to exert precise control over the movement and orientation of objects, allowing robots to achieve desired goals with accuracy and efficiency. Our expertise encompasses advanced techniques such as inverse kinematics and inverse dynamics. With a team of seasoned experts who bring years of experience to the table, we are dedicated to delivering innovative and effective solutions tailored to meet the specific needs of our clients.",
   ],
   image: ManipulationImage,
 };

@@ -8,8 +8,8 @@ export const title: RoboticsAutonomyServiceTitleType = "Computer Vision";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [
-    "Computer vision is a rapidly growing field that has become an essential component of robotics technology. By using advanced algorithms to analyze and interpret visual data, robots equipped with computer vision systems can navigate complex environments, identify and manipulate objects, and perform a wide range of tasks with speed and precision.",
-    "At our company, we specialize in developing cutting-edge robotics systems that incorporate advanced computer vision technology. With years of experience in both robotics and computer vision, our experts are well-equipped to develop cutting-edge systems that utilize the latest technology and techniques. ",
+    "Computer vision is a rapidly evolving field that has become an indispensable component of robotics technology. By leveraging advanced algorithms to analyze and interpret visual data, robots equipped with computer vision systems can seamlessly navigate complex environments, accurately identify and manipulate objects, and perform a diverse range of tasks with exceptional speed and precision.",
+    "We specialize in developing robotics systems that integrate advanced computer vision technology. With extensive experience in both robotics and computer vision, our team of experts is well-equipped to design cutting-edge systems that harness the latest techniques and technologies. We are dedicated to delivering innovative solutions that leverage the power of computer vision to enhance the capabilities and performance of robotic systems.",
   ],
   image: ComputerVisionImage,
 };

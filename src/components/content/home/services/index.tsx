@@ -10,11 +10,15 @@ import styles from "./ourServices.module.scss";
 const OurServices = () => {
   const { ref, inView } = useView();
 
-  const classes = [styles.ourServicesMain, inView ? styles.visible : ""];
-
   return (
-    <section ref={ref} className={classes.join(" ")}>
-      <Container fluid="lg">
+    <section className={styles.ourServicesMain}>
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2>{data.title}</h2>
           <article>

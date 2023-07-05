@@ -9,8 +9,8 @@ export const title: RoboticsAutonomyServiceTitleType = "Simulation";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [
-    "Computer vision is a rapidly growing field that has become an essential component of robotics technology. By using advanced algorithms to analyze and interpret visual data, robots equipped with computer vision systems can navigate complex environments, identify and manipulate objects, and perform a wide range of tasks with speed and precision.",
-    "At our company, we specialize in developing cutting-edge robotics systems that incorporate advanced computer vision technology. With years of experience in both robotics and computer vision, our experts are well-equipped to develop cutting-edge systems that utilize the latest technology and techniques. ",
+    "A robotic simulation is a powerful tool that empowers companies to thoroughly test and refine their robotics designs prior to physical implementation. By leveraging a sophisticated physics-based simulator, we can create a realistic virtual environment that accurately replicates robotic movements and behaviors. This enables us to identify potential issues, explore various scenarios, and optimize designs for optimal performance and efficiency.",
+    "Our team utilizes state-of-the-art physics-based simulation software, enabling you to test your robotics systems with unparalleled accuracy and precision. Through rigorous simulation and validation, we ensure that your robotics designs meet the highest standards of quality and performance.",
   ],
   image: SimulationImage,
 };

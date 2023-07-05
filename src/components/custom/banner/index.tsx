@@ -1,11 +1,13 @@
 import React from "react";
+import { useRouter } from "next/router";
 import { Container } from "react-bootstrap";
 import { handleClickScroll } from "@/utils/functions/scrollingHandler";
 import { BannerPropTypes } from "@/types/custom.type";
 import styles from "./Banner.module.scss";
 
 const CustomBanner = (props: BannerPropTypes) => {
-  const { title, description, list, imageClass } = props;
+  const { title1, title2, title, description, list, imageClass } = props;
+  const { pathname } = useRouter();
 
   const classes = [styles.BannerMain, imageClass];
 
@@ -25,7 +27,15 @@ const CustomBanner = (props: BannerPropTypes) => {
       <Container>
         <div>
           <article>
-            <h1>{title}</h1>
+            {pathname === "/" ? (
+              <>
+                <h1 className={styles.homeTitle}>{title1}</h1>
+                <h2>{title2}</h2>
+              </>
+            ) : (
+              <h1>{title}</h1>
+            )}
+
             <div>
               <p>{description}</p>
 

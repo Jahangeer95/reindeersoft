@@ -1,0 +1,3 @@
+// About us overvew Data types...
+export type AboutUsOverviewTitleType = string;
+export type AboutUsOverviewConTentType = string[];

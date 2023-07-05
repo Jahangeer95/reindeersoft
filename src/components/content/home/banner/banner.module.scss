@@ -27,6 +27,23 @@
 
                 }
 
+                h2 {
+                    text-shadow: 2px 2px 3px rgba(colors.$reindeer-lightbrown, 0.8);
+
+                    &::before {
+                        content: '❝';
+                        color: colors.$white-color;
+                        text-shadow: 2px 2px 3px rgba(colors.$reindeer-lightbrown, 0.8);
+                    }
+
+                    &::after {
+                        content: '❞';
+                        color: colors.$white-color;
+                        text-shadow: 2px 2px 3px rgba(colors.$reindeer-lightbrown, 0.8);
+                    }
+
+                }
+
                 div {
                     p {
                         text-align: center;

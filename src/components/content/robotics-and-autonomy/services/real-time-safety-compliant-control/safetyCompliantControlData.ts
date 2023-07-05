@@ -10,8 +10,8 @@ export const title: RoboticsAutonomyServiceTitleType =
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [
-    "Real-time safety compliant control is a crucial component of robotics that ensures the safety of both the robot and the people who work around it. It involves continuously monitoring the robot's movements and behaviors and taking corrective action if it detects any potential safety hazards.",
-    "At our company, we specialize in developing real-time safety compliant control solutions for robotic systems that are designed to offer theoretical guarantees on safety. At our company, we pride ourselves on having a team of experts with years of experience in the field. Whether you're looking for cutting-edge robotics technology or customized solutions, we have the knowledge and expertise to deliver results that exceed your expectations.",
+    "Real-time safety-compliant control is a crucial aspect of robotics, ensuring the safety of both robots and the individuals who interact with them. It involves continuous monitoring of a robot's movements and behaviors, and promptly taking corrective actions to mitigate potential safety hazards.",
+    "We specialize in developing advanced real-time safety-compliant control solutions for robotic systems, offering theoretical guarantees on safety. We have a deep understanding and practical experience in incorporating safety protocols into the control scheme of every project. Whether you are seeking advanced robotics technology or customized solutions, we prioritize the well-being of your workforce and the seamless integration of robotics into your operations.",
   ],
   image: RealTimeSafetyImage,
 };

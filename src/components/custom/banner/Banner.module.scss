@@ -2,6 +2,7 @@
 @use "../../../sass/font";
 @use "../../../sass/animation";
 @use "../../../sass/paragraph";
+@use "../../../sass/heading";
 
 .BannerMain {
     position: relative;
@@ -46,6 +47,13 @@
                         width: 80%;
                     }
 
+                }
+
+                h2 {
+                    @include heading.levelTwo-heading;
+                    color: colors.$white_color;
+                    margin-bottom: 0;
+                    @extend h1;
 
                 }
 
@@ -137,4 +145,8 @@
             }
         }
     }
+}
+
+.homeTitle {
+    text-transform: none !important;
 }
