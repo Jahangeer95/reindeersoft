@@ -38,7 +38,8 @@
                     width: fit-content;
                     color: colors.$white_color;
                     text-align: center;
-                    @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
+                    // @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
+                    @include font.font(2.3rem, 120%, 700);
                     text-transform: uppercase;
                     margin-bottom: 0;
                     animation: slide 1.5s forwards;
@@ -50,10 +51,11 @@
                 }
 
                 h2 {
+                    @extend h1;
                     @include heading.levelTwo-heading;
                     color: colors.$white_color;
                     margin-bottom: 0;
-                    @extend h1;
+
                     animation: slide1 1.5s forwards;
 
                 }

@@ -6,7 +6,6 @@
 
 .ServicesMain {
     padding: 80px 0;
-    @include vis.hiddenVisibility;
 
 
     div {
@@ -106,6 +105,12 @@
     }
 }
 
-.ServicesMain.visible {
-    @include vis.showVisibility
+
+
+.content-container {
+    @include vis.hiddenVisibility;
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
 }

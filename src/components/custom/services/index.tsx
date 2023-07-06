@@ -10,15 +10,17 @@ const Services = (props: ServicesPropTypes) => {
   const { title, servicesArray, serviceClass } = props;
   const { ref, inView } = useView();
 
-  const classes = [
-    styles.ServicesMain,
-    serviceClass,
-    inView ? styles.visible : "",
-  ];
+  const classes = [styles.ServicesMain, serviceClass];
 
   return (
-    <section ref={ref} className={classes.join(" ")}>
-      <Container fluid="lg">
+    <section className={classes.join(" ")}>
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-center">{title}</h2>
           <article>

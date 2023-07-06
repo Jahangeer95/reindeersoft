@@ -6,6 +6,7 @@ import logo from "@/assets/images/logo.png";
 import styles from "./header.module.scss";
 import { Transition } from "react-transition-group";
 import HoverMenu from "./nav-menu";
+import { useRouter } from "next/router";
 
 const Header = () => {
   const [pos, setPos] = useState("top");
@@ -13,6 +14,7 @@ const Header = () => {
   const [display, setDisplay] = useState(false);
   const [hideSideBar, setHideSideBar] = useState(true);
   const [button, setButton] = useState<null | any>(null);
+  const { pathname } = useRouter();
 
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
@@ -49,6 +51,11 @@ const Header = () => {
       setDisplay(false);
     }
   };
+
+  useEffect(() => {
+    setValue(false);
+    setDisplay(false);
+  }, [pathname]);
 
   return (
     <>
