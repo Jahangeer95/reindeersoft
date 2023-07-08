@@ -80,16 +80,33 @@
 
 .text-container {
     @include visibility.hiddenVisibilityRightToLeft;
+
+    @media only screen and (max-width: "768px") {
+        @include visibility.hiddenVisibilityLeftToRight;
+    }
 }
 
 .text-container.visible {
     @include visibility.showVisibilityRightToLeft;
+
+    @media only screen and (max-width: "768px") {
+        @include visibility.showVisibilityLeftToRight;
+    }
 }
 
 .image-container {
     @include visibility.hiddenVisibilityLeftToRight;
+
+    @media only screen and (max-width: "768px") {
+        @include visibility.hiddenVisibilityRightToLeft;
+    }
+
 }
 
 .image-container.visible {
     @include visibility.showVisibilityLeftToRight;
+
+    @media only screen and (max-width: "768px") {
+        @include visibility.showVisibilityRightToLeft;
+    }
 }

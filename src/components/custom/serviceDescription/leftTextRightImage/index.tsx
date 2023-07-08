@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import { ServiceDescriptionPropTypes } from "@/types/custom.type";
 import { useView } from "@/hooks/useView";
-import styles from "./style.module.scss";
+import styles from "./rightDescription.module.scss";
 
 const LeftServiceDescription = (props: ServiceDescriptionPropTypes) => {
   const { title, content } = props;
