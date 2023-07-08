@@ -1,10 +1,12 @@
-@use "../../../../../sass/heading";
-@use "../../../../../sass/paragraph";
-@use "../../../../../sass/gradient";
-@use "../../../../../sass/colors";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/gradient";
+@use "../../../../sass/colors";
+@use "../../../../sass/visibility";
 
-.manipulationMain {
+.leftServiceDescriptionMain {
     padding: 80px 0;
+
 
     div {
         div {
@@ -74,4 +76,20 @@
             }
         }
     }
+}
+
+.image-container {
+    @include visibility.hiddenVisibilityRightToLeft;
+}
+
+.image-container.visible {
+    @include visibility.showVisibilityRightToLeft;
+}
+
+.text-container {
+    @include visibility.hiddenVisibilityLeftToRight;
+}
+
+.text-container.visible {
+    @include visibility.showVisibilityLeftToRight;
 }

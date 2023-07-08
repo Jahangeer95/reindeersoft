@@ -23,3 +23,11 @@ export type ServicesPropTypes = {
   }[];
   serviceClass: string;
 };
+
+export type ServiceDescriptionPropTypes = {
+  title: string;
+  content: {
+    description: string[];
+    image: StaticImageData;
+  };
+};

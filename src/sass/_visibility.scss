@@ -1,10 +1,32 @@
 @mixin hiddenVisibility {
     transform: translateY(100px);
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 0.7s ease-in-out;
 }
 
 @mixin showVisibility {
     transform: translateY(0px);
+    opacity: 1;
+}
+
+@mixin hiddenVisibilityRightToLeft {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+}
+
+@mixin showVisibilityRightToLeft {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+@mixin hiddenVisibilityLeftToRight {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+}
+
+@mixin showVisibilityLeftToRight {
+    transform: translateX(0px);
     opacity: 1;
 }

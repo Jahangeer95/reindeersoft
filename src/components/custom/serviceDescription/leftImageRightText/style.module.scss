@@ -1,11 +1,13 @@
-@use "../../../../../sass/heading";
-@use "../../../../../sass/paragraph";
-@use "../../../../../sass/gradient";
-@use "../../../../../sass/colors";
+@use "../../../../sass/font";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/colors";
+@use "../../../../sass/gradient";
+@use "../../../../sass/visibility";
 
-.roboticsHardwareMain {
+.rightServiceDescriptionMain {
     padding: 80px 0;
-
+    @include gradient.backgroundGradient;
 
     div {
         div {
@@ -35,7 +37,7 @@
 
                     }
 
-                    &:nth-child(2) {
+                    &:first-child {
                         width: 35%;
                         position: relative;
                         border-radius: 20px;
@@ -51,11 +53,10 @@
                             width: 100%;
                             height: fit-content;
                             border-radius: 20px;
-
                         }
                     }
 
-                    &:first-child {
+                    &:nth-child(2) {
                         width: 60%;
 
                         @media only screen and (max-width: "768px") {
@@ -75,4 +76,20 @@
             }
         }
     }
+}
+
+.text-container {
+    @include visibility.hiddenVisibilityRightToLeft;
+}
+
+.text-container.visible {
+    @include visibility.showVisibilityRightToLeft;
+}
+
+.image-container {
+    @include visibility.hiddenVisibilityLeftToRight;
+}
+
+.image-container.visible {
+    @include visibility.showVisibilityLeftToRight;
 }

@@ -3,27 +3,10 @@ import Image from "next/image";
 import * as data from "./integrationData";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./integration.module.scss";
+import LeftServiceDescription from "@/components/custom/serviceDescription/leftTextRightImage";
 
 const Integration = () => {
-  return (
-    <section className={styles.integrationMain} id={camelToDash(data.title)}>
-      <Container fluid="lg">
-        <div className="d-flex flex-column align-items-center">
-          <article>
-            <span>
-              <h3 className="text-center">{data.title}</h3>
-              {data.content.description.map((state, idx) => (
-                <p key={idx}>{state}</p>
-              ))}
-            </span>
-            <span>
-              <Image src={data.content.image} alt={data.title} />
-            </span>
-          </article>
-        </div>
-      </Container>
-    </section>
-  );
+  return <LeftServiceDescription title={data.title} content={data.content} />;
 };
 
 export default Integration;
