@@ -4,42 +4,58 @@
 @use "../../../../sass/paragraph";
 @use "../../../../sass/gradient";
 
-.IotMain {
+.aboutBannerMain {
     position: relative;
     margin-top: 100px;
-    @include gradient.bannerGradient(url("../assets/images/about-us/about-banner.jpg"));
-    background-size: cover;
+    @include gradient.bannerGradient(url("../assets/images/about-us/about-banner.png"));
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center right;
     aspect-ratio: 1/0.49;
     min-height: 320px;
-    max-height: 550px;
+    max-height: 650px;
     width: 100%;
 
     div {
         div {
             article {
                 position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 90%;
-                margin-left: 10%;
-                height: 100%;
+                width: 70%;
+                min-width: 600px;
+                max-width: 1200px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                gap: 30px;
+                gap: 20px;
 
                 @media only screen and (max-width: "768px") {
-                    gap: 15px;
+                    width: 100%;
+                    min-width: fit-content;
+                }
+
+                span {
+                    width: 50px;
+                    height: 50px;
+                    background-color: gold;
+                    font-size: 35px;
+                    display: flex;
+                    margin-left: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    color: colors.$secondary_dark2;
+                    animation: scale-up 1.5s forwards;
                 }
 
                 h1 {
                     display: block;
-                    color: colors.$white_color;
-                    text-align: left;
-                    @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
+                    color: gold;
+                    text-align: center;
+                    @include font.font(2.3rem, 120%, 700);
                     text-transform: uppercase;
                     margin-bottom: 0;
                     animation: slide 1.5s forwards;
@@ -69,8 +85,9 @@
                         width: 100%;
                         @include paragraph.paragraph-mixin;
                         text-indent: unset;
-                        color: colors.$white-color;
-                        animation: bottom-to-top 1.5s forwards;
+                        text-align: left;
+                        color: gold;
+                        animation: right-to-left 1.5s forwards;
                         margin: 0;
 
                         @media only screen and (max-width: "768px") {
@@ -78,6 +95,21 @@
                         }
                     }
 
+                }
+
+                a {
+                    padding: 7px 10px;
+                    background-color: gold;
+                    color: colors.$secondary_dark2;
+                    margin-left: 10px;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    transition: all 0.3s ease-in;
+                    animation: bottom-to-top 1.5s forwards;
+
+                    &:hover {
+                        background-color: rgba(gold, 0.7);
+                    }
                 }
 
 
