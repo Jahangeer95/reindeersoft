@@ -80,6 +80,12 @@
 
 .image-container {
     @include visibility.hiddenVisibilityRightToLeft;
+
+    @media only screen and (max-width: "768px") {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: all 0.7s ease-in-out;
+    }
 }
 
 .image-container.visible {
@@ -88,8 +94,27 @@
 
 .text-container {
     @include visibility.hiddenVisibilityLeftToRight;
+
+    @media only screen and (max-width: "768px") {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: all 0.7s ease-in-out;
+    }
 }
 
 .text-container.visible {
     @include visibility.showVisibilityLeftToRight;
+
+}
+
+.content-container {
+    @media only screen and (max-width: "768px") {
+        @include visibility.hiddenVisibility;
+    }
+}
+
+.content-container.visible {
+    @media only screen and (max-width: "768px") {
+        @include visibility.showVisibility;
+    }
 }

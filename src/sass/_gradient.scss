@@ -30,7 +30,7 @@
 }
 
 @mixin bannerGradient1 ($banner-image) {
-    background-image: linear-gradient(rgba(colors.$secondary_dark2, 0.7), rgba(colors.$secondary_dark2, 0.7)),
+    background-image: linear-gradient(rgba(colors.$secondary_dark2, 0.6), rgba(colors.$secondary_dark2, 0.6)),
     #{$banner-image};
 }
 

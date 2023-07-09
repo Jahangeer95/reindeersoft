@@ -82,31 +82,39 @@
     @include visibility.hiddenVisibilityRightToLeft;
 
     @media only screen and (max-width: "768px") {
-        @include visibility.hiddenVisibilityLeftToRight;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: all 0.7s ease-in-out;
     }
 }
 
 .text-container.visible {
     @include visibility.showVisibilityRightToLeft;
 
-    @media only screen and (max-width: "768px") {
-        @include visibility.showVisibilityLeftToRight;
-    }
 }
 
 .image-container {
     @include visibility.hiddenVisibilityLeftToRight;
 
     @media only screen and (max-width: "768px") {
-        @include visibility.hiddenVisibilityRightToLeft;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: all 0.7s ease-in-out;
     }
-
 }
 
 .image-container.visible {
     @include visibility.showVisibilityLeftToRight;
+}
 
+.content-container {
     @media only screen and (max-width: "768px") {
-        @include visibility.showVisibilityRightToLeft;
+        @include visibility.hiddenVisibility;
+    }
+}
+
+.content-container.visible {
+    @media only screen and (max-width: "768px") {
+        @include visibility.showVisibility;
     }
 }

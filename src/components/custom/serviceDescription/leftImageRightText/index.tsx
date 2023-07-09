@@ -14,7 +14,13 @@ const RightServiceDescription = (props: ServiceDescriptionPropTypes) => {
       className={styles.rightServiceDescriptionMain}
       id={camelToDash(title)}
     >
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <article>
             <span
