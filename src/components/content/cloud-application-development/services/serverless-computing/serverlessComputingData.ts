@@ -8,7 +8,8 @@ export const serverlessComputingTitle: CloudAppServiceTitleType =
   "Serverless Computing";
 export const serverlessComputingContent: CloudAppServiceContent = {
   description: [
-    "Reduce operational overhead and accelerate innovation with our Serverless Application Development services. We design and build applications that take full advantage of serverless computing, allowing you to focus on your core business while we handle the infrastructure management. Enjoy the benefits of reduced costs, improved scalability, and faster time-to-market as you harness the power of serverless technology.",
+    "Serverless computing is a cloud computing model where the cloud provider manages server provisioning and dynamically allocates and scales computing resources based on the application's needs. This leads to increased productivity and cost efficiency, as businesses can focus entirely on their core business logic.",
+    "We specialize in designing and building applications that fully leverage serverless technologies such as AWS Lambda, Azure Functions, and GCP Cloud Functions. By harnessing the power of serverless technology, you can enjoy the benefits of reduced costs, improved scalability, and faster time-to-market. Our expertise in serverless architecture allows us to deliver efficient and highly performant solutions tailored to your specific needs.",
   ],
   image: serverlessComputing,
 };

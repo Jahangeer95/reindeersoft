@@ -18,22 +18,17 @@ export const qaServicesArray: CloudAppServicesArrayType = [
   },
   {
     id: "cloud-app-two",
-    value: "Cloud Migration",
+    value: "Migration To Cloud",
     image: cloudMigration,
   },
   {
     id: "cloud-app-three",
-    value: "Cloud Integration",
-    image: cloudIntegration,
-  },
-  {
-    id: "cloud-app-four",
     value: "Serverless Computing",
     image: serverlessComputing,
   },
   {
-    id: "cloud-app-five",
-    value: "Distributed Systems",
+    id: "cloud-app-four",
+    value: "Event Driven Applications",
     image: distributedSystem,
   },
 ];

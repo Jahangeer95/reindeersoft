@@ -1,9 +1,9 @@
+import LeftServiceDescription from "@/components/custom/serviceDescription/leftTextRightImage";
 import * as data from "./serverlessComputingData";
-import RightServiceDescription from "@/components/custom/serviceDescription/leftImageRightText";
 
 const ServerlessComputing = () => {
   return (
-    <RightServiceDescription
+    <LeftServiceDescription
       title={data.serverlessComputingTitle}
       content={data.serverlessComputingContent}
     />
