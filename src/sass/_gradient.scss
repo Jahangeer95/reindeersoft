@@ -29,10 +29,10 @@
     #{$banner-image};
 }
 
-// @mixin bannerGradient1 ($banner-image) {
-//     background-image: linear-gradient(rgba(colors.$secondary_dark1, 0.7), rgba(colors.$secondary_dark2, 0.7)),
-//     #{$banner-image};
-// }
+@mixin bannerGradient1 ($banner-image) {
+    background-image: linear-gradient(rgba(colors.$secondary_dark2, 0.7), rgba(colors.$secondary_dark2, 0.7)),
+    #{$banner-image};
+}
 
 @mixin backgroundGradient {
     background: linear-gradient(to top, rgba(colors.$secondary_light1, 0.3), rgba(colors.$secondary_light1, 0.3));

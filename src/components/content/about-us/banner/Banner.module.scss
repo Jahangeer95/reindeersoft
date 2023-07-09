@@ -10,7 +10,7 @@
     @include gradient.bannerGradient(url("../assets/images/about-us/about-banner.png"));
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: 85%;
     aspect-ratio: 1/0.49;
     min-height: 320px;
     max-height: 650px;
@@ -35,6 +35,7 @@
                 @media only screen and (max-width: "768px") {
                     width: 100%;
                     min-width: fit-content;
+                    margin-left: 10%;
                 }
 
                 span {
@@ -59,11 +60,6 @@
                     text-transform: uppercase;
                     margin-bottom: 0;
                     animation: slide 1.5s forwards;
-
-                    @media only screen and (max-width: "768px") {
-                        width: 80%;
-                    }
-
 
                 }
 
@@ -98,7 +94,7 @@
                 }
 
                 a {
-                    padding: 7px 10px;
+                    padding: 5px 10px;
                     background-color: gold;
                     color: colors.$secondary_dark2;
                     margin-left: 10px;

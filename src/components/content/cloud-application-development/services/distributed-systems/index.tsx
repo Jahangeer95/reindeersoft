@@ -3,30 +3,14 @@ import Image from "next/image";
 import * as data from "./distributedSystemData";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./distributedSystems.module.scss";
+import LeftServiceDescription from "@/components/custom/serviceDescription/leftTextRightImage";
 
 const DistributedSystems = () => {
   return (
-    <section
-      className={styles.DistributedSystemsMain}
-      id={camelToDash(data.distributedSystemTitle)}
-    >
-      <Container fluid="lg">
-        <div className="d-flex flex-column align-items-center">
-          <article>
-            <span>
-              <h3 className="text-center">{data.distributedSystemTitle}</h3>
-              <p>{data.distributedSystemContent.description}</p>
-            </span>
-            <span>
-              <Image
-                src={data.distributedSystemContent.image}
-                alt={data.distributedSystemTitle}
-              />
-            </span>
-          </article>
-        </div>
-      </Container>
-    </section>
+    <LeftServiceDescription
+      title={data.distributedSystemTitle}
+      content={data.distributedSystemContent}
+    />
   );
 };
 

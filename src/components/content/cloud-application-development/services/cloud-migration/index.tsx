@@ -1,32 +1,12 @@
-import { Container } from "react-bootstrap";
-import Image from "next/image";
 import * as data from "./cloudMigrationData";
-import { camelToDash } from "@/utils/functions/camelToDash";
-import styles from "./cloudMigrations.module.scss";
+import RightServiceDescription from "@/components/custom/serviceDescription/leftImageRightText";
 
 const CloudMigrations = () => {
   return (
-    <section
-      className={styles.CloudMigrationsMain}
-      id={camelToDash(data.cloudMigrationTitle)}
-    >
-      <Container fluid="lg">
-        <div className="d-flex flex-column align-items-center">
-          <article>
-            <span>
-              <Image
-                src={data.cloudMigrationContent.image}
-                alt={data.cloudMigrationTitle}
-              />
-            </span>
-            <span>
-              <h3 className="text-center">{data.cloudMigrationTitle}</h3>
-              <p>{data.cloudMigrationContent.description}</p>
-            </span>
-          </article>
-        </div>
-      </Container>
-    </section>
+    <RightServiceDescription
+      title={data.cloudMigrationTitle}
+      content={data.cloudMigrationContent}
+    />
   );
 };
 
