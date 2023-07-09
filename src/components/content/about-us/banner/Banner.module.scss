@@ -97,18 +97,21 @@
                 }
 
                 a {
-                    padding: 5px 10px;
+                    padding: 8px 12px;
                     background-color: colors.$white-color;
                     color: colors.$secondary_dark2;
                     margin-left: 10px;
-                    font-weight: 500;
+                    @include font.font(22px, 100%, 500);
+                    border: 1px solid colors.$white-color;
                     border-radius: 5px;
                     transition: all 0.3s ease-in;
                     animation: bottom-to-top 1.5s forwards;
                     box-shadow: 2px 4px 8px rgba(colors.$primary_dark1, 0.22);
 
                     &:hover {
-                        background-color: rgba(colors.$primary_light, 1);
+                        background-color: transparent;
+                        border: 1px solid colors.$white-color;
+                        color: colors.$white-color;
                     }
                 }
 
