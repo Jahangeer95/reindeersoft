@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import { Container } from "react-bootstrap";
 import * as data from "./engagementModalData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import { useView } from "@/hooks/useView";
 import styles from "./howWeWork.module.scss";
 
 const HowWeWork = () => {
   const { ref, inView } = useView();
+  const router = useRouter();
+
+  useEffect(() => {
+    const { query } = router;
+    const elementId: string | any = query.id;
+
+    if (elementId) {
+      const element = document.getElementById(elementId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [router]);
+
   return (
-    <section className={styles.howWeWorkMain}>
+    <section
+      className={styles.howWeWorkMain}
+      id={camelToDash("Engagement Modal")}
+    >
       <Container
         fluid="lg"
         ref={ref}

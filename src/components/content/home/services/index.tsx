@@ -11,7 +11,7 @@ const OurServices = () => {
   const { ref, inView } = useView();
 
   return (
-    <section className={styles.ourServicesMain}>
+    <section className={styles.ourServicesMain} id="our-services">
       <Container
         fluid="lg"
         ref={ref}
