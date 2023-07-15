@@ -1,5 +1,18 @@
-import AboutUs from "@/components/content/about-us";
+// import AboutUs from "@/components/content/about-us";
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import { Spinner } from "react-bootstrap";
+
+const AboutUs = dynamic(() => import("@/components/content/about-us"), {
+  loading: () => (
+    <div
+      style={{ height: "70vh", marginTop: "120px" }}
+      className="d-flex align-items-center justify-content-center"
+    >
+      <Spinner variant="primary" animation="border" />
+    </div>
+  ),
+});
 
 export default function AboutUsPage() {
   return (
