@@ -50,13 +50,6 @@
   text-align: justify;
   text-justify: inter-word;
 
-  // &:last-child {
-  //   @media only screen and (min-width: "768px") {
-  //     grid-column: 1/span 2;
-  //   }
-
-  // }
-
   @media screen and (min-width: "768px") {
     &::before {
       position: absolute;
@@ -177,9 +170,6 @@
 
           @extend .anchorTag;
 
-          // &:last-child {
-          //   grid-column: auto;
-          // }
         }
 
       }

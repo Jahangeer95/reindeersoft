@@ -1,6 +1,8 @@
-export const title = "Frequently Asked Questions";
+import { FaqsContentType, FaqsTitleType } from "@/types/home.type";
 
-export const faqsContent = [
+export const title: FaqsTitleType = "Frequently Asked Questions";
+
+export const faqsContent: FaqsContentType = [
   {
     question: "Do you offer custom software development services?",
     answer:

@@ -13,7 +13,7 @@ export const title: OurServicesTitleType = "Service Offerings";
 export const ourServicesList: OurServiceListType = [
   {
     icon: webAppDevelopment,
-    title: "Web and App Development",
+    title: "Web and Mobile Applications",
   },
   {
     icon: dedicatedDevelopmentTeam,

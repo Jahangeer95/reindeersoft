@@ -2,11 +2,20 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./llmApplicationsData";
 import styles from "./llmApplications.module.scss";
+import { useView } from "@/hooks/useView";
 
 const LLMApplications = () => {
+  const { ref, inView } = useView();
+
   return (
     <section className={styles.llmApplicationsMain} id="applications">
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-center">{data.llmApplicationTitle}</h2>
           <article>

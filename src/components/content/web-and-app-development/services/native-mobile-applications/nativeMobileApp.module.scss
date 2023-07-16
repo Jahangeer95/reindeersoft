@@ -1,0 +1,33 @@
+@use "../../../../../sass/heading";
+@use "../../../../../sass/paragraph";
+@use "../../../../../sass/gradient";
+@use "../../../../../sass/visibility" as vis;
+
+.nativeMobileAppMain {
+    position: relative;
+    padding: 80px 0;
+    @include gradient.backgroundGradient;
+
+    div {
+        div {
+
+            h2 {
+                @include heading.levelTwo-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                }
+            }
+        }
+    }
+}
+
+.content-container {
+    @include vis.hiddenVisibility;
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
+}

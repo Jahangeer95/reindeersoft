@@ -9,13 +9,13 @@
 
     div {
         div {
-            padding-bottom: 50px;
 
             h3 {
                 @include heading.levelThree-heading;
             }
 
             article {
+
                 p {
                     @include paragraph.paragraph-mixin;
                 }
@@ -27,11 +27,12 @@
                     align-items: center;
                     justify-content: center;
                     padding: 0;
-                    margin-top: 50px;
+                    margin: 50px 0;
                     row-gap: 20px;
 
                     li {
                         position: relative;
+                        width: 100%;
                         @include paragraph.paragraph-mixin;
                         display: flex;
                         margin: 0;
@@ -43,7 +44,6 @@
                         @include gradient.lightGradient3;
 
                         aside {
-
                             height: fit-content;
                             background-color: transparent;
                             text-align: center;
@@ -59,6 +59,7 @@
                         }
 
                         p {
+                            width: 100%;
                             background-color: colors.$white-color;
                             border-radius: 0 10px 10px 0;
                             text-indent: unset;
@@ -79,6 +80,7 @@
                                     @include font.font(0.8rem, 1rem, 400);
                                     padding: 10px 20px;
                                     background: transparent;
+                                    text-align: justify;
 
                                 }
 
@@ -88,83 +90,41 @@
 
                     }
                 }
-            }
 
+                &:last-child {
+                    width: 100%;
 
-        }
-
-        &:nth-child(2) {
-            // @include gradient.lightGradient2;
-
-            @include gradient.backgroundGradient;
-
-            div {
-                div {
-
-                    article {
-                        padding-top: 50px;
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        margin-bottom: 50px;
+                        gap: 20px;
 
                         h4 {
+                            flex: 0 0 100%;
                             @include heading.levelFour-heading;
-                            margin-bottom: 50px;
-                            width: 100%;
                         }
 
-                        div {
-                            display: flex;
-                            justify-content: center;
-                            flex-wrap: wrap;
-                            gap: 15px;
-                            background: none;
-                            padding: 0;
+                        span {
+                            display: inline-block;
+                            width: 100px;
+                            aspect-ratio: 1/1;
+                            padding: 20px;
+                            border-radius: 50%;
+                            background-color: colors.$white-color;
+                            box-shadow: 2px 3px 8px rgba(colors.$primary_dark2, 0.20);
 
-                            aside {
-
-                                // background-color: colors.$white-color;
-                                @include gradient.lightGradient3;
-                                width: max(7rem);
-                                padding: 10px 0;
-                                aspect-ratio: 1/1;
-                                border-radius: 10px;
-                                box-shadow: 2px 4px 4px rgba(colors.$primary-dark1, 0.25);
-                                transition: all 0.3s ease-in;
-
-                                &:hover {
-                                    @include gradient.lightGradient2;
-                                }
-
-                                // &:nth-child(even) {
-                                //     @include gradient.darkGradient1;
-
-                                //     &:hover {
-                                //         background: linear-gradient(to top left, rgba(colors.$primary-dark1, 1), rgba(colors.$primary-dark2, 0.7));
-                                //     }
-
-                                //     h5 {
-                                //         color: colors.$white-color;
-                                //     }
-
-                                //     span {
-                                //         color: colors.$white-color;
-                                //     }
-                                // }
-
-                                h5 {
-                                    @include heading.levelFive-heading;
-                                    color: colors.$white-color;
-                                }
-
-                                span {
-                                    font-size: 2rem;
-                                    color: colors.$primary_dark3;
-                                }
+                            img {
+                                width: 100%;
+                                height: 100%;
                             }
                         }
                     }
                 }
             }
+
+
         }
     }
-
-
 }

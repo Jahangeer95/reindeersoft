@@ -3,7 +3,7 @@ import slide2 from "@/assets/images/homeSlider/slide2.jpg";
 import slide3 from "@/assets/images/homeSlider/slide3.jpg";
 import slide4 from "@/assets/images/homeSlider/automation-testing1.png";
 import slide5 from "@/assets/images/homeSlider/slide4.jpg";
-import { homeBannerArrayTypes } from "@/types/home.type";
+import { HomeBannerDataType, homeBannerArrayTypes } from "@/types/home.type";
 import * as webAndAppDevelopment from "../../web-and-app-development/banner/bannerData";
 import * as cloudApplicationAndDevelopment from "../../cloud-application-development/banner/bannerData";
 import * as qaAndTestAutomation from "../../qa-and-test-automation/banner/bannerData";
@@ -16,7 +16,7 @@ import * as iot from "../../iot/banner/bannerData";
 export const homeBannerArray: homeBannerArrayTypes = [
   {
     bannerImage: slide1,
-    heading: "Web and App Development",
+    heading: "Web and Mobile Applications",
     description: webAndAppDevelopment.description,
     list: webAndAppDevelopment.list,
   },
@@ -65,3 +65,10 @@ export const homeBannerArray: homeBannerArrayTypes = [
     list: iot.list,
   },
 ];
+
+export const homeBannerData: HomeBannerDataType = {
+  title1: "ReindeerSoft",
+  title2: "Embrace Ethics, Pursue Excellence",
+  description:
+    "We specialize in driving business growth through innovative digital solutions. Our focus is on creating streamlined software solutions to address intricate challenges, simplifying complexity for our clients.",
+};

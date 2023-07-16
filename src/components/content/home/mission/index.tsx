@@ -1,14 +1,10 @@
 import { Container } from "react-bootstrap";
-import { AboutUsContentType, AboutUsTitleType } from "@/types/home.type";
+import * as data from "./missionData";
 import { useView } from "@/hooks/useView";
 import styles from "./mission.module.scss";
 
-const About = () => {
+const MissionStatement = () => {
   const { ref, inView } = useView();
-  const title: AboutUsTitleType = "Mission Statement";
-  const contentArr: AboutUsContentType = [
-    '"To strive for excellence in all aspects of our work, constantly pushing the boundaries of innovation to deliver products and services that exceed expectations at competitive cost."',
-  ];
 
   return (
     <section className={styles.missionMain}>
@@ -20,9 +16,9 @@ const About = () => {
         }`}
       >
         <div className="d-flex flex-column align-items-center">
-          <h2 className="text-center">{title}</h2>
+          <h2 className="text-center">{data.title}</h2>
           <article>
-            {contentArr.map((state, idx) => (
+            {data.contentArr.map((state, idx) => (
               <p key={idx}>{state}</p>
             ))}
           </article>
@@ -32,4 +28,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default MissionStatement;

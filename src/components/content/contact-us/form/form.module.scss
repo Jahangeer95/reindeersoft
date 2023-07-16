@@ -29,6 +29,10 @@
                 padding: 70px;
                 @include gradient.twoColorGradient;
                 border-radius: 10px;
+
+                @media (max-width: "768px") {
+                    padding: 20px;
+                }
             }
         }
     }

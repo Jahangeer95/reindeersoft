@@ -34,7 +34,8 @@ const Header = () => {
   };
 
   const handleClick = () => {
-    setValue((value) => !value);
+    // setValue((value) => !value);
+    setValue(false);
     setDisplay(false);
   };
 

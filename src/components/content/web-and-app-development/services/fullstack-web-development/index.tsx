@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 import * as data from "./webDevelopmentData";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./WebDevlopment.module.scss";
+import Image from "next/image";
 
 const WebDevelopmentServices = () => {
   return (
@@ -17,9 +18,9 @@ const WebDevelopmentServices = () => {
             {data.webDevelopmentDescription.map((state, idx) => (
               <p key={idx}>{state}</p>
             ))}
-
+            <p>Type of Websites</p>
             <ul>
-              {data.webDevelopmentTypeList.map((state, idx) => {
+              {data.websiteTypes.map((state, idx) => {
                 return (
                   <li key={idx}>
                     <aside>{idx + 1}</aside>
@@ -32,33 +33,24 @@ const WebDevelopmentServices = () => {
               })}
             </ul>
           </article>
-        </div>
-      </Container>
-      <div>
-        <Container>
-          <div>
+          <article>
             {data.webDevelopmentTechnologies.map((state, idx) => {
               return (
-                <article key={idx}>
-                  <h4 className="text-center">{state.heading}</h4>
-                  <div>
-                    {state.List.map((state, idx) => {
-                      return (
-                        <aside
-                          className="d-flex flex-column align-items-center justify-content-center"
-                          key={idx}
-                        >
-                          <h5>{state}</h5>
-                        </aside>
-                      );
-                    })}
-                  </div>
-                </article>
+                <div key={idx}>
+                  <h4 className="text-left">{state.heading}:</h4>
+                  {state.List.map((state, idx) => {
+                    return (
+                      <span key={idx}>
+                        <Image src={state.icon} alt={state.alt} />
+                      </span>
+                    );
+                  })}
+                </div>
               );
             })}
-          </div>
-        </Container>
-      </div>
+          </article>
+        </div>
+      </Container>
     </section>
   );
 };
