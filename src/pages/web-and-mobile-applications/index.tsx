@@ -1,4 +1,4 @@
-import WebAppDevelopment from "@/components/content/web-and-app-development";
+import WebAppDevelopment from "@/components/content/web-and-mobile-applications";
 import Head from "next/head";
 
 export default function mobileAndAppDevelopmentPage() {

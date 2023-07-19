@@ -2,13 +2,17 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { useView } from "@/hooks/useView";
 import * as data from "./nativeMobileAppData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./nativeMobileApp.module.scss";
 
 const NativeMobileApplications = () => {
   const { ref, inView } = useView();
 
   return (
-    <section className={styles.nativeMobileAppMain}>
+    <section
+      className={styles.nativeMobileAppMain}
+      id={camelToDash(data.title)}
+    >
       <Container
         fluid="lg"
         ref={ref}

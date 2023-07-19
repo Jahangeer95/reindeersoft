@@ -1,20 +1,29 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { useView } from "@/hooks/useView";
 import * as data from "./integratedAppDevelopmentData";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./IntegratedAppDevelopment.module.scss";
 
 const IntegratedAppDevelopment = () => {
+  const { ref, inView } = useView();
+
   return (
     <section
-      className={styles.appDevelopmentMain}
-      id={camelToDash(data.appDevelopmentTitle)}
+      className={styles.integratedMobileAppMain}
+      id={camelToDash(data.title)}
     >
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
-          <h3 className="text-center">{data.appDevelopmentTitle}</h3>
+          <h2 className="text-center">{data.title}</h2>
           <article>
-            {data.appDevelopmentDescription.map((state, idx) => (
+            {data.contentArray.map((state, idx) => (
               <p key={idx}>{state}</p>
             ))}
           </article>
