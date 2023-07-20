@@ -39,29 +39,23 @@ export type WebDevelopmenttypeOfWebsitesType = {
   title: string;
   description: string;
 }[];
-export type WebDevelopmentTechnologiesType = {
+export interface WebDevelopmentTechnologiesType {
   heading: string;
   List: {
     alt: string;
     icon: StaticImageData;
   }[];
-}[];
+}
 
 // Native mobile development serice data type
 export type NativeMobileAppDevelopmentTitleType = string;
 export type NativeMobileAppDevelopmentContentType = string[];
 
-// App Development service data type
-export type AppDevelopmentServiceTitleType = string;
-export type AppDevelopmentDescriptionType = string[];
-export type AppDevelopmentTypeDataType = {
-  title: string;
-  description: string;
-}[];
-export type AppDevelopmentTechnologiesType = {
-  heading: string;
-  List: string[];
-}[];
+// Cross Plateform App Development service data type
+export type CrossPlateformAppDevelopmentServiceTitleType = string;
+export type CrossPlateformAppDevelopmentDescriptionType = string[];
+export interface CrossPLateformAppDevelopmentTechnologiesType
+  extends WebDevelopmentTechnologiesType {}
 
 // Integrated Mobile App Development service data type
 export type IntegratedAppDevelopmentServiceTitleType = string;

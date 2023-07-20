@@ -3,7 +3,7 @@ import Banner from "./banner";
 import WebAndAppDevProcess from "./web-app-dev-process";
 import WebAppDevOverview from "./service-overview";
 import WebDevelopmentServices from "./services/fullstack-web-development";
-import AppDevelopment from "./services/app-development";
+import AppDevelopment from "./services/cross-plateform-app-development";
 import IntegratedAppDevelopment from "./services/integrated-web-mobile-app-development";
 import ContactUsSection from "@/components/custom/contactUsSection";
 import WebMobileApplicationServices from "./web-and-mobile-application-services";

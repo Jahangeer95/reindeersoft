@@ -40,7 +40,7 @@ const WebDevelopmentServices = () => {
                   <h4 className="text-left">{state.heading}:</h4>
                   {state.List.map((state, idx) => {
                     return (
-                      <span key={idx}>
+                      <span key={idx} title={state.alt}>
                         <Image src={state.icon} alt={state.alt} />
                       </span>
                     );

@@ -114,6 +114,12 @@
                             border-radius: 50%;
                             background-color: colors.$white-color;
                             box-shadow: 2px 3px 8px rgba(colors.$primary_dark2, 0.20);
+                            transition: all 0.3s ease-in;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: rgba(colors.$primary_dark2, 0.2);
+                            }
 
                             img {
                                 width: 100%;

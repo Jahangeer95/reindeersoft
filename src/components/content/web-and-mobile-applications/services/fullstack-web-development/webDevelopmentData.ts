@@ -65,7 +65,7 @@ export const websiteTypes: WebDevelopmenttypeOfWebsitesType = [
   },
 ];
 
-export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType = [
+export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType[] = [
   {
     heading: "Frontend Technologies",
     List: [
