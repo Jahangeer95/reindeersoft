@@ -27,7 +27,7 @@ export const WebMobileServicesArray: WebAppServicesArrayType = [
   },
   {
     id: "web-app-four",
-    value: "Web integrated Mobile Application Development",
+    value: "Integrated Web Mobile Application Development",
     image: integratedAppDevelopment,
   },
 ];

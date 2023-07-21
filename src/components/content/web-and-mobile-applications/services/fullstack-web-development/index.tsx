@@ -18,7 +18,6 @@ const WebDevelopmentServices = () => {
             {data.webDevelopmentDescription.map((state, idx) => (
               <p key={idx}>{state}</p>
             ))}
-            <p>Type of Websites</p>
             <ul>
               {data.websiteTypes.map((state, idx) => {
                 return (
@@ -37,7 +36,7 @@ const WebDevelopmentServices = () => {
             {data.webDevelopmentTechnologies.map((state, idx) => {
               return (
                 <div key={idx}>
-                  <h4 className="text-left">{state.heading}:</h4>
+                  <h4 className="text-left">{state.heading}</h4>
                   {state.List.map((state, idx) => {
                     return (
                       <span key={idx} title={state.alt}>

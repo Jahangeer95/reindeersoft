@@ -17,7 +17,7 @@ const ModalAndServiceOffering = () => {
     <section className={styles.modalAndServicesMain}>
       <div>
         <div>
-          <div className={styles.Background}></div>
+          {/* <div className={styles.Background}></div> */}
           <article>
             {modalAndServicesData.map((state) => {
               return (

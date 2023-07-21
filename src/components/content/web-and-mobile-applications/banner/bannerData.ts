@@ -11,5 +11,5 @@ export const list: BannerListType = [
   "Full Stack Web Application Development",
   "Native Mobile Application Development",
   "Cross Platform Mobile Application Development",
-  "Web integrated Mobile Application Development",
+  "Integrated Web Mobile Application Development",
 ];
