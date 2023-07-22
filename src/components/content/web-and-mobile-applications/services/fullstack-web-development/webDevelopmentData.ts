@@ -103,6 +103,10 @@ export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType[] = [
     heading: "Backend Technologies",
     List: [
       {
+        alt: "JavaScript",
+        icon: javascript,
+      },
+      {
         alt: "Java",
         icon: java,
       },
