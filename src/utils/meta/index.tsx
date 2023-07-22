@@ -10,7 +10,7 @@ const MetaInformation = (props: MetaInformationPropTypes) => {
       <meta name="description" content={description} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="preload" href="../assets/images/home/Liqq.gif" as="image" />
+      {/* <link rel="preload" href="../assets/images/home/Liqq.gif" as="image" /> */}
     </Head>
   );
 };
