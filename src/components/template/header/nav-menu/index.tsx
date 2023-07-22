@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import { homeBannerArray } from "@/components/content/home/banner/HomeBannerData";
+import { homeBannerArray } from "@/components/routes/home/banner/HomeBannerData";
 const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.png");
 import { camelToDash } from "@/utils/functions/camelToDash";
 import { engagementModelData } from "./engagement";

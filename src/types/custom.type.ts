@@ -31,3 +31,8 @@ export type ServiceDescriptionPropTypes = {
     image: StaticImageData;
   };
 };
+
+export type MetaInformationPropTypes = {
+  title: string;
+  description: string;
+};
