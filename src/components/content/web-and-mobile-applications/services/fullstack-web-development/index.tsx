@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./webDevelopmentData";
 import { camelToDash } from "@/utils/functions/camelToDash";
@@ -6,6 +6,22 @@ import styles from "./WebDevlopment.module.scss";
 import Image from "next/image";
 
 const WebDevelopmentServices = () => {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevActiveIndex) => prevActiveIndex + 1);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex > 6) {
+      setActiveIndex(0);
+    }
+  }, [activeIndex]);
+
   return (
     <section
       className={styles.webDevelopmentMain}
@@ -41,7 +57,11 @@ const WebDevelopmentServices = () => {
                     return (
                       <span key={idx} title={state.alt}>
                         <Image src={state.icon} alt={state.alt} />
-                        <aside>
+                        <aside
+                          className={
+                            idx === activeIndex ? styles.textDisplay : ""
+                          }
+                        >
                           <p>{state.alt}</p>
                         </aside>
                       </span>
