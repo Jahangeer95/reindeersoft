@@ -41,6 +41,9 @@ const WebDevelopmentServices = () => {
                     return (
                       <span key={idx} title={state.alt}>
                         <Image src={state.icon} alt={state.alt} />
+                        <aside>
+                          <p>{state.alt}</p>
+                        </aside>
                       </span>
                     );
                   })}
