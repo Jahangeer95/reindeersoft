@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import * as data from "./webAppProcess";
+import * as data from "./webAppProcessData";
 import styles from "./webApp.module.scss";
 
 const WebAndAppDevProcess = () => {

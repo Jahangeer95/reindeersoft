@@ -1,6 +1,7 @@
 import React, { Fragment, useState, useEffect } from "react";
 import Footer from "../template/footer";
 import Header from "../template/header/Header";
+import LetterAnimate from "../animations/letterAnimate";
 
 const WebLayout: React.FC<React.PropsWithChildren> = (props) => {
   const [loading, setLoading] = useState(true);
@@ -11,10 +12,12 @@ const WebLayout: React.FC<React.PropsWithChildren> = (props) => {
     }, 2000);
   }, []);
 
+  let titleArray = "REINDEERSOFT".split("");
+
   return (
     <Fragment>
       {loading ? (
-        <p>Loading...</p>
+        <LetterAnimate strArray={titleArray} />
       ) : (
         <>
           <Header />

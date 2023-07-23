@@ -7,7 +7,6 @@
 
 .modalAndServicesMain {
     position: relative;
-    // @include gradient.backgroundGradient;
     background-color: rgba(252, 151, 55, 0.87);
     background-image: url("../../../../assets/images/about-us/line-image.png");
     background-position: center;
@@ -19,16 +18,6 @@
 
     div {
         div {
-
-            // .Background {
-            //     position: absolute;
-            //     left: 0;
-            //     top: 0;
-            //     width: 100%;
-            //     height: 100%;
-            //     clip-path: ellipse(90% 44% at 46% 49%);
-            //     background-color: rgba(252, 151, 55, 0.87);
-            // }
 
             article {
                 position: relative;

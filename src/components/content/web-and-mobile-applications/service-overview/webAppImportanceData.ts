@@ -6,7 +6,7 @@ import {
 export const title: WebAppDevImportanceTitleType = "Service Overview";
 export const content: WebAppDevImportanceConTentType = {
   description:
-    "With our team of skilled developers and expertise in a wide range of technologies, including HTML, CSS, JavaScript, Python, Java, Swift, Flutter, and React Native, we deliver transformative web and mobile application solutions tailored to your unique needs.",
+    "Our team of skilled developers possesses expertise in a wide range of cutting-edge technologies, such as HTML, CSS, JavaScript, Python, Java, Swift, Flutter, and React Native. With this diverse skill set, we are equipped to deliver transformative web and mobile application solutions tailored to your unique needs. Experience a digital transformation with our comprehensive end-to-end web and mobile application development services.",
   serviceArray: [
     {
       title: "Web Development",
@@ -19,6 +19,4 @@ export const content: WebAppDevImportanceConTentType = {
         "We specialize in designing and developing native and cross-platform mobile applications that deliver exceptional user experiences. Whether it's an iOS or Android app, or a cross-platform solution, our team creates feature-rich, intuitive, and high-performance applications that connect and engage with your target audience. We leverage the power of technologies like Swift, Flutter, and React Native to ensure your mobile app stands out in the competitive app market.",
     },
   ],
-  finishingText:
-    "Experience a digital transformation with our comprehensive end-to-end web and mobile application development services.",
 };

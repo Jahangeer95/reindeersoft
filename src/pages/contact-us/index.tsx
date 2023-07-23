@@ -1,15 +1,13 @@
-import ContactUs from "@/components/content/contact-us";
-import Head from "next/head";
+import MetaInformation from "@/utils/meta";
+import ContactUs from "@/components/routes/contact-us";
 
 export default function ContactUsPage() {
   return (
     <>
-      <Head>
-        <title>Contact us - ReindeerSoft</title>
-        <meta name="description" content="Contact us - ReindeerSoft" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaInformation
+        title="ReindeerSoft - Contact us"
+        description="This page is related to ReindeerSoft contact details"
+      />
 
       <ContactUs />
     </>

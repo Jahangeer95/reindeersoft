@@ -36,38 +36,38 @@ export const websiteTypes: WebDevelopmenttypeOfWebsitesType = [
   {
     title: "Web Portals Development",
     description:
-      "A portal is a self contained and independent section of a larger network or system that provides access to various services such as news, information, products etc.",
+      "Web portals are powerful platforms that serve as gateways to information, services, and resources. It enables businesses to create user-friendly and intuitive interfaces that connect users to relevant content and services.",
   },
   {
     title: "E-Commerce Web Development",
     description:
-      "A website is a collection of related web pages that are accessible over the internet. It is typically hosted on a web server and can be accessed by users using a web browser. ",
+      " E-Commerce web service empowers businesses to create captivating online stores that deliver exceptional shopping experiences to customers. ",
   },
   {
     title: "Social Networking Web Development",
     description:
-      "A website is a collection of related web pages that are accessible over the internet. It is typically hosted on a web server and can be accessed by users using a web browser. ",
+      "Social networking platforms connect like-minded individuals, enable seamless content sharing, and facilitate real-time interactions with a focus on user experience and privacy.",
   },
   {
     title: "Media Streaming Web Development",
     description:
-      "A website is a collection of related web pages that are accessible over the internet. It is typically hosted on a web server and can be accessed by users using a web browser. ",
+      "In the era of digital media consumption, Media Streaming Web service enables businesses to provide immersive and seamless video streaming experiences to their audience.",
   },
   {
     title: "Learning Management System Website",
     description:
-      "A website is a collection of related web pages that are accessible over the internet. It is typically hosted on a web server and can be accessed by users using a web browser. ",
+      "Learning Management System (LMS) Website service offers businesses and educational institutions the opportunity to create interactive and engaging online learning platforms.",
   },
   {
-    title: "Content Management System Websites",
+    title: "Content Management System Website",
     description:
-      "A website is a collection of related web pages that are accessible over the internet. It is typically hosted on a web server and can be accessed by users using a web browser. ",
+      " Content Management System (CMS) Websites service enables businesses to easily update, edit, and publish content without technical expertise. ",
   },
 ];
 
 export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType[] = [
   {
-    heading: "Frontend Technologies",
+    heading: "Web Frontend Technologies",
     List: [
       {
         alt: "HTML",
@@ -100,7 +100,7 @@ export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType[] = [
     ],
   },
   {
-    heading: "Backend Technologies",
+    heading: "Web Backend Technologies",
     List: [
       {
         alt: "JavaScript",

@@ -14,19 +14,23 @@
             }
 
             article {
+                width: 100%;
+
                 p {
                     @include paragraph.paragraph-mixin;
                 }
 
                 div {
+                    width: 100%;
+                    margin-top: 20px;
 
                     p {
-                        display: inline;
                         @include paragraph.paragraph-mixin;
 
                         span {
                             position: relative;
                             margin-right: 5px;
+                            font-weight: 600;
 
                             &::after {
                                 content: ":"

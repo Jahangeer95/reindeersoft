@@ -29,7 +29,6 @@ const WebAppDevOverview = () => {
                 </div>
               );
             })}
-            <p>{data.content.finishingText}</p>
           </article>
         </div>
       </Container>

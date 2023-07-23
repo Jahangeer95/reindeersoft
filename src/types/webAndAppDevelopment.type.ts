@@ -13,7 +13,6 @@ export type WebAppDevImportanceConTentType = {
     title: string;
     serviceDescription: string;
   }[];
-  finishingText: string;
 };
 
 // Web Mobile Application Services Data types...
