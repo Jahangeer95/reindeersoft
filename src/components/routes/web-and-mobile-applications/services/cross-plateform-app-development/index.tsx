@@ -41,7 +41,7 @@ const AppDevelopment = () => {
             {data.crossPLateformAppDevelopmentTechnologies.map((state, idx) => {
               return (
                 <div key={idx}>
-                  {/* <h4 className="text-left">{state.heading}:</h4> */}
+                  <h4 className="text-left">{state.heading}:</h4>
                   {state.List.map((state, idx) => {
                     return (
                       <span key={idx} title={state.alt}>

@@ -16,7 +16,7 @@ export const content: WebAppDevImportanceConTentType = {
     {
       title: "Mobile Application Development",
       serviceDescription:
-        "We specialize in designing and developing native and cross-platform mobile applications that deliver exceptional user experiences. Whether it's an iOS or Android app, or a cross-platform solution, our team creates feature-rich, intuitive, and high-performance applications that connect and engage with your target audience. We leverage the power of technologies like Swift, Flutter, and React Native to ensure your mobile app stands out in the competitive app market.",
+        "We specialize in designing and developing native and cross-platform mobile applications that deliver exceptional user experiences. Whether it's an iOS or Android application, or a cross-platform solution, our team creates feature-rich, intuitive, and high-performance applications that connect and engage with your target audience. We leverage the power of technologies like Swift, Flutter, and React Native to ensure your mobile application stands out in the competitive application market.",
     },
   ],
 };

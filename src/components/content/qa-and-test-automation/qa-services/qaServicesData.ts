@@ -9,7 +9,7 @@ import {
   QaServicesTitleType,
 } from "@/types/qaAndTestAutomation.type";
 
-export const title: QaServicesTitleType = "Our Quality Assurance Services";
+export const title: QaServicesTitleType = "Quality Assurance Services";
 export const qaServicesArray: QaServicesArrayType = [
   {
     id: "one",
@@ -23,7 +23,7 @@ export const qaServicesArray: QaServicesArrayType = [
   },
   {
     id: "three",
-    value: "Unique Testing Offering",
+    value: "Testing Categories",
     image: manualTesting,
   },
   {

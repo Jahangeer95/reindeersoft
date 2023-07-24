@@ -15,11 +15,10 @@
         transition: all 0.3s ease-in-out;
 
         .Animate {
-            animation: shade 1.5s ease backwards;
-            transition: all 0.3s linear;
+            animation: shade 1.5s ease-out backwards;
+            transition: all 0.3s ease-in-out;
             height: fit-content;
             opacity: 1;
-            cursor: context-menu;
             user-select: none;
 
             &:hover {
@@ -35,6 +34,7 @@
 @keyframes shade {
     0% {
         opacity: 0;
+        color: transparent;
     }
 
     20% {

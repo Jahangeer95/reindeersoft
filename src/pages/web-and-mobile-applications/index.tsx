@@ -1,15 +1,21 @@
-import WebAppDevelopment from "@/components/content/web-and-mobile-applications";
-import Head from "next/head";
+import dynamic from "next/dynamic";
+import MetaInformation from "@/utils/meta";
+import Loading from "@/components/animations/loading";
+
+const WebAppDevelopment = dynamic(
+  () => import("@/components/routes/web-and-mobile-applications"),
+  {
+    loading: () => <Loading />,
+  }
+);
 
 export default function mobileAndAppDevelopmentPage() {
   return (
     <>
-      <Head>
-        <title>Web and App Development - ReindeerSoft</title>
-        <meta name="description" content="Web and App Development" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaInformation
+        title="Web And Mobile Applications - ReindeerSoft"
+        description="This page is related to the web and mobile application services provided by ReindeerSoft"
+      />
       <WebAppDevelopment />
     </>
   );

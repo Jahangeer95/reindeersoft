@@ -4,7 +4,7 @@ import slide3 from "@/assets/images/homeSlider/slide3.jpg";
 import slide4 from "@/assets/images/homeSlider/automation-testing1.png";
 import slide5 from "@/assets/images/homeSlider/slide4.jpg";
 import { HomeBannerDataType, homeBannerArrayTypes } from "@/types/home.type";
-import * as webAndAppDevelopment from "../../../content/web-and-mobile-applications/banner/bannerData";
+import * as webAndAppDevelopment from "../../web-and-mobile-applications/banner/bannerData";
 import * as cloudApplicationAndDevelopment from "../../../content/cloud-application-development/banner/bannerData";
 import * as qaAndTestAutomation from "../../../content/qa-and-test-automation/banner/bannerData";
 import * as roboticsAndAutonomy from "../../../content/robotics-and-autonomy/banner/bannerData";

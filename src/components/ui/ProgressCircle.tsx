@@ -24,6 +24,7 @@ function ProgressCircle({ percentage }: progressCircleProps) {
     const r = 50;
     const circ = 2 * Math.PI * r;
     const strokePct = ((100 - props?.percentage) * circ) / 100;
+
     return (
       <circle
         r={r}

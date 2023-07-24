@@ -115,7 +115,6 @@
                             @include paragraph.paragraph-mixin;
                             text-indent: unset;
                             color: colors.$white-color;
-                            text-transform: capitalize;
                             animation: right-to-left 1.5s forwards;
                             text-align: left;
 
@@ -128,6 +127,7 @@
                                 background-color: transparent;
                                 color: inherit;
                                 transition: all 0.3s ease-in;
+                                text-transform: capitalize;
                                 border-radius: 5px;
                                 padding: 0 5px;
 

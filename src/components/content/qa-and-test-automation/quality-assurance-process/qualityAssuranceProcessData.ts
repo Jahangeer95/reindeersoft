@@ -5,10 +5,10 @@ import {
 } from "@/types/qaAndTestAutomation.type";
 
 export const title: QualityAssuranceProcessTitleType =
-  "Our Quality assurance Process";
+  "Quality assurance Process";
 
 export const description: QualityAssuranceProcessDescriptionType =
-  "Our Quality Assurance Process is transparent and offers full traceability throughout all phases.";
+  "Our Quality Assurance Process is characterized by transparency and meticulous traceability at every phase, ensuring that each step is well-documented and easily traceable for thorough evaluation and accountability.";
 
 export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   {
@@ -36,9 +36,9 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
     heading: "Test Plan Review & Approval",
     list: [
       "Internal review of the test plan",
-      "Customer review of the test plan",
+      "Client review of the test plan",
       "Updates in the test plan as per the feedback",
-      "Customer approval on the test plan",
+      "Client approval on the test plan",
     ],
   },
   {
@@ -48,7 +48,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
       "Test execution",
       "Bug reporting",
       "Product's release stability tracking",
-      "Weekly status sharing with customer",
+      "Weekly status sharing with client",
     ],
   },
   {
@@ -56,8 +56,8 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
     heading: "Reporting and Final Review",
     list: [
       "Compile report of final testing status",
-      "Share the report with customer",
-      "Review the report with customer",
+      "Share the report with client",
+      "Review the report with client",
     ],
   },
 ];

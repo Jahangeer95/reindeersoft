@@ -37,6 +37,8 @@
                         h4 {
                             flex: 0 0 100%;
                             @include heading.levelFour-heading;
+                            color: rgba(252, 151, 55, 0.87);
+                            text-align: center;
                         }
 
                         span {

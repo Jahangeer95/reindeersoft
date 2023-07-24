@@ -9,7 +9,7 @@ import {
   UniqueTestingTitleType,
 } from "@/types/qaAndTestAutomation.type";
 
-export const title: UniqueTestingTitleType = "Unique Testing Offering";
+export const title: UniqueTestingTitleType = "Testing Categories";
 export const UniqueTestingArr: UniqueTestingArrType = [
   {
     image: functionalTesting,

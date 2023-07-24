@@ -22,7 +22,7 @@ export const crossPlateformAppDevelopmentDescription: CrossPlateformAppDevelopme
 export const crossPLateformAppDevelopmentTechnologies: CrossPLateformAppDevelopmentTechnologiesType[] =
   [
     {
-      heading: "Frontend Technologies",
+      heading: "Cross Platform Mobile Development Technologies",
       List: [
         {
           alt: "Java",
