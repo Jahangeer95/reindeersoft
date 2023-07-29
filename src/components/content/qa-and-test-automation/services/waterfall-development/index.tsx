@@ -25,7 +25,6 @@ const WaterfallDevelopment = () => {
                 </li>
               ))}
             </ul>
-            <p>{data.content.paragraph2}</p>
           </article>
         </div>
       </Container>

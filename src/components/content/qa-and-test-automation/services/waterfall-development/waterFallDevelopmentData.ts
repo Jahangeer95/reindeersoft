@@ -8,34 +8,32 @@ export const title: waterfallDevelopmentTitleType =
 
 export const content: waterfallDevelopmentContentType = {
   paragraph1:
-    "In waterfall development, Quality Assurance (QA) is a separate stage of development that comes after the development phase. The QA team is responsible for ensuring that the final software product meets the required quality standards and performs as expected. Here are some ways that QA is typically implemented in waterfall development:",
+    "The waterfall software development model represents a structured breakdown of project activities into linear sequential phases, where each phase is dependent on the deliverables of the previous one. This approach corresponds to specialized tasks for each phase and follows a top-down flow of development. In the context of waterfall development, Quality Assurance (QA) is a distinct and crucial stage that follows the development phase. The primary responsibility of the QA team is to ensure that the final software product meets the required quality standards and performs as expected. Here are some key ways in which QA is typically implemented in the waterfall development model:",
   list: [
     {
       title: "Requirements Analysis",
       description:
-        "In this stage, the requirements for the software are identified and documented. The QA team is involved in reviewing the requirements to ensure that they are clear, complete, and testable.",
+        "During this stage, the software requirements are identified and documented before proceeding with the development phase. The QA team plays a crucial role in reviewing these requirements to ensure their clarity, completeness, and testability.",
     },
     {
       title: "Test Planning",
       description:
-        "In this stage, the QA team creates a test plan that outlines the testing strategy, test objectives, and test cases. This plan is used to guide the testing process and ensure that all aspects of the software are tested. ",
+        " In this stage, the QA team creates comprehensive test plans based on the finalized requirements and design specifications. These detailed test plans outline the testing objectives, scope, strategies, and acceptance criteria for each phase of the development lifecycle. Test plans ensure that functional testing, integration testing, system testing and performance testing are thoroughly covered for the software.",
     },
     {
-      title: "Test Design",
+      title: "Test Development",
       description:
-        "In this stage, the QA team creates detailed test cases and test scripts based on the test plan. These tests are designed to ensure that the software meets the requirements and performs as expected.",
+        "In this stage, the QA team creates detailed test cases and test scripts, aligning them with the test plan. These tests are strategically designed to verify that the software meets all specified requirements and performs flawlessly as expected.",
     },
     {
       title: "Test Execution",
       description:
-        " In this stage, the software is tested using the test cases and scripts created in the previous stage. Any defects identified during testing are reported, tracked, and fixed.",
+        "In this stage, the software undergoes rigorous testing using the previously created test cases and scripts. Any identified defects are promptly reported, tracked, and meticulously fixed to ensure the software's optimal performance and reliability. The QA team collaborates with the development team to address and resolve these issues promptly.",
     },
     {
-      title: "Test Closure",
+      title: "Final Validation",
       description:
-        "In this stage, the QA team reviews the test results and prepares a final test report. This report is used to evaluate the quality of the software and determine if it is ready for release. While waterfall development provides a structured approach to software development, it can also lead to longer development cycles and make it difficult to respond to changing requirements.",
+        "Before deployment, the QA team performs final validation and acceptance testing to ensure that the software is ready for production use and aligns with customer expectations.",
     },
   ],
-  paragraph2:
-    "Agile development, which integrates QA into the development process itself, is becoming increasingly popular as a more flexible and efficient approach to software development.",
 };

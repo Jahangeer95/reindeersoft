@@ -8,7 +8,7 @@ import { camelToDash } from "@/utils/functions/camelToDash";
 const HomeBanner = () => {
   return (
     <section className="HomeBanner_Main">
-      <Carousel className="carousel">
+      <Carousel className="carousel" slide={true}>
         {homeBannerArray.map((state, index) => {
           return (
             <Carousel.Item

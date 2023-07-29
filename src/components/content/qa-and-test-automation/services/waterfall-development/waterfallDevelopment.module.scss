@@ -26,12 +26,18 @@
                     li {
                         position: relative;
                         width: 100%;
+                        height: 100%;
                         display: flex;
                         justify-content: flex-start;
                         background-color: rgba(colors.$white-color, 1);
                         align-items: center;
                         border-radius: 10px;
                         border-bottom: 1px ridge rgba(colors.$primary-dark2, 1);
+
+                        @media only screen and (max-width: "550px") {
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
 
                         span {
                             @include gradient.lightGradient3;
@@ -41,15 +47,22 @@
                             justify-content: center;
                             align-items: center;
                             width: 150px;
-                            height: min(150px);
+                            min-height: 150px;
 
-                            @media only screen and (max-width: "768px") {
-                                height: min(180px);
-                                width: 120px;
+                            @media only screen and (max-width: "991px") {
+                                min-height: 180px;
                             }
 
-                            @media only screen and (max-width: "450px") {
-                                width: 100px;
+                            @media only screen and (max-width: "768px") {
+                                width: 120px;
+                                min-height: 230px;
+                            }
+
+                            @media only screen and (max-width: "550px") {
+                                border-radius: 10px 10px 0 0;
+                                height: fit-content;
+                                min-height: unset;
+                                width: 100%;
                             }
 
                             h4 {
@@ -68,25 +81,6 @@
                             padding: 10px;
                             text-indent: unset;
 
-                        }
-
-                        &:last-child {
-                            margin-bottom: 10px;
-
-                            span {
-
-                                @media only screen and (max-width: "991px") {
-                                    height: min(175px);
-                                }
-
-                                @media only screen and (max-width: "768px") {
-                                    height: min(230px);
-                                }
-
-                                @media only screen and (max-width: "450px") {
-                                    height: min(250px);
-                                }
-                            }
                         }
                     }
                 }

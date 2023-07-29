@@ -34,7 +34,6 @@ export type waterfallDevelopmentContentType = {
     title: string;
     description: string;
   }[];
-  paragraph2: string;
 };
 
 // Agile Development Data types...
