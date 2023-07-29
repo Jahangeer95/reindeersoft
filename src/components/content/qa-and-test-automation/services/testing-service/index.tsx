@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
-import * as data from "./UniqueTestingData";
+import * as data from "./testingServiceData";
 import { camelToDash } from "@/utils/functions/camelToDash";
-import styles from "./uniqueTesting.module.scss";
+import styles from "./testingService.module.scss";
 
 const UniqueTesting = () => {
   return (

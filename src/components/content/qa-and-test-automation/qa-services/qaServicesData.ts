@@ -23,7 +23,7 @@ export const qaServicesArray: QaServicesArrayType = [
   },
   {
     id: "three",
-    value: "Testing Categories",
+    value: "Testing Service",
     image: manualTesting,
   },
   {

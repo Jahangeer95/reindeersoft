@@ -10,7 +10,7 @@ export const description: BannerDescriptionType =
 export const list: BannerListType = [
   "Quality Assurance in waterfall software development",
   "Quality Assurance in agile software development",
-  "Testing Categories",
+  "Testing Service",
   "Test Automation & CI/CD integration",
   "Consultancy & training",
 ];

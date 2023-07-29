@@ -25,7 +25,7 @@
 @mixin levelFour-heading {
     position: relative;
     width: fit-content;
-    @include font.font(1.4rem, 120%, 500);
+    @include font.font(1.35rem, 120%, 500);
     margin-bottom: 20px;
     color: colors.$primary_dark2;
     text-transform: capitalize;
