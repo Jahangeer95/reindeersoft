@@ -84,7 +84,10 @@
                             @include paragraph.paragraph-mixin;
                             padding: 10px;
                             text-indent: unset;
+                        }
 
+                        &:last-child {
+                            margin-bottom: 0;
                         }
                     }
                 }
