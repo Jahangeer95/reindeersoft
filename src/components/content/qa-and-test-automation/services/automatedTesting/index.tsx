@@ -21,11 +21,7 @@ const AutomatedTesting = () => {
               {data.content.list.map((state, idx) => {
                 return (
                   <li key={idx}>
-                    <aside>{idx + 1}</aside>
-                    <p>
-                      <span>{state.title}</span>
-                      <span>{state.description}</span>
-                    </p>
+                    <p>{state.title}</p>
                   </li>
                 );
               })}

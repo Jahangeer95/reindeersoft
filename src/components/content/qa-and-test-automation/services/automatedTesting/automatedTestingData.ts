@@ -15,69 +15,57 @@ export const title: AutomatedTestingTitleType =
   "Test automation & CI/CD Integration";
 export const content: AutomatedTestingContentType = {
   paragraph1:
-    "Automated testing is the process of using software tools to run pre-scripted tests on a software application or system to ensure it meets the required quality standards. It is an essential part of software development that helps to improve the speed, quality, and accuracy of testing. Here are some of the reasons why automated testing is so important:",
+    "Automated testing utilizes software tools to execute pre-scripted tests on a software application or system, ensuring compliance with required quality standards. It holds immense significance in software development, bolstering testing speed, precision, and overall quality. The importance of automated testing stems from its ability to streamline repetitive tasks, achieve consistent test execution, and broaden test coverage. Moreover, it expedites regression testing, proves cost-effective over time, seamlessly integrates with Continuous Integration / Continuous Delivery (CI/CD) pipelines, and scales efficiently to handle complex projects. Some compelling reasons for automated testing are given below:",
   list: [
     {
-      title: "Faster Testing",
-      description:
-        "Automated testing can execute tests much faster than manual testing, which can help to speed up the development process and reduce the time-to-market.",
-    },
-    {
-      title: "Consistency",
-      description:
-        "Automated testing ensures that the same tests are run consistently every time, which helps to reduce the risk of human error and increase the accuracy of the testing process.",
-    },
-    {
-      title: "Reusability",
-      description:
-        "Automated test scripts can be reused across different versions of the software, which can save time, reduce costs, and improve the efficiency of testing.",
-    },
-    {
-      title: "Increased Test Coverage",
-      description:
-        "Automated testing can cover a wider range of test cases than manual testing, which helps to improve the overall quality of the software and reduce the risk of defects.",
+      title: "Efficiency and Speed",
     },
     {
       title: "Scalability",
-      description:
-        "Automated testing can be easily scaled up or down to meet the changing needs of the project, which makes it a flexible and adaptable testing solution.",
+    },
+    {
+      title: "Cost-Effectiveness",
+    },
+    {
+      title: "Consistent Test Results",
+    },
+    {
+      title: "Broader Test Coverage",
+    },
+    {
+      title: "Regression Testing",
+    },
+    {
+      title: "Continuous Integration and Continuous Delivery (CI/CD)",
     },
   ],
 };
 
 export const automationServicesTitle: AutomationServicesTitleType =
-  "Services we are offering in Test Automation";
+  "Services Offering in Test Automation";
 
 export const automationServicesDescription: AutomationServicesDescriptionType =
-  "We have more than ten years of experience in designing and implementing frameworks for UI and CLI test automation, automating manual procedures, effective use of test automation, and test script maintenance, as well as test integration in CI/CD.";
+  "We possess over a decade of experience in designing and implementing frameworks for User Interface (UI) and Command Line Interface (CLI) test automation, automating manual procedures, optimizing test automation practices, and maintaining test scripts. Additionally, we excel in seamlessly integrating testing into CI/CD pipelines.";
 export const automationServicesdata: AutomationServicesArrayType = [
   {
     image: images,
-    title: "Tool Evaluation & Comparison of Tools",
+    title: "Off the Shelf Tools Evaluation & Comparison",
   },
   {
     image: images,
-    title: "Framework Design & Implementation",
+    title: "Custom Test Framework Design & Implementation",
   },
   {
     image: images,
-    title: "Automated Test development",
+    title: "Workflow Script Development",
   },
   {
     image: images,
-    title: "Script Development",
+    title: "Automated Test Development & Regression Testing",
   },
   {
     image: images,
-    title: "Test Integration in CI/CD",
-  },
-  {
-    image: images,
-    title: "Execution and maintenance of test scripts",
-  },
-  {
-    image: images,
-    title: "Automated Regression testing",
+    title: "Test Integration In CI/CD",
   },
 ];
 

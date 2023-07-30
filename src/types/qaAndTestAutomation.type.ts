@@ -60,7 +60,6 @@ export type AutomatedTestingContentType = {
   paragraph1: string;
   list: {
     title: string;
-    description: string;
   }[];
 };
 

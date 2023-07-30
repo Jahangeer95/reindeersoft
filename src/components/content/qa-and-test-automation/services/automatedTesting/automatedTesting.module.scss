@@ -21,72 +21,30 @@
                 }
 
                 ul {
-                    list-style-type: none;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    list-style-type: decimal;
                     padding: 0;
-                    margin-top: 50px;
+                    margin-top: 30px;
                     row-gap: 20px;
+                    margin-left: 50px;
 
                     li {
                         position: relative;
-                        width: 100%;
                         @include paragraph.paragraph-mixin;
-                        display: flex;
-                        margin: 0;
                         text-indent: unset;
                         border-radius: 10px;
-                        box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.10), -2px -4px 8px rgba(colors.$primary-dark1, 0.10);
                         user-select: none;
                         transition: all 0.3s ease-in;
-                        @include gradient.lightGradient3;
 
-                        aside {
-                            height: fit-content;
-                            background-color: transparent;
-                            text-align: center;
-                            display: block;
-                            margin: auto 0;
-                            color: colors.$white-color;
-                            padding: 0 50px;
-                            @include font.font(1.2rem, 1rem, 600);
+                        :last-child {
+                            margin-bottom: 0;
 
-                            @media only screen and (max-width: "768px") {
-                                padding: 0 30px;
-                            }
                         }
+
 
                         p {
                             width: 100%;
-                            background-color: colors.$white-color;
-                            border-radius: 0 10px 10px 0;
                             text-indent: unset;
-
-                            span {
-                                display: block;
-                                margin: 10px 0;
-                                padding: 10px;
-                                width: fit-content;
-                                color: colors.$white-color;
-                                @include gradient.lightGradient3;
-                                @include font.font(1rem, 1rem, 500);
-
-                                &:last-child {
-                                    width: 100%;
-                                    background-color: transparent;
-                                    color: colors.$primary_dark1;
-                                    @include font.font(0.8rem, 1rem, 400);
-                                    padding: 10px 20px;
-                                    background: transparent;
-                                    text-align: justify;
-
-                                }
-
-                            }
                         }
-
 
                     }
                 }
@@ -96,12 +54,12 @@
 
     .AutomationServices {
         position: relative;
-        padding: 80px 0;
+        // padding: 80px 0;
         height: fit-content;
-        @include gradient.backgroundGradient;
+        // @include gradient.backgroundGradient;
 
         @media only screen and (max-width: 991px) {
-            padding: 80px 20px;
+            padding: 0 20px;
         }
 
         div {
@@ -130,7 +88,9 @@
 
                     span {
                         position: relative;
+
                         display: block;
+
                         width: 45%;
 
                         @media only screen and (max-width: "991px") {
@@ -139,6 +99,8 @@
 
                         img {
                             width: 100%;
+                            box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.22);
+                            border-radius: 5px;
                             display: block;
                             max-width: 500px;
                             margin-left: auto;
@@ -148,10 +110,6 @@
                     }
 
                     div {
-                        display: flex;
-                        justify-content: flex-start;
-                        flex-wrap: wrap;
-                        gap: 20px;
                         width: 55%;
                         padding: 0;
 
@@ -164,33 +122,37 @@
                             max-width: 900px;
                             text-indent: unset;
                             margin: 0 auto;
-                            margin-bottom: 30px;
+                            margin-bottom: 20px;
                             color: colors.$primary-dark1;
                         }
 
                         span {
-                            width: 45%;
+                            width: 100%;
                             display: flex;
                             align-items: center;
-                            gap: 20px;
+                            gap: 10px;
 
                             img {
-                                width: 30px;
+                                width: 20px;
                                 height: auto;
                                 margin: 0;
-                                filter: invert(1) hue-rotate(340deg) brightness(40%);
+                                filter: invert(1) hue-rotate(180deg) brightness(80%);
+                                box-shadow: unset;
+                                margin-bottom: 15px;
                             }
 
                             aside {
                                 display: block;
+                                margin-bottom: 15px;
 
                                 p {
                                     @include paragraph.paragraph-mixin;
                                     text-indent: unset;
                                     font-weight: 500;
-                                    color: colors.$primary-dark1;
+                                    color: colors.$secondary_dark1;
                                     text-align: left;
                                     text-transform: capitalize;
+
                                 }
                             }
                         }
