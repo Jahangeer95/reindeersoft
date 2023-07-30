@@ -28,23 +28,18 @@ export type QaServicesArrayType = {
 
 // Waterfall Development Data types...
 export type waterfallDevelopmentTitleType = string;
-export type waterfallDevelopmentContentType = {
+export interface waterfallDevelopmentContentType {
   paragraph1: string;
   list: {
     title: string;
     description: string;
   }[];
-};
+}
 
 // Agile Development Data types...
 export type AgileDevelopmentTitleType = string;
-export type AgileDevelopmentContentType = {
-  paragraph1: string;
-  list: {
-    title: string;
-    description: string;
-  }[];
-};
+export interface AgileDevelopmentContentType
+  extends waterfallDevelopmentContentType {}
 
 // Unique Testing Data types...
 export type UniqueTestingTitleType = string;
@@ -73,10 +68,11 @@ export type AutomationImageType = StaticImageData;
 
 export type TechnologiesTitleType = string;
 export type TechnologiesArrayType = {
-  title: string;
+  alt: string;
+  icon: StaticImageData;
 }[];
 
 // Automated Testing Data types...
 export type ConsultancyTitleType = string;
-export type ConsultancyParagraphType = string;
-export type ConsultancyArrayType = string[];
+export interface ConsultancyContentType
+  extends waterfallDevelopmentContentType {}

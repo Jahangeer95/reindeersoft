@@ -1,5 +1,18 @@
 import images from "@/assets/images/qa-and-automation-testing/automation-testing/star1.png";
 import automation from "@/assets/images/qa-and-automation-testing/automation-testing/automationTesting.jpg";
+
+// -------------Technologies Icons----------------------//
+import jenkin from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/jenkin.png";
+import git from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/git.png";
+import bash from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/bash.png";
+import python from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/python.png";
+import squish from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/squish.png";
+import testlink from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/testlink.png";
+import kiwi from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/kiwi.png";
+import jira from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/jira.png";
+import container from "@/assets/images/qa-and-automation-testing/automation-testing/technologies/docker.png";
+// -------------Technologies Icons----------------------//
+
 import {
   AutomatedTestingContentType,
   AutomatedTestingTitleType,
@@ -71,27 +84,42 @@ export const automationServicesdata: AutomationServicesArrayType = [
 
 export const techTitle: TechnologiesTitleType = "Technologies";
 
-export const techData: TechnologiesArrayType = [
+export const technologiesList: TechnologiesArrayType = [
   {
-    title: "Jenkins",
+    alt: "Jenkins",
+    icon: jenkin,
   },
   {
-    title: "Git",
+    alt: "Git",
+    icon: git,
   },
   {
-    title: "Bash",
+    alt: "Bash",
+    icon: bash,
   },
   {
-    title: "Python",
+    alt: "Pyhton",
+    icon: python,
   },
   {
-    title: "Squish",
+    alt: "Squish",
+    icon: squish,
   },
   {
-    title: "Testlink",
+    alt: "Testlink",
+    icon: testlink,
   },
   {
-    title: "Kivi",
+    alt: "Kiwi",
+    icon: kiwi,
+  },
+  {
+    alt: "Jira",
+    icon: jira,
+  },
+  {
+    alt: "Containers",
+    icon: container,
   },
 ];
 

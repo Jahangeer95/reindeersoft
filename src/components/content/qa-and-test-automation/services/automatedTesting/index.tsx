@@ -1,12 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { Container } from "react-bootstrap";
 import * as data from "./automatedTestingData";
-import Image from "next/image";
-import Technologies from "./Technologies";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./automatedTesting.module.scss";
 
 const AutomatedTesting = () => {
+  const [activeIndex, setActiveIndex] = useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevActiveIndex) => prevActiveIndex + 1);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (activeIndex > 8) {
+      setActiveIndex(0);
+    }
+  }, [activeIndex]);
+
   return (
     <section
       className={styles.AutomatedTestingMain}
@@ -58,15 +73,16 @@ const AutomatedTesting = () => {
         <h4 className="text-center">{data.techTitle}</h4>
         <Container fluid="lg">
           <div>
-            {data.techData.map((state, idx) => {
+            {data.technologiesList.map((state, idx) => {
               return (
-                <aside
-                  className="d-flex flex-column align-items-center justify-content-center"
-                  key={idx}
-                >
-                  <h5>{state.title}</h5>
-                  <span>{Technologies(state.title)}</span>
-                </aside>
+                <span key={idx} title={state.alt}>
+                  <Image src={state.icon} alt={state.alt} />
+                  <aside
+                    className={idx === activeIndex ? styles.textDisplay : ""}
+                  >
+                    <p>{state.alt}</p>
+                  </aside>
+                </span>
               );
             })}
           </div>
