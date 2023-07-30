@@ -1,15 +1,21 @@
-import Head from "next/head";
-import QaAndTestAutomation from "@/components/content/qa-and-test-automation";
+import dynamic from "next/dynamic";
+import Loading from "@/components/animations/loading";
+import MetaInformation from "@/utils/meta";
+
+const QaAndTestAutomation = dynamic(
+  () => import("@/components/routes/qa-and-test-automation"),
+  {
+    loading: () => <Loading />,
+  }
+);
 
 export default function QaAndTestAutomationPage() {
   return (
     <>
-      <Head>
-        <title>QA and Test Automation - ReindeerSoft</title>
-        <meta name="description" content="QA and Test Automation" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaInformation
+        title="Qa And Test Automation - ReindeerSoft"
+        description="This page is related to the qa and test automation services provided by ReindeerSoft"
+      />
       <QaAndTestAutomation />
     </>
   );
