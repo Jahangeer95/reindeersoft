@@ -38,7 +38,6 @@
                     width: fit-content;
                     color: colors.$white_color;
                     text-align: center;
-                    // @include font.font(clamp(25px, calc(18px + 3.5vmin), 60px), 110%, 600);
                     @include font.font(2.3rem, 120%, 700);
                     text-transform: uppercase;
                     margin-bottom: 0;
