@@ -11,7 +11,7 @@ const AppDevelopment = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prevActiveIndex) => prevActiveIndex + 1);
-    }, 2000);
+    }, 1200);
 
     return () => clearInterval(interval);
   }, []);
