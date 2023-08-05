@@ -1,10 +1,10 @@
-import roboticsHardware from "@/assets/images/robotics-and-autonomy/robotics-hardware.png";
-import motionPlanning from "@/assets/images/robotics-and-autonomy/motion-planning.png";
-import complianceControl from "@/assets/images/robotics-and-autonomy/compliance-control.png";
-import manipulation from "@/assets/images/robotics-and-autonomy/manipulation.png";
-import simulation from "@/assets/images/robotics-and-autonomy/simulation.png";
-import computerVision from "@/assets/images/robotics-and-autonomy/computer-vision.png";
-import integration from "@/assets/images/robotics-and-autonomy/integration.png";
+import roboticsHardware from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/robotics-hardware.png";
+import motionPlanning from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/motion-planning.png";
+import complianceControl from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/compliance-control.png";
+import manipulation from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/manipulation.png";
+import simulation from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/simulation.png";
+import computerVision from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/computer-vision.png";
+import integration from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy-services/integration.png";
 
 import {
   RoboticsAutonomyServicesArrayType,

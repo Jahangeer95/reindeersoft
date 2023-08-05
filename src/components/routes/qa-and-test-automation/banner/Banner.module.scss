@@ -1,5 +1,5 @@
 @use "../../../../sass/gradient";
 
 .QaBannerImage {
-    @include gradient.bannerGradient(url("../assets/images/qa-and-automation-testing/automation-testing1.png"));
+    @include gradient.bannerGradient(url("../assets/images/qa-and-automation-testing/qa-and-test-automation.jpg"));
 }

@@ -3,7 +3,7 @@ import {
   RoboticsAutonomyServiceTitleType,
 } from "@/types/roboticsAndAutonomy.type";
 
-import RoboticsHardwareImage from "@/assets/images/robotics-and-autonomy/robotics-hardware-image.png";
+import RoboticsHardwareImage from "@/assets/images/robotics-and-autonomy/robotics-hardware-image.jpg";
 
 export const title: RoboticsAutonomyServiceTitleType = "Robotics Hardware";
 

@@ -2,7 +2,7 @@ import {
   RoboticsAutonomyServiceContentType,
   RoboticsAutonomyServiceTitleType,
 } from "@/types/roboticsAndAutonomy.type";
-import ComputerVisionImage from "@/assets/images/robotics-and-autonomy/computer-vision-image.png";
+import ComputerVisionImage from "@/assets/images/robotics-and-autonomy/computer-vision-image.jpg";
 
 export const title: RoboticsAutonomyServiceTitleType = "Computer Vision";
 
