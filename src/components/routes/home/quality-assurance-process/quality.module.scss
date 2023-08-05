@@ -86,23 +86,23 @@
                     padding-left: 30px;
 
                     @media only screen and (max-width: "1230px") {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
+                        // display: flex;
+                        // flex-direction: column;
+                        // justify-content: center;
+                        // align-items: center;
                         padding: 0;
                     }
 
-                    @media only screen and (max-width: "550px") {
-                        align-items: flex-start;
-                    }
+                    // @media only screen and (max-width: "550px") {
+                    //     align-items: flex-start;
+                    // }
 
                     p {
                         @include paragraph.paragraph-mixin;
                         color: colors.$primary_dark2;
                         text-align: left;
                         font-weight: 500;
-                        height: 50px;
+                        height: 70px;
                         text-indent: unset;
                         font-size: 1rem;
                         margin-bottom: 20px;

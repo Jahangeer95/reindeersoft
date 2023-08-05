@@ -20,11 +20,6 @@ export const agileContent: AgileDevelopmentContentType = {
         "In Agile development, testing is performed continuously throughout the development process. QA teams are responsible for testing the functionality developed during each sprint, ensuring that it meets the acceptance criteria and aligns with the overall project objectives.",
     },
     {
-      title: "Test-Driven Development (TDD)",
-      description:
-        " TDD is a development approach that emphasizes writing tests before writing code. This helps to ensure that the code meets the requirements and that any issues are identified early on.",
-    },
-    {
       title: "Automated Testing",
       description:
         "QA professionals work with developers to create automated test scripts that can be run regularly to verify the software's functionality and identify any regressions. Automated testing accelerates the testing process, providing rapid feedback on the code changes made during each sprint.",
