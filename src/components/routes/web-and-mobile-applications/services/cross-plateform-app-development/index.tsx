@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { Container } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
 import * as data from "./appDevelopmentData";
+import { useView } from "@/hooks/useView";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./AppDevelopment.module.scss";
 
 const AppDevelopment = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+  const { ref, inView } = useView();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,7 +29,13 @@ const AppDevelopment = () => {
       className={styles.appDevelopmentMain}
       id={camelToDash(data.crossPlateformAppDevelopmentTitle)}
     >
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">
             {data.crossPlateformAppDevelopmentTitle}

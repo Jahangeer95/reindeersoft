@@ -3,6 +3,7 @@
 @use "../../../../../sass/paragraph";
 @use "../../../../../sass/colors";
 @use "../../../../../sass/font";
+@use "../../../../../sass/visibility" as vis;
 
 .appDevelopmentMain {
     padding: 80px 0;
@@ -109,4 +110,12 @@
     height: 100% !important;
     left: 0 !important;
     top: 0 !important;
+}
+
+.content-container {
+    @include vis.hiddenVisibility;
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
 }

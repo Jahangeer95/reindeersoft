@@ -1,16 +1,22 @@
-import CloudApplicationDevelopment from "@/components/content/cloud-application-development";
-import Head from "next/head";
 import React from "react";
+import dynamic from "next/dynamic";
+import Loading from "@/components/animations/loading";
+import MetaInformation from "@/utils/meta";
+
+const CloudApplicationDevelopment = dynamic(
+  () => import("@/components/routes/cloud-application-development"),
+  {
+    loading: () => <Loading />,
+  }
+);
 
 const CloudAppDevelopemntPage = () => {
   return (
     <>
-      <Head>
-        <title>Cloud Application Development - ReindeerSoft</title>
-        <meta name="description" content="Cloud Application Development" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <MetaInformation
+        title="Cloud Application Development - ReindeerSoft"
+        description="This page is related to the Cloud Application Development services provided by ReindeerSoft"
+      />
       <CloudApplicationDevelopment />
     </>
   );
