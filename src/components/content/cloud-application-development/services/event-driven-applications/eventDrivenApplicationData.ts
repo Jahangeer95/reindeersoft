@@ -2,7 +2,7 @@ import {
   CloudAppServiceContent,
   CloudAppServiceTitleType,
 } from "@/types/cloudAppDevelopment.type";
-import eventDrivenApplications from "@/assets/images/cloud-application-development/distributed-system.jpg";
+import eventDrivenApplications from "@/assets/images/cloud-application-development/event-driven-applications.jpg";
 
 export const eventDrivenApplicationsTitle: CloudAppServiceTitleType =
   "Event Driven Applications";
