@@ -3,7 +3,7 @@
 
 .homeBannerImage {
     @include gradient.bannerGradient(url("../assets/images/home/banner.gif"));
-    max-height: fit-content;
+    max-height: fit-content !important;
 
     div {
         div {
