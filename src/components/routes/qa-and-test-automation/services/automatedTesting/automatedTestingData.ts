@@ -98,7 +98,7 @@ export const technologiesList: TechnologiesArrayType = [
     icon: bash,
   },
   {
-    alt: "Pyhton",
+    alt: "Python",
     icon: python,
   },
   {
