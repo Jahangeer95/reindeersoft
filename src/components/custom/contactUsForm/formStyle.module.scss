@@ -16,6 +16,10 @@
         @include font.font(0.8rem, 100%, 300);
         border: 1px solid colors.$primary-dark2;
 
+        @media only screen and (max-width: "768px") {
+            font-size: max(16px, 1.3rem);
+        }
+
         &::placeholder {
             color: colors.$primary_light;
         }
@@ -38,6 +42,10 @@
         border: 1px solid colors.$primary-dark2;
         @include font.font(0.8rem, 100%, 300);
 
+        @media only screen and (max-width: "768px") {
+            font-size: max(16px, 1.3rem);
+        }
+
         &::placeholder {
             color: colors.$primary_light;
         }
@@ -48,6 +56,11 @@
         height: 45px;
         border: 1px solid colors.$primary-dark2;
         @include font.font(0.8rem, 100%, 300);
+        color: colors.$primary_light;
+
+        @media only screen and (max-width: "768px") {
+            font-size: max(16px, 1.3rem);
+        }
 
     }
 

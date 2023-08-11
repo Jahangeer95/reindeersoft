@@ -5,7 +5,7 @@
 @use "../../../sass/visibility" as vis;
 
 .ServicesMain {
-    padding: 80px 0;
+    padding: 4rem 0;
 
 
     div {
@@ -21,6 +21,7 @@
                 flex-flow: row wrap;
                 gap: 4%;
                 row-gap: 50px;
+                margin-top: 1rem;
 
                 @media only screen and (max-width: "1200px") {
                     gap: 5%;
@@ -109,6 +110,10 @@
 
 .content-container {
     @include vis.hiddenVisibility;
+
+    @media only screen and (max-width: "768px") {
+        @include vis.showVisibility;
+    }
 }
 
 .content-container.visible {

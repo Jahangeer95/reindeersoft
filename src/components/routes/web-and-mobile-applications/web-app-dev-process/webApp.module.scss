@@ -4,8 +4,7 @@
 @use "../../../../sass/gradient";
 
 .WebAppProcessMain {
-    padding: 80px 0;
-    // @include gradient.backgroundGradient;
+    padding: 4rem 0;
 
     div {
         div {
@@ -13,7 +12,6 @@
 
             h2 {
                 @include heading.levelTwo-heading;
-                margin-bottom: 60px;
 
             }
 
