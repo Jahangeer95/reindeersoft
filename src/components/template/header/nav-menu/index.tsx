@@ -37,7 +37,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
   let marginTop;
   if (window.innerWidth <= 768) {
     marginTop = {
-      marginTop: props.button === "services" ? "190px" : "230px",
+      marginTop: props.button === "services" ? "180px" : "220px",
     };
   }
 
