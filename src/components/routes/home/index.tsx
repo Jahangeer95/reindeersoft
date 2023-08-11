@@ -12,7 +12,7 @@ const HomeContent = () => {
     <>
       <Banner />
 
-      <MissionStatement />
+      {/* <MissionStatement /> */}
 
       <OurServices />
 
