@@ -6,7 +6,7 @@
 @use "../../../../sass/visibility";
 
 .rightServiceDescriptionMain {
-    padding: 80px 0;
+    padding: 4rem 0;
     @include gradient.backgroundGradient;
 
     div {
@@ -82,9 +82,7 @@
     @include visibility.hiddenVisibilityRightToLeft;
 
     @media only screen and (max-width: "768px") {
-        transform: translateY(0px);
-        opacity: 1;
-        transition: all 0.7s ease-in-out;
+        @include visibility.showVisibilityRightToLeft;
     }
 }
 
@@ -97,24 +95,10 @@
     @include visibility.hiddenVisibilityLeftToRight;
 
     @media only screen and (max-width: "768px") {
-        transform: translateY(0px);
-        opacity: 1;
-        transition: all 0.7s ease-in-out;
+        @include visibility.showVisibilityLeftToRight;
     }
 }
 
 .image-container.visible {
     @include visibility.showVisibilityLeftToRight;
-}
-
-.content-container {
-    @media only screen and (max-width: "768px") {
-        @include visibility.hiddenVisibility;
-    }
-}
-
-.content-container.visible {
-    @media only screen and (max-width: "768px") {
-        @include visibility.showVisibility;
-    }
 }

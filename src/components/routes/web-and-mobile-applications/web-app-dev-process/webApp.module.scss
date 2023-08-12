@@ -2,6 +2,7 @@
 @use "../../../../sass/heading";
 @use "../../../../sass/paragraph";
 @use "../../../../sass/gradient";
+@use "../../../../sass/visibility" as vis;
 
 .WebAppProcessMain {
     padding: 4rem 0;
@@ -77,4 +78,16 @@
 
     }
 
+}
+
+.content-container {
+    @include vis.hiddenVisibility;
+
+    @media only screen and (max-width: "768px") {
+        @include vis.showVisibility;
+    }
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
 }

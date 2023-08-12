@@ -13,7 +13,7 @@ export const engagementModalData: EngagementModelDataTypes = [
     column2: "Deliver a specific project within scope, time, and budget",
     column3: "We take full responsibility for project execution",
     column4: "Predictable outcome and cost",
-    column5: "Limited scope flexibility; may not suit evolving needs.",
+    column5: "Limited scope flexibility; may not suit evolving needs",
   },
   {
     column1: "Staff Augmentation",
