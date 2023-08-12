@@ -3,11 +3,20 @@ import { Container } from "react-bootstrap";
 import ProgressCircle from "@/components/ui/ProgressCircle";
 import * as data from "./qualityAssuranceProcessData";
 import styles from "./quality.module.scss";
+import { useView } from "@/hooks/useView";
 
 const QualityAssuranceProcess = () => {
+  const { ref, inView } = useView();
+
   return (
     <section className={styles.QualityMain}>
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h2 className="text-center">{data.title}</h2>
           <p>{data.description}</p>

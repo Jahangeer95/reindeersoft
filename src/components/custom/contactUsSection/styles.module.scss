@@ -25,6 +25,10 @@
 
 .content-container {
     @include visibility.hiddenVisibility;
+
+    @media only screen and (max-width: "768px") {
+        @include visibility.showVisibility;
+    }
 }
 
 .content-container.visible {

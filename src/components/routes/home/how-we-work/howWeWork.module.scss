@@ -7,7 +7,7 @@
 
 .howWeWorkMain {
     position: relative;
-    padding: 80px 0;
+    padding: 4rem 0;
 
     div {
 
@@ -27,6 +27,10 @@
                 scrollbar-width: auto;
                 scroll-behavior: smooth;
                 scrollbar-color: transparent transparent;
+
+                @media only screen and (max-width: "991px") {
+                    padding: 20px;
+                }
 
                 @media only screen and (max-width: "768px") {
                     padding: 0;
@@ -110,7 +114,7 @@
                                 border-left: 2px solid color.$white-color;
                                 padding: 10px;
                                 color: color.$table-header-font-color;
-                                @include font.font(0.9rem, 105%, 600);
+                                @include font.font(0.8rem, 105%, 600);
 
                                 &:first-child {
                                     background-color: transparent;
@@ -133,7 +137,7 @@
                                 border-left: 2px solid color.$white-color;
                                 padding: 10px;
                                 color: color.$primary_dark4;
-                                @include font.font(0.8rem, 105%, 400);
+                                @include font.font(0.7rem, 105%, 400);
 
 
                                 &:first-child {
@@ -141,7 +145,7 @@
                                     border-left: 2px solid color.$white-color;
                                     padding: 10px;
                                     color: color.$table-header-font-color;
-                                    @include font.font(0.9rem, 105%, 600);
+                                    @include font.font(0.8rem, 105%, 600);
                                     border-left: unset;
 
                                 }
@@ -161,6 +165,10 @@
 
 .content-container {
     @include vis.hiddenVisibility;
+
+    @media only screen and (max-width: "768px") {
+        @include vis.showVisibility;
+    }
 }
 
 .content-container.visible {
