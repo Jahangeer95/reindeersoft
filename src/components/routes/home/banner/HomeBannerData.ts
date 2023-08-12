@@ -70,5 +70,5 @@ export const homeBannerData: HomeBannerDataType = {
   title1: "ReindeerSoft",
   title2: "Embrace Ethics, Pursue Excellence",
   description:
-    "We specialize in driving business growth through innovative digital solutions. Our focus is on creating streamlined software solutions to address intricate challenges, simplifying complexity for our clients.",
+    "We specialize in driving business growth through innovative digital solutions. Our focus is on creating software solutions to address intricate challenges while simplifying complexity for our clients at a competitive cost.",
 };

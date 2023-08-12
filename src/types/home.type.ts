@@ -22,6 +22,18 @@ export type OurServiceListType = {
   title: string;
 }[];
 
+export type EngagementModelDataTypes = {
+  column1: string;
+  column2: string;
+  column3: string;
+  column4: string;
+  column5: string;
+}[];
+export type MobileViewTablePropTypes = {
+  title: string;
+  description: string[];
+};
+
 export type FaqsTitleType = string;
 export type FaqsContentType = {
   question: string;

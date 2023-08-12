@@ -30,6 +30,50 @@
 
                 @media only screen and (max-width: "768px") {
                     padding: 0;
+                    background: unset;
+
+                    div {
+
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 30px;
+                        padding: 10px;
+
+                        div {
+                            width: 70%;
+                            min-width: 300px;
+                            border-radius: 10px;
+                            display: block;
+                            padding: unset;
+                            box-shadow: 4px 4px 8px rgba(color.$primary_dark4, 0.20), -4px -4px 8px rgba(color.$primary_dark4, 0.20);
+
+                            h4 {
+                                @include h.levelFour-heading;
+                                @include g.lightGradient4;
+                                border-radius: 10px 10px 0 0;
+                                color: color.$table-header-font-color;
+                                width: unset;
+                                margin: 0;
+                            }
+
+                            p {
+                                @include font.font(1rem, 105%, 400);
+                                padding: 8px;
+                                margin: 0;
+                                @include g.lightGradient1;
+
+                                span {
+                                    font-weight: 500;
+                                    margin-right: 5px;
+                                }
+
+                                &:last-of-type {
+                                    border-radius: 0 0 10px 10px;
+                                }
+                            }
+                        }
+                    }
                 }
 
                 &::-webkit-scrollbar {
@@ -54,19 +98,19 @@
 
 
                     thead {
+                        width: inherit;
+
                         tr {
+                            width: inherit;
                             border-bottom: 2px solid color.$white-color;
 
                             th {
+                                width: 20%;
                                 @include g.lightGradient4;
                                 border-left: 2px solid color.$white-color;
                                 padding: 10px;
                                 color: color.$table-header-font-color;
-                                @include font.font(0.8rem, 105%, 600);
-
-                                @media only screen and (max-width: "768px") {
-                                    font-size: max(16px, 1rem);
-                                }
+                                @include font.font(0.9rem, 105%, 600);
 
                                 &:first-child {
                                     background-color: transparent;
@@ -89,23 +133,17 @@
                                 border-left: 2px solid color.$white-color;
                                 padding: 10px;
                                 color: color.$primary_dark4;
-                                @include font.font(0.7rem, 105%, 400);
+                                @include font.font(0.8rem, 105%, 400);
 
-                                @media only screen and (max-width: "768px") {
-                                    font-size: max(14px, 1rem);
-                                }
 
                                 &:first-child {
                                     @include g.lightGradient4;
                                     border-left: 2px solid color.$white-color;
                                     padding: 10px;
                                     color: color.$table-header-font-color;
-                                    @include font.font(0.8rem, 105%, 600);
+                                    @include font.font(0.9rem, 105%, 600);
                                     border-left: unset;
 
-                                    @media only screen and (max-width: "768px") {
-                                        font-size: max(16px, 1rem);
-                                    }
                                 }
 
                             }
@@ -114,6 +152,8 @@
 
 
                 }
+
+
             }
         }
     }

@@ -1,34 +1,33 @@
-export const engagementModalData = [
+import { EngagementModelDataTypes } from "@/types/home.type";
+
+export const engagementModalData: EngagementModelDataTypes = [
   {
-    column1: "",
-    column2: "OutStaffing Model",
-    column3: "Dedicated Team Model",
-    column4: "Technology Partner",
+    column1: "Business Medel",
+    column2: "Main Goal",
+    column3: "Cooperation Model",
+    column4: "Main Advantage",
+    column5: "Main Disadvantage",
   },
   {
-    column1: "Main Goal",
-    column2: "Complementing your in-house team",
-    column3: "Handling various development task",
-    column4: "Fulfilling the role of CTO",
+    column1: "Project Engagement",
+    column2: "Deliver a specific project within scope, time, and budget",
+    column3: "We take full responsibility for project execution",
+    column4: "Predictable outcome and cost",
+    column5: "Limited scope flexibility; may not suit evolving needs.",
   },
   {
-    column1: "Cooperation Model",
-    column2: "The client has full control over the developer's work",
-    column3:
-      "The client communicates with the project manager who passes tasks to developer",
+    column1: "Staff Augmentation",
+    column2: "Enhance client's team with skilled professionals",
+    column3: "We provides temporary resources as extension",
+    column4: "Quick access to specialized skills with flexibility",
+    column5: "Client is responsible for project management",
+  },
+  {
+    column1: "Dedicated Development Team",
+    column2: "Establish a long-term partnership for ongoing projects",
+    column3: "We provides dedicated team working exclusively",
     column4:
-      "The vendor profoundly analyzes the client's business goals and offer a best-feeting solution",
-  },
-  {
-    column1: "Main Advantage",
-    column2: "Quickly scaling your current team",
-    column3: "Vetted professionals with industry-specific experience",
-    column4: "Full engagement in the production development",
-  },
-  {
-    column1: "Main Disadvantages",
-    column2: "Project management is on your side",
-    column3: "Detailed technical tasks are required",
-    column4: "Sharing lots of sensitive information with a third party",
+      "Deep collaboration and alignment with client's goals and processes",
+    column5: "Continuous management efforts",
   },
 ];
