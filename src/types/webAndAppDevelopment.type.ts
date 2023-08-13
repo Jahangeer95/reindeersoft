@@ -49,6 +49,8 @@ export interface WebDevelopmentTechnologiesType {
 // Native mobile development serice data type
 export type NativeMobileAppDevelopmentTitleType = string;
 export type NativeMobileAppDevelopmentContentType = string[];
+export interface NativeAppDevelopmentTechnologiesType
+  extends WebDevelopmentTechnologiesType {}
 
 // Cross Plateform App Development service data type
 export type CrossPlateformAppDevelopmentServiceTitleType = string;
