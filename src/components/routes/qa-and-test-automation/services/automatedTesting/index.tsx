@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import React, { useEffect, useState } from "react";
+import { useView } from "@/hooks/useView";
 import { Container } from "react-bootstrap";
 import * as data from "./automatedTestingData";
 import { camelToDash } from "@/utils/functions/camelToDash";
@@ -7,6 +8,7 @@ import styles from "./automatedTesting.module.scss";
 
 const AutomatedTesting = () => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
+  const { ref, inView } = useView();
 
   useEffect(() => {
     const interval = setInterval(() => {

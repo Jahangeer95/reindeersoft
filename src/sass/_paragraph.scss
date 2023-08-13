@@ -10,10 +10,12 @@
 
     @media only screen and (max-width: "768px") {
         text-justify: inter-character;
+        @include font.font(16px, 120%, 400);
+    }
+
+    @media only screen and (max-width: "550px") {
+        text-justify: inter-character;
         @include font.font(14px, 120%, 400);
     }
 
-    &:last-child {
-        margin-bottom: 0;
-    }
 }

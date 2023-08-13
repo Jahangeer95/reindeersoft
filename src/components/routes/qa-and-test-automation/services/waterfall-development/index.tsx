@@ -1,16 +1,25 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { useView } from "@/hooks/useView";
 import * as data from "./waterFallDevelopmentData";
-import styles from "./waterfallDevelopment.module.scss";
 import { camelToDash } from "@/utils/functions/camelToDash";
+import styles from "./waterfallDevelopment.module.scss";
 
 const WaterfallDevelopment = () => {
+  const { ref, inView } = useView();
+
   return (
     <section
       className={styles.WaterFallDevelopmentMain}
       id={camelToDash(data.title)}
     >
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>
           <article>

@@ -63,7 +63,7 @@
 
 
                         div {
-                            width: 70%;
+                            width: 80%;
                             min-width: 300px;
                             border-radius: 10px;
                             display: block;
@@ -82,22 +82,28 @@
                                 margin: 0;
                             }
 
-                            p {
-                                @include font.font(1rem, 105%, 400);
-                                padding: 5px;
-                                margin: 0;
-                                color: color.$primary_dark4;
+                            aside {
+                                padding: 0.6rem;
 
-                                span {
+                                p {
+                                    @include font.font(1rem, 105%, 400);
+                                    margin-bottom: 0.7rem;
+                                    color: color.$primary_dark4;
 
-                                    font-weight: 500;
-                                    margin-right: 5px;
-                                }
+                                    span {
 
-                                &:last-of-type {
-                                    border-radius: 0 0 10px 10px;
+                                        font-weight: 500;
+                                        margin-right: 5px;
+                                    }
+
+                                    &:last-of-type {
+                                        border-radius: 0 0 10px 10px;
+                                        margin-bottom: 0;
+                                    }
                                 }
                             }
+
+
                         }
                     }
                 }

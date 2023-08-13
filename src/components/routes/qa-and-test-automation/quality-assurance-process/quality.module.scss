@@ -2,9 +2,10 @@
 @use "../../../../sass/heading";
 @use "../../../../sass/paragraph";
 @use "../../../../sass/gradient";
+@use "../../../../sass/visibility" as vis;
 
 .QualityMain {
-    padding: 80px 0;
+    padding: 4rem 0;
     @include gradient.backgroundGradient;
 
     div {
@@ -19,14 +20,9 @@
                 @include paragraph.paragraph-mixin;
                 text-align: center;
                 text-indent: unset;
-                margin-bottom: 30px;
-                width: 85%;
-                max-width: 1100px;
+                margin-bottom: 0 !important;
+                max-width: 900px;
                 font-size: 0.9rem;
-
-                @media only screen and (max-width: "1250px") {
-                    width: 100%;
-                }
             }
 
 
@@ -56,7 +52,7 @@
                 }
 
                 @media only screen and (max-width: "550px") {
-                    width: 80%;
+                    width: 85%;
                 }
 
                 .Border {
@@ -94,7 +90,7 @@
                         // flex-direction: column;
                         // justify-content: center;
                         // align-items: flex-start;
-                        padding: 0;
+                        // padding: 0;
                     }
 
                     // @media only screen and (max-width: "550px") {
@@ -105,7 +101,7 @@
                         @include paragraph.paragraph-mixin;
                         color: colors.$primary_dark2;
                         text-align: left;
-                        font-weight: 500;
+                        font-weight: 500 !important;
                         height: 70px;
                         text-indent: unset;
                         font-size: 1rem;
@@ -113,6 +109,8 @@
 
                         @media only screen and (max-width: "768px") {
                             height: fit-content;
+                            margin-bottom: 20px !important;
+                            font-size: max(1.2rem, 16px) !important;
                         }
                     }
 
@@ -137,4 +135,16 @@
 
     }
 
+}
+
+.content-container {
+    @include vis.hiddenVisibility;
+
+    @media only screen and (max-width: "768px") {
+        @include vis.showVisibility;
+    }
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
 }

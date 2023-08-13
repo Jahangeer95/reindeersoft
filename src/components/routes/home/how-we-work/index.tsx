@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { Container } from "react-bootstrap";
 import * as data from "./engagementModalData";
@@ -9,7 +9,6 @@ import MobileViewTable from "./MobileViewTable";
 
 const HowWeWork = () => {
   const { ref, inView } = useView();
-  const [mobileView, setMobileView] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
