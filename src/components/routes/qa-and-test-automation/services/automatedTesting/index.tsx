@@ -29,7 +29,13 @@ const AutomatedTesting = () => {
       className={styles.AutomatedTestingMain}
       id={camelToDash(data.title)}
     >
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h3 className="text-center">{data.title}</h3>
           <article>
@@ -45,9 +51,8 @@ const AutomatedTesting = () => {
             </ul>
           </article>
         </div>
-      </Container>
-      <div className={styles.AutomationServices}>
-        <Container fluid="lg">
+
+        <div className={styles.AutomationServices}>
           <div className="d-flex flex-column align-items-center">
             <h4 className="text-center">{data.automationServicesTitle}</h4>
             <article>
@@ -69,11 +74,10 @@ const AutomatedTesting = () => {
               </div>
             </article>
           </div>
-        </Container>
-      </div>
-      <div className={styles.Slider}>
-        <h4 className="text-center">{data.techTitle}</h4>
-        <Container fluid="lg">
+        </div>
+        <div className={styles.Slider}>
+          <h4 className="text-center">{data.techTitle}</h4>
+
           <div>
             {data.technologiesList.map((state, idx) => {
               return (
@@ -88,8 +92,8 @@ const AutomatedTesting = () => {
               );
             })}
           </div>
-        </Container>
-      </div>
+        </div>
+      </Container>
     </section>
   );
 };

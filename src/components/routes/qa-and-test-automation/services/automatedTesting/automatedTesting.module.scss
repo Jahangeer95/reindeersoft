@@ -51,21 +51,20 @@
                 }
             }
         }
-    }
 
-    .AutomationServices {
-        position: relative;
-        height: fit-content;
-
-        @media only screen and (max-width: 991px) {
-            padding: 0 20px;
-        }
-
-        div {
-            padding: 0;
+        .AutomationServices {
             position: relative;
+            height: fit-content;
+
+            @media only screen and (max-width: 991px) {
+                padding: 0 20px;
+            }
 
             div {
+                padding: 0;
+                position: relative;
+
+
 
                 h4 {
                     @include heading.levelFour-heading;
@@ -148,7 +147,7 @@
                                 p {
                                     @include paragraph.paragraph-mixin;
                                     text-indent: unset;
-                                    font-weight: 500;
+                                    font-weight: 500 !important;
                                     color: colors.$secondary_dark1;
                                     text-align: left;
                                     text-transform: capitalize;
@@ -158,23 +157,22 @@
                         }
                     }
 
+
                 }
             }
         }
-    }
 
-    .Slider {
-        padding-top: 1.2rem;
-        user-select: none;
+        .Slider {
+            padding-top: 1.2rem;
+            user-select: none;
 
-        h4 {
-            @include heading.levelFour-heading;
-            margin-bottom: 50px;
-            width: 100%;
-        }
+            h4 {
+                @include heading.levelFour-heading;
+                margin-bottom: 50px;
+                width: 100%;
+            }
 
-        div {
-            padding: 0;
+
 
             div {
                 display: flex;
@@ -237,9 +235,12 @@
                     }
                 }
             }
-        }
 
+
+        }
     }
+
+
 }
 
 .textDisplay {
