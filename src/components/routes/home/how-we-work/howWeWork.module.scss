@@ -69,12 +69,15 @@
                             display: block;
                             padding: unset;
                             border-bottom: 1px ridge rgba(color.$primary-dark2, 1);
+                            @include g.lightGradient2;
 
                             h4 {
                                 @include h.levelFive-heading;
-                                @include g.lightGradient3;
+
                                 border-radius: 10px 10px 0 0;
-                                color: color.$white-color;
+                                @include g.lightGradient4;
+
+                                color: color.$table-header-font-color;
                                 width: unset;
                                 margin: 0;
                             }
@@ -83,9 +86,10 @@
                                 @include font.font(1rem, 105%, 400);
                                 padding: 5px;
                                 margin: 0;
-                                background-color: color.$white-color;
+                                color: color.$primary_dark4;
 
                                 span {
+
                                     font-weight: 500;
                                     margin-right: 5px;
                                 }
@@ -127,9 +131,7 @@
                                     @include font.font(0.8rem, 105%, 600);
 
                                     &:first-child {
-                                        background-color: transparent;
-                                        border-left-color: transparent;
-                                        visibility: hidden;
+                                        border-left: none;
                                     }
                                 }
                             }

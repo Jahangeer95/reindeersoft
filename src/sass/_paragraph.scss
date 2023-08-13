@@ -10,7 +10,7 @@
 
     @media only screen and (max-width: "768px") {
         text-justify: inter-character;
-        @include font.font(max(1rem, 14px), 120%, 400);
+        @include font.font(14px, 120%, 400);
     }
 
     &:last-child {
