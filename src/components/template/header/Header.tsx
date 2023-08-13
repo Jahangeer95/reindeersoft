@@ -14,7 +14,7 @@ const Header = () => {
   const [display, setDisplay] = useState(false);
   const [hideSideBar, setHideSideBar] = useState(true);
   const [button, setButton] = useState<null | any>(null);
-  const { pathname } = useRouter();
+  const { pathname, push } = useRouter();
 
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
@@ -51,6 +51,13 @@ const Header = () => {
       setValue(false);
       setDisplay(false);
     }
+  };
+
+  const handleScrollToElement = (event: any, elementId: string) => {
+    event.preventDefault();
+    sideBarHandler();
+
+    push(`/?id=#${elementId}`, `/#${elementId}`);
   };
 
   useEffect(() => {
@@ -112,12 +119,18 @@ const Header = () => {
                   >
                     Services
                   </button>
-                  <button
-                    type="button"
-                    onMouseEnter={() => menuHandler("engagement-model")}
+                  <Link
+                    href="#"
+                    onClick={(event) =>
+                      handleScrollToElement(event, "engagement-modal")
+                    }
+                    onMouseEnter={() => {
+                      setDisplay(false);
+                      setValue(false);
+                    }}
                   >
                     How We Work
-                  </button>
+                  </Link>
 
                   <Link
                     href="/about-us"
