@@ -5,59 +5,55 @@ import {
 } from "@/types/qaAndTestAutomation.type";
 
 export const title: QualityAssuranceProcessTitleType =
-  "Our Quality assurance Process";
+  "Engagement and Development Process";
 
 export const description: QualityAssuranceProcessDescriptionType =
-  "Our Quality Assurance Process is transparent and offers full traceability throughout all phases.";
+  "Our engagement and development process ensures a smooth journey from conceptualization to successful deployment while maintaining communication and adaptability.";
 
 export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   {
     id: 1,
-    heading: "Requirement Analysis",
+    heading: "Discovery & Analysis",
     list: [
-      "Correct understanding of the requirements",
-      "Remove ambiguities from the requirements",
-      "Raise open questions",
+      "In-depth understanding of project requirements.",
+      "Identification of goals and challenges.",
+      "Tailoring a strategy aligned with your vision.",
     ],
   },
   {
     id: 2,
-    heading: "Test Planning & Strategy",
+    heading: "Planning & Design",
     list: [
-      "Define use cases",
-      "Identify testing environment",
-      "Define testing matrix",
-      "Define testing strategy",
-      "Complete test plan",
+      "Collaborative mapping of the project roadmap.",
+      "Defining milestones, tasks, and timelines.",
+      "Creation of a visual and functional blueprint.",
     ],
   },
   {
     id: 3,
-    heading: "Test Plan Review & Approval",
+    heading: "Development & Iteration",
     list: [
-      "Internal review of the test plan",
-      "Customer review of the test plan",
-      "Updates in the test plan as per the feedback",
-      "Customer approval on the test plan",
+      "Skilled developers bring the project to life.",
+      "Iterative cycles for continuous improvement.",
+      "Regular updates and reviews for transparency.",
     ],
   },
   {
     id: 4,
-    heading: "Test Execution & Bug Reporting",
+    heading: "Testing & Quality Assurance",
     list: [
-      "Test execution",
-      "Bug reporting",
-      "Product's release stability tracking",
-      "Weekly status sharing with customer",
+      "Comprehensive evaluation of functionality.",
+      "Rigorous testing for usability and security.",
+      "Ensuring industry-standard compliance.",
     ],
   },
   {
     id: 5,
-    heading: "Reporting and Final Review",
+    heading: "Delivery & Support",
     list: [
-      "Compile report of final testing status",
-      "Share the report with customer",
-      "Review the report with customer",
+      "Project delivery upon perfection.",
+      "Post-launch support for ongoing evolution.",
+      "Adaptation based on user feedback and needs.",
     ],
   },
 ];
