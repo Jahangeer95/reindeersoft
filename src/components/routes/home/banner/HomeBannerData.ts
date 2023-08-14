@@ -8,7 +8,7 @@ import * as webAndAppDevelopment from "../../web-and-mobile-applications/banner/
 import * as cloudApplicationAndDevelopment from "../../cloud-application-development/banner/bannerData";
 import * as qaAndTestAutomation from "../../qa-and-test-automation/banner/bannerData";
 import * as roboticsAndAutonomy from "../../robotics-and-autonomy/banner/bannerData";
-import * as iot from "../../../content/iot/banner/bannerData";
+import * as iot from "../../iot/banner/bannerData";
 
 // Has to be modified since slider is not there
 // still this data used in other section
