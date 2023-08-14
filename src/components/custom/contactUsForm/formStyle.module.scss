@@ -17,7 +17,7 @@
         border: 1px solid colors.$primary-dark2;
 
         @media only screen and (max-width: "768px") {
-            font-size: max(16px, 1.3rem);
+            font-size: 16px;
         }
 
         &::placeholder {
@@ -43,7 +43,7 @@
         @include font.font(0.8rem, 100%, 300);
 
         @media only screen and (max-width: "768px") {
-            font-size: max(16px, 1.3rem);
+            font-size: 16px;
         }
 
         &::placeholder {
@@ -59,7 +59,7 @@
         color: colors.$primary_light;
 
         @media only screen and (max-width: "768px") {
-            font-size: max(16px, 1.3rem);
+            font-size: 16px;
         }
 
     }

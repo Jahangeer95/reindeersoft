@@ -3,6 +3,7 @@
 @use "../../../../sass/heading";
 @use "../../../../sass/paragraph";
 @use "../../../../sass/font";
+@use "../../../../sass/visibility";
 
 
 .modalAndServicesMain {
@@ -90,4 +91,17 @@
             }
         }
     }
+}
+
+
+.content-container {
+    @include visibility.hiddenVisibilityScaledUp;
+
+    @media only screen and (max-width: "768px") {
+        @include visibility.showVisibilityScaledUp;
+    }
+}
+
+.content-container.visible {
+    @include visibility.showVisibilityScaledUp;
 }

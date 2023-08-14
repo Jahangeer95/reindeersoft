@@ -30,3 +30,15 @@
     transform: translateX(0px);
     opacity: 1;
 }
+
+@mixin hiddenVisibilityScaledUp {
+    transform: rotateY(90deg);
+    opacity: 0;
+    transition: all 0.7s ease-out;
+}
+
+@mixin showVisibilityScaledUp {
+    transform: rotateY(0deg);
+    width: 100%;
+    opacity: 1;
+}

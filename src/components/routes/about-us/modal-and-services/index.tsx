@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useView } from "@/hooks/useView";
 import { modalAndServicesData } from "./modalAndServiceData";
 import styles from "./ModalAndService.module.scss";
 
 const ModalAndServiceOffering = () => {
   const router = useRouter();
+  const { ref, inView } = useView();
 
   const handleScrollToElement = (event: any, elementId: string) => {
     event.preventDefault();
@@ -14,7 +16,12 @@ const ModalAndServiceOffering = () => {
   };
 
   return (
-    <section className={styles.modalAndServicesMain}>
+    <section
+      ref={ref}
+      className={`${styles["content-container"]} ${
+        styles.modalAndServicesMain
+      } ${inView ? styles.visible : ""}`}
+    >
       <div>
         <div>
           <article>

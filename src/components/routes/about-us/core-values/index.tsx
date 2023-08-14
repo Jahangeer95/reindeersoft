@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { useView } from "@/hooks/useView";
 import { Container } from "react-bootstrap";
 import * as data from "./coreValuesData";
 import styles from "./coreValues.module.scss";
-import { useView } from "@/hooks/useView";
 
 const OurCoreValues = () => {
   const { ref, inView } = useView();
