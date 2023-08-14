@@ -1,11 +1,12 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
-import { homeBannerArray } from "@/components/routes/home/banner/HomeBannerData";
-const menu = require("../../../../assets/images/cloud-application-development/cloud-application-development.jpg");
 import { camelToDash } from "@/utils/functions/camelToDash";
+import { servicesDataArray } from "./servicesdata";
 import { engagementModelData } from "./engagement";
 import styles from "./hoverMenu.module.scss";
+
+const menu = require("../../../../assets/images/home/banner.gif");
 
 const defaultValue = "";
 
@@ -44,10 +45,10 @@ const HoverMenu = (props: HoverMenuPropsType) => {
   const servicesMenu: JSX.Element = (
     <div className={styles.services}>
       <span>
-        <Image src={menuImage} alt="nav-menu" />
+        <Image src={menuImage} alt="nav-menu" priority />
       </span>
       <aside>
-        {homeBannerArray.map((state, index) => {
+        {servicesDataArray.map((state, index) => {
           return (
             <Link
               key={index}
@@ -62,6 +63,9 @@ const HoverMenu = (props: HoverMenuPropsType) => {
       </aside>
     </div>
   );
+
+  // We are not using Engagement model menu.....
+  // It is there in case we have to another nav menu...
 
   const engagementModelMenu: JSX.Element = (
     <div className={styles.engagementModel}>

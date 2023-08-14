@@ -69,7 +69,8 @@
                             display: block;
                             padding: unset;
                             border-bottom: 1px ridge rgba(color.$primary-dark2, 1);
-                            @include g.lightGradient2;
+                            // @include g.lightGradient2;
+                            background-color: rgba(color.$primary_dark2, 0.25);
 
                             h4 {
                                 @include h.levelFive-heading;
