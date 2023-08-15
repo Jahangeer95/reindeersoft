@@ -36,7 +36,7 @@ const HowWeWork = () => {
         }`}
       >
         <div className="d-flex flex-column align-items-center">
-          <h2>How We Work</h2>
+          <h2>Engagement Model</h2>
           <article>
             <div className={styles.mobileView}>
               <MobileViewTable

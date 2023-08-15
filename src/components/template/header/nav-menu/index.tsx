@@ -45,7 +45,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
   const servicesMenu: JSX.Element = (
     <div className={styles.services}>
       <span>
-        <Image src={menuImage} alt="nav-menu" priority />
+        <Image src={menuImage} alt="nav-menu-services-image" priority />
       </span>
       <aside>
         {servicesDataArray.map((state, index) => {
