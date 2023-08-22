@@ -6,7 +6,7 @@ import { servicesDataArray } from "./servicesdata";
 import { engagementModelData } from "./engagement";
 import styles from "./hoverMenu.module.scss";
 
-const menu = require("../../../../assets/images/home/banner.gif");
+const menu = require("@/assets/images/our-services.png");
 
 const defaultValue = "";
 
