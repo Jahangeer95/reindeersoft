@@ -36,6 +36,7 @@
 
                     @media only screen and (max-width: "768px") {
                         height: 290px;
+
                     }
 
                     @media only screen and (max-width: "550px") {
@@ -80,6 +81,12 @@
                         text-align: left;
                         color: colors.$white-color;
                         font-size: 0.7rem;
+
+                        @media only screen and (max-width:"768px") {
+                            text-align: justify;
+                            text-justify: inter-word;
+                            letter-spacing: 1.2px;
+                        }
                     }
 
                     span {

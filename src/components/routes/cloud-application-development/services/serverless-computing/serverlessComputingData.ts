@@ -2,7 +2,7 @@ import {
   CloudAppServiceContent,
   CloudAppServiceTitleType,
 } from "@/types/cloudAppDevelopment.type";
-import serverlessComputing from "@/assets/images/cloud-application-development/serverless-computing.webp";
+import serverlessComputing from "@/assets/images/cloud-application-development/serverless-computing.jpg";
 
 export const serverlessComputingTitle: CloudAppServiceTitleType =
   "Serverless Computing";
