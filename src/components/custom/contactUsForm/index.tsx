@@ -1,9 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Form } from "react-bootstrap";
 import styles from "./formStyle.module.scss";
 import countryList from "country-list";
+import { useFormik } from "formik";
+import * as Yup from "yup";
 
 const ContactUsForm = () => {
+  const formik = useFormik({
+    initialValues: {
+      "first-name": "",
+      "last-name": "",
+      email: "",
+      country: "",
+      seekingFor: "",
+      message: "",
+    },
+    onSubmit: (values) => {
+      console.log(values);
+    },
+    validationSchema: Yup.object({
+      "first-name": Yup.string().required("First Name  is required!"),
+      "last-name": Yup.string().required("Last Name is Required!"),
+      email: Yup.string()
+        .email("Invalid Email Format")
+        .required("Email is Required!"),
+      country: Yup.string().optional(),
+      seekingFor: Yup.string().required(
+        "What you are seeking for is Required!"
+      ),
+      message: Yup.string().min(10).required("Message is Required!"),
+    }),
+  });
   // should use currying concept for change Handler
 
   const whatAreYouSeekingArr: string[] = [
@@ -14,23 +41,51 @@ const ContactUsForm = () => {
     "Item 5",
   ];
 
+  useEffect(() => {
+    console.log(formik);
+  });
+
   return (
-    <Form className={styles.formMain}>
+    <Form className={styles.formMain} onSubmit={formik.handleSubmit}>
       <Form.Control
-        name="first-name"
         type="text"
+        className={
+          formik.errors["first-name"] && formik.touched["first-name"]
+            ? styles.error
+            : ""
+        }
         placeholder="First Name"
-        required
+        {...formik.getFieldProps("first-name")}
       />
       <Form.Control
-        name="last-name"
         type="text"
+        className={
+          formik.errors["last-name"] && formik.touched["last-name"]
+            ? styles.error
+            : ""
+        }
         placeholder="Last Name"
-        required
+        {...formik.getFieldProps("last-name")}
       />
-      <Form.Control name="email" type="email" placeholder="Email" required />
-      <Form.Select name="country" defaultValue="none" required>
-        <option value="none" disabled hidden>
+      <Form.Control
+        type="string"
+        className={
+          formik.errors["email"] && formik.touched["email"] ? styles.error : ""
+        }
+        placeholder="Email"
+        {...formik.getFieldProps("email")}
+      />
+      <Form.Select
+        {...formik.getFieldProps("country")}
+        className={
+          formik.errors["country"] && formik.touched["country"]
+            ? styles.error
+            : formik.touched["country"]
+            ? styles.selectText
+            : ""
+        }
+      >
+        <option value="none" selected hidden>
           Select Country (optional)
         </option>
         {countryList.getNames().map((state: string, idx: number) => (
@@ -39,8 +94,17 @@ const ContactUsForm = () => {
           </option>
         ))}
       </Form.Select>
-      <Form.Select name="seekingFor" defaultValue="none" required>
-        <option value="none" disabled hidden>
+      <Form.Select
+        {...formik.getFieldProps("seekingFor")}
+        className={
+          formik.errors["seekingFor"] && formik.touched["seekingFor"]
+            ? styles.error
+            : formik.touched["seekingFor"]
+            ? styles.selectText
+            : ""
+        }
+      >
+        <option value="none" selected hidden>
           What are you seeking for?
         </option>
         {whatAreYouSeekingArr.map((state: string, idx: number) => (
@@ -50,11 +114,15 @@ const ContactUsForm = () => {
         ))}
       </Form.Select>
       <Form.Control
-        name="message"
         as="textarea"
+        className={
+          formik.errors["message"] && formik.touched["message"]
+            ? styles.error
+            : ""
+        }
         rows={4}
         placeholder="Message"
-        required
+        {...formik.getFieldProps("message")}
       />
       <Form.Control type="submit" value="Submit" />
     </Form>

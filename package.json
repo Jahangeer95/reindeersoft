@@ -17,6 +17,7 @@
     "country-list": "^2.3.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "formik": "^2.4.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -26,6 +27,7 @@
     "react-transition-group": "^4.4.5",
     "sass": "^1.60.0",
     "sharp": "^0.32.0",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "yup": "^1.2.0"
   }
 }
