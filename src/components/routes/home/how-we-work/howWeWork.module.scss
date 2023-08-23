@@ -76,9 +76,10 @@
                                 @include h.levelFive-heading;
 
                                 border-radius: 10px 10px 0 0;
-                                @include g.lightGradient4;
+                                // @include g.lightGradient4;
+                                @include g.lightGradient3;
 
-                                color: color.$table-header-font-color;
+                                color: color.$white-color;
                                 width: unset;
                                 margin: 0;
                             }
@@ -131,10 +132,10 @@
 
                                 th {
                                     width: 20%;
-                                    @include g.lightGradient4;
+                                    @include g.lightGradient3;
                                     border-left: 2px solid color.$white-color;
                                     padding: 10px;
-                                    color: color.$table-header-font-color;
+                                    color: color.$white-color;
                                     @include font.font(0.8rem, 105%, 600);
 
                                     &:first-child {
@@ -160,10 +161,12 @@
 
 
                                     &:first-child {
-                                        @include g.lightGradient4;
+                                        // @include g.lightGradient4;
+                                        @include g.lightGradient3;
                                         border-left: 2px solid color.$white-color;
                                         padding: 10px;
-                                        color: color.$table-header-font-color;
+                                        // color: color.$table-header-font-color;
+                                        color: color.$white-color;
                                         @include font.font(0.8rem, 105%, 600);
                                         border-left: unset;
 
