@@ -5,7 +5,8 @@
 
 .contactUsSectionMain {
     padding: 4rem 0;
-    @include gradient.twoColorGradient;
+    // @include gradient.twoColorGradient;
+    @include gradient.darkGradient2;
 
     div {
         div {

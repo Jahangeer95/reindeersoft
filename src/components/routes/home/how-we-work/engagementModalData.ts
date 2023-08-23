@@ -3,10 +3,10 @@ import { EngagementModelDataTypes } from "@/types/home.type";
 export const engagementModalData: EngagementModelDataTypes = [
   {
     column1: "Business Model",
-    column2: "Main Goal",
+    column2: "Goal",
     column3: "Cooperation Model",
-    column4: "Main Advantage",
-    column5: "Main Disadvantage",
+    column4: "Advantage",
+    column5: "Limitation",
   },
   {
     column1: "Project Engagement",

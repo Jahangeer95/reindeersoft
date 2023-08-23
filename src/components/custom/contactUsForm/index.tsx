@@ -28,12 +28,7 @@ const ContactUsForm = () => {
         placeholder="Last Name"
         required
       />
-      <Form.Control
-        name="email"
-        type="email"
-        placeholder="Work Email"
-        required
-      />
+      <Form.Control name="email" type="email" placeholder="Email" required />
       <Form.Select name="country" defaultValue="none" required>
         <option value="none" disabled hidden>
           Select Country (optional)

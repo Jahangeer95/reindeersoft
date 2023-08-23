@@ -14,6 +14,7 @@ const Header = () => {
   const [display, setDisplay] = useState(false);
   const [hideSideBar, setHideSideBar] = useState(true);
   const [button, setButton] = useState<null | any>(null);
+  const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
   const { pathname, push } = useRouter();
 
   useEffect(() => {
@@ -25,6 +26,10 @@ const Header = () => {
         setPos("top");
       }
     });
+
+    if (window.innerWidth <= 768) {
+      setIsSmallScreen(true);
+    }
   }, []);
 
   const menuHandler = (buttonText: string) => {
@@ -64,6 +69,20 @@ const Header = () => {
     setValue(false);
     setDisplay(false);
   }, [pathname]);
+
+  const setMargin = () => {
+    if (window.innerWidth > 670) {
+      return "15rem";
+    } else if (window.innerWidth > 550) {
+      return "16.5rem";
+    } else if (window.innerWidth > 480) {
+      return "23rem";
+    } else if (window.innerWidth > 400) {
+      return "25rem";
+    } else {
+      return "26rem";
+    }
+  };
 
   return (
     <>
@@ -127,6 +146,9 @@ const Header = () => {
                     onMouseEnter={() => {
                       setDisplay(false);
                       setValue(false);
+                    }}
+                    style={{
+                      marginTop: isSmallScreen && display ? setMargin() : "0",
                     }}
                   >
                     Engagement Model
