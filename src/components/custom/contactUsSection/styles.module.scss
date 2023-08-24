@@ -6,7 +6,8 @@
 .contactUsSectionMain {
     padding: 4rem 0;
     // @include gradient.twoColorGradient;
-    @include gradient.backgroundGradient;
+    @include gradient.backgroundGradientContact(url("../assets/images/divider.jpg"));
+    background-size: 100%;
 
     div {
         div {

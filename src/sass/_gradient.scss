@@ -38,6 +38,11 @@
     background: linear-gradient(to top, rgba(colors.$secondary_light1, 0.3), rgba(colors.$secondary_light1, 0.3));
 }
 
+@mixin backgroundGradientContact ($banner-image) {
+    background: linear-gradient(to top, rgba(colors.$secondary_light1, 0.3), rgba(colors.$secondary_light1, 0.3)),
+    #{$banner-image};
+}
+
 @mixin twoColorGradient {
     background: linear-gradient(rgba(colors.$secondary_light1, 1), rgba(colors.$secondary_light2, 1), rgba(colors.$secondary_light3, 1));
 }
