@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { Container } from "react-bootstrap";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import { ServiceDescriptionPropTypes } from "@/types/custom.type";
@@ -7,6 +8,7 @@ import styles from "./rightDescription.module.scss";
 
 const LeftServiceDescription = (props: ServiceDescriptionPropTypes) => {
   const { title, content } = props;
+  const { pathname } = useRouter();
   const { ref, inView } = useView();
 
   return (
@@ -22,7 +24,14 @@ const LeftServiceDescription = (props: ServiceDescriptionPropTypes) => {
         }`}
       >
         <div className="d-flex flex-column align-items-center">
-          <article>
+          <article
+            className={
+              pathname.slice(1) === "cloud-application-development" ||
+              pathname.slice(1) === "robotics-and-autonomy"
+                ? styles.contentContainer
+                : ""
+            }
+          >
             <span
               ref={ref}
               className={`${styles["text-container"]} ${

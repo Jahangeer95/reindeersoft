@@ -15,7 +15,7 @@
                 display: flex;
                 align-items: center;
                 gap: 5%;
-                row-gap: 40px;
+                row-gap: 1.5rem;
 
                 @media only screen and (max-width: "768px") {
                     flex-direction: column;
@@ -73,6 +73,52 @@
                 }
 
 
+            }
+
+            .contentContainer {
+                span {
+                    &:first-child {
+                        width: 65%;
+
+                        @media only screen and (max-width: "1200px") {
+                            width: 55%;
+                        }
+
+                        @media only screen and (max-width: "768px") {
+                            width: 100%;
+                        }
+
+                    }
+
+                    &:nth-child(2) {
+
+                        width: 30%;
+
+                        @media only screen and (max-width: "1200px") {
+                            width: 40%;
+                        }
+
+                        @media only screen and (max-width: "768px") {
+                            width: 100%;
+
+                            img {
+                                display: block;
+                                max-width: 300px;
+                                margin: 0 auto;
+                            }
+                        }
+
+                        @media only screen and (max-width: "500px") {
+
+
+                            img {
+
+                                max-width: 250px;
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }
