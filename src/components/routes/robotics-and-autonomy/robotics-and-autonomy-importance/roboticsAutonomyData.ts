@@ -5,7 +5,6 @@ import {
 
 export const title: RoboticsAutonomyImportanceTitleType = "Service Overview";
 export const contentArray: RoboticsAutonomyImportanceConTentType = [
-  "Experience the transformative power of Robotics and Autonomy with Reindeer Soft. By harnessing the latest technologies in robotics and AI, we deliver solutions that drive efficiency, reduce costs, enhance safety, and unlock previously unimaginable capabilities.",
   "Our team comprises accomplished professionals who have graduated from renowned universities worldwide, equipped with expertise in both robotics hardware and software. From motion planning and real-time safety-compliant control to manipulation and computer vision, our comprehensive skill set ensures that we can design tailored solutions to meet your specific requirements.",
-  "With years of experience in system design, we bring a unique blend of innovation and support to every project. Our unwavering commitment to delivering the highest quality solutions ensures that you have the tools needed to thrive in today's rapidly evolving landscape.",
+  "With years of experience in system design, we bring a unique blend of innovation and support to every project. Our unwavering commitment to delivering the highest quality solutions ensures that you have the tools needed to thrive in today's rapidly evolving landscape. By harnessing the latest technologies in robotics and AI, we deliver solutions that drive efficiency, reduce costs, enhance safety, and unlock previously unimaginable capabilities.",
 ];
