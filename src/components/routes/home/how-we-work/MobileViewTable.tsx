@@ -9,7 +9,7 @@ const MobileViewTable = (props: MobileViewTablePropTypes) => {
       <h4 className="text-center p-2">{title}</h4>
       <aside>
         <p>
-          <span>Main Goal:</span>
+          <span>Goal:</span>
           {description[0]}
         </p>
         <p>
@@ -17,11 +17,11 @@ const MobileViewTable = (props: MobileViewTablePropTypes) => {
           {description[1]}
         </p>
         <p>
-          <span>Main Advantage:</span>
+          <span>Advantage:</span>
           {description[2]}
         </p>
         <p>
-          <span>Main Disadvantage:</span>
+          <span>Limitation:</span>
           {description[3]}
         </p>
       </aside>
