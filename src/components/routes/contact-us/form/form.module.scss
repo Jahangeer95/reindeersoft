@@ -27,9 +27,8 @@
             article {
                 max-width: 700px;
                 padding: 70px;
-                // @include gradient.twoColorGradient;
-                // @include gradient.darkGradient2;
-                @include gradient.backgroundGradient;
+                @include gradient.backgroundGradientContact(url("../assets/images/divider.jpg"));
+                background-size: 100%;
                 border-radius: 10px;
 
                 @media (max-width: "768px") {

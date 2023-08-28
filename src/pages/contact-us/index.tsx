@@ -1,5 +1,10 @@
+import dynamic from "next/dynamic";
 import MetaInformation from "@/utils/meta";
-import ContactUs from "@/components/routes/contact-us";
+import Loading from "@/components/animations/loading";
+
+const ContactUs = dynamic(() => import("@/components/routes/contact-us"), {
+  loading: () => <Loading />,
+});
 
 export default function ContactUsPage() {
   return (
