@@ -1,0 +1,5 @@
+@use "../../../../sass/gradient";
+
+.DedicatedTeamDevBannerImage {
+    @include gradient.bannerGradient(url("../assets/images/web-and-app-development/web-app-development.jpg"));
+}

@@ -1,0 +1,22 @@
+import dynamic from "next/dynamic";
+import Loading from "@/components/animations/loading";
+import MetaInformation from "@/utils/meta";
+
+const DedicatedDevelopmentTeam = dynamic(
+  () => import("@/components/routes/dedicated-development-team"),
+  {
+    loading: () => <Loading />,
+  }
+);
+
+export default function DedicatedDevelopmentTeamPage() {
+  return (
+    <>
+      <MetaInformation
+        title="Dedicated Development Team - ReindeerSoft"
+        description="This page is related to the Dedicated and Development Team services provided by ReindeerSoft"
+      />
+      <DedicatedDevelopmentTeam />
+    </>
+  );
+}

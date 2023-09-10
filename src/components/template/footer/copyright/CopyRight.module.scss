@@ -11,32 +11,23 @@
 
         div {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             padding: 0 !important;
-
-            @media only screen and (max-width: "550px") {
-                flex-direction: column-reverse;
-                align-items: center;
-            }
 
             span {
                 display: block;
-                padding: 5px 0;
+                padding: 10px 0;
                 @include paragraph.paragraph-mixin;
                 font-size: 0.5rem;
                 color: rgba(colors.$reindeer-lightbrown, 1);
                 margin: 0 !important;
-            }
 
-            a {
-                @extend span;
-                text-decoration: none;
-                transition: all 0.3s ease-in;
-
-                &:hover {
-                    color: rgba(colors.$white-color, 0.7);
+                @media only screen and (max-width: "768px") {
+                    font-size: 12px !important;
                 }
             }
+
+
         }
     }
 
