@@ -11,7 +11,7 @@ const Footer = () => {
       <Container fluid="lg">
         <div>
           <article>
-            <Company />
+            {/* <Company /> */}
 
             <Contact />
           </article>
