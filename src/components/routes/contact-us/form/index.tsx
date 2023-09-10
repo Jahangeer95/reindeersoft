@@ -2,6 +2,8 @@ import ContactUsForm from "@/components/custom/contactUsForm";
 import React from "react";
 import { Container } from "react-bootstrap";
 import styles from "./form.module.scss";
+import { BiMap } from "react-icons/bi";
+import { AiOutlinePhone } from "react-icons/ai";
 
 const Form = () => {
   return (
@@ -14,9 +16,27 @@ const Form = () => {
             estimate. Just send us a message in the form below with any
             questions you may have
           </p>
-          <article>
-            <ContactUsForm />
-          </article>
+          <div>
+            <article>
+              <div>
+                <address>
+                  <span>
+                    <BiMap />
+                  </span>
+                  <span>100 Summer St, Boston, MA 02110</span>
+                </address>
+                <address>
+                  <span>
+                    <AiOutlinePhone />
+                  </span>
+                  <span>+1 (508) 202-1132</span>
+                </address>
+              </div>
+            </article>
+            <article>
+              <ContactUsForm />
+            </article>
+          </div>
         </div>
       </Container>
     </section>

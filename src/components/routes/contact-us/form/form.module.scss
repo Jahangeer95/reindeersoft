@@ -12,29 +12,85 @@
         div {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
+
 
             h2 {
                 @include heading.levelTwo-heading;
+                flex: 0 0 100%;
             }
 
             p {
+                flex: 0 0 100%;
                 @include paragraph.paragraph_mixin;
                 text-align: center;
                 margin-bottom: 30px;
             }
 
-            article {
-                max-width: 700px;
-                padding: 70px;
-                @include gradient.backgroundGradientContact(url("../assets/images/divider.jpg"));
-                background-size: 100%;
-                border-radius: 10px;
+            div {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 50px;
 
-                @media (max-width: "768px") {
-                    padding: 20px;
+                @media only screen and (max-width: "991px") {
+                    flex-direction: column-reverse;
+                    align-items: center;
+                }
+
+                article {
+                    max-width: 700px;
+                    padding: 70px;
+                    @include gradient.backgroundGradientContact(url("../assets/images/divider.jpg"));
+                    background-size: 100%;
+                    border-radius: 10px;
+
+                    &:first-child {
+                        min-width: 400px;
+                        padding: 20px;
+                        // background: none;
+
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            gap: 10px;
+
+                            address {
+                                display: flex;
+                                gap: 20px;
+                                margin-bottom: 0;
+
+                                span {
+                                    @include paragraph.paragraph_mixin;
+                                    color: colors.$primary_dark2;
+                                    font-weight: 500;
+
+                                    &:first-child {
+                                        font-weight: 700;
+                                        background-color: colors.$primary_dark2;
+                                        color: colors.$white-color;
+                                        border-radius: 50%;
+                                        width: 30px;
+                                        aspect-ratio: 1/1;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    @media (max-width: "768px") {
+                        padding: 20px;
+                    }
                 }
             }
+
+
         }
     }
 }
