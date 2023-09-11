@@ -1,0 +1,85 @@
+@use "../../../../sass/font";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/colors";
+@use "../../../../sass/gradient";
+@use "../../../../sass/visibility" as vis;
+
+.DDTBenifitsMain {
+    padding: 4rem 0;
+    @include gradient.backgroundGradient;
+
+    div {
+        div {
+
+            h3 {
+                @include heading.levelThree-heading;
+            }
+
+            article {
+                p {
+                    @include paragraph.paragraph-mixin;
+                    text-indent: unset;
+                }
+
+                ul {
+                    list-style-type: none;
+                    padding-left: 32px;
+
+                    li {
+                        position: relative;
+                        @include paragraph.paragraph-mixin;
+
+                        margin-bottom: 15px;
+                        text-indent: unset;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 7px;
+                            left: -30px;
+                            height: 12px;
+                            width: 12px;
+                            background: linear-gradient(to top left, rgba(colors.$primary_dark2, 1), rgba(colors.$reindeer-lightbrown, 1));
+                            box-shadow: 2px 3px 2px rgba(colors.$secondary_dark2, 0.6);
+                        }
+
+                        span {
+                            display: inline-block;
+
+                            h4 {
+                                @include heading.levelFive-heading;
+                                color: colors.$secondary_dark2;
+                                font-size: 0.85rem;
+                                text-align: center;
+                                margin: 0;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        p {
+                            @extend p;
+                            // display: inline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-container {
+    @include vis.hiddenVisibility;
+
+    @media only screen and (max-width: "768px") {
+        @include vis.showVisibility;
+    }
+}
+
+.content-container.visible {
+    @include vis.showVisibility;
+}
