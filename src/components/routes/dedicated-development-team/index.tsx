@@ -2,6 +2,7 @@ import React from "react";
 import Banner from "./banner";
 import DDTServiceOverview from "./ddtServiceOverview";
 import DDTBenifits from "./benefits";
+import DDTServices from "./ddt-services";
 
 const DedicatedDevelopmentTeam = () => {
   return (
@@ -11,6 +12,8 @@ const DedicatedDevelopmentTeam = () => {
       <DDTServiceOverview />
 
       <DDTBenifits />
+
+      <DDTServices />
     </>
   );
 };

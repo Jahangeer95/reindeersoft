@@ -17,3 +17,11 @@ export type DDTEbenifitsContentList = {
     description: string;
   }[];
 };
+
+// Dedicated Development Team Services Data types...
+export type DDTServicesTitleType = string;
+export type DDtServicesArrayType = {
+  id: string;
+  value: string;
+  image: StaticImageData;
+}[];
