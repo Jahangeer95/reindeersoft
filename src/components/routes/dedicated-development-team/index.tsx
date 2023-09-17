@@ -3,6 +3,7 @@ import Banner from "./banner";
 import DDTServiceOverview from "./ddtServiceOverview";
 import DDTBenifits from "./benefits";
 import DDTServices from "./ddt-services";
+import TeamExtension from "./services/team-extension";
 
 const DedicatedDevelopmentTeam = () => {
   return (
@@ -14,6 +15,8 @@ const DedicatedDevelopmentTeam = () => {
       <DDTBenifits />
 
       <DDTServices />
+
+      <TeamExtension />
     </>
   );
 };

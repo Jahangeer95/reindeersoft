@@ -25,3 +25,21 @@ export type DDtServicesArrayType = {
   value: string;
   image: StaticImageData;
 }[];
+
+// Team Extension Data types...
+export type TeamExtensionTitleType = string;
+export type TeamExtensionDEscriptionType = string;
+export type OurResponsibilityObjectType = {
+  mainTitle: string;
+  content: {
+    title: string;
+    description: string;
+  }[];
+};
+export type ClientResponsibilityObjectType = {
+  mainTitle: string;
+  content: {
+    title: string;
+    description: string;
+  }[];
+};

@@ -34,7 +34,7 @@
 @mixin levelFive-heading {
     position: relative;
     width: fit-content;
-    @include font.font(1.1rem, 120%, 500);
+    @include font.font(1rem, 120%, 500);
     margin-bottom: 0.8rem;
     color: colors.$primary_dark2;
 }
