@@ -20,7 +20,7 @@ export const ourResponsibilityData: OurResponsibilityObjectType = {
     {
       title: "Resource Support",
       description:
-        " Ensure our engineers have all the resources and tools necessary for their roles.",
+        "Ensure our engineers have all the resources and tools necessary for their roles.",
     },
     {
       title: "Flexible Team",
@@ -46,7 +46,7 @@ export const clientResponsibilityData: ClientResponsibilityObjectType = {
     {
       title: "Team Management",
       description:
-        "Oversee the management of the team, including workload and resource management",
+        "Oversee the management of the team, including workload and resource management.",
     },
     {
       title: "Feedback",

@@ -4,6 +4,8 @@ import DDTServiceOverview from "./ddtServiceOverview";
 import DDTBenifits from "./benefits";
 import DDTServices from "./ddt-services";
 import TeamExtension from "./services/team-extension";
+import DedicatedTeam from "./services/dedicated-team";
+import ContactUsSection from "@/components/custom/contactUsSection";
 
 const DedicatedDevelopmentTeam = () => {
   return (
@@ -17,6 +19,10 @@ const DedicatedDevelopmentTeam = () => {
       <DDTServices />
 
       <TeamExtension />
+
+      <DedicatedTeam />
+
+      <ContactUsSection />
     </>
   );
 };

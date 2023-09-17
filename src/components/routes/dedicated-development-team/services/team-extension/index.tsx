@@ -1,18 +1,26 @@
 import React from "react";
+import Image from "next/image";
 import { Container } from "react-bootstrap";
+import { useView } from "@/hooks/useView";
 import * as data from "./teamExtensionData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import star from "@/assets/images/qa-and-automation-testing/automation-testing/star1.png";
 import styles from "./teamExtension.module.scss";
-import Image from "next/image";
-import { camelToDash } from "@/utils/functions/camelToDash";
 
 const TeamExtension = () => {
+  const { inView, ref } = useView();
   return (
     <section
       className={styles.TeamExtensionMain}
       id={camelToDash(data.teamExtensionTitle)}
     >
-      <Container fluid="lg">
+      <Container
+        fluid="lg"
+        ref={ref}
+        className={`${styles["content-container"]} ${
+          inView ? styles.visible : ""
+        }`}
+      >
         <div className="d-flex flex-column align-items-center">
           <h3>{data.teamExtensionTitle}</h3>
           <p>{data.teamExtensionDescription}</p>

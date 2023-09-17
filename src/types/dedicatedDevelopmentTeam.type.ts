@@ -43,3 +43,7 @@ export type ClientResponsibilityObjectType = {
     description: string;
   }[];
 };
+
+// Dedicated Team Data types....
+export type DedicatedTeamTitleType = string;
+export type DedicatedTeamDEscriptionType = string;
