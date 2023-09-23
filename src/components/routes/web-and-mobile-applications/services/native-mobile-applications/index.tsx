@@ -37,7 +37,7 @@ const NativeMobileApplications = () => {
         }`}
       >
         <div className="d-flex flex-column align-items-center">
-          <h2 className="text-center">{data.title}</h2>
+          <h3 className="text-center">{data.title}</h3>
           <article>
             {data.contentArray.map((state, idx) => (
               <p key={idx}>{state}</p>

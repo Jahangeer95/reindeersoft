@@ -17,7 +17,7 @@ const DDTBenifits = () => {
         }`}
       >
         <div className="d-flex flex-column align-items-center">
-          <h3 className="text-center">{data.title}</h3>
+          <h2 className="text-center">{data.title}</h2>
           <article>
             <ul>
               {data.content.list.map((state, idx) => {

@@ -47,3 +47,11 @@ export type ClientResponsibilityObjectType = {
 // Dedicated Team Data types....
 export type DedicatedTeamTitleType = string;
 export type DedicatedTeamDEscriptionType = string;
+
+// Hiring and Engagement Process Data types...
+export type HireEngageProcessTitleType = string;
+export type HireEngageProcessDescriptionType = string;
+export type HireEngageProcessContentArrayType = {
+  title: string;
+  description: string;
+}[];

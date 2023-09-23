@@ -6,6 +6,7 @@ import DDTServices from "./ddt-services";
 import TeamExtension from "./services/team-extension";
 import DedicatedTeam from "./services/dedicated-team";
 import ContactUsSection from "@/components/custom/contactUsSection";
+import HiringAndEngagementProcess from "./hiring-and-engagement-process";
 
 const DedicatedDevelopmentTeam = () => {
   return (
@@ -21,6 +22,8 @@ const DedicatedDevelopmentTeam = () => {
       <TeamExtension />
 
       <DedicatedTeam />
+
+      <HiringAndEngagementProcess />
 
       <ContactUsSection />
     </>

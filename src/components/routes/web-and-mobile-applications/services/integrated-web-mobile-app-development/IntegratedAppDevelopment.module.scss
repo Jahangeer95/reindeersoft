@@ -11,8 +11,8 @@
     div {
         div {
 
-            h2 {
-                @include heading.levelTwo-heading;
+            h3 {
+                @include heading.levelThree-heading;
             }
 
             article {

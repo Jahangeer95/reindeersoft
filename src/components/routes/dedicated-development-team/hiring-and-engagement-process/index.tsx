@@ -1,18 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import * as data from "./hiringAndEngagementProcessData";
+import styles from "./hiringAndEngagementProcess.module.scss";
 import { useView } from "@/hooks/useView";
-import * as data from "./integratedAppDevelopmentData";
-import { camelToDash } from "@/utils/functions/camelToDash";
-import styles from "./IntegratedAppDevelopment.module.scss";
 
-const IntegratedAppDevelopment = () => {
+const HiringAndEngagementProcess = () => {
   const { ref, inView } = useView();
-
   return (
-    <section
-      className={styles.integratedMobileAppMain}
-      id={camelToDash(data.title)}
-    >
+    <section className={styles.HiringAndEngagementMain}>
       <Container
         fluid="lg"
         ref={ref}
@@ -21,10 +16,17 @@ const IntegratedAppDevelopment = () => {
         }`}
       >
         <div className="d-flex flex-column align-items-center">
-          <h3 className="text-center">{data.title}</h3>
+          <h2>{data.mainTitle}</h2>
+          <p>{data.description}</p>
           <article>
             {data.contentArray.map((state, idx) => (
-              <p key={idx}>{state}</p>
+              <div key={idx}>
+                <p>
+                  <span>{idx + 1}</span>
+                  {state.title}
+                </p>
+                <p>{state.description}</p>
+              </div>
             ))}
           </article>
         </div>
@@ -33,4 +35,4 @@ const IntegratedAppDevelopment = () => {
   );
 };
 
-export default IntegratedAppDevelopment;
+export default HiringAndEngagementProcess;
