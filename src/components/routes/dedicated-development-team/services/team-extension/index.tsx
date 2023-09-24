@@ -26,14 +26,14 @@ const TeamExtension = () => {
           <p>{data.teamExtensionDescription}</p>
           <article>
             <div>
-              <h4>{data.ourResponsibilityData.mainTitle}:</h4>
+              <h4>{data.ourResponsibilityData.mainTitle}</h4>
               <ul>
                 {data.ourResponsibilityData.content.map(
                   (state: any, idx: number) => {
                     return (
                       <li key={idx}>
                         <span>
-                          <Image src={star} alt="star-icon" />
+                          {/* <Image src={star} alt="star-icon" /> */}
                           <h5>{state.title}</h5>
                         </span>
                         <p>{state.description}</p>
@@ -44,14 +44,14 @@ const TeamExtension = () => {
               </ul>
             </div>
             <div>
-              <h4>{data.clientResponsibilityData.mainTitle}:</h4>
+              <h4>{data.clientResponsibilityData.mainTitle}</h4>
               <ul>
                 {data.clientResponsibilityData.content.map(
                   (state: any, idx: number) => {
                     return (
                       <li key={idx}>
                         <span>
-                          <Image src={star} alt="star-icon" />
+                          {/* <Image src={star} alt="star-icon" /> */}
                           <h5>{state.title}</h5>
                         </span>
                         <p>{state.description}</p>

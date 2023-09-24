@@ -1,10 +1,10 @@
-@use "../../../../sass/heading";
-@use "../../../../sass/gradient";
-@use "../../../../sass/paragraph";
 @use "../../../../sass/colors";
+@use "../../../../sass/heading";
+@use "../../../../sass/paragraph";
+@use "../../../../sass/gradient";
 @use "../../../../sass/visibility" as vis;
 
-.HiringAndEngagementMain {
+.HiringAndEngagementProcessMain {
     padding: 4rem 0;
     @include gradient.backgroundGradient;
 
@@ -12,106 +12,118 @@
         div {
             h2 {
                 @include heading.levelTwo-heading;
+
             }
 
             p {
+                display: block;
                 @include paragraph.paragraph-mixin;
+                text-align: center;
+                text-indent: unset;
+                margin-bottom: 0 !important;
+                max-width: 900px;
+                font-size: 0.9rem;
             }
 
-            article {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                row-gap: 2px;
-                margin-top: 1.2rem;
 
+        }
 
-                @media only screen and (max-width: "550px") {
-                    padding: 0 20px;
+        article {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+
+            @media only screen and (max-width: "768px") {
+                gap: 10px;
+            }
+
+            div {
+                position: relative;
+                width: 18%;
+
+                @media only screen and (max-width: "1430px") {
+                    width: 30%;
                 }
 
+                @media only screen and (max-width: "768px") {
+                    width: 40%;
+                }
+
+                @media only screen and (max-width: "550px") {
+                    width: 85%;
+                }
+
+                .Border {
+                    position: relative;
+                    z-index: 0;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -1000px;
+                        bottom: -100px;
+                        width: 3000px;
+                        height: 4px;
+                        background-color: colors.$primary-dark2;
+                        z-index: 0;
+                    }
+                }
+
+                span {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    z-index: 1;
+
+
+
+                }
 
                 div {
-                    width: 80%;
-                    max-width: 900px;
-
-                    @media only screen and (max-width: "550px") {
-                        width: 90%;
-                        min-width: 300px;
-                    }
+                    width: 100%;
+                    padding-left: 30px;
 
 
                     p {
                         @include paragraph.paragraph-mixin;
+                        color: colors.$primary_dark2;
+                        text-align: left;
+                        font-weight: 500 !important;
+                        height: 70px;
+                        text-indent: unset;
+                        font-size: 1rem;
+                        margin-bottom: 20px;
 
-                        &:first-child {
-
-                            position: relative;
-
-                            top: 20px;
-                            background-color: colors.$secondary_dark2;
-                            color: colors.$white-color;
-                            padding: 10px;
-                            max-width: 400px;
-                            border-radius: 40px;
-                            border-bottom-left-radius: 0;
-                            border-top-left-radius: 0;
-
-                            @media only screen and (max-width: "1200px") {
-                                max-width: 350px;
-                            }
-
-                            @media only screen and (max-width: "768px") {
-                                max-width: 330px;
-                            }
-
-                            span {
-                                display: inline-flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 25px;
-                                aspect-ratio: 1/1;
-                                background-color: colors.$white-color;
-                                border-radius: 50%;
-                                color: colors.$secondary_dark2 ;
-                                margin: 0 10px;
-                            }
-
-
+                        @media only screen and (max-width: "768px") {
+                            height: fit-content;
+                            margin-bottom: 20px !important;
+                            font-size: max(1.2rem, 16px) !important;
                         }
 
                         &:last-child {
-                            background-color: colors.$white-color;
-                            padding: 20px;
-                            border-bottom: 5px groove rgba(colors.$secondary_dark2, 1);
-                            box-shadow: 2px 4px 20px rgba(colors.$secondary_dark2, 0.3);
-                            margin-bottom: 0;
+                            position: relative;
+                            @include paragraph.paragraph-mixin;
+                            font-size: 0.7rem;
+                            text-indent: unset;
+                            text-align: left;
+                            height: fit-content;
+                            font-weight: 400 !important;
+
+                            @media only screen and (max-width: "768px") {
+                                font-size: 16px !important;
+                            }
                         }
-
-
                     }
 
-
-                }
-
-                aside {
-                    align-self: start;
-
-                    @media only screen and (min-width: "550px") {
-                        margin-left: 80px;
-                    }
-
-                    img {
-                        width: 100px;
-                        height: auto;
-                        filter: invert(1) hue-rotate(150deg) brightness(80%);
-
-                    }
                 }
             }
+
         }
+
     }
+
 }
 
 .content-container {

@@ -14,106 +14,81 @@
 
             h2 {
                 @include heading.levelTwo-heading;
-                margin-bottom: 2rem;
             }
 
             article {
-                p {
-                    @include paragraph.paragraph-mixin;
-                    text-indent: unset;
-                }
+                margin-top: 1.2rem;
 
                 ul {
                     list-style-type: none;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 0;
-                    margin-top: 0px;
-                    row-gap: 20px;
+                    padding: 0px;
 
                     li {
                         position: relative;
                         width: 100%;
-                        @include paragraph.paragraph-mixin;
+                        height: 100%;
                         display: flex;
-                        margin: 0;
-                        text-indent: unset;
+                        justify-content: flex-start;
+                        background-color: rgba(colors.$white-color, 1);
+                        align-items: center;
                         border-radius: 10px;
-                        box-shadow: 2px 4px 8px rgba(colors.$primary-dark1, 0.15), -2px -4px 8px rgba(colors.$primary-dark1, 0.15);
-                        user-select: none;
-                        transition: all 0.3s ease-in;
-                        background-color: colors.$secondary_dark2;
+                        border-bottom: 1px ridge rgba(colors.$primary-dark2, 1);
 
+                        @media only screen and (max-width: "550px") {
+                            flex-direction: column;
+                            margin-bottom: 10px;
+                        }
 
-                        aside {
+                        span {
+                            @include gradient.lightGradient3;
+                            border-radius: 10px 0 0 10px;
+                            padding: 10px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 150px;
+                            min-height: 150px;
 
-                            height: fit-content;
-                            background-color: transparent;
-                            text-align: center;
-                            display: block;
-                            margin: auto 0;
-                            color: colors.$white-color;
-                            padding: 0 50px;
-                            @include font.font(1.2rem, 1rem, 600);
+                            @media only screen and (max-width: "991px") {
+                                min-height: 180px;
+                            }
 
                             @media only screen and (max-width: "768px") {
-                                padding: 0 30px;
+                                width: 120px;
+                                min-height: 170px;
                             }
 
                             @media only screen and (max-width: "550px") {
-                                display: none;
+                                border-radius: 10px 10px 0 0;
+                                height: fit-content;
+                                min-height: unset;
+                                width: 100%;
+                            }
+
+                            h4 {
+                                @include heading.levelFive-heading;
+                                font-size: 0.85rem;
+                                color: colors.$white-color;
+                                width: 120px !important;
+                                text-align: center;
+                                margin: 0;
+
+                                @media only screen and (max-width: "550px") {
+                                    width: fit-content !important;
+                                }
                             }
                         }
 
                         p {
                             width: 100%;
-                            background-color: colors.$white-color;
-                            border-radius: 0 10px 10px 0;
+                            @include paragraph.paragraph-mixin;
+                            padding: 10px;
                             text-indent: unset;
-                            margin: 0;
+                            margin-bottom: 0;
+                        }
 
-                            @media only screen and (max-width: "550px") {
-
-                                border-radius: 10px;
-                            }
-
-                            span {
-                                display: block;
-                                margin: 10px 0;
-                                padding: 10px;
-                                width: fit-content;
-                                color: colors.$white-color;
-                                background-color: colors.$secondary_dark2;
-                                @include font.font(1rem, 1rem, 500);
-                                word-wrap: break-word;
-                                text-align: left;
-
-                                @media only screen and (max-width: "550px") {
-                                    margin: 0;
-                                    width: 100%;
-                                    text-align: center;
-                                    border-radius: 10px 10px 0 0;
-                                }
-
-                                &:last-child {
-                                    width: 100%;
-                                    background-color: transparent;
-                                    color: colors.$primary_dark1;
-                                    @include font.font(0.8rem, 1rem, 400);
-                                    padding: 10px 20px;
-                                    background: transparent;
-                                    text-align: justify;
-
-                                    @media only screen and (max-width: "550px") {
-
-                                        border-radius: 0 0 10px 10px;
-                                        padding: 10px;
-                                    }
-                                }
-
-                            }
+                        &:last-child {
+                            margin-bottom: 0;
                         }
                     }
                 }

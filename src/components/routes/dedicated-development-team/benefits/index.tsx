@@ -20,17 +20,14 @@ const DDTBenifits = () => {
           <h2 className="text-center">{data.title}</h2>
           <article>
             <ul>
-              {data.content.list.map((state, idx) => {
-                return (
-                  <li key={idx}>
-                    <aside>{idx + 1}</aside>
-                    <p>
-                      <span>{state.title}</span>
-                      <span>{state.description}</span>
-                    </p>
-                  </li>
-                );
-              })}
+              {data.content.list.map((state, idx) => (
+                <li key={idx}>
+                  <span>
+                    <h4>{state.title}</h4>
+                  </span>
+                  <p>{state.description}</p>
+                </li>
+              ))}
             </ul>
           </article>
         </div>

@@ -4,7 +4,7 @@ import {
 } from "@/types/dedicatedDevelopmentTeam.type";
 
 export const title: DDTBenifitsTitleType =
-  "Benefits of Our Dedicated Development Team Service";
+  "Benefits Of Dedicated Development Team";
 
 export const content: DDTEbenifitsContentList = {
   list: [
@@ -21,12 +21,12 @@ export const content: DDTEbenifitsContentList = {
     {
       title: "Cost Efficiency",
       description:
-        "By outsourcing your development needs to our dedicated development team, we ensure that you access top talent at a fraction of the cost. This not only maximizes your return on investment (ROI) but also eliminates overhead costs associated with hiring, training, and managing an in-house team.",
+        "We ensure that you can access top talent at a significantly reduced cost, maximizing your Return On Investment (ROI) while eliminating the overhead costs associated with hiring, training, and managing an in-house team.",
     },
     {
       title: "Timely Delivery",
       description:
-        "We're committed to meeting deadlines without compromising on quality, helping you bring your products to market faster.",
+        "We are committed to meeting deadlines without compromising on quality, helping you accelerate your product's time-to-market.",
     },
     {
       title: "Collaboration",

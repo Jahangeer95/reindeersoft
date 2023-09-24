@@ -28,48 +28,61 @@
                     }
 
                     &:first-child {
-                        margin-bottom: 1.5rem;
+                        margin-bottom: 2.5rem;
                     }
 
                     h4 {
                         @include heading.levelFour-heading;
+                        width: 100%;
+                        text-align: center;
                     }
 
                     ul {
                         list-style-type: none;
                         padding: 0px;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 50px;
+
+                        @media only screen and (max-width: "768px") {
+                            gap: 30px;
+                        }
+
 
                         li {
-
+                            width: 300px;
+                            height: 160px;
                             position: relative;
-                            width: 100%;
                             display: flex;
                             flex-direction: column;
-                            justify-content: flex-start;
+                            border: 1px solid colors.$primary_dark2;
+                            @include gradient.backgroundGradient;
+                            box-shadow: 2px 4px 8px rgba(colors.$secondary_dark2, 0.22);
                             align-items: center;
                             border-radius: 10px;
-                            margin-bottom: 0.7rem;
+
+                            @media only screen and (max-width: "550px") {
+                                height: 130px;
+                            }
+
 
                             span {
                                 display: flex;
-                                justify-content: flex-start;
+                                height: 40px;
+                                justify-content: center;
                                 align-items: center;
                                 width: 100%;
-
-                                img {
-                                    margin-right: 10px;
-                                    width: 20px;
-                                    filter: invert(1) hue-rotate(330deg) brightness(80%);
-                                    display: block;
-                                    height: auto;
-                                }
+                                padding: 10px;
+                                @include gradient.lightGradient3;
+                                border-radius: 10px 10px 0 0;
 
 
                                 h5 {
                                     display: block;
                                     width: 100%;
                                     @include heading.levelFive-heading;
-                                    color: colors.$secondary_dark2;
+                                    color: colors.$white-color;
                                     width: fit-content;
                                     margin: 0;
 
@@ -83,10 +96,11 @@
                                 display: block;
                                 width: 100%;
                                 @include paragraph.paragraph-mixin;
-
+                                padding: 10px;
                                 text-indent: unset;
                                 margin-bottom: 0;
-                                padding-left: 30px;
+
+
                             }
 
                             &:last-child {
