@@ -18,22 +18,6 @@ const Form = () => {
           </p>
           <div>
             <article>
-              <div>
-                <address>
-                  <span>
-                    <BiMap />
-                  </span>
-                  <span>100 Summer St, Boston, MA 02110</span>
-                </address>
-                <address>
-                  <span>
-                    <AiOutlinePhone />
-                  </span>
-                  <span>+1 (508) 202-1132</span>
-                </address>
-              </div>
-            </article>
-            <article>
               <ContactUsForm />
             </article>
           </div>

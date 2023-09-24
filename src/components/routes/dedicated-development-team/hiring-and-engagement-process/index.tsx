@@ -1,8 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import * as data from "./hiringAndEngagementProcessData";
-import styles from "./hiringAndEngagementProcess.module.scss";
 import { useView } from "@/hooks/useView";
+import * as data from "./hiringAndEngagementProcessData";
+import arrow from "@/assets/images/dedicated-development-team/arrow.png";
+import styles from "./hiringAndEngagementProcess.module.scss";
+import Image from "next/image";
 
 const HiringAndEngagementProcess = () => {
   const { ref, inView } = useView();
@@ -20,13 +22,22 @@ const HiringAndEngagementProcess = () => {
           <p>{data.description}</p>
           <article>
             {data.contentArray.map((state, idx) => (
-              <div key={idx}>
-                <p>
-                  <span>{idx + 1}</span>
-                  {state.title}
-                </p>
-                <p>{state.description}</p>
-              </div>
+              <>
+                <div key={idx}>
+                  <p>
+                    <span>{idx + 1}</span>
+                    {state.title}
+                  </p>
+                  <p>{state.description}</p>
+                </div>
+                {idx !== data.contentArray.length - 1 ? (
+                  <aside>
+                    <Image src={arrow} alt="arrow-icon" />
+                  </aside>
+                ) : (
+                  ""
+                )}
+              </>
             ))}
           </article>
         </div>
