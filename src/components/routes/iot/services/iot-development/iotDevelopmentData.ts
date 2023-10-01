@@ -1,4 +1,4 @@
-import iotDevelopment from "@/assets/images/iot/iot.jpg";
+import iotDevelopment from "@/assets/images/iot/iot-development.jpg";
 import { IoTServiceContent, IoTServiceTitleType } from "@/types/iot.type";
 
 export const IoTDevelopmentTitle: IoTServiceTitleType = "IoT Development";
