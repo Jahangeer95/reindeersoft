@@ -1,5 +1,5 @@
 import webAppImage from "@/assets/images/web-and-app-development/web-app-development.jpg";
-import dedicatedTeam from "@/assets/images/web-and-app-development/web-app-development.jpg";
+import dedicatedTeam from "@/assets/images/dedicated-development-team/dedicated-development-team.jpg";
 import roboticsAndAutonomy from "@/assets/images/robotics-and-autonomy/robotics-and-autonomy.jpg";
 import qaAndTestAutomation from "@/assets/images/qa-and-automation-testing/qa-and-test-automation.jpg";
 import cloudApplicationDevelopment from "@/assets/images/cloud-application-development/cloud-application-development.jpg";
