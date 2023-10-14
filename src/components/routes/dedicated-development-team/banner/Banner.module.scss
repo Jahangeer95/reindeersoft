@@ -1,5 +1,5 @@
 @use "../../../../sass/gradient";
 
 .DedicatedTeamDevBannerImage {
-    @include gradient.bannerGradient(url("../assets/images/dedicated-development-team/dedicatedDevelopmentTeamBanner.jpg"));
+    @include gradient.bannerGradient(url("../assets/images/dedicated-development-team/dedicated-development-team.jpg"));
 }
