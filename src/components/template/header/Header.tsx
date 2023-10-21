@@ -110,12 +110,19 @@ const Header = () => {
             >
               <Offcanvas.Header
                 closeButton
-                closeVariant="white"
-                style={{ backgroundColor: "#000d28" }}
+                closeVariant="dark"
+                style={{
+                  backgroundColor: "#fff",
+                  boxShadow: "2px 4px 8px rgba(0, 13, 40, 0.25)",
+                }}
                 onHide={sideBarHandler}
               >
                 <Offcanvas.Title id="offcanvasNavbarLabel-expand-md">
-                  <Image src={logo} alt="logo-png" />
+                  <Image
+                    src={logo}
+                    alt="logo-png"
+                    className={styles.Logo_Animation}
+                  />
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
