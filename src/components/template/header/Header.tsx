@@ -110,7 +110,7 @@ const Header = () => {
             >
               <Offcanvas.Header
                 closeButton
-                closeVariant="dark"
+                // closeVariant="dark"
                 style={{
                   backgroundColor: "#fff",
                   boxShadow: "2px 4px 8px rgba(0, 13, 40, 0.25)",
