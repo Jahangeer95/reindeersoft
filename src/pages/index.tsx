@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <>
       <MetaInformation
-        title="Reindeersoft - A dedicated team of professionals committed to delivering exceptional solutions to our clients. We strive to exceed expectations and build long-lasting partnerships."
-        description="This page is about ReindeerSoft"
+        title="Reindeersoft"
+        description="A dedicated team of professionals committed to delivering exceptional solutions to our clients. We strive to exceed expectations and build long-lasting partnerships."
       />
       <HomeContent />
     </>
