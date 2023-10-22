@@ -1,0 +1,33 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build
+        env:
+          CI: true
+
+      - name: Deploy to Hostinger VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: hostinger
+          username: ${{ secrets.HOSTINGER_USERNAME }}
+          key: ${{ secrets.HOSTINGER_PRIVATE_KEY }}
+          script: |
+            cd /
+            git pull origin main
+            npm install
+            npm run build
