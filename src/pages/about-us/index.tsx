@@ -16,7 +16,7 @@ export default function AboutUsPage() {
         description="This page is about all the details related to ReindeerSoft"
       />
 
-      {/* <AboutUs /> */}
+      <AboutUs />
     </>
   );
 }
