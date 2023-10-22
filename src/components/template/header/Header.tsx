@@ -17,6 +17,8 @@ const Header = () => {
   const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
   const { pathname, push } = useRouter();
 
+  // testing for auto deploment
+
   useEffect(() => {
     document.addEventListener("scroll", (e) => {
       let scrolled = document.scrollingElement!.scrollTop;
