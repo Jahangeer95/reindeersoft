@@ -12,6 +12,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         ></link>
+
         <meta property="title" content="ReindeerSoft" />
         <meta
           name="description"
