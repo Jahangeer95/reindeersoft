@@ -29,5 +29,9 @@
     "sharp": "^0.32.0",
     "typescript": "5.0.2",
     "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
   }
 }
