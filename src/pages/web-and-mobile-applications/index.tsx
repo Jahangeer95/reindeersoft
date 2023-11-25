@@ -15,6 +15,7 @@ export default function mobileAndAppDevelopmentPage() {
       <MetaInformation
         title="Web And Mobile Applications - ReindeerSoft"
         description="This page is related to the web and mobile application services provided by ReindeerSoft"
+        chononicalUrl="https://reindeersoft.com/web-and-mobile-applications"
       />
       <WebAppDevelopment />
     </>

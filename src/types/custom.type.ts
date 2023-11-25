@@ -35,4 +35,5 @@ export type ServiceDescriptionPropTypes = {
 export type MetaInformationPropTypes = {
   title: string;
   description: string;
+  chononicalUrl: string;
 };

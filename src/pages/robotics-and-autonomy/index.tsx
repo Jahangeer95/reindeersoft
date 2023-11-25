@@ -15,6 +15,7 @@ export default function RoboticsAndAnotomyServicesPage() {
       <MetaInformation
         title="Robotics And Autonomy - ReindeerSoft"
         description="This page is related to the Robotics And Autonomy services provided by ReindeerSoft"
+        chononicalUrl="https://reindeersoft.com/robotics-and-autonomy"
       />
       <RoboticsAndAutonomy />
     </>

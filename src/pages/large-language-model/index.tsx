@@ -12,6 +12,7 @@ export default function LLMPage() {
       <MetaInformation
         title="Robotics And Autonomy - ReindeerSoft"
         description="This page is related to the Robotics And Autonomy services provided by ReindeerSoft"
+        chononicalUrl="https://reindeersoft.com/large-language-model"
       />
       <LLM />
     </>

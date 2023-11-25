@@ -15,6 +15,7 @@ export default function QaAndTestAutomationPage() {
       <MetaInformation
         title="Qa And Test Automation - ReindeerSoft"
         description="This page is related to the qa and test automation services provided by ReindeerSoft"
+        chononicalUrl="https://reindeersoft.com/qa-and-test-automation"
       />
       <QaAndTestAutomation />
     </>

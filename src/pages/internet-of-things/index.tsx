@@ -12,6 +12,7 @@ export default function IoTPage() {
       <MetaInformation
         title="Internet of Things - ReindeerSoft"
         description="This page is related to the IoT services provided by ReindeerSoft"
+        chononicalUrl="https://reindeersoft.com/internet-of-things"
       />
       <Iot />
     </>

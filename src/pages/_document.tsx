@@ -20,7 +20,6 @@ export default function Document() {
           delivering exceptional solutions to our clients. We strive to exceed
           expectations and build long-lasting partnerships."
         />
-        <link rel="canonical" href="https://www.reindeersoft.com/" />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ReindeerSoft" />
@@ -31,7 +30,7 @@ export default function Document() {
           expectations and build long-lasting partnerships."
         />
         <meta property="og:url" content="https://www.reindeersoft.com/" />
-        <meta property="og:site_name" content="EMI Fusion" />
+        <meta property="og:site_name" content="Reindeersoft" />
       </Head>
       <body>
         <Main />
