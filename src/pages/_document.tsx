@@ -13,13 +13,6 @@ export default function Document() {
           rel="stylesheet"
         ></link>
 
-        <meta property="title" content="ReindeerSoft" />
-        <meta
-          name="description"
-          content="Reindeersoft is a dedicated team of professionals committed to
-          delivering exceptional solutions to our clients. We strive to exceed
-          expectations and build long-lasting partnerships."
-        />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="ReindeerSoft" />
