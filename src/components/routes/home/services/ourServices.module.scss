@@ -80,7 +80,7 @@
                         }
                     }
 
-                    p {
+                    h3 {
                         margin: 40px auto;
                         @include h.levelFive-heading;
                         text-align: center;
@@ -96,7 +96,7 @@
                             background-color: color.$white-color;
                         }
 
-                        p {
+                        h3 {
                             color: color.$white-color;
                         }
                     }

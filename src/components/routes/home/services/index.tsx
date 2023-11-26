@@ -28,7 +28,7 @@ const OurServices = () => {
                   <span>
                     <Image src={state.icon} alt={state.title} />
                   </span>
-                  <p>{state.title}</p>
+                  <h3>{state.title}</h3>
                 </Link>
               );
             })}
