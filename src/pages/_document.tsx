@@ -15,12 +15,13 @@ export default function Document() {
 
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="ReindeerSoft" />
+        <meta
+          property="og:title"
+          content="IT Services | Digital Solutions - ReindeerSoft"
+        />
         <meta
           property="og:description"
-          content="Reindeersoft is a dedicated team of professionals committed to
-          delivering exceptional solutions to our clients. We strive to exceed
-          expectations and build long-lasting partnerships."
+          content="A dedicated team of professionals committed to delivering exceptional IT services and digital solutions. Explore excellence in technology with us."
         />
         <meta property="og:url" content="https://www.reindeersoft.com/" />
         <meta property="og:site_name" content="Reindeersoft" />
