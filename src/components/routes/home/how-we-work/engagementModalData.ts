@@ -18,14 +18,14 @@ export const engagementModalData: EngagementModelDataTypes = [
   {
     column1: "Staff Augmentation",
     column2: "Enhance client's team with skilled professionals.",
-    column3: "We provides temporary resources as extension.",
+    column3: "We provide temporary resources as extension.",
     column4: "Quick access to specialized skills with flexibility.",
     column5: "Client is responsible for project management.",
   },
   {
     column1: "Dedicated Development Team",
     column2: "Establish a long-term partnership for ongoing projects.",
-    column3: "We provides dedicated team working exclusively.",
+    column3: "We provide dedicated team working exclusively.",
     column4:
       "Deep collaboration and alignment with client's goals and processes.",
     column5: "Continuous management efforts.",
