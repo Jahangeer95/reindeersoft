@@ -10,8 +10,8 @@ const MetaInformation = (props: MetaInformationPropTypes) => {
       <meta name="description" content={description} />
       <link rel="canonical" href={chononicalUrl} />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-      {/* <link rel="icon" href="/logo.ico" /> */}
+      {/* <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" /> */}
+      <link rel="icon" type="image/png" href="/logo.png" />
       {/* <link rel="icon" href="/favicon.ico" /> */}
       {/* <link rel="preload" href="../assets/images/home/Liqq.gif" as="image" /> */}
     </Head>
