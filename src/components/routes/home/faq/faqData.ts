@@ -18,7 +18,7 @@ export const faqsContent: FaqsContentType = [
     question:
       "What practices does your team employ to ensure quality assurance throughout the project?",
     answer:
-      "Our team possesses an in-depth understanding of various quality assurance software, with refined skills in defining effective QA processes, deploying advanced UI and CLI test automation frameworks, seamless integration of tests into CI/CD pipelines, and precise automation of manual procedures.  Adhering to industry best practices, we provide an extensive range of manual and automated testing services. Our quality assurance process encompasses Requirement Analysis, Test Planning & Strategy, Test Plan Review & Approval, and Test Execution & Bug Reporting to ensure the delivery of high-quality products.",
+      "Our team possesses an in-depth understanding of various quality assurance software, with refined skills in defining effective QA processes, deploying advanced UI and CLI test automation frameworks, seamless integration of tests into CI/CD pipelines, and precise automation of manual procedures.  Adhering to industry best practices, we provide an extensive range of manual and automated testing services. Our quality assurance process encompasses Requirement Analysis, Test Planning & Strategy, Test Plan Review & Approval, and Test Execution & Bug Reporting ensuring the delivery of high-quality products.",
   },
   {
     question: "How do you handle changes in project scope or requirements?",

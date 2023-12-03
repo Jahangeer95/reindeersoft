@@ -10,7 +10,7 @@ const CopyRight = () => {
     <div className={styles.CopyRight_Main}>
       <Container fluid="lg">
         <div>
-          <span>Copyright &copy; 2023 REINDEERSOFT. All rights reserved.</span>
+          <span>Copyright &copy; 2023 ReindeerSoft. All rights reserved.</span>
         </div>
       </Container>
     </div>
