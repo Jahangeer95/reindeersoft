@@ -25,8 +25,8 @@ export default function Document() {
         />
         <meta property="og:image" content="https://reindeersoft.com/logo.png" />
         <meta property="og:url" content="https://reindeersoft.com/" />
-        <meta property="og:image:width" content="300" />
-        <meta property="og:image:height" content="300" />
+        {/* <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" /> */}
         <meta property="og:site_name" content="Reindeersoft" />
       </Head>
       <body>
