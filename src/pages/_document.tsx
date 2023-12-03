@@ -23,7 +23,13 @@ export default function Document() {
           property="og:description"
           content="A dedicated team of professionals committed to delivering exceptional IT services and digital solutions. Explore excellence in technology with us."
         />
+        <meta
+          property="og:image"
+          content="https://www.reindeersoft.com/logo.png"
+        />
         <meta property="og:url" content="https://www.reindeersoft.com/" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
         <meta property="og:site_name" content="Reindeersoft" />
       </Head>
       <body>
