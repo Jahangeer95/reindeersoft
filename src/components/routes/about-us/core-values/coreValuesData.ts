@@ -28,7 +28,7 @@ export const coreValueContent: coreValueContentType = [
   {
     title: "Cost Effectiveness",
     description:
-      "We strongly prioritize cost effectiveness, actively committed to delivering efficient solutions that optimize investment and provide exceptional value for our clients and partners.",
+      "We strongly prioritize cost effectiveness, actively committed to delivering efficient solutions that optimize investment and provides exceptional value for our clients and partners.",
     image: costEffectiveness,
   },
 ];
