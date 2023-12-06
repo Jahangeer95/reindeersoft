@@ -8,7 +8,7 @@ import {
 } from "@/types/webAndAppDevelopment.type";
 
 export const title: WebAppServicesTitleType =
-  "Web and Mobile Application Development Service";
+  "Web & Mobile Application Development Services";
 export const WebMobileServicesArray: WebAppServicesArrayType = [
   {
     id: "web-app-one",
@@ -27,7 +27,7 @@ export const WebMobileServicesArray: WebAppServicesArrayType = [
   },
   {
     id: "web-app-four",
-    value: "Integrated Web Mobile Application Development",
+    value: "Integrated Web-Mobile Application Development",
     image: integratedAppDevelopment,
   },
 ];

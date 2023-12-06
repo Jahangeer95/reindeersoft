@@ -67,7 +67,7 @@ export const websiteTypes: WebDevelopmenttypeOfWebsitesType = [
 
 export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType[] = [
   {
-    heading: "Web Frontend Technologies",
+    heading: "Front-End Web Development Technologies",
     List: [
       {
         alt: "HTML",
@@ -100,7 +100,7 @@ export const webDevelopmentTechnologies: WebDevelopmentTechnologiesType[] = [
     ],
   },
   {
-    heading: "Web Backend Technologies",
+    heading: "Back-End Web Development Technologies",
     List: [
       {
         alt: "JavaScript",

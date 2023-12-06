@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import { servicesDataArray } from "./servicesdata";
-import { engagementModelData } from "./engagement";
+// import { engagementModelData } from "./engagement";
 import styles from "./hoverMenu.module.scss";
 
 const menu = require("@/assets/images/web-and-app-development/web-app-development.jpg");
@@ -67,34 +67,34 @@ const HoverMenu = (props: HoverMenuPropsType) => {
   // We are not using Engagement model menu.....
   // It is there in case we have to another nav menu...
 
-  const engagementModelMenu: JSX.Element = (
-    <div className={styles.engagementModel}>
-      <span>
-        <Image src={menuImage} alt="nav-menu" />
-      </span>
-      <aside>
-        {engagementModelData.map((state, idx) => {
-          return (
-            <Link
-              key={idx}
-              href={camelToDash(state.linkname)}
-              onClick={sideBarHandler}
-              onMouseEnter={() => {
-                setMenuImage(state.image);
-                setMenuText(defaultValue);
-              }}
-            >
-              {state.linkname}
-            </Link>
-          );
-        })}
-      </aside>
+  // const engagementModelMenu: JSX.Element = (
+  //   <div className={styles.engagementModel}>
+  //     <span>
+  //       <Image src={menuImage} alt="nav-menu" />
+  //     </span>
+  //     <aside>
+  //       {engagementModelData.map((state, idx) => {
+  //         return (
+  //           <Link
+  //             key={idx}
+  //             href={camelToDash(state.linkname)}
+  //             onClick={sideBarHandler}
+  //             onMouseEnter={() => {
+  //               setMenuImage(state.image);
+  //               setMenuText(defaultValue);
+  //             }}
+  //           >
+  //             {state.linkname}
+  //           </Link>
+  //         );
+  //       })}
+  //     </aside>
 
-      <span>
-        <p>{menuText}</p>
-      </span>
-    </div>
-  );
+  //     <span>
+  //       <p>{menuText}</p>
+  //     </span>
+  //   </div>
+  // );
 
   return (
     <div
@@ -108,7 +108,7 @@ const HoverMenu = (props: HoverMenuPropsType) => {
     >
       <div>
         {props.button === "services" && servicesMenu}
-        {props.button === "engagement-model" && engagementModelMenu}
+        {/* {props.button === "engagement-model" && engagementModelMenu} */}
       </div>
     </div>
   );
