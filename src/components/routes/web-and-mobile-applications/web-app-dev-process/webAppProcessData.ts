@@ -5,7 +5,7 @@ import {
 } from "@/types/webAndAppDevelopment.type";
 
 export const title: WebAppDevProcessTitleType =
-  "Web & Mobile Application Development Process";
+  "Application Development Process";
 
 export const description: WebAppDevProcessDescriptionType =
   "Our comprehensive range of development services covers every stage of the process, ensuring a seamless and successful project from start to finish. The process we follow for application development includes the following key steps:";

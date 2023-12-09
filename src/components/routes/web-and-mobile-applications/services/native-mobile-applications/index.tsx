@@ -51,7 +51,11 @@ const NativeMobileApplications = () => {
                   {state.List.map((state, idx) => {
                     return (
                       <span key={idx} title={state.alt}>
-                        <Image src={state.icon} alt={state.alt} />
+                        <Image
+                          src={state.icon}
+                          alt={state.alt}
+                          loading="lazy"
+                        />
                         <aside
                           className={
                             idx === activeIndex ? styles.textDisplay : ""

@@ -32,7 +32,7 @@ const Services = (props: ServicesPropTypes) => {
                   onClick={() => handleClickScroll(state.value)}
                 >
                   <span>
-                    <Image src={state.image} alt={state.value} priority />
+                    <Image src={state.image} alt={state.value} loading="lazy" />
                   </span>
                   <p>{state.value}</p>
                 </button>
