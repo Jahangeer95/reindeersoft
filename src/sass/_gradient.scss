@@ -1,4 +1,4 @@
-@use "../sass/colors";
+@use "./colors";
 
 @mixin lightGradient1 {
     background: linear-gradient(to top left, rgba(colors.$white-color, 1), rgba(colors.$secondary_light, 1));

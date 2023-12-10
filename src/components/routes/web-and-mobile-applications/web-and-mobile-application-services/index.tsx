@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import * as data from "./webAppServicesData";
+import * as data from "../data";
 import Services from "@/components/custom/services";
 import styles from "./serviceStyles.module.scss";
 

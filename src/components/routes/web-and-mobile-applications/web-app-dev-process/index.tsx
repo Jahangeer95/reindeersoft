@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useView } from "@/hooks/useView";
-import * as data from "./webAppProcessData";
+import * as data from "../data";
 import styles from "./webApp.module.scss";
 
 const WebAndAppDevProcess = () => {

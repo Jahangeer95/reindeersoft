@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useView } from "@/hooks/useView";
-import * as data from "./integratedAppDevelopmentData";
+import * as data from "../../data";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./IntegratedAppDevelopment.module.scss";
 

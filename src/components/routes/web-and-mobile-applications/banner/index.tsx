@@ -1,5 +1,5 @@
 import React from "react";
-import * as data from "./bannerData";
+import * as data from "../data";
 import CustomBanner from "@/components/custom/banner";
 import styles from "./Banner.module.scss";
 
