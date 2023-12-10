@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import * as Yup from "yup";
 import { Form } from "react-bootstrap";
 import countryList from "country-list";
@@ -71,7 +71,10 @@ const ContactUsForm = () => {
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer
+        progressClassName="toastProgress"
+        bodyClassName="toastBody"
+      />
 
       <Form
         className={styles.formMain}

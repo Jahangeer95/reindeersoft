@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useView } from "@/hooks/useView";
-import * as data from "../../data";
+import * as data from "./nativeMobileAppData";
 import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./nativeMobileApp.module.scss";
 import Image from "next/image";

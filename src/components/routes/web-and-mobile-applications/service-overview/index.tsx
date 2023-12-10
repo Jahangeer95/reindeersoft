@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { useView } from "@/hooks/useView";
-import * as data from "../data";
+import * as data from "./webAppImportanceData";
 import styles from "./serviceOverview.module.scss";
 
 const WebAppDevOverview = () => {
