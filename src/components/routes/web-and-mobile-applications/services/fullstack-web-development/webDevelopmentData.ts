@@ -25,7 +25,7 @@ import spring from "@/assets/images/web-and-app-development/full-stack-web/sprin
 
 // ------------Backend icons-----------//
 export const webDevelopmentTitle: WebDevelopmentServiceTitleType =
-  "Full Stack Web Application Development";
+  "Full Stack Web Development";
 
 export const webDevelopmentDescription: WebDevelopmentDescriptionType = [
   "Our full-stack development services harness the power of cutting-edge technologies, backed by years of expertise in MERN and MEAN stack development. With proficiency in frontend technology like React and Angular, and backend technology like Django, NodeJS, and Spring, our team excels in delivering outstanding web applications across diverse industries, including healthcare, finance, e-commerce, education, and more. Whether you need a custom CRM, ERP, CMS, or any tailored solution, we possess the skills and experience to develop a solution that precisely meets your business needs. Our commitment goes beyond development, as we provide ongoing support and maintenance services to ensure your application remains up-to-date and fully functional.",

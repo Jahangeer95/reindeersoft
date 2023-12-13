@@ -11,7 +11,7 @@ import flutter from "@/assets/images/web-and-app-development/cross-plateform-app
 import reactNative from "@/assets/images/web-and-app-development/cross-plateform-app/react-native.png";
 
 export const crossPlateformAppDevelopmentTitle: CrossPlateformAppDevelopmentServiceTitleType =
-  "Cross Platform Mobile Application Development";
+  "Cross Platform Mobile App Development";
 
 export const crossPlateformAppDevelopmentDescription: CrossPlateformAppDevelopmentDescriptionType =
   [
