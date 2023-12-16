@@ -12,7 +12,7 @@ import {
 } from "@/types/roboticsAndAutonomy.type";
 
 export const title: RoboticsAutonomyServicesTitleType =
-  "Robotics and Autonomy Services";
+  "Autonomous Robots Services";
 export const roboticServicesArray: RoboticsAutonomyServicesArrayType = [
   {
     id: "robotics-app-one",
@@ -21,12 +21,12 @@ export const roboticServicesArray: RoboticsAutonomyServicesArrayType = [
   },
   {
     id: "robotics-app-two",
-    value: "Motion Planning",
+    value: "Robot Motion Planning and Control",
     image: motionPlanning,
   },
   {
     id: "robotics-app-three",
-    value: "Manipulation",
+    value: "Autonomous Robotic Manipulation",
     image: manipulation,
   },
   {
@@ -36,17 +36,17 @@ export const roboticServicesArray: RoboticsAutonomyServicesArrayType = [
   },
   {
     id: "robotics-app-five",
-    value: "Simulation",
+    value: "Robot Simulation",
     image: simulation,
   },
   {
     id: "robotics-app-six",
-    value: "Computer Vision",
+    value: "Computer Vision for Robots",
     image: computerVision,
   },
   {
     id: "robotics-app-seven",
-    value: "Integration",
+    value: "Integrated Robotic System",
     image: integration,
   },
 ];

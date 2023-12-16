@@ -13,7 +13,7 @@ export const description: QualityAssuranceProcessDescriptionType =
 export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   {
     id: 1,
-    heading: "Discovery & Analysis",
+    heading: "Discovery & Analysis ",
     list: [
       "In-depth understanding of project requirements.",
       "Identification of goals and challenges.",
@@ -22,7 +22,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 2,
-    heading: "Planning & Design",
+    heading: "Planning & Design ",
     list: [
       "Collaborative mapping of the project roadmap.",
       "Defining milestones, tasks, and timelines.",
@@ -31,7 +31,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 3,
-    heading: "Development & Iteration",
+    heading: "Development & Iteration ",
     list: [
       "Skilled developers bring the project to life.",
       "Iterative cycles for continuous improvement.",
@@ -40,7 +40,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 4,
-    heading: "Testing & Quality Assurance",
+    heading: "Testing & Quality Assurance ",
     list: [
       "Comprehensive evaluation of functionality.",
       "Rigorous testing for usability and security.",
@@ -49,7 +49,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 5,
-    heading: "Delivery & Support",
+    heading: "Delivery & Support ",
     list: [
       "Project delivery upon perfection.",
       "Post-launch support for ongoing evolution.",

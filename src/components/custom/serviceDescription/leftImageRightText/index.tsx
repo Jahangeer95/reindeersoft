@@ -38,7 +38,11 @@ const RightServiceDescription = (props: ServiceDescriptionPropTypes) => {
                 inView ? styles.visible : ""
               }`}
             >
-              <Image src={content.image} alt={title} priority />
+              <Image
+                src={content.image}
+                alt={`${title} - ReindeerSoft`}
+                priority
+              />
             </span>
             <span
               ref={ref}

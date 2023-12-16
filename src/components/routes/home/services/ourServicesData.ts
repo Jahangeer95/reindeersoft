@@ -13,30 +13,30 @@ export const title: OurServicesTitleType = "Service Offerings";
 export const ourServicesList: OurServiceListType = [
   {
     icon: webAppDevelopment,
-    title: "Web and Mobile Applications",
+    title: "Web and Mobile Applications ",
   },
   {
     icon: dedicatedDevelopmentTeam,
-    title: "Dedicated Development Team",
+    title: "Dedicated Development Team ",
   },
   {
     icon: roboticAndAutonomy,
-    title: "Robotics and Autonomy",
+    title: "Robotics and Autonomy ",
   },
   {
     icon: qaAndTestAutomation,
-    title: "QA and Test Automation",
+    title: "QA and Test Automation ",
   },
   {
     icon: cloudApplicationDevelopment,
-    title: "Cloud Application Development",
+    title: "Cloud Application Development ",
   },
   {
     icon: iot,
-    title: "Internet of Things",
+    title: "Internet of Things ",
   },
   {
     icon: llm,
-    title: "Large Language Model",
+    title: "Large Language Model ",
   },
 ];
