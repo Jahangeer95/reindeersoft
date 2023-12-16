@@ -21,7 +21,7 @@ export const roboticServicesArray: RoboticsAutonomyServicesArrayType = [
   },
   {
     id: "robotics-app-two",
-    value: "Robot Motion Planning and Control",
+    value: "Robot Motion Planning & Control",
     image: motionPlanning,
   },
   {

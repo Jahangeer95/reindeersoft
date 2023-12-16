@@ -5,7 +5,8 @@ import {
 
 import ManipulationImage from "@/assets/images/robotics-and-autonomy/robotics-manipulation-image.jpg";
 
-export const title: RoboticsAutonomyServicesTitleType = "Manipulation";
+export const title: RoboticsAutonomyServicesTitleType =
+  "Autonomous Robotic Manipulation";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [
