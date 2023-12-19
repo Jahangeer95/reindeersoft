@@ -1,5 +1,5 @@
 export const camelToDash = (str: string): string => {
-  return str.toLowerCase().split(" ").join("-");
+  return str.trim().toLowerCase().split(" ").join("-");
 };
 
 // just include in web and app development....
