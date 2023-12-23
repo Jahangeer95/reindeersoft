@@ -16,37 +16,37 @@ export const title: RoboticsAutonomyServicesTitleType =
 export const roboticServicesArray: RoboticsAutonomyServicesArrayType = [
   {
     id: "robotics-app-one",
-    value: "Robotics Hardware",
+    value: "Robot Hardware ",
     image: roboticsHardware,
   },
   {
     id: "robotics-app-two",
-    value: "Robot Motion Planning & Control",
+    value: "Robot Motion Planning & Control ",
     image: motionPlanning,
   },
   {
     id: "robotics-app-three",
-    value: "Autonomous Robotic Manipulation",
+    value: "Robotic Manipulation ",
     image: manipulation,
   },
   {
     id: "robotics-app-four",
-    value: "Real-Time Safety Compliant Control",
+    value: "Real-Time Safety Compliance Software ",
     image: complianceControl,
   },
   {
     id: "robotics-app-five",
-    value: "Robot Simulation",
+    value: "Robotic Simulation Software  ",
     image: simulation,
   },
   {
     id: "robotics-app-six",
-    value: "Computer Vision for Robots",
+    value: "Computer Vision for Robots ",
     image: computerVision,
   },
   {
     id: "robotics-app-seven",
-    value: "Integrated Robotic System",
+    value: "Robotic System Integration ",
     image: integration,
   },
 ];

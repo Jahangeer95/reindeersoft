@@ -6,7 +6,7 @@ import {
 import IntegrationImage from "@/assets/images/robotics-and-autonomy/robotics-integration-image.jpg";
 
 export const title: RoboticsAutonomyServiceTitleType =
-  "Integrated Robotic System";
+  "Robotic System Integration ";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [

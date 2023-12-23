@@ -5,7 +5,7 @@ import {
 
 import RoboticsHardwareImage from "@/assets/images/robotics-and-autonomy/robotics-hardware-image.jpg";
 
-export const title: RoboticsAutonomyServiceTitleType = "Robotics Hardware";
+export const title: RoboticsAutonomyServiceTitleType = "Robot Hardware ";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [

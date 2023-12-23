@@ -5,7 +5,7 @@ import {
 import eventDrivenApplications from "@/assets/images/cloud-application-development/event-driven-applications.jpg";
 
 export const eventDrivenApplicationsTitle: CloudAppServiceTitleType =
-  "Event Driven Applications";
+  "Event Driven Applications ";
 export const eventDrivenApplicationsContent: CloudAppServiceContent = {
   description: [
     "Event-Driven Architecture (EDA) is a modern software architecture paradigm where application components communicate through messaging queues by generating and consuming software events. It promotes loose coupling between components, leading to increased flexibility, scalability, and easier maintenance. With EDA, integrating new components or services becomes seamless, enhancing extensibility. The decoupled nature of EDA enables independent development, testing, and deployment of application components.",

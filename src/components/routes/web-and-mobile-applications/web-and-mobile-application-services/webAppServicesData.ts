@@ -12,22 +12,22 @@ export const title: WebAppServicesTitleType =
 export const WebMobileServicesArray: WebAppServicesArrayType = [
   {
     id: "web-app-one",
-    value: "Full Stack Web Development",
+    value: "Full Stack Web Development ",
     image: fullStackDevelopment,
   },
   {
     id: "web-app-two",
-    value: "Native Mobile App Development",
+    value: "Native Mobile App Development ",
     image: nativeAppDevelopment,
   },
   {
     id: "web-app-three",
-    value: "Cross Platform Mobile App Development",
+    value: "Cross Platform Mobile App Development ",
     image: crossAppDevelopment,
   },
   {
     id: "web-app-four",
-    value: "Integrated Web-Mobile App Development",
+    value: "Integrated Web-Mobile App Development ",
     image: integratedAppDevelopment,
   },
 ];

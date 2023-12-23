@@ -5,7 +5,7 @@ import {
 import cloudNativeApplication from "@/assets/images/cloud-application-development/cloud-native-application.jpg";
 
 export const cloudNativeApplicationTitle: CloudAppServiceTitleType =
-  "Cloud-Native Applications";
+  "Cloud-Native Applications ";
 export const cloudNativeApplicationContent: CloudAppServiceContent = {
   description: [
     "Cloud-native applications are purposefully designed and built software applications that leverage the capabilities and benefits of cloud computing. They utilize containerization, microservices architecture, and dynamic orchestration to enable scalability, resilience, and rapid deployment.",

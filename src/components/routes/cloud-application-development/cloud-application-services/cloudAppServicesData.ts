@@ -12,22 +12,22 @@ export const title: CloudAppServicesTitleType =
 export const qaServicesArray: CloudAppServicesArrayType = [
   {
     id: "cloud-app-one",
-    value: "Cloud-Native Applications",
+    value: "Cloud-Native Applications ",
     image: cloudNativeApp,
   },
   {
     id: "cloud-app-two",
-    value: "Migration To Cloud",
+    value: "Migration To Cloud ",
     image: cloudMigration,
   },
   {
     id: "cloud-app-three",
-    value: "Serverless Computing",
+    value: "Serverless Computing ",
     image: serverlessComputing,
   },
   {
     id: "cloud-app-four",
-    value: "Event Driven Applications",
+    value: "Event Driven Applications ",
     image: distributedSystem,
   },
 ];

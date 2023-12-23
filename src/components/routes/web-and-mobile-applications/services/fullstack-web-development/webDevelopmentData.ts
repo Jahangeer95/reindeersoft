@@ -34,32 +34,32 @@ export const webDevelopmentDescription: WebDevelopmentDescriptionType = [
 
 export const websiteTypes: WebDevelopmenttypeOfWebsitesType = [
   {
-    title: "Web Portals Development",
+    title: "Web Portals Development ",
     description:
       "Web portals are powerful platforms that serve as gateways to information, services, and resources. It enables businesses to create user-friendly and intuitive interfaces that connect users to relevant content and services.",
   },
   {
-    title: "E-Commerce Web Development",
+    title: "E-Commerce Web Development ",
     description:
-      " E-Commerce web service empowers businesses to create captivating online stores that deliver exceptional shopping experiences to customers. ",
+      "E-Commerce web service empowers businesses to create captivating online stores that deliver exceptional shopping experiences to customers. ",
   },
   {
-    title: "Social Networking Web Development",
+    title: "Social Networking Web Development ",
     description:
       "Social networking platforms connect like-minded individuals, enable seamless content sharing, and facilitate real-time interactions with a focus on user experience and privacy.",
   },
   {
-    title: "Media Streaming Web Development",
+    title: "Media Streaming Web Development ",
     description:
       "In the era of digital media consumption, Media Streaming Web service enables businesses to provide immersive and seamless video streaming experiences to their audience.",
   },
   {
-    title: "Learning Management System Website",
+    title: "Learning Management System Website ",
     description:
       "Learning Management System (LMS) Website service offers businesses and educational institutions the opportunity to create interactive and engaging online learning platforms.",
   },
   {
-    title: "Content Management System Website",
+    title: "Content Management System Website ",
     description:
       " Content Management System (CMS) Websites service enables businesses to easily update, edit, and publish content without technical expertise. ",
   },

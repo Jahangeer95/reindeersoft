@@ -5,7 +5,7 @@ import {
 import serverlessComputing from "@/assets/images/cloud-application-development/serverless-computing.jpg";
 
 export const serverlessComputingTitle: CloudAppServiceTitleType =
-  "Serverless Computing";
+  "Serverless Computing ";
 export const serverlessComputingContent: CloudAppServiceContent = {
   description: [
     "Serverless computing is a cloud computing model where the cloud provider manages server provisioning and dynamically allocates and scales computing resources based on the application's needs. This leads to increased productivity and cost efficiency, as businesses can focus entirely on their core business logic.",

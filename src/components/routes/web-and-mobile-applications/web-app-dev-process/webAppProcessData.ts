@@ -13,22 +13,22 @@ export const description: WebAppDevProcessDescriptionType =
 export const qualityAssuranceProcessArray: WebAppDevProcessArrayType = [
   {
     id: 1,
-    heading: "Requirement Analysis",
+    heading: "Requirement Analysis ",
   },
   {
     id: 2,
-    heading: "Application Design",
+    heading: "Application Design ",
   },
   {
     id: 3,
-    heading: "Design Review & Approval",
+    heading: "Design Review & Approval ",
   },
   {
     id: 4,
-    heading: "Coding & Development",
+    heading: "Coding & Development ",
   },
   {
     id: 5,
-    heading: "Testing & Deployment",
+    heading: "Testing & Deployment ",
   },
 ];

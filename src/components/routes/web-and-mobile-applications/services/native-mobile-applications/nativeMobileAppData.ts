@@ -19,11 +19,11 @@ export const nativeMobileApplicationsTechnologies: NativeAppDevelopmentTechnolog
       heading: "Native Mobile App",
       List: [
         {
-          alt: "Android",
+          alt: "Android ",
           icon: android,
         },
         {
-          alt: "IOS",
+          alt: "IOS ",
           icon: ios,
         },
       ],

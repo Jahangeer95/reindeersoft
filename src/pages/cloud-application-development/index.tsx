@@ -14,7 +14,7 @@ const CloudAppDevelopemntPage = () => {
   return (
     <>
       <MetaInformation
-        title="Cloud Application Development - ReindeerSoft"
+        title="Cloud Computing & Application Development Services"
         description="This page is related to the Cloud Application Development services provided by ReindeerSoft"
         chononicalUrl="https://reindeersoft.com/cloud-application-development"
       />

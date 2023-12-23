@@ -29,7 +29,7 @@ export const crossPLateformAppDevelopmentTechnologies: CrossPLateformAppDevelopm
           icon: java,
         },
         {
-          alt: "Kotline",
+          alt: "Kotlin",
           icon: kotline,
         },
         {

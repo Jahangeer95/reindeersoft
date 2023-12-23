@@ -6,7 +6,7 @@ import {
 import MotionPlanningImage from "@/assets/images/robotics-and-autonomy/robotics-motion-planning-image.jpg";
 
 export const title: RoboticsAutonomyServiceTitleType =
-  "Robot Motion Planning & Control";
+  "Robot Motion Planning & Control ";
 
 export const content: RoboticsAutonomyServiceContentType = {
   description: [
