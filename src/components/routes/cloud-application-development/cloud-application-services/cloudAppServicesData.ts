@@ -8,7 +8,7 @@ import {
 } from "@/types/cloudAppDevelopment.type";
 
 export const title: CloudAppServicesTitleType =
-  "Our Cloud Application Development Services";
+  "Application Development Services";
 export const qaServicesArray: CloudAppServicesArrayType = [
   {
     id: "cloud-app-one",
@@ -17,17 +17,17 @@ export const qaServicesArray: CloudAppServicesArrayType = [
   },
   {
     id: "cloud-app-two",
-    value: "Migration To Cloud ",
+    value: "Cloud Migration Strategies & Solutions ",
     image: cloudMigration,
   },
   {
     id: "cloud-app-three",
-    value: "Serverless Computing ",
+    value: "Serverless Cloud Computing ",
     image: serverlessComputing,
   },
   {
     id: "cloud-app-four",
-    value: "Event Driven Applications ",
+    value: "Event Driven Architecture for Cloud Applications ",
     image: distributedSystem,
   },
 ];

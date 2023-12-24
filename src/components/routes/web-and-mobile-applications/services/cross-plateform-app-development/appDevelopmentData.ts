@@ -15,7 +15,7 @@ export const crossPlateformAppDevelopmentTitle: CrossPlateformAppDevelopmentServ
 
 export const crossPlateformAppDevelopmentDescription: CrossPlateformAppDevelopmentDescriptionType =
   [
-    "Cross-platform mobile applications are designed to run on multiple operating systems, such as iOS and Android, using a single codebase. They offer several advantages, including faster development, lower costs, and broader audience reach. We specialize in developing applications for both iOS and Android platforms using leading cross-platform development tools such as React Native and Flutter.",
+    "Cross-platform mobile apps are designed to run on multiple operating systems, such as iOS and Android, using a single codebase. They offer several advantages, including faster development, lower costs, and broader audience reach. We specialize in developing applications for both iOS and Android platforms using leading cross-platform development tools such as React Native and Flutter.",
     "Our team stays up to date with the latest technologies and programming languages to ensure that your app is optimized for performance, scalability, and security. Whether you're seeking to streamline your business operations or engage with your customers on a new level, our experienced team has the expertise and experience to deliver exceptional results and help you succeed.",
   ];
 
