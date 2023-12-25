@@ -9,31 +9,31 @@ import {
   QaServicesTitleType,
 } from "@/types/qaAndTestAutomation.type";
 
-export const title: QaServicesTitleType = "Quality Assurance Services";
+export const title: QaServicesTitleType = "Quality Assurance Services ";
 export const qaServicesArray: QaServicesArrayType = [
   {
     id: "one",
-    value: "Quality Assurance in Waterfall Software Development",
+    value: "Quality Assurance in Waterfall Software Development ",
     image: waterfall,
   },
   {
     id: "two",
-    value: "Quality Assurance in Agile Software Development",
+    value: "Quality Assurance in Agile Software Development ",
     image: agile,
   },
   {
     id: "three",
-    value: "Testing Service",
+    value: "Testing Service ",
     image: manualTesting,
   },
   {
     id: "four",
-    value: "Test Automation & CI/CD Integration",
+    value: "Test Automation & CI/CD Integration ",
     image: automationTesting,
   },
   {
     id: "five",
-    value: "Consultancy & Training",
+    value: "Consultancy & Training ",
     image: consultancy,
   },
 ];

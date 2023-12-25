@@ -5,7 +5,7 @@ import {
 } from "@/types/qaAndTestAutomation.type";
 
 export const title: QualityAssuranceProcessTitleType =
-  "Quality assurance Process";
+  "Quality assurance Process ";
 
 export const description: QualityAssuranceProcessDescriptionType =
   "Our Quality Assurance Process is characterized by transparency and meticulous traceability at every phase, ensuring that each step is well-documented and easily traceable for thorough evaluation and accountability.";
@@ -13,7 +13,7 @@ export const description: QualityAssuranceProcessDescriptionType =
 export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   {
     id: 1,
-    heading: "Requirement Analysis",
+    heading: "Requirement Analysis ",
     list: [
       "Correct understanding of the requirements",
       "Remove ambiguities from the requirements",
@@ -22,7 +22,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 2,
-    heading: "Test Planning & Strategy",
+    heading: "Test Planning & Strategy ",
     list: [
       "Define use cases",
       "Identify testing environment",
@@ -33,7 +33,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 3,
-    heading: "Test Plan Review & Approval",
+    heading: "Test Plan Review & Approval ",
     list: [
       "Internal review of the test plan",
       "Client review of the test plan",
@@ -43,7 +43,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 4,
-    heading: "Test Execution & Bug Reporting",
+    heading: "Test Execution & Bug Reporting ",
     list: [
       "Test execution",
       "Bug reporting",
@@ -53,7 +53,7 @@ export const qualityAssuranceProcessArray: qualityAssuranceProcessArrayType = [
   },
   {
     id: 5,
-    heading: "Reporting and Final Review",
+    heading: "Reporting and Final Review ",
     list: [
       "Compile report of final testing status",
       "Share the report with client",

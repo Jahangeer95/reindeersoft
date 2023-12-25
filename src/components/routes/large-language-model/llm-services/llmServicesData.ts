@@ -10,27 +10,27 @@ export const title: LLMServicesTitleType = "Large Language Model Services";
 export const roboticServicesArray: LLMServicesArrayType = [
   {
     id: "llm-app-one",
-    value: "Integrations",
+    value: "Integrations ",
     image: llmIntegration,
   },
   {
     id: "llm-app-two",
-    value: "Prompt Engineering",
+    value: "Prompt Engineering ",
     image: llmPromptEngineering,
   },
   {
     id: "llm-app-three",
-    value: "Training and Customization",
+    value: "Training and Customization ",
     image: llmTrainingAndCustomization,
   },
   {
     id: "llm-app-four",
-    value: "Consultation and Support",
+    value: "Consultation and Support ",
     image: llmConsultationAndSupport,
   },
   {
     id: "llm-app-five",
-    value: "Applications",
+    value: "Applications ",
     image: llmApplications,
   },
 ];

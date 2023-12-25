@@ -1,7 +1,7 @@
 import llmPromptEngineeringImage from "@/assets/images/llm/llm-prompt-engineering.jpg";
 import { LLMServiceContentType, LLMServiceTitleType } from "@/types/llm.type";
 
-export const title: LLMServiceTitleType = "Prompt Engineering";
+export const title: LLMServiceTitleType = "Prompt Engineering ";
 
 export const content: LLMServiceContentType = {
   description: [

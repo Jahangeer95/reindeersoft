@@ -12,5 +12,5 @@ export const list: BannerListType = [
   "Cloud-Native Applications ",
   "Cloud Migration Strategies & Solutions ",
   "Serverless Cloud Computing ",
-  "Event Driven Architecture for Cloud Applications ",
+  "Event Driven Architecture For Cloud Applications ",
 ];

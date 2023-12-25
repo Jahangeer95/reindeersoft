@@ -1,7 +1,7 @@
 import llmTrainingAndCustomizationImage from "@/assets/images/llm/llm-training-and-customization.png";
 import { LLMServiceContentType, LLMServiceTitleType } from "@/types/llm.type";
 
-export const title: LLMServiceTitleType = "Training and Customization";
+export const title: LLMServiceTitleType = "Training and Customization ";
 
 export const content: LLMServiceContentType = {
   description: [

@@ -7,16 +7,16 @@ import {
 } from "@/types/dedicatedDevelopmentTeam.type";
 
 export const title: DDTServicesTitleType =
-  "Dedicated Development Team Services";
+  "Dedicated Development Team Services ";
 export const qaServicesArray: DDtServicesArrayType = [
   {
     id: "one",
-    value: "Team Extension",
+    value: "Team Extension ",
     image: teamExtension,
   },
   {
     id: "two",
-    value: "Dedicated Team",
+    value: "Dedicated Team ",
     image: dedicatedTeam,
   },
 ];

@@ -8,7 +8,7 @@ import {
 } from "@/types/cloudAppDevelopment.type";
 
 export const title: CloudAppServicesTitleType =
-  "Application Development Services";
+  "Cloud Application Development Services ";
 export const qaServicesArray: CloudAppServicesArrayType = [
   {
     id: "cloud-app-one",
@@ -27,7 +27,7 @@ export const qaServicesArray: CloudAppServicesArrayType = [
   },
   {
     id: "cloud-app-four",
-    value: "Event Driven Architecture for Cloud Applications ",
+    value: "Event Driven Architecture For Cloud Applications ",
     image: distributedSystem,
   },
 ];

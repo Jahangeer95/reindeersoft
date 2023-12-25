@@ -1,7 +1,7 @@
 import llmIntegrationImage from "@/assets/images/llm/llm-integration.jpg";
 import { LLMServiceContentType, LLMServiceTitleType } from "@/types/llm.type";
 
-export const title: LLMServiceTitleType = "Integrations";
+export const title: LLMServiceTitleType = "Integrations ";
 
 export const content: LLMServiceContentType = {
   description: [
