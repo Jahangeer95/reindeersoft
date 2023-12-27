@@ -3,7 +3,7 @@ import {
   RoboticsAutonomyServiceTitleType,
 } from "@/types/roboticsAndAutonomy.type";
 
-import IntegrationImage from "@/assets/images/robotics-and-autonomy/robotics-integration-image.jpg";
+import IntegrationImage from "@/assets/images/robotics-and-autonomy/robotics-integration-image.webp";
 
 export const title: RoboticsAutonomyServiceTitleType =
   "Robotic System Integration ";

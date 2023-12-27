@@ -13,8 +13,8 @@ export default function RoboticsAndAnotomyServicesPage() {
   return (
     <>
       <MetaInformation
-        title="Autonomous Robots Software & Solutions"
-        description="Experience the future of robotics with cutting-edge <strong>software</strong> and <strong>operating solutions</strong>, empowering <strong>autonomous robots</strong> to redefine efficiency and adaptability."
+        title="Autonomous Robots Services & Software Solutions"
+        description="Innovate for the future with our <strong>autonomous robots</strong> services. Explore <strong>software solutions</strong> in robotic manipulation, hardware, motion planning, and beyond."
         chononicalUrl="https://reindeersoft.com/robotics-and-autonomy"
       />
       <RoboticsAndAutonomy />

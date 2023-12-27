@@ -4,9 +4,9 @@ import {
   BannertitleType,
 } from "@/types/roboticsAndAutonomy.type";
 
-export const title: BannertitleType = "Autonomous Robots software & solutions ";
+export const title: BannertitleType = "Autonomous Robots Services & Solutions ";
 export const description: BannerDescriptionType =
-  "Welcome to our Autonomous Robots software & solutions! Our specialized team offers tailored robotics software and hardware solutions to meet the unique needs of your business. Whether you're a startup or an established enterprise, our experts provide the necessary tools to help you achieve your goals in robotics and autonomy.";
+  "Welcome to our Autonomous Robots Services & Software Solutions! Our specialized team offers tailored robotics software and hardware solutions to meet the unique needs of your business. Whether you're a startup or an established enterprise, our experts provide the necessary tools to help you achieve your goals in robotics and autonomy.";
 export const list: BannerListType = [
   "Robot Hardware ",
   "Robot Motion Planning & Control ",

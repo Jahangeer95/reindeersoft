@@ -1,10 +1,10 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import * as data from "./bannerData";
-import { handleClickScroll } from "@/utils/functions/scrollingHandler";
-import styles from "./Banner.module.scss";
 import { AiOutlinePhone } from "react-icons/ai";
 import { BiMap } from "react-icons/bi";
+import { AiOutlineMail } from "react-icons/ai";
+import styles from "./Banner.module.scss";
 
 const Banner = () => {
   return (
@@ -30,6 +30,12 @@ const Banner = () => {
                   <AiOutlinePhone />
                 </span>
                 <span>+1 (508) 202-1132</span>
+              </address>
+              <address>
+                <span>
+                  <AiOutlineMail />
+                </span>
+                <span>info@reindeersoft.com</span>
               </address>
             </div>
           </article>

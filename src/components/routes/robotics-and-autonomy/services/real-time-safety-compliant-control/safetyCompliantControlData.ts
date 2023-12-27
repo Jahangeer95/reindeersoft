@@ -3,7 +3,7 @@ import {
   RoboticsAutonomyServiceTitleType,
 } from "@/types/roboticsAndAutonomy.type";
 
-import RealTimeSafetyImage from "@/assets/images/robotics-and-autonomy/real-time-safety-image.jpg";
+import RealTimeSafetyImage from "@/assets/images/robotics-and-autonomy/real-time-safety-image.webp";
 
 export const title: RoboticsAutonomyServiceTitleType =
   "Real-Time Safety Compliance Software ";
