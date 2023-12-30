@@ -10,7 +10,7 @@ export default function ContactUsPage() {
   return (
     <>
       <MetaInformation
-        title="ReindeerSoft - Contact us"
+        title="Contact Us - ReindeerSoft"
         description="This page is related to ReindeerSoft contact details"
         chononicalUrl="https://reindeersoft.com/contact-us"
       />

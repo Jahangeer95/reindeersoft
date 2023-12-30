@@ -5,13 +5,13 @@ import {
 } from "@/types/llm.type";
 
 export const title: BannertitleType =
-  "Large Language Model Integration & Application ";
+  "Large language Model Integration & AI Services ";
 export const description: BannerDescriptionType =
-  "Unleash the transformative potential of AI with our Large Language Models (LLMs) Integrations and Applications service. Our cutting-edge solutions help businesses integrate language models like Chat-GPT, BERT, BART, T5, and more into their existing infrastructure. With our  offerings, you can stay at the forefront of AI innovation and gain a competitive edge in today's rapidly evolving digital landscape.";
+  "Welcome to our Large language Model Integration & Generative AI Services! Unleash the transformative potential of AI with our Large Language Model (LLM) Integration and Generative AI service. Our cutting-edge solutions help businesses integrate language models like Chat-GPT, BERT, BART, T5, and more into their existing infrastructure. With our  offerings, you can stay at the forefront of AI innovation and gain a competitive edge in today's rapidly evolving digital landscape.";
 export const list: BannerListType = [
-  "Integrations ",
+  "Large Language Model Integration ",
   "Prompt Engineering ",
-  "Training and Customization ",
-  "Consultation and Support ",
+  "LLM Training & Customization ",
+  "Consultation & Support for LLM Integration ",
   "Applications ",
 ];

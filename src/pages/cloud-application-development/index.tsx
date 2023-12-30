@@ -15,7 +15,7 @@ const CloudAppDevelopemntPage = () => {
     <>
       <MetaInformation
         title="Cloud Computing & Application Development Services"
-        description="Empower business with our <strong>cloud application development</strong> services. Explore robust solutions for cloud native app, serverless <strong>cloud computing</strong>, and more."
+        description="Empower business with our cloud application development services. Explore robust solutions for cloud native app, serverless cloud computing, and more."
         chononicalUrl="https://reindeersoft.com/cloud-application-development"
       />
       <CloudApplicationDevelopment />

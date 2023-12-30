@@ -4,7 +4,7 @@ import {
 } from "@/types/dedicatedDevelopmentTeam.type";
 
 export const title: DDTBenifitsTitleType =
-  "Benefits Of Dedicated Development Team";
+  "Benefits Of Hiring Software Development Team";
 
 export const content: DDTEbenifitsContentList = {
   list: [

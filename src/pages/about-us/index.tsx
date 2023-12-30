@@ -12,7 +12,7 @@ export default function AboutUsPage() {
   return (
     <>
       <MetaInformation
-        title="About us - ReindeerSoft"
+        title="About Us - ReindeerSoft"
         description="This page is about all the details related to ReindeerSoft"
         chononicalUrl="https://reindeersoft.com/about-us"
       />

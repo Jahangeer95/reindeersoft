@@ -15,7 +15,7 @@ export default function mobileAndAppDevelopmentPage() {
       <MetaInformation
         title="Application Development Services | Web & Mobile App"
         // description="Achieve digital brilliance effortlessly with our web and mobile application development services, tailored for optimal performance and user satisfaction."
-        description="Expertise in crafting robust, secure, and scalable <strong>web and mobile</strong> apps. Experience seamless innovation through our <strong>application development services.</strong>"
+        description="Expertise in crafting robust, secure, and scalable web and mobile apps. Experience seamless innovation through our application development services."
         chononicalUrl="https://reindeersoft.com/web-and-mobile-applications"
       />
       <WebAppDevelopment />

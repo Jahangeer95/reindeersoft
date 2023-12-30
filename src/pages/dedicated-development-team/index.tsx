@@ -13,7 +13,7 @@ export default function DedicatedDevelopmentTeamPage() {
   return (
     <>
       <MetaInformation
-        title="Dedicated Development Team - ReindeerSoft"
+        title="Dedicated Development Team Services"
         description="This page is related to the Dedicated and Development Team services provided by ReindeerSoft"
         chononicalUrl="https://reindeersoft.com/dedicated-development-team"
       />
