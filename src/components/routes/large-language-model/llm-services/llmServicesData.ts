@@ -6,8 +6,7 @@ import llmApplications from "@/assets/images/llm/llm-services-icon/llm-applicati
 
 import { LLMServicesArrayType, LLMServicesTitleType } from "@/types/llm.type";
 
-export const title: LLMServicesTitleType =
-  "Large Language Model Generative AI Services";
+export const title: LLMServicesTitleType = "Generative AI Services";
 export const roboticServicesArray: LLMServicesArrayType = [
   {
     id: "llm-app-one",
@@ -21,7 +20,7 @@ export const roboticServicesArray: LLMServicesArrayType = [
   },
   {
     id: "llm-app-three",
-    value: "LLM Training & Customization ",
+    value: "LLMs Training & Customization ",
     image: llmTrainingAndCustomization,
   },
   {
@@ -31,7 +30,7 @@ export const roboticServicesArray: LLMServicesArrayType = [
   },
   {
     id: "llm-app-five",
-    value: "Applications ",
+    value: "LLM Applications ",
     image: llmApplications,
   },
 ];

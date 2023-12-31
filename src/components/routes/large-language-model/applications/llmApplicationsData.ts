@@ -3,7 +3,8 @@ import {
   LLMApplicationsTitleType,
 } from "@/types/llm.type";
 
-export const llmApplicationTitle: LLMApplicationsTitleType = "Applications ";
+export const llmApplicationTitle: LLMApplicationsTitleType =
+  "LLM Applications ";
 
 export const llmApplicationContent: LLMApplicationsContentType = [
   {

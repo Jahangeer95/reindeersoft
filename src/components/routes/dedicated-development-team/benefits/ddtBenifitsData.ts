@@ -16,7 +16,7 @@ export const content: DDTEbenifitsContentList = {
     {
       title: "Scalability ",
       description:
-        "Scale your team up or down based on project demands, allowing you to remain agile in a dynamic business environment.",
+        "Scale your resources up or down based on project demands, allowing you to remain agile in a dynamic business environment.",
     },
     {
       title: "Cost Efficiency ",
