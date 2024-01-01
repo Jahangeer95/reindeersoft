@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 import Loading from "@/components/animations/loading";
 import MetaInformation from "@/utils/meta";
+import { websiteMetaDeta } from "@/constants/metaData";
+import { QA_AND_TEST_AUTOMATION_PATHNAME } from "@/constants";
 
 const QaAndTestAutomation = dynamic(
   () => import("@/components/routes/qa-and-test-automation"),
@@ -10,12 +12,15 @@ const QaAndTestAutomation = dynamic(
 );
 
 export default function QaAndTestAutomationPage() {
+  const { title, description, chononicalUrl } =
+    websiteMetaDeta[QA_AND_TEST_AUTOMATION_PATHNAME];
+
   return (
     <>
       <MetaInformation
-        title="Qa And Test Automation - ReindeerSoft"
-        description="This page is related to the qa and test automation services provided by ReindeerSoft"
-        chononicalUrl="https://reindeersoft.com/qa-and-test-automation"
+        title={title}
+        description={description}
+        chononicalUrl={chononicalUrl}
       />
       <QaAndTestAutomation />
     </>

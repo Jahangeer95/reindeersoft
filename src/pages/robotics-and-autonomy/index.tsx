@@ -1,6 +1,8 @@
 import dynamic from "next/dynamic";
 import Loading from "@/components/animations/loading";
+import { websiteMetaDeta } from "@/constants/metaData";
 import MetaInformation from "@/utils/meta";
+import { ROBOTICS_AND_AUTONOMY_PATHNAME } from "@/constants";
 
 const RoboticsAndAutonomy = dynamic(
   () => import("@/components/routes/robotics-and-autonomy"),
@@ -10,12 +12,15 @@ const RoboticsAndAutonomy = dynamic(
 );
 
 export default function RoboticsAndAnotomyServicesPage() {
+  const { title, description, chononicalUrl } =
+    websiteMetaDeta[ROBOTICS_AND_AUTONOMY_PATHNAME];
+
   return (
     <>
       <MetaInformation
-        title="Autonomous Robots Services & Software Solutions"
-        description="Innovate for the future with our autonomous robots services. Explore software solutions in robotic manipulation, hardware, motion planning, and beyond."
-        chononicalUrl="https://reindeersoft.com/robotics-and-autonomy"
+        title={title}
+        description={description}
+        chononicalUrl={chononicalUrl}
       />
       <RoboticsAndAutonomy />
     </>

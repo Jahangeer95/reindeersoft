@@ -1,18 +1,23 @@
 import dynamic from "next/dynamic";
 import Loading from "@/components/animations/loading";
 import MetaInformation from "@/utils/meta";
+import { websiteMetaDeta } from "@/constants/metaData";
+import { LARGE_LANGUAGE_MODEL_PATHNAME } from "@/constants";
 
 const LLM = dynamic(() => import("@/components/routes/large-language-model"), {
   loading: () => <Loading />,
 });
 
 export default function LLMPage() {
+  const { title, description, chononicalUrl } =
+    websiteMetaDeta[LARGE_LANGUAGE_MODEL_PATHNAME];
+
   return (
     <>
       <MetaInformation
-        title="Large language Model Integration & Generative AI Services"
-        description="This page is related to the Robotics And Autonomy services provided by ReindeerSoft"
-        chononicalUrl="https://reindeersoft.com/large-language-model"
+        title={title}
+        description={description}
+        chononicalUrl={chononicalUrl}
       />
       <LLM />
     </>
