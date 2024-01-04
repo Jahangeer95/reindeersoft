@@ -1,6 +1,7 @@
 import {
   CLOUD_APPLICATION_DEVELOPMENT_PATHNAME,
   DEDICATED_DEVELOPMENT_TEAM_PATHNAME,
+  HOME_PATHNAME,
   INTERNET_OF_THINGS_PATHNAME,
   LARGE_LANGUAGE_MODEL_PATHNAME,
   QA_AND_TEST_AUTOMATION_PATHNAME,
@@ -20,6 +21,12 @@ interface WebsiteMetaDataTypes {
 }
 
 export const websiteMetaDeta: WebsiteMetaDataTypes = {
+  [HOME_PATHNAME]: {
+    title: "IT Services | Digital Solutions - ReindeerSoft",
+    description:
+      "A dedicated team of professionals committed to delivering exceptional IT services and digital solutions. Experience technological excellence excellence with us.",
+    chononicalUrl: `${REINDEERSOFT_WEB_URI}`,
+  },
   [WEB_AND_APP_PATHNAME]: {
     title: "Application Development Services | Web & Mobile App",
     description:
@@ -29,7 +36,7 @@ export const websiteMetaDeta: WebsiteMetaDataTypes = {
   [DEDICATED_DEVELOPMENT_TEAM_PATHNAME]: {
     title: "Dedicated Development Team Services",
     description:
-      "Unlock the potential of a dedicated development team for tailored, efficient, and collaborative software development. Achieve your project goals seamlessly with our expert developers.",
+      "Elevate your projects with our dedicated development team services. We provide expert digital solutions, teamwork, and ensure efficient project delivery for success.",
     chononicalUrl: `${REINDEERSOFT_WEB_URI}/${DEDICATED_DEVELOPMENT_TEAM_PATHNAME}`,
   },
   [ROBOTICS_AND_AUTONOMY_PATHNAME]: {
@@ -60,7 +67,7 @@ export const websiteMetaDeta: WebsiteMetaDataTypes = {
   [LARGE_LANGUAGE_MODEL_PATHNAME]: {
     title: "Large language Model Integration & Generative AI Services",
     description:
-      "Leverage the power of large language models and generative AI services for innovative solutions. Our services enable seamless integration of cutting-edge language models, driving transformative and personalized user experiences. Explore the possibilities of generative AI for your business growth and innovation.",
+      "Empower your visions with our generative AI services. We specialize in large language model integration, prompt engineering, LLM training and customization.",
     chononicalUrl: `${REINDEERSOFT_WEB_URI}/${LARGE_LANGUAGE_MODEL_PATHNAME}`,
   },
 };

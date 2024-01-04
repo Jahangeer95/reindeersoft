@@ -2,7 +2,7 @@ import llmConsultaionAndSupportImage from "@/assets/images/llm/llm-consultation-
 import { LLMServiceContentType, LLMServiceTitleType } from "@/types/llm.type";
 
 export const title: LLMServiceTitleType =
-  "Consultation & Support for LLM Integration";
+  "Consultation & Support for LLM Integration ";
 
 export const content: LLMServiceContentType = {
   description: [

@@ -14,3 +14,9 @@ export const CLOUD_APPLICATION_DEVELOPMENT_PATHNAME =
 export const INTERNET_OF_THINGS_PATHNAME = "internet-of-things";
 
 export const LARGE_LANGUAGE_MODEL_PATHNAME = "large-language-model";
+
+export const HOME_PATHNAME = "/";
+
+export const ABOUT_US_PATHNAME = "about-us";
+
+export const CONTACT_US_PATHNAME = "contact-us";
