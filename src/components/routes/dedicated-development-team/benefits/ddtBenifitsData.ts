@@ -31,7 +31,7 @@ export const content: DDTEbenifitsContentList = {
     {
       title: "Collaboration ",
       description:
-        "We seamlessly integrate with your teams, ensuring overlapping working hours for effortless collaboration and efficient project coordination.",
+        "We seamlessly integrate with your staff members, ensuring overlapping working hours for effortless collaboration and efficient project coordination.",
     },
   ],
 };

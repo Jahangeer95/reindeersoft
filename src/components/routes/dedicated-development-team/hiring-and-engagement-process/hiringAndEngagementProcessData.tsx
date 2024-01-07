@@ -13,12 +13,12 @@ export const contentArray: HireEngageProcessContentArrayType = [
   {
     title: " Inquiry and Project Requirements ",
     description:
-      " We start with a detailed consultation to understand your project  requirements, objectives, and the specific skills you're looking for in team members.",
+      " We start with a detailed consultation to understand your project  requirements, objectives, and the specific skills you're looking for in crew members.",
   },
   {
     title: "Client-Centric Selection ",
     description:
-      "We provide a curated list of potential team members for your review and interviews.",
+      "We provide a curated list of collaborative group members for your review and interviews.",
   },
   {
     title: "Onboarding and Integration ",

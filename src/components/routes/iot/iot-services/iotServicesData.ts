@@ -8,22 +8,22 @@ export const title: IoTServicesTitleType = "IoT Services";
 export const iotServicesArray: IoTServicesArrayType = [
   {
     id: "iot-one",
-    value: "IoT Development",
+    value: "IoT Development ",
     image: iotDevelopment,
   },
   {
     id: "iot-two",
-    value: "IoT Integrations",
+    value: "IoT Integration ",
     image: iotIntegration,
   },
   {
     id: "iot-three",
-    value: "IoT Security",
+    value: "IoT Security ",
     image: iotSecurity,
   },
   {
     id: "iot-four",
-    value: "IoT Analytics",
+    value: "IoT Analytics ",
     image: iotAnalytics,
   },
 ];

@@ -1,14 +1,18 @@
 import React from "react";
+import { useView } from "@/hooks/useView";
 import { Container } from "react-bootstrap";
 import * as data from "./llmApplicationsData";
+import { camelToDash } from "@/utils/functions/camelToDash";
 import styles from "./llmApplications.module.scss";
-import { useView } from "@/hooks/useView";
 
 const LLMApplications = () => {
   const { ref, inView } = useView();
 
   return (
-    <section className={styles.llmApplicationsMain} id="applications">
+    <section
+      className={styles.llmApplicationsMain}
+      id={camelToDash(data.llmApplicationTitle)}
+    >
       <Container
         fluid="lg"
         ref={ref}

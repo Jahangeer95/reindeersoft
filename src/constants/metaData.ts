@@ -25,7 +25,7 @@ export const websiteMetaDeta: WebsiteMetaDataTypes = {
     title: "IT Services | Digital Solutions - ReindeerSoft",
     description:
       "A dedicated team of professionals committed to delivering exceptional IT services and digital solutions. Experience technological excellence excellence with us.",
-    chononicalUrl: `${REINDEERSOFT_WEB_URI}`,
+    chononicalUrl: `${REINDEERSOFT_WEB_URI}/`,
   },
   [WEB_AND_APP_PATHNAME]: {
     title: "Application Development Services | Web & Mobile App",
@@ -59,7 +59,7 @@ export const websiteMetaDeta: WebsiteMetaDataTypes = {
   },
 
   [INTERNET_OF_THINGS_PATHNAME]: {
-    title: "Internet of Things Services",
+    title: "Internet of Things (IoT) Services",
     description:
       "Explore cutting-edge IoT services to innovate and connect devices seamlessly. Our IoT solutions empower businesses with smart connectivity, real-time insights, and efficient automation. Harness the power of the Internet of Things for transformative and connected experiences.",
     chononicalUrl: `${REINDEERSOFT_WEB_URI}/${INTERNET_OF_THINGS_PATHNAME}`,

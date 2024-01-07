@@ -7,7 +7,7 @@ import {
 
 export const teamExtensionTitle: TeamExtensionTitleType = "Team Extension ";
 export const teamExtensionDescription: TeamExtensionDEscriptionType =
-  "We understand that building a highly skilled and cohesive software development team is crucial for the success of any project. Our team extension service offers you the flexibility to augment your existing team with our seasoned professionals who seamlessly integrate into your workflow. Whether you need additional expertise for a specific project or want to scale your team for ongoing development needs, our team extension service ensures you have the right talent at the right time. We also guarantee that there are overlapping working hours to promote seamless collaboration and effective project coordination. This collaborative approach not only enhances project efficiency but also accelerates your product's time-to-market, all while maintaining cost-effectiveness. With our team extension service, you get the benefits of an extended team without the complexities of recruitment, allowing you to focus on innovation and achieving your business goals.";
+  "We understand that building a highly skilled and cohesive software development team is crucial for the success of any project. Our team extension service offers you the flexibility to augment your existing staff with our seasoned professionals who seamlessly integrate into your workflow. Whether you need additional expertise for a specific project or want to scale your workforce for ongoing development needs, our team extension service ensures you have the right talent at the right time. We also guarantee that there are overlapping working hours to promote seamless collaboration and effective project coordination. This collaborative approach not only enhances project efficiency but also accelerates your product's time-to-market, all while maintaining cost-effectiveness. With our team extension service, you get the benefits of an extended staff without the complexities of recruitment, allowing you to focus on innovation and achieving your business goals.";
 
 export const ourResponsibilityData: OurResponsibilityObjectType = {
   mainTitle: "Our Responsibility ",
@@ -56,12 +56,12 @@ export const clientResponsibilityData: ClientResponsibilityObjectType = {
     {
       title: "Resource Provision ",
       description:
-        "Provide necessary project resources, access to tools, and data required for our team to work effectively.",
+        "Provide necessary project resources, access to tools, and data required for our staff to work effectively.",
     },
     {
       title: "Scaling Requirements ",
       description:
-        "Communicate any needs for scaling the team, whether for expansion or reduction.",
+        "Communicate any needs for scaling the workforce unit, whether for expansion or reduction.",
     },
   ],
 };

@@ -8,7 +8,7 @@ const Banner = () => {
 
   useEffect(() => {
     if (window.innerWidth < 768) {
-      setLlmTitle("Large Language Model");
+      setLlmTitle("Large Language Model Integration");
     }
   }, []);
 
